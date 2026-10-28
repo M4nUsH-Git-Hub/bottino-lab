@@ -551,7 +551,7 @@ def run(rosa, prev, do_news=True, do_fc=True):
                 raise RuntimeError(f"pagina incompleta o bloccata ({text.count('%')} percentuali)")
             if DEBUG_FC:
                 with open(DEBUG_FC, "w", encoding="utf-8") as f:
-                    f.write(fc_debug_excerpt(text, ["Lucumì", "Pulisic"]))
+                    f.write(fc_debug_excerpt(text, ["Mercoledì 28 Ottobre, 20:45"], before=2, after=120))
             snap = fc_parse(text, rosa)
             # Dati di un parser precedente non sono confrontabili: in quel caso niente cambi.
             old = prev.get("probabili") if prev.get("probabili_parser") == FC_PARSER_VERSION else None
