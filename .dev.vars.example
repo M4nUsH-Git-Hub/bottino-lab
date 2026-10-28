@@ -1,0 +1,2 @@
+# Copia questo file come .dev.vars per provare la password in locale con "npm run dev".
+SITE_PASSWORD=cambiami

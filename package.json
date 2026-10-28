@@ -1,0 +1,10 @@
+{
+  "name": "bottino-lab",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Analisi e recap delle domande Sì/No di Salva il Bottino",
+  "scripts": {
+    "test": "node --test tests/engine.test.js tests/parser.test.js",
+    "dev": "npx wrangler pages dev docs"
+  }
+}
