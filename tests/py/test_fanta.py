@@ -84,8 +84,9 @@ class TestFanta(unittest.TestCase):
         "Venezia", "Inter", *[f"Nome{i}" for i in range(22)],
         "Martedì 27 Ottobre, 20:45", "Pier Luigi Penzo",
         "Venezia", "3-5-2", *sum([[f"Ven{i}", "90%"] for i in range(11)], []),
+        "Panchina", "Ven99", "10%",
         "Inter", "3-5-2", "Sommer", "95%", "Akanji", "55%", "Bastoni", "55%", "Barella", "60%", "Thuram", "80%",
-        "Panchina", "Ven99", "10%", "Jones C.", "5%",
+        "Panchina", "Jones C.", "5%",
         "Ultimo aggiornamento 27/10/2026 - 19:55", "Presentazione squadre", "Venezia", "Inter", "Dettaglio calciatori",
         "Ballottaggi", "Nessun ballottaggio", "Bastoni", "55%", "Akanji", "45%",
         "Squalificati", "Nessun calciatore", "Nessun calciatore",
@@ -95,11 +96,12 @@ class TestFanta(unittest.TestCase):
         # partita 2
         "Genoa", "Juventus", *[f"Nome{i}" for i in range(22)],
         "Mercoledì 28 Ottobre, 20:45", "Luigi Ferraris",
-        "Genoa", "3-5-2", "Bijlow", "90%", "Vitinha O.", "60%",
+        "Genoa", "3-5-2", "Bijlow", "90%", "Colombo", "55%",
+        "Panchina", "Vitinha O.", "60%",
         "Juventus", "3-5-2", "Vicario", "95%", "Lucumì", "80%", "Woltemade", "70%",
         "Panchina", "Koopmeiners", "40%",
         "Ultimo aggiornamento 28/10/2026 - 09:10", "Presentazione squadre", "Genoa", "Juventus", "Dettaglio calciatori",
-        "Ballottaggi", "Vitinha O.", "60%", "Ekuban", "40%", "Nessun ballottaggio",
+        "Ballottaggi", "Colombo", "55%", "Vitinha O.", "45%", "Nessun ballottaggio",
         "Squalificati", "Nessun calciatore", "Nessun calciatore",
         "Diffidati", "Nessun calciatore", "Nessun calciatore",
         "Infortunati", "Nessun calciatore", "Yildiz", "Frattura al piede, rientro a dicembre",
@@ -108,8 +110,9 @@ class TestFanta(unittest.TestCase):
         "Milan", "Bologna", *[f"Nome{i}" for i in range(22)],
         "Mercoledì 28 Ottobre, 18:30", "Giuseppe Meazza",
         "Milan", "4-4-1-1", "Maignan", "95%", "Pulisic", "85%",
-        "Bologna", "4-2-3-1", "Skorupski", "95%",
         "Panchina", "Modric", "30%",
+        "Bologna", "4-2-3-1", "Skorupski", "95%",
+        "Panchina", "Sohm", "20%",
         "Ultimo aggiornamento 28/10/2026 - 09:10", "Presentazione squadre", "Milan", "Bologna", "Dettaglio calciatori",
         "Ballottaggi", "Nessun ballottaggio", "Nessun ballottaggio",
         "Squalificati", "Gila", "Nessun calciatore",
@@ -128,13 +131,16 @@ class TestFanta(unittest.TestCase):
     def test_fc_parse(self):
         r = U.fc_parse(self.PAGE, self.rosa)
         self.assertEqual(r["Lucumì"]["stato"], "titolare")
+        self.assertEqual(r["Lucumì"]["match"]["away"], "Juventus")
         self.assertEqual(r["Lucumì"]["pct"], 80)
         self.assertFalse(r["Lucumì"]["match"]["casa"])
         self.assertEqual(r["Lucumì"]["match"]["home"], "Genoa")
         self.assertEqual(r["Koopmeiners"]["stato"], "panchina")
         self.assertEqual(r["Koopmeiners"]["pct"], 40)
+        self.assertEqual(r["Vitinha O."]["stato"], "panchina")
+        self.assertEqual(r["Vitinha O."]["pct"], 60)
         self.assertEqual(r["Vitinha O."]["flags"], ["ballottaggio"])
-        self.assertEqual(r["Vitinha O."]["partner"], "Ekuban")
+        self.assertEqual(r["Vitinha O."]["partner"], "Colombo")
         self.assertEqual(r["Akanji"]["partner"], "Bastoni")
         self.assertEqual(r["Bastoni"]["flags"], ["ballottaggio", "diffidato"])
         self.assertEqual(r["Jones C."]["stato"], "indisponibile")

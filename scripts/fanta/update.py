@@ -366,26 +366,26 @@ def _parse_block(lines, d, e):
     b = {"kickoff": lines[d], "stadium": lines[d + 1], "home": lines[d + 2], "away": "",
          "modules": [], "starters": {}, "bench": {}, "updated": "",
          "ballottaggi": [], "squalificati": [], "diffidati": [], "infortunati": {}, "dubbio": {}}
-    i = d + 3
-    if i < e and MODULE_RX.match(lines[i]):
-        b["modules"].append(lines[i])
-        i += 1
+    # Ogni squadra: nome, modulo, titolari (nome / percentuale), "Panchina", riserve.
+    # Dopo la squadra di casa viene quella ospite nello stesso formato, poi "Ultimo aggiornamento".
+    team_head = lambda k: k + 1 < e and MODULE_RX.match(lines[k + 1]) is not None and not PCT_RX.match(lines[k])
     is_panchina = lambda k: norm(lines[k]) == "panchina"
-    away_head = lambda k: k + 1 < e and MODULE_RX.match(lines[k + 1]) is not None
-    hs, i = _pairs(lines, i, e, lambda k: away_head(k) or is_panchina(k))
-    for nm, pct in hs:
-        b["starters"][norm(nm)] = (pct, "home")
-    if i < e and away_head(i):
-        b["away"] = lines[i]
+    is_end = lambda k: norm(lines[k]).startswith(("ultimo aggiornamento", "presentazione squadre"))
+    i = d + 2
+    for side in ("home", "away"):
+        if i >= e or not team_head(i):
+            break
+        b[side] = lines[i]
         b["modules"].append(lines[i + 1])
-        i += 2
-    aw, i = _pairs(lines, i, e, is_panchina)
-    for nm, pct in aw:
-        b["starters"][norm(nm)] = (pct, "away")
-    if i < e and is_panchina(i):
-        bench, i = _pairs(lines, i + 1, e, lambda k: norm(lines[k]).startswith(("ultimo aggiornamento", "presentazione squadre")))
-        for nm, pct in bench:
-            b["bench"][norm(nm)] = pct
+        st, i = _pairs(lines, i + 2, e, lambda k: is_panchina(k) or team_head(k) or is_end(k))
+        for nm, pct in st:
+            b["starters"][norm(nm)] = (pct, side)
+        if i < e and is_panchina(i):
+            bench, i = _pairs(lines, i + 1, e, lambda k: team_head(k) or is_end(k))
+            for nm, pct in bench:
+                b["bench"][norm(nm)] = pct
+    while i < e and not is_end(i):
+        i += 1
     if i < e and norm(lines[i]).startswith("ultimo aggiornamento"):
         b["updated"] = lines[i][len("Ultimo aggiornamento"):].strip()
     sec, items = None, {k: [] for k in set(SECTION_NAMES.values())}
@@ -551,7 +551,8 @@ def run(rosa, prev, do_news=True, do_fc=True):
                 raise RuntimeError(f"pagina incompleta o bloccata ({text.count('%')} percentuali)")
             if DEBUG_FC:
                 with open(DEBUG_FC, "w", encoding="utf-8") as f:
-                    f.write(fc_debug_excerpt(text, ["Mercoledì 28 Ottobre, 20:45"], before=2, after=120))
+                    first_date = next((l.strip() for l in text.splitlines() if WEEKDAY_RX.match(norm(l.strip()))), "")
+                    f.write(fc_debug_excerpt(text, [first_date] if first_date else ["Panchina"], before=2, after=160))
             snap = fc_parse(text, rosa)
             # Dati di un parser precedente non sono confrontabili: in quel caso niente cambi.
             old = prev.get("probabili") if prev.get("probabili_parser") == FC_PARSER_VERSION else None
