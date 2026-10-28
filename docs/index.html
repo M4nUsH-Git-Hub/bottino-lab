@@ -56,7 +56,8 @@
               <button class="btn ghost small" id="btnExample" type="button">Esempio PSG–Lione</button>
             </div>
           </div>
-          <p class="hint">Copia dal quiz il blocco con competizione, squadre e domanda. Il riconoscimento compila le caselle qui sotto: controllale sempre.</p>
+          <p class="hint">Copia dal quiz il blocco con competizione, squadre e domanda e incollalo qui: le caselle si compilano da sole. Controllale sempre.</p>
+          <div class="callout exnote" id="exampleNote" hidden>Stai guardando l'esempio PSG–Lione. Incolla qui la tua domanda: i dati dell'esempio verranno sostituiti.</div>
           <label for="pasteBox" class="sr">Testo dal quiz</label>
           <textarea id="pasteBox" rows="5" placeholder="FRA Ligue 1&#10;Paris Saint-Germain&#10;v/s&#10;Lione&#10;Almeno 2 goal segnati nel 1° tempo?"></textarea>
           <div class="btns" style="margin-top:10px">
@@ -75,6 +76,7 @@
             </label>
             <p class="full typeblurb" id="typeBlurb"></p>
             <label class="full">Testo della domanda<input id="question" type="text" placeholder="Es. Almeno 2 goal segnati nel 1° tempo?"></label>
+            <div class="full qsuggest" id="qSuggest" role="status" hidden></div>
             <label>Risposta 1 (Sì)<input id="ans_si" type="text"></label>
             <label>Risposta 2 (No)<input id="ans_no" type="text"></label>
             <label>Sport<input id="ev_sport" type="text"></label>
@@ -127,7 +129,7 @@
 
       <aside class="verdict" aria-live="polite">
         <div>
-          <div class="lbl">Risposta consigliata</div>
+          <div class="lbl">Risposta consigliata <span class="pill warn" id="vExample" hidden>Esempio</span></div>
           <div class="vq" id="vQ"></div>
         </div>
         <div class="answer" id="vAns">—</div>

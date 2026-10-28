@@ -80,12 +80,15 @@
 
   function parseHeader(lines) {
     const ev = { comp: '', home: '', away: '' };
-    const sepIdx = lines.findIndex(l => /^(v\/?s\.?|vs\.?|-|–|contro)$/i.test(l));
+    // Se ci sono più blocchi, vale l'ultimo (quello più vicino alla domanda).
+    let sepIdx = -1;
+    lines.forEach((l, i) => { if (/^(v\/?s\.?|vs\.?|-|–|contro)$/i.test(l)) sepIdx = i; });
     if (sepIdx > 0 && sepIdx < lines.length - 1) {
       ev.home = lines[sepIdx - 1]; ev.away = lines[sepIdx + 1];
       if (sepIdx >= 2) ev.comp = lines[sepIdx - 2];
     } else {
-      const i = lines.findIndex(l => !/\?\s*$/.test(l) && /\s(v\/?s\.?|vs\.?|-|–|contro)\s/i.test(l));
+      let i = -1;
+      lines.forEach((l, k) => { if (!/\?\s*$/.test(l) && /\s(v\/?s\.?|vs\.?|-|–|contro)\s/i.test(l)) i = k; });
       if (i >= 0) {
         const m = lines[i].split(/\s(?:v\/?s\.?|vs\.?|-|–|contro)\s/i);
         ev.home = (m[0] || '').trim(); ev.away = (m[1] || '').trim();

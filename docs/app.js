@@ -31,7 +31,7 @@
   }
 
   const EXAMPLE = {
-    v: 3, type: 'goals_total', question: 'Almeno 2 goal segnati nel 1° tempo?',
+    v: 3, example: true, type: 'goals_total', question: 'Almeno 2 goal segnati nel 1° tempo?',
     paste: 'FRA Ligue 1\nParis Saint-Germain\nv/s\nLione\nAlmeno 2 goal segnati nel 1° tempo?',
     answers: { si: 'Sì', no: 'No' },
     event: { sport: 'Calcio', comp: 'Ligue 1, 8ª giornata', home: 'Paris Saint-Germain', away: 'Lione', when: 'Lun 26/10/2026, 20:30' },
@@ -234,14 +234,16 @@
     if (r.smallSample) ss.push('<span class="pill warn">Campione piccolo: meno di 8 partite</span>');
     $('statSummary').innerHTML = ss.join('') || '<span class="pill neutral">Nessuna statistica inserita</span>';
 
-    const si = r.p >= 0.5;
+    const si = r.p >= 0.5, noData = r.pM == null && r.m.pS == null;
     $('vQ').textContent = state.question || 'Incolla o scrivi la domanda';
-    $('vAns').textContent = pick(r.p);
-    $('vAns').className = 'answer ' + (si ? 'si' : 'no');
+    $('vExample').hidden = !state.example;
+    $('exampleNote').hidden = !state.example;
+    $('vAns').textContent = noData ? '—' : pick(r.p);
+    $('vAns').className = 'answer ' + (noData ? '' : si ? 'si' : 'no');
     $('vBar').style.width = (r.p * 100) + '%';
-    $('vSi').textContent = `${S} ${pct(r.p)}`;
-    $('vNo').textContent = `${N} ${pct(1 - r.p)}`;
-    $('vConf').textContent = `${r.conf.text} (${pct(r.conf.c)})`;
+    $('vSi').textContent = noData ? S : `${S} ${pct(r.p)}`;
+    $('vNo').textContent = noData ? N : `${N} ${pct(1 - r.p)}`;
+    $('vConf').textContent = noData ? 'Mancano i dati: inserisci almeno le quote.' : `${r.conf.text} (${pct(r.conf.c)})`;
     $('vBreak').innerHTML =
       `<div><span>Mercato</span><b>${r.pM == null ? '—' : pct(r.pM)}</b></div>` +
       `<div><span>Statistiche</span><b>${r.m.pS == null ? '—' : pct(r.m.pS)}</b></div>` +
@@ -250,9 +252,10 @@
     $('vQual').innerHTML = `<div class="qhead"><span>Qualità dei dati</span><span class="pill ${r.quality.cls}">${r.quality.level}</span></div>` +
       (r.quality.tips.length ? `<ul>${r.quality.tips.map(x => `<li>${esc(x)}</li>`).join('')}</ul>` : '<p>Dati completi.</p>');
     $('wLbl').textContent = `${Math.round(r.w * 100)}% quote · ${Math.round((1 - r.w) * 100)}% statistiche`;
-    $('chipAns').textContent = pick(r.p);
-    $('chipPct').textContent = pct(Math.max(r.p, 1 - r.p));
-    $('chip').className = 'chip ' + (si ? 'si' : 'no');
+    $('chipAns').textContent = noData ? '—' : pick(r.p);
+    $('chipPct').textContent = noData ? '' : pct(Math.max(r.p, 1 - r.p));
+    $('chip').className = 'chip ' + (noData ? '' : si ? 'si' : 'no');
+    checkQuestionMatch();
     $('promptText').textContent = buildPrompt(r);
     if (!$('view-recap').hidden) $('recap').innerHTML = recapHTML(r);
     store.set(DRAFT_KEY, state);
@@ -286,9 +289,41 @@
     next.odds = state.odds.map(r => emptyRow(r.bk)).slice(0, Math.max(3, state.odds.length));
     state = next;
     renderAll();
+    $('qSuggest').hidden = true;
     $('detected').hidden = false;
     $('detected').innerHTML = describeDetection(res);
     toast('Domanda riconosciuta: controlla le caselle');
+  }
+
+  // Se il testo della domanda indica un tipo o una soglia diversi da quelli impostati, lo segnala.
+  let qTimer;
+  function checkQuestionMatch() {
+    clearTimeout(qTimer);
+    qTimer = setTimeout(() => {
+      const box = $('qSuggest'), q = (state.question || '').trim();
+      if (!q) { box.hidden = true; return; }
+      const header = state.event.home && state.event.away ? `${state.event.home}\nv/s\n${state.event.away}\n` : '';
+      const res = P.parse(header + q);
+      const t = T.byId(res.type), want = Object.assign({}, t.defaults.params, res.params);
+      const same = res.type === state.type && Object.keys(want).every(k => String(want[k]) === String(state.params[k] ?? ''));
+      if (same || res.type === 'generic') { box.hidden = true; return; }
+      box.hidden = false;
+      box.innerHTML = `<span>Il testo sembra un'altra domanda: <b>${esc(describeShort(res))}</b>. Le caselle sono impostate diversamente.</span>
+        <button class="btn small" type="button" id="btnApplyQ">Usa questa impostazione</button>`;
+      $('btnApplyQ').onclick = () => {
+        const keepEvent = Object.assign({}, state.event);
+        $('pasteBox').value = header ? `${keepEvent.comp}\n${header}${q}` : q;
+        applyParse();
+        if (!header) Object.assign(state.event, { home: keepEvent.home, away: keepEvent.away });
+      };
+    }, 400);
+  }
+  function describeShort(res) {
+    const t = T.byId(res.type), bits = [t.name];
+    const per = { '1T': '1° tempo', '2T': '2° tempo' }[res.params.period];
+    if (per) bits.push(per);
+    if (res.params.line) bits.push('soglia ' + lf(res.params.line));
+    return bits.join(' · ');
   }
 
   // ---------- analisi ----------
@@ -577,6 +612,24 @@ Chiudi con i numeri pronti da inserire nelle caselle di Bottino Lab e indica per
 
   $('btnParse').addEventListener('click', applyParse);
   $('pasteBox').addEventListener('keydown', e => { if (e.key === 'Enter' && (e.ctrlKey || e.metaKey)) applyParse(); });
+  // Incollando il testo, il riconoscimento parte da solo.
+  // Il testo incollato sostituisce quello già presente: la casella contiene una domanda alla volta.
+  $('pasteBox').addEventListener('paste', e => {
+    const text = (e.clipboardData || window.clipboardData).getData('text');
+    if (!text || !text.trim()) return;
+    e.preventDefault();
+    $('pasteBox').value = text.trim();
+    applyParse();
+  });
+  // Un blocco di più righe incollato nella casella della domanda viene riconosciuto come se fosse incollato sopra.
+  $('question').addEventListener('paste', e => {
+    const text = (e.clipboardData || window.clipboardData).getData('text');
+    if (text && /\n/.test(text.trim())) {
+      e.preventDefault();
+      $('pasteBox').value = text;
+      applyParse();
+    }
+  });
   $('btnAddRow').addEventListener('click', () => {
     if (state.odds.length >= MAX_ROWS) return;
     state.odds.push(emptyRow()); renderOdds(); update();

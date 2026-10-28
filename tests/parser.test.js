@@ -118,3 +118,17 @@ test('solo la domanda, senza intestazione', () => {
   assert.equal(r.params.line, '2.5');
   assert.equal(r.event.home, '');
 });
+
+test('presente e "nel match": Genoa–Juventus', () => {
+  const r = P.parse('ITA Serie A\nGenoa\nv/s\nJuventus\nLa Juventus segna almeno 2 goal nel match?');
+  assert.equal(r.event.comp, 'Serie A');
+  assert.equal(r.type, 'team_goals');
+  assert.deepEqual(r.params, { team: 'away', period: 'FT', line: '1.5', side: 'pos' });
+});
+
+test('due blocchi incollati: vale l\'ultimo', () => {
+  const r = P.parse('FRA Ligue 1\nParis Saint-Germain\nv/s\nLione\nAlmeno 2 goal segnati nel 1° tempo?\nITA Serie A\nGenoa\nv/s\nJuventus\nLa Juventus segna almeno 2 goal nel match?');
+  assert.equal(r.event.home, 'Genoa');
+  assert.equal(r.event.comp, 'Serie A');
+  assert.equal(r.type, 'team_goals');
+});
