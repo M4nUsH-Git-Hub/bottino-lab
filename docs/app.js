@@ -755,13 +755,14 @@ Chiudi con i dati pronti da copiare nelle caselle di Bottino Lab: quote, statist
   }
 
   // ---------- viste ----------
-  const VIEWS = ['dati', 'recap', 'diario', 'guida'];
+  const VIEWS = ['dati', 'recap', 'diario', 'fanta', 'guida'];
   function showView() {
     const v = VIEWS.includes(location.hash.slice(1)) ? location.hash.slice(1) : 'dati';
     VIEWS.forEach(x => { $('view-' + x).hidden = x !== v; });
     document.querySelectorAll('.tabs a').forEach(a => { if (a.dataset.view === v) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current'); });
     if (v === 'recap') $('recap').innerHTML = recapHTML(compute(state));
     if (v === 'diario') renderDiary();
+    if (v === 'fanta' && window.BLFanta) setTimeout(() => window.BLFanta.show(), 0);
     window.scrollTo(0, 0);
   }
 

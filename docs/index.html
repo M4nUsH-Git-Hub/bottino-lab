@@ -38,6 +38,7 @@
       <a href="#dati" data-view="dati">Dati</a>
       <a href="#recap" data-view="recap">Analisi</a>
       <a href="#diario" data-view="diario">Storico</a>
+      <a href="#fanta" data-view="fanta">Fanta</a>
       <a href="#guida" data-view="guida">Guida</a>
     </nav>
     <a class="chip" id="chip" href="#recap" aria-label="Stima attuale"><b id="chipAns">—</b><span id="chipPct"></span></a>
@@ -228,6 +229,19 @@
     </div>
   </section>
 
+  <!-- ================= FANTA ================= -->
+  <section class="view" id="view-fanta" hidden>
+    <div class="fhead" id="fHead"></div>
+    <div id="fBody" hidden>
+      <div class="fgrid">
+        <section class="panel" id="fXI"></section>
+        <section class="panel" id="fChanges"></section>
+      </div>
+      <section class="panel" id="fRosa"></section>
+      <section class="panel" id="fNews"></section>
+    </div>
+  </section>
+
   <!-- ================= GUIDA ================= -->
   <section class="view" id="view-guida" hidden>
     <div class="guide">
@@ -294,5 +308,6 @@
 <script src="templates.js"></script>
 <script src="parser.js"></script>
 <script src="app.js"></script>
+<script src="fanta.js"></script>
 </body>
 </html>

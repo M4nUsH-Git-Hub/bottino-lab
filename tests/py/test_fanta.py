@@ -78,30 +78,72 @@ class TestFanta(unittest.TestCase):
         self.assertEqual(m[1]["first_seen"], "2026-10-27T10:05:00Z")
         self.assertEqual(m[0]["first_seen"], "2026-10-28T12:00:00Z")
 
+    PAGE = "\n".join([
+        "Probabili formazioni Serie A", "Menu",
+        # partita 1: pitch senza percentuali, poi data, stadio, casa, modulo, titolari con percentuali
+        "Venezia", "Inter", *[f"Nome{i}" for i in range(22)],
+        "Martedì 27 Ottobre, 20:45", "Pier Luigi Penzo",
+        "Venezia", "3-5-2", *sum([[f"Ven{i}", "90%"] for i in range(11)], []),
+        "Inter", "3-5-2", "Sommer", "95%", "Akanji", "55%", "Bastoni", "55%", "Barella", "60%", "Thuram", "80%",
+        "Panchina", "Ven99", "10%", "Jones C.", "5%",
+        "Ultimo aggiornamento 27/10/2026 - 19:55", "Presentazione squadre", "Venezia", "Inter", "Dettaglio calciatori",
+        "Ballottaggi", "Nessun ballottaggio", "Bastoni", "55%", "Akanji", "45%",
+        "Squalificati", "Nessun calciatore", "Nessun calciatore",
+        "Diffidati", "Nessun calciatore", "Bastoni",
+        "Infortunati", "Jones C.", "Risentimento agli adduttori, rientro dalla fine di ottobre",
+        "In dubbio", "Nessun calciatore", "Thuram", "Affaticamento, da valutare nella rifinitura",
+        # partita 2
+        "Genoa", "Juventus", *[f"Nome{i}" for i in range(22)],
+        "Mercoledì 28 Ottobre, 20:45", "Luigi Ferraris",
+        "Genoa", "3-5-2", "Bijlow", "90%", "Vitinha O.", "60%",
+        "Juventus", "3-5-2", "Vicario", "95%", "Lucumì", "80%", "Woltemade", "70%",
+        "Panchina", "Koopmeiners", "40%",
+        "Ultimo aggiornamento 28/10/2026 - 09:10", "Presentazione squadre", "Genoa", "Juventus", "Dettaglio calciatori",
+        "Ballottaggi", "Vitinha O.", "60%", "Ekuban", "40%", "Nessun ballottaggio",
+        "Squalificati", "Nessun calciatore", "Nessun calciatore",
+        "Diffidati", "Nessun calciatore", "Nessun calciatore",
+        "Infortunati", "Nessun calciatore", "Yildiz", "Frattura al piede, rientro a dicembre",
+        "In dubbio", "Nessun calciatore", "Nessun calciatore",
+        # partita 3 con un giocatore della rosa assente e uno squalificato
+        "Milan", "Bologna", *[f"Nome{i}" for i in range(22)],
+        "Mercoledì 28 Ottobre, 18:30", "Giuseppe Meazza",
+        "Milan", "4-4-1-1", "Maignan", "95%", "Pulisic", "85%",
+        "Bologna", "4-2-3-1", "Skorupski", "95%",
+        "Panchina", "Modric", "30%",
+        "Ultimo aggiornamento 28/10/2026 - 09:10", "Presentazione squadre", "Milan", "Bologna", "Dettaglio calciatori",
+        "Ballottaggi", "Nessun ballottaggio", "Nessun ballottaggio",
+        "Squalificati", "Gila", "Nessun calciatore",
+        "Diffidati", "Nessun calciatore", "Nessun calciatore",
+        "Infortunati", "Nessun calciatore", "Nessun calciatore",
+        "In dubbio", "Nessun calciatore", "Nessun calciatore",
+        "Footer del sito", "Privacy",
+    ])
+
+    def test_fc_blocks(self):
+        blocks = U.fc_blocks(self.PAGE)
+        self.assertEqual([(b["home"], b["away"]) for b in blocks], [("Venezia", "Inter"), ("Genoa", "Juventus"), ("Milan", "Bologna")])
+        self.assertEqual(blocks[1]["modules"], ["3-5-2", "3-5-2"])
+        self.assertEqual(blocks[1]["updated"], "28/10/2026 - 09:10")
+
     def test_fc_parse(self):
-        text = """Genoa - Juventus
-        Titolari
-        Vicario 95% Lucumì 80% Koopmeiners 75% Woltemade 70%
-        Panchina
-        Openda 30%
-        Ballottaggi
-        Woltemade 70% Openda 30%
-        Indisponibili
-        Yildiz
-        Inter - Atalanta
-        Bastoni 90% Jones C. 40%
-        In dubbio
-        Scalvini
-        Squalificati
-        Akanji"""
-        players = [p for p in self.rosa if p["nome"] in ("Lucumì", "Woltemade", "Jones C.", "Scalvini", "Akanji", "Pulisic")]
-        r = U.fc_parse(text, players)
-        self.assertEqual(r["Lucumì"], {"stato": "titolare", "pct": 80, "flags": []})
+        r = U.fc_parse(self.PAGE, self.rosa)
+        self.assertEqual(r["Lucumì"]["stato"], "titolare")
+        self.assertEqual(r["Lucumì"]["pct"], 80)
+        self.assertFalse(r["Lucumì"]["match"]["casa"])
+        self.assertEqual(r["Lucumì"]["match"]["home"], "Genoa")
+        self.assertEqual(r["Koopmeiners"]["stato"], "panchina")
+        self.assertEqual(r["Koopmeiners"]["pct"], 40)
+        self.assertEqual(r["Vitinha O."]["flags"], ["ballottaggio"])
+        self.assertEqual(r["Vitinha O."]["partner"], "Ekuban")
+        self.assertEqual(r["Akanji"]["partner"], "Bastoni")
+        self.assertEqual(r["Bastoni"]["flags"], ["ballottaggio", "diffidato"])
+        self.assertEqual(r["Jones C."]["stato"], "indisponibile")
+        self.assertIn("adduttori", r["Jones C."]["note"])
+        self.assertEqual(r["Gila"]["stato"], "squalificato")
+        self.assertEqual(r["Zortea"]["stato"], "assente")        # Bologna presente, Zortea non nelle probabili
+        self.assertEqual(r["Modric"]["stato"], "panchina")
+        self.assertNotIn("Diao", r)                              # il Como non è in questa pagina
         self.assertEqual(r["Woltemade"]["stato"], "titolare")
-        self.assertIn("ballottaggio", r["Woltemade"]["flags"])
-        self.assertEqual(r["Scalvini"]["stato"], "dubbio")
-        self.assertEqual(r["Akanji"]["stato"], "squalificato")
-        self.assertNotIn("Pulisic", r)
 
     def test_diff_probabili(self):
         rosa = [{"nome": "A", "squadra": "X"}, {"nome": "B", "squadra": "Y"}, {"nome": "C", "squadra": "Z"}]
@@ -110,6 +152,8 @@ class TestFanta(unittest.TestCase):
                "C": {"stato": "titolare", "pct": 90, "flags": []}}
         ch = U.diff_probabili(old, new, rosa, NOW)
         self.assertEqual([c["nome"] for c in ch], ["A", "B"])  # A: -20 punti; B: cambia stato; C: prima volta
+        same = {"A": dict(old["A"], note="cambiata", match={"x": 1})}
+        self.assertEqual(U.diff_probabili({"A": old["A"]}, same, rosa[:1], NOW), [])  # nota e partita non contano
         self.assertEqual(U.diff_probabili(None, new, rosa, NOW), [])
 
     def test_run_offline(self):

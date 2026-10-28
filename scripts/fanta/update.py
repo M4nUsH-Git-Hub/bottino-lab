@@ -36,6 +36,7 @@ NEWS_MAX = 400
 CHANGES_MAX = 150
 FC_URL = "https://www.fantacalcio.it/probabili-formazioni-serie-a"
 FC_MIN_DELTA = 15
+FC_PARSER_VERSION = 2
 FC_SECTIONS = ("panchina", "ballottaggi", "indisponibili", "in dubbio", "squalificati", "diffidati")
 
 # Cognomi ambigui (omonimi famosi o parole comuni): serve anche la squadra nel testo.
@@ -324,41 +325,130 @@ def merge_news(fresh, previous, now):
 
 # ── Probabili formazioni di Fantacalcio.it ────────────────────────────────────
 
+WEEKDAY_RX = re.compile(r"^(lunedi|martedi|mercoledi|giovedi|venerdi|sabato|domenica)\s+\d{1,2}\s+[a-z]+,?\s+\d{1,2}[:.]\d{2}$")
+PCT_RX = re.compile(r"^(\d{1,3})\s*%$")
+MODULE_RX = re.compile(r"^\d(-\d){2,3}$")
+SECTION_NAMES = {"ballottaggi": "ballottaggi", "squalificati": "squalificati", "diffidati": "diffidati",
+                 "infortunati": "infortunati", "in dubbio": "dubbio"}
+
+
+def _pairs(lines, i, end, stop):
+    """Legge coppie nome / percentuale fino a quando stop(i) è vero."""
+    out = []
+    while i < end and not stop(i):
+        m = PCT_RX.match(lines[i + 1]) if i + 1 < end else None
+        if m and not PCT_RX.match(lines[i]):
+            out.append((lines[i], int(m.group(1))))
+            i += 2
+        else:
+            i += 1
+    return out, i
+
+
+def fc_blocks(text):
+    """Divide la pagina in partite. Ogni partita inizia con le due squadre e lo schieramento
+    senza percentuali, poi data e ora, stadio, squadra di casa, modulo e i titolari con le percentuali."""
+    lines = [l.strip() for l in text.splitlines() if l.strip()]
+    dates = [i for i, l in enumerate(lines) if WEEKDAY_RX.match(norm(l)) and i + 3 < len(lines)]
+    starts = []
+    for d in dates:
+        home = norm(lines[d + 2])
+        s = next((k for k in range(d - 1, max(-1, d - 60), -1) if norm(lines[k]) == home), d)
+        starts.append((s, d))
+    blocks = []
+    for n, (s, d) in enumerate(starts):
+        e = starts[n + 1][0] if n + 1 < len(starts) else len(lines)
+        blocks.append(_parse_block(lines, d, e))
+    return blocks
+
+
+def _parse_block(lines, d, e):
+    b = {"kickoff": lines[d], "stadium": lines[d + 1], "home": lines[d + 2], "away": "",
+         "modules": [], "starters": {}, "bench": {}, "updated": "",
+         "ballottaggi": [], "squalificati": [], "diffidati": [], "infortunati": {}, "dubbio": {}}
+    i = d + 3
+    if i < e and MODULE_RX.match(lines[i]):
+        b["modules"].append(lines[i])
+        i += 1
+    is_panchina = lambda k: norm(lines[k]) == "panchina"
+    away_head = lambda k: k + 1 < e and MODULE_RX.match(lines[k + 1]) is not None
+    hs, i = _pairs(lines, i, e, lambda k: away_head(k) or is_panchina(k))
+    for nm, pct in hs:
+        b["starters"][norm(nm)] = (pct, "home")
+    if i < e and away_head(i):
+        b["away"] = lines[i]
+        b["modules"].append(lines[i + 1])
+        i += 2
+    aw, i = _pairs(lines, i, e, is_panchina)
+    for nm, pct in aw:
+        b["starters"][norm(nm)] = (pct, "away")
+    if i < e and is_panchina(i):
+        bench, i = _pairs(lines, i + 1, e, lambda k: norm(lines[k]).startswith(("ultimo aggiornamento", "presentazione squadre")))
+        for nm, pct in bench:
+            b["bench"][norm(nm)] = pct
+    if i < e and norm(lines[i]).startswith("ultimo aggiornamento"):
+        b["updated"] = lines[i][len("Ultimo aggiornamento"):].strip()
+    sec, items = None, {k: [] for k in set(SECTION_NAMES.values())}
+    for k in range(i, e):
+        n = norm(lines[k])
+        if n in SECTION_NAMES:
+            sec = SECTION_NAMES[n]
+        elif sec and not n.startswith("nessun"):
+            items[sec].append(lines[k])
+    bal, _ = _pairs(items["ballottaggi"], 0, len(items["ballottaggi"]), lambda k: False)
+    b["ballottaggi"] = bal
+    b["squalificati"] = [norm(x) for x in items["squalificati"]]
+    b["diffidati"] = [norm(x) for x in items["diffidati"]]
+    for key in ("infortunati", "dubbio"):
+        lst = items[key]
+        for k, nm in enumerate(lst):
+            nxt = lst[k + 1] if k + 1 < len(lst) else ""
+            b[key][norm(nm)] = nxt if len(nxt) > 25 else ""
+    return b
+
+
+def _same_team(a, b):
+    a, b = norm(a), norm(b)
+    return bool(a) and (a == b or a.startswith(b + " ") or b.startswith(a + " "))
+
+
 def fc_parse(text, players):
-    """{nome: {"stato", "pct", "flags"}} per i giocatori trovati nel testo della pagina."""
-    t = norm(text)
+    """Per ogni giocatore della rosa: stato nelle probabili, percentuale, flag, nota e partita."""
+    blocks = fc_blocks(text)
     out = {}
     for p in players:
         name = norm(p["nome"])
-        rx = re.compile(rf"(?<![a-z]){re.escape(name)}(?![a-z])")
-        occ = []
-        for m in rx.finditer(t):
-            before = t[max(0, m.start() - 450): m.start()]
-            sec, pos = "titolari", -1
-            for s in FC_SECTIONS:
-                i = before.rfind(s)
-                if i > pos:
-                    sec, pos = s, i
-            pm = re.match(r"[^%\d]{0,40}?(\d{1,3})\s*%", t[m.end(): m.end() + 60])
-            occ.append((sec, int(pm.group(1)) if pm else None))
-        if not occ:
+        blk = next((b for b in blocks if _same_team(b["home"], p["squadra"]) or _same_team(b["away"], p["squadra"])), None)
+        if not blk:
             continue
-        secs = {s for s, _ in occ}
-        pct = next((v for s, v in occ if v is not None and s in ("titolari", "panchina", "ballottaggi")), None)
-        if "squalificati" in secs:
-            stato = "squalificato"
-        elif "indisponibili" in secs:
-            stato = "indisponibile"
-        elif "in dubbio" in secs:
-            stato = "dubbio"
-        elif pct is not None and pct >= 50:
-            stato = "titolare"
-        elif pct is not None or "panchina" in secs:
-            stato = "panchina"
-        else:
-            stato = "citato"
-        flags = (["ballottaggio"] if "ballottaggi" in secs else []) + (["diffidato"] if "diffidati" in secs else [])
-        out[p["nome"]] = {"stato": stato, "pct": pct, "flags": flags}
+        casa = _same_team(blk["home"], p["squadra"])
+        info = {"stato": "assente", "pct": None, "flags": [], "note": "", "partner": "",
+                "match": {"home": blk["home"], "away": blk["away"], "casa": casa, "kickoff": blk["kickoff"],
+                          "stadium": blk["stadium"], "aggiornato": blk["updated"]}}
+        if name in blk["starters"]:
+            info["stato"], info["pct"] = "titolare", blk["starters"][name][0]
+        elif name in blk["bench"]:
+            info["stato"], info["pct"] = "panchina", blk["bench"][name]
+        if name in blk["dubbio"]:
+            if info["stato"] == "assente":
+                info["stato"] = "dubbio"
+            else:
+                info["flags"].append("in dubbio")
+            info["note"] = blk["dubbio"][name]
+        if name in blk["infortunati"]:
+            info["stato"], info["pct"], info["note"] = "indisponibile", 0, blk["infortunati"][name]
+        if name in blk["squalificati"]:
+            info["stato"], info["pct"] = "squalificato", 0
+        names = [norm(n) for n, _ in blk["ballottaggi"]]
+        if name in names:
+            k = names.index(name)
+            info["flags"].append("ballottaggio")
+            j = k + 1 if k % 2 == 0 else k - 1
+            if 0 <= j < len(blk["ballottaggi"]):
+                info["partner"] = blk["ballottaggi"][j][0]
+        if name in blk["diffidati"]:
+            info["flags"].append("diffidato")
+        out[p["nome"]] = info
     return out
 
 
@@ -392,13 +482,17 @@ def fc_fetch_text():
     return text
 
 
+def _key(x):
+    return {"stato": x.get("stato"), "pct": x.get("pct"), "flags": sorted(x.get("flags") or [])} if x else None
+
+
 def diff_probabili(old, new, rosa, now):
     """Cambi di stato, di flag o di percentuale (almeno 15 punti) rispetto al giro precedente."""
     changes = []
     if old is None:
         return changes
     for p in rosa:
-        a, b = old.get(p["nome"]), new.get(p["nome"])
+        a, b = _key(old.get(p["nome"])), _key(new.get(p["nome"]))
         if p["nome"] not in old or a == b:
             continue
         sa, sb = (a or {}).get("stato"), (b or {}).get("stato")
@@ -434,6 +528,7 @@ def run(rosa, prev, do_news=True, do_fc=True):
            "sources": dict(prev.get("sources") or {}),
            "news": prev.get("news") or [], "probabili": prev.get("probabili"),
            "probabili_updated": prev.get("probabili_updated"),
+           "probabili_parser": prev.get("probabili_parser"),
            "changes": prev.get("changes") or []}
 
     if do_news:
@@ -458,12 +553,13 @@ def run(rosa, prev, do_news=True, do_fc=True):
                 with open(DEBUG_FC, "w", encoding="utf-8") as f:
                     f.write(fc_debug_excerpt(text, ["Lucumì", "Pulisic"]))
             snap = fc_parse(text, rosa)
-            out["changes"] = (diff_probabili(prev.get("probabili"), snap, rosa, now) + out["changes"])[:CHANGES_MAX]
+            # Dati di un parser precedente non sono confrontabili: in quel caso niente cambi.
+            old = prev.get("probabili") if prev.get("probabili_parser") == FC_PARSER_VERSION else None
+            out["changes"] = (diff_probabili(old, snap, rosa, now) + out["changes"])[:CHANGES_MAX]
             out["probabili"], out["probabili_updated"] = snap, iso(now)
+            out["probabili_parser"] = FC_PARSER_VERSION
             status.update(ok=True, found=len(snap))
-            log(f"[probabili] trovati {len(snap)} giocatori su {len(rosa)}")
-            for p in rosa[:6]:
-                log(f"[probabili]   {p['nome']}: {snap.get(p['nome'])}")
+            log(f"[probabili] partite lette {len(fc_blocks(text))}, giocatori trovati {len(snap)} su {len(rosa)}")
         except Exception as e:
             status["error"] = f"{type(e).__name__}: {e}"[:200]
             log(f"[probabili] ERRORE {status['error']}")
