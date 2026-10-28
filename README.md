@@ -12,6 +12,21 @@ Sito per analizzare le domande Sì/No di **Salva il Bottino**.
 
 Il sito è statico (HTML, CSS, JavaScript): nessun server, nessun costo, nessun dato inviato fuori dal browser.
 
+## Fanta: la sezione per il fantacalcio
+
+La scheda **Fanta** del sito segue la rosa di **Alma Football Club** (`data/fanta/rosa.csv`, export di Fantacalcio.it):
+
+- **Formazione consigliata:** per ogni ruolo sceglie chi ha il valore atteso più alto (fantamedia × probabilità di giocare) e il modulo migliore tra 3-4-3, 3-5-2, 4-3-3, 4-4-2, 4-5-1, 5-3-2, 5-4-1. Panchina in ordine.
+- **La rosa:** stato di ogni giocatore nelle probabili di Fantacalcio.it (titolare o panchina con percentuale, ballottaggio e con chi, diffidato, in dubbio, infortunato con la nota, squalificato), prossima partita e statistiche dell'export.
+- **Cambi nelle probabili:** quando cambia lo stato o la percentuale si muove di almeno 15 punti.
+- **Notizie:** ultimi 7 giorni, solo da Sky Sport, Fantacalcio.it, Gazzetta, Corriere dello Sport, Tuttosport, ANSA, Rai Sport, DAZN e SOS Fanta, filtrabili per giocatore e categoria, con le nuove dall'ultima visita.
+
+Come funziona: il workflow **"Fanta · notizie e probabili"** gira da solo ogni 30 minuti (circa dalle 6 alle 23). Legge Google News con una ricerca per giocatore e, una volta all'ora, le probabili di Fantacalcio.it (solo se robots.txt lo consente). Scrive `fanta.json` sul ramo `fanta-data`, che il sito legge direttamente: non serve ripubblicare il sito. Per un aggiornamento immediato: **Actions → Fanta · notizie e probabili → Run workflow**.
+
+Per cambiare la rosa basta sostituire `data/fanta/rosa.csv` con un nuovo export (stesso formato). Da sapere: GitHub sospende i lavori programmati dopo 60 giorni senza modifiche al repository; in quel caso basta riattivarli dalla scheda Actions.
+
+Non inclusi rispetto al vecchio bot Discord: la lettura diretta di sport.sky.it (blocca i programmi automatici; le notizie di Sky arrivano comunque da Google News) e i post Instagram di Sky (servono un'app Meta e un token personale).
+
 ## Tipi di domanda
 
 | Tipo | Esempi riconosciuti | Modello |
@@ -45,7 +60,10 @@ docs/              il sito pubblicato
   app.js           interfaccia
 functions/
   _middleware.js   password, solo su Cloudflare Pages
-tests/             test dei calcoli e del riconoscimento (npm test)
+  fanta.js         sezione Fanta
+data/fanta/        rosa del fantacalcio (CSV)
+scripts/fanta/     raccolta di notizie e probabili (Python, gira su GitHub Actions)
+tests/             test dei calcoli e del riconoscimento (npm test) e della raccolta Fanta (tests/py)
 .github/workflows/ test e pubblicazione automatica a ogni modifica
 scripts/           numero di versione e anti-cache (usato in pubblicazione)
 ```

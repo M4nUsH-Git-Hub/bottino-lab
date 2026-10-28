@@ -109,7 +109,7 @@
     if (!data.probabili) return '<span class="pill neutral">Probabili non disponibili</span>';
     if (!pi.info) return '<span class="pill neutral">Non tra i probabili</span>';
     const [label, cls] = STATO[pi.info.stato] || ['—', 'neutral'];
-    const pct = pi.info.pct != null ? ` ${pi.info.pct}%` : '';
+    const pct = pi.info.pct != null && ['titolare', 'panchina'].includes(pi.info.stato) ? ` ${pi.info.pct}%` : '';
     const fl = { ballottaggio: 'Ballottaggio', diffidato: 'Diffidato', 'in dubbio': 'In dubbio' };
     const flags = (pi.info.flags || []).map(f => `<span class="pill warn">${fl[f] || f}${f === 'ballottaggio' && pi.info.partner ? ` con ${esc(pi.info.partner)}` : ''}</span>`).join('');
     return `<span class="pill ${cls}">${label}${pct}</span>${flags}`;
@@ -118,12 +118,24 @@
     const pr = playInfo(p).prob;
     return `<span class="pbar" title="Probabilità di giocare stimata ${Math.round(pr * 100)}%"><i style="width:${Math.round(pr * 100)}%"></i></span>`;
   }
+  // "Mercoledì 28 Ottobre, 20:45" → data (anno corrente, o il precedente se cade troppo avanti)
+  const MESI = ['gennaio', 'febbraio', 'marzo', 'aprile', 'maggio', 'giugno', 'luglio', 'agosto', 'settembre', 'ottobre', 'novembre', 'dicembre'];
+  function kickoffDate(s) {
+    const m = String(s || '').toLowerCase().match(/(\d{1,2})\s+([a-zà-ù]+),?\s+(\d{1,2})[:.](\d{2})/);
+    if (!m || MESI.indexOf(m[2]) < 0) return null;
+    const now = new Date();
+    let d = new Date(now.getFullYear(), MESI.indexOf(m[2]), +m[1], +m[3], +m[4]);
+    if (d - now > 200 * 864e5) d = new Date(now.getFullYear() - 1, MESI.indexOf(m[2]), +m[1], +m[3], +m[4]);
+    return d;
+  }
   function matchShort(p) {
     const m = (playInfo(p).info || {}).match;
     if (!m) return '';
     const opp = m.casa ? m.away : m.home;
-    const ko = (m.kickoff || '').replace(/^(\w{3})\w*\s+(\d+)\s+\w+,?\s*/, '$1 $2, ');
-    return `${m.casa ? 'contro' : 'a casa del'} ${opp}${ko ? ` · ${ko}` : ''}`;
+    const ko = (m.kickoff || '').replace(/^(\S{3})\S*\s+(\d+)\s+\S+,?\s*/, '$1 $2, ');
+    const d = kickoffDate(m.kickoff);
+    const played = d && Date.now() - d.getTime() > 2 * 3600e3;
+    return `${m.casa ? 'contro' : 'a casa del'} ${opp}${ko ? ` · ${ko}` : ''}${played ? ' · giocata' : ''}`;
   }
   function chip(p, extra) {
     const opp = matchShort(p);
@@ -257,4 +269,6 @@
     },
     _bestXI: bestXI, _expected: expected
   };
+  // Se la pagina si apre già sulla sezione Fanta, parte da qui (fanta.js si carica dopo app.js).
+  if (location.hash === '#fanta') window.BLFanta.show();
 })();
