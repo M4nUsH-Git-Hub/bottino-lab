@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Bottino Lab</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="Analisi e recap delle domande Sì/No di Salva il Bottino: quote, statistiche, contesto e diario.">
+<meta name="description" content="Analisi e storico delle domande Sì/No di Salva il Bottino: quote, statistiche, forma, contesto.">
 <meta name="robots" content="noindex">
 <meta name="app-version" content="dev">
 <meta name="theme-color" content="#13201A">
@@ -13,6 +13,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Bottino Lab">
 <link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/svg+xml" href="icons/logo.svg">
 <link rel="icon" type="image/png" href="icons/favicon.png">
 <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,11 +23,21 @@
 <body>
 <header class="appbar">
   <div class="appbar-in">
-    <a class="brand" href="#dati">Bottino <span>Lab</span></a>
+    <a class="brand" href="#dati" aria-label="Bottino Lab, vai ai dati">
+      <svg class="logo" viewBox="0 0 64 64" aria-hidden="true">
+        <path class="l-bag" d="M22.5 9.5 L27.5 14.5 L32 8.5 L36.5 14.5 L41.5 9.5 L40 20.5 H24 Z"/>
+        <rect class="l-tie" x="22.5" y="20.5" width="19" height="3.6" rx="1.8"/>
+        <path class="l-bag" d="M24.5 25.5 H39.5 C49 31 54 41 51.5 49.5 C49.5 56 42.5 58 32 58 C21.5 58 14.5 56 12.5 49.5 C10 41 15 31 24.5 25.5 Z"/>
+        <circle class="l-ink" cx="25.5" cy="38.5" r="3.6"/>
+        <circle class="l-ink" cx="38.5" cy="48.5" r="3.6"/>
+        <path class="l-line" d="M39 35.5 L25 51.5"/>
+      </svg>
+      <span class="wordmark">Bottino <span>Lab</span></span>
+    </a>
     <nav class="tabs" aria-label="Sezioni">
       <a href="#dati" data-view="dati">Dati</a>
       <a href="#recap" data-view="recap">Analisi</a>
-      <a href="#diario" data-view="diario">Diario</a>
+      <a href="#diario" data-view="diario">Storico</a>
       <a href="#guida" data-view="guida">Guida</a>
     </nav>
     <a class="chip" id="chip" href="#recap" aria-label="Stima attuale"><b id="chipAns">—</b><span id="chipPct"></span></a>
@@ -45,6 +56,7 @@
 
   <!-- ================= DATI ================= -->
   <section class="view" id="view-dati">
+    <div class="matchup" id="matchup"></div>
     <div class="grid">
       <div class="col">
 
@@ -59,7 +71,7 @@
           <p class="hint">Copia dal quiz il blocco con competizione, squadre e domanda e incollalo qui: le caselle si compilano da sole. Controllale sempre.</p>
           <div class="callout exnote" id="exampleNote" hidden>Stai guardando l'esempio PSG–Lione. Incolla qui la tua domanda: i dati dell'esempio verranno sostituiti.</div>
           <label for="pasteBox" class="sr">Testo dal quiz</label>
-          <textarea id="pasteBox" rows="5" placeholder="FRA Ligue 1&#10;Paris Saint-Germain&#10;v/s&#10;Lione&#10;Almeno 2 goal segnati nel 1° tempo?"></textarea>
+          <textarea id="pasteBox" rows="5" placeholder="ITA Serie A&#10;Genoa&#10;v/s&#10;Juventus&#10;La Juventus segna almeno 2 goal nel match?"></textarea>
           <div class="btns" style="margin-top:10px">
             <button class="btn pri" id="btnParse" type="button">Riconosci la domanda</button>
           </div>
@@ -69,21 +81,23 @@
         <section class="panel">
           <div class="step">2</div>
           <h2>La domanda</h2>
-          <p class="hint">Tipo, evento e significato delle risposte.</p>
+          <p class="hint">Tipo, evento e significato delle risposte. Gioco e numero della domanda servono allo storico.</p>
           <div class="fields">
             <label class="full">Tipo di domanda
               <select id="type"></select>
             </label>
             <p class="full typeblurb" id="typeBlurb"></p>
-            <label class="full">Testo della domanda<input id="question" type="text" placeholder="Es. Almeno 2 goal segnati nel 1° tempo?"></label>
+            <label class="full">Testo della domanda<input id="question" type="text" placeholder="Es. La Juventus segna almeno 2 goal nel match?"></label>
             <div class="full qsuggest" id="qSuggest" role="status" hidden></div>
+            <label>Gioco n°<input id="quiz_game" type="text" inputmode="numeric" placeholder="72"></label>
+            <label>Domanda n° (su 15)<input id="quiz_qn" type="text" inputmode="numeric" placeholder="3"></label>
             <label>Risposta 1 (Sì)<input id="ans_si" type="text"></label>
             <label>Risposta 2 (No)<input id="ans_no" type="text"></label>
             <label>Sport<input id="ev_sport" type="text"></label>
             <label>Competizione<input id="ev_comp" type="text"></label>
             <label>Casa / Giocatore 1<input id="ev_home" type="text"></label>
             <label>Ospite / Giocatore 2<input id="ev_away" type="text"></label>
-            <label>Data e ora<input id="ev_when" type="text" placeholder="Lun 26/10, 20:30"></label>
+            <label>Data e ora<input id="ev_when" type="text" placeholder="Mer 28/10, 20:45"></label>
           </div>
           <div class="fields params" id="params"></div>
           <div class="meaning small" id="meaningBox"></div>
@@ -106,7 +120,7 @@
 
         <section class="panel">
           <div class="step">4</div>
-          <h2>Statistiche</h2>
+          <h2>Statistiche della stagione</h2>
           <p class="hint">Lascia vuoto ciò che non hai. Se puoi, usa le medie in casa per la squadra di casa e in trasferta per l'ospite.</p>
           <div class="fields" id="statFields"></div>
           <div class="fields" style="margin-top:12px">
@@ -120,10 +134,23 @@
 
         <section class="panel">
           <div class="step">5</div>
+          <h2>Forma e precedenti</h2>
+          <p class="hint">Incolla i risultati, separati da virgole. Il primo tempo tra parentesi è facoltativo ma serve per le domande sul primo o secondo tempo. Esempio: <span class="mono">2-1 (1-0), 0-0, 1-3</span>.</p>
+          <div class="teamgrid" id="formGrid"></div>
+          <label class="h2hlabel"><span id="h2hLabel">Precedenti diretti</span> <small id="h2hHint"></small>
+            <input id="m_h2h" type="text" data-group="ctx" data-side="match" data-k="h2h" placeholder="1-2 (0-1), 3-2, 2-2">
+          </label>
+          <div class="formsum" id="fs_h2h"></div>
+        </section>
+
+        <section class="panel">
+          <div class="step">6</div>
           <h2>Contesto</h2>
-          <p class="hint">Per ogni fattore indica se spinge verso il Sì o verso il No. Ognuno sposta la stima di 2,5 punti, fino a 12,5.</p>
-          <div class="factors" id="factors"></div>
-          <label style="margin-top:12px">Note di contesto<textarea id="ctxNotes" placeholder="Assenze, notizie, motivazioni"></textarea></label>
+          <p class="hint" id="ctxNote"></p>
+          <div class="ctxgrid" id="ctxGrid"></div>
+          <div class="fields" style="margin-top:14px" id="matchCtx"></div>
+          <div class="effects" id="ctxEffects"></div>
+          <label style="margin-top:12px">Altre note<textarea id="ctxNotes" placeholder="Notizie, dichiarazioni, condizioni del campo"></textarea></label>
         </section>
       </div>
 
@@ -132,11 +159,11 @@
           <div class="lbl">Risposta consigliata <span class="pill warn" id="vExample" hidden>Esempio</span></div>
           <div class="vq" id="vQ"></div>
         </div>
-        <div class="answer" id="vAns">—</div>
-        <div>
-          <div class="bar"><i id="vBar" style="width:50%"></i></div>
-          <div class="barlbl"><span id="vSi">Sì</span><span id="vNo">No</span></div>
+        <div class="gaugewrap">
+          <div id="vGauge"></div>
+          <div class="answer" id="vAns">—</div>
         </div>
+        <div class="barlbl"><span id="vSi">Sì</span><span id="vNo">No</span></div>
         <div class="conf" id="vConf"></div>
         <div class="breakdown" id="vBreak"></div>
         <div class="quality" id="vQual"></div>
@@ -145,7 +172,7 @@
         </label>
         <div class="btns">
           <a class="btn pri" href="#recap">Apri l'analisi</a>
-          <button class="btn ghost" id="btnSave" type="button">Salva nel diario</button>
+          <button class="btn ghost" id="btnSave" type="button">Salva nello storico</button>
         </div>
         <div class="toast" id="toast" role="status"></div>
       </aside>
@@ -157,37 +184,48 @@
     <div class="recap-actions">
       <button class="btn pri" id="btnCopyRecap" type="button">Copia l'analisi</button>
       <button class="btn ghost" id="btnPrint" type="button">Stampa o salva PDF</button>
-      <button class="btn ghost" id="btnSave2" type="button">Salva nel diario</button>
+      <button class="btn ghost" id="btnSave2" type="button">Salva nello storico</button>
       <a class="btn ghost" href="#dati">Modifica i dati</a>
     </div>
     <article class="recap" id="recap"></article>
   </section>
 
-  <!-- ================= DIARIO ================= -->
+  <!-- ================= STORICO ================= -->
   <section class="view" id="view-diario" hidden>
-    <section class="panel">
-      <div class="panel-head"><h2>Diario delle risposte</h2>
-        <div class="btns">
-          <button class="btn ghost small" id="btnExport" type="button">Esporta</button>
-          <label class="btn ghost small filebtn">Importa<input id="importFile" type="file" accept="application/json,.json"></label>
+    <div class="col">
+      <section class="panel">
+        <div class="panel-head"><h2>Storico</h2>
+          <div class="btns">
+            <button class="btn ghost small" id="btnExport" type="button">Esporta</button>
+            <label class="btn ghost small filebtn">Importa<input id="importFile" type="file" accept="application/json,.json"></label>
+          </div>
         </div>
-      </div>
-      <p class="hint">Salvato in questo browser. Dopo la partita segna se la risposta era giusta: così misuri quanto funziona il metodo. Esporta ogni tanto per non perdere lo storico.</p>
-      <div class="stats4">
-        <div class="stat"><b id="dTot">0</b><span>risposte</span></div>
-        <div class="stat"><b id="dAcc">—</b><span>corrette</span></div>
-        <div class="stat"><b id="dStreak">0</b><span>serie attuale</span></div>
-        <div class="stat"><b id="dCal">—</b><span>fiducia media stimata</span></div>
-      </div>
-      <div class="tablewrap">
-        <table>
-          <thead><tr><th>Data</th><th>Domanda</th><th>Tipo</th><th>Scelta</th><th class="num">Fiducia</th><th>Esito</th><th></th></tr></thead>
-          <tbody id="diaryBody"></tbody>
-        </table>
-      </div>
-      <div class="empty" id="diaryEmpty">Nessuna risposta salvata. Quando hai deciso, premi "Salva nel diario".</div>
-      <div id="byType"></div>
-    </section>
+        <p class="hint">Dopo la partita inserisci il risultato: lo storico segna da solo se la risposta era giusta. Tutto resta salvato in questo browser; esporta ogni tanto per averne una copia.</p>
+        <div class="stats4">
+          <div class="stat"><b id="dTot">0</b><span>risposte salvate</span></div>
+          <div class="stat"><b id="dAcc">—</b><span>risposte giuste</span></div>
+          <div class="stat"><b id="dStreak">0</b><span>serie attuale</span></div>
+          <div class="stat"><b id="dCal">—</b><span>fiducia media stimata</span></div>
+        </div>
+        <div id="gamesBox"></div>
+      </section>
+      <section class="panel">
+        <div class="panel-head"><h2>Domande</h2>
+          <label class="filter">Mostra
+            <select id="diaryFilter">
+              <option value="all">Tutte</option>
+              <option value="pending">Da completare</option>
+              <option value="ok">Giuste</option>
+              <option value="ko">Sbagliate</option>
+            </select>
+          </label>
+        </div>
+        <div class="entries" id="diaryList"></div>
+        <div class="empty" id="diaryEmpty">Nessuna risposta salvata. Quando hai deciso, premi "Salva nello storico".</div>
+        <div id="byType"></div>
+        <p class="muted small" id="storageInfo"></p>
+      </section>
+    </div>
   </section>
 
   <!-- ================= GUIDA ================= -->
@@ -196,29 +234,44 @@
       <section class="panel">
         <h2>La routine di ogni giorno</h2>
         <ol class="steps">
-          <li><b>Incolla la domanda</b> dal quiz e premi "Riconosci la domanda". Controlla tipo, soglia e cosa significa il Sì.</li>
+          <li><b>Incolla la domanda</b> dal quiz: tipo, soglia e significato del Sì si compilano da soli. Controllali.</li>
           <li><b>Inserisci le quote</b> di 2-3 bookmaker. Il riquadro ti dice quale mercato cercare e quale quota va nella colonna del Sì.</li>
-          <li><b>Inserisci le statistiche</b>: medie e percentuali delle due squadre. I link sotto le caselle portano ai siti giusti.</li>
-          <li><b>Valuta il contesto</b>: assenze, coppe, motivazioni, meteo.</li>
+          <li><b>Inserisci le statistiche</b> della stagione. I link sotto le caselle portano ai siti giusti.</li>
+          <li><b>Incolla forma e precedenti</b>: i risultati delle ultime 5 partite e degli ultimi scontri diretti.</li>
+          <li><b>Compila il contesto</b>: assenze, riposo, impegni, motivazione, tipo di partita, meteo.</li>
           <li><b>Guarda la qualità dei dati</b> nel riquadro scuro e completa quello che manca.</li>
-          <li><b>Apri l'analisi</b>, se puoi aspetta le formazioni ufficiali, poi rispondi e salva nel diario.</li>
+          <li><b>Rispondi, salva nello storico</b> e, a partita finita, inserisci il risultato.</li>
         </ol>
       </section>
       <section class="panel">
         <h2>Le regole del metodo</h2>
         <ul class="rules">
-          <li><b>Nel quiz la quota non paga.</b> Non esiste una risposta "di valore": conta solo quale delle due è più probabile. Scegli sempre il lato sopra il 50%.</li>
-          <li><b>Le quote sono il dato più affidabile.</b> Riassumono informazioni che non hai. Per questo pesano il 60% di base.</li>
-          <li><b>Il margine va tolto.</b> Quote 1,80 e 1,85 sembrano dire 56% e 54%: la somma supera il 100% perché il bookmaker trattiene circa il 10%. Bottino Lab lo toglie da solo.</li>
-          <li><b>Attenzione alle domande al contrario.</b> "Meno di 3 gol?" o "Il Milan non perderà?" hanno il Sì sull'Under o sulla doppia chance. Il riconoscimento lo imposta, ma controlla sempre la colonna delle quote.</li>
-          <li><b>Diffida dei campioni piccoli.</b> Con meno di 8 partite le percentuali oscillano molto: alza il peso delle quote.</li>
-          <li><b>Se quote e statistiche non concordano</b> di oltre 10 punti, cerca il motivo (un infortunio, un cambio di allenatore) prima di decidere.</li>
+          <li><b>Nel quiz la quota non paga.</b> Conta solo quale risposta è più probabile: scegli sempre il lato sopra il 50%.</li>
+          <li><b>Le quote sono il dato più affidabile</b> e contengono già le notizie note (assenze, forma). Per questo il contesto corregge solo la parte statistica.</li>
+          <li><b>Il margine va tolto.</b> Quote 1,80 e 1,85 sembrano dire 56% e 54%: il bookmaker trattiene circa il 10%. Bottino Lab lo toglie da solo.</li>
+          <li><b>Attenzione alle domande al contrario.</b> "Meno di 3 gol?" o "Il Milan non perderà?" hanno il Sì sull'Under o sulla doppia chance.</li>
+          <li><b>Diffida dei campioni piccoli.</b> Cinque partite dicono poco: per questo forma e precedenti pesano poco.</li>
+          <li><b>Se quote e statistiche non concordano</b> di oltre 10 punti, cerca il motivo prima di decidere.</li>
           <li><b>Sotto il 55% è testa o croce.</b> Scegli il lato indicato, sapendo che il margine è minimo.</li>
         </ul>
       </section>
       <section class="panel">
+        <h2>Come pesa ogni dato</h2>
+        <ul class="rules">
+          <li><b>Stima finale:</b> quote senza margine 60% e statistiche 40% (regolabile con il cursore).</li>
+          <li><b>Statistiche:</b> modello dei gol attesi 50%, frequenza stagionale 25%, ultime partite di ciascuna squadra 7,5%, precedenti diretti 10%.</li>
+          <li><b>Forma:</b> le medie delle ultime partite pesano il 30% accanto alle medie stagionali nei gol attesi.</li>
+          <li><b>Assenze in attacco:</b> −7% un titolare, −12% il miglior marcatore, −14% due o più.</li>
+          <li><b>Assenze in difesa:</b> +5% ai gol dell'avversario per un titolare, +8% il portiere, +10% due o più.</li>
+          <li><b>Riposo:</b> −6% con 2 giorni o meno, −3% con 3 giorni; +3% all'avversario.</li>
+          <li><b>Turnover per un impegno vicino:</b> −5%, +3% all'avversario. <b>Motivazione:</b> +5% se deve vincere, −6% se ha poco da giocarsi.</li>
+          <li><b>Tipo di partita:</b> big match −7% ai gol, derby −3%, decisiva −8%. Per i cartellini: derby +15%, decisiva +12%, big match +8%.</li>
+          <li><b>Meteo:</b> pioggia o vento −5%, caldo −4%, neve o campo pesante −10%.</li>
+        </ul>
+      </section>
+      <section class="panel">
         <h2>Prompt per Claude</h2>
-        <p class="hint">Copia e incolla in una chat con Claude: cerca quote, statistiche e notizie per la domanda inserita e ti restituisce i numeri da riportare nelle caselle.</p>
+        <p class="hint">Copia e incolla in una chat con Claude: cerca quote, statistiche, risultati recenti e notizie e ti restituisce i dati da inserire nelle caselle.</p>
         <pre class="prompt" id="promptText"></pre>
         <button class="btn ghost small" id="btnPrompt" type="button">Copia il prompt</button>
       </section>
@@ -227,27 +280,17 @@
         <ul class="rules">
           <li><b>iPhone (Safari):</b> tasto Condividi, poi "Aggiungi alla schermata Home".</li>
           <li><b>Android (Chrome):</b> menu ⋮, poi "Aggiungi a schermata Home" o "Installa app".</li>
-          <li><b>Computer (Chrome o Edge):</b> icona di installazione nella barra degli indirizzi, oppure menu, poi "Installa Bottino Lab".</li>
-          <li><b>Aggiornamenti:</b> sono automatici. Quando esce una versione nuova compare una barra in alto con "Aggiorna ora".</li>
+          <li><b>Computer (Chrome o Edge):</b> icona di installazione nella barra degli indirizzi.</li>
+          <li><b>Aggiornamenti:</b> automatici. Quando esce una versione nuova compare una barra in alto con "Aggiorna ora".</li>
         </ul>
         <p class="muted" id="versionInfo"></p>
-      </section>
-      <section class="panel">
-        <h2>Come ragionano i modelli</h2>
-        <ul class="rules">
-          <li><b>Gol, corner, cartellini:</b> si stima quanti eventi aspettarsi (media tra quanto produce una squadra e quanto concede l'altra) e da lì la probabilità di superare la soglia.</li>
-          <li><b>Esito 1X2:</b> dagli stessi gol attesi si calcolano tutti i risultati possibili e si sommano vittorie, pareggi e sconfitte.</li>
-          <li><b>Marcatore:</b> gol ogni 90 minuti per i minuti previsti, corretti per la difesa avversaria.</li>
-          <li><b>Totale punti:</b> media attesa e variabilità tipica del totale.</li>
-          <li><b>Altre domande:</b> quote, dato storico e la tua stima personale.</li>
-          <li><b>Stima finale:</b> quote senza margine e statistiche pesate (60/40 di base), più o meno il contesto.</li>
-        </ul>
       </section>
     </div>
   </section>
 </main>
 
 <script src="engine.js"></script>
+<script src="context.js"></script>
 <script src="templates.js"></script>
 <script src="parser.js"></script>
 <script src="app.js"></script>

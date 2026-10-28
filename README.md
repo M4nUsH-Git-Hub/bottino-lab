@@ -4,9 +4,11 @@ Sito per analizzare le domande Sì/No di **Salva il Bottino**.
 
 1. **Incolli la domanda** come appare nel quiz (competizione, squadre, domanda). Il sito riconosce il tipo di domanda, il periodo, la soglia e cosa significa il Sì, e compila le caselle.
 2. **Inserisci a mano le quote** di uno o più bookmaker. Il sito ti dice quale mercato cercare e quale quota va nella colonna del Sì.
-3. **Inserisci le statistiche e il contesto** nelle caselle. Accanto a ogni sezione ci sono i siti dove trovare i dati.
-4. Il sito **elabora tutto** e produce l'analisi: risposta consigliata, probabilità, sintesi, quote senza margine, modello statistico, scenari del Sì e del No, contesto, verdetto, controlli finali e qualità dei dati (con cosa manca).
-5. Un **diario** tiene traccia delle risposte e di quante erano giuste, anche per tipo di domanda.
+3. **Inserisci le statistiche della stagione.** Accanto a ogni sezione ci sono i siti dove trovare i dati.
+4. **Incolla forma e precedenti**: i risultati delle ultime 5 partite di ogni squadra e degli scontri diretti (es. `2-1 (1-0), 0-0, 1-3`). Il sito calcola forma, medie e quante volte si è verificato l'esito della domanda.
+5. **Compila il contesto con scelte precise** per ogni squadra: assenze in attacco e in difesa, giorni di riposo, impegni vicini (turnover), motivazione, posizione; per la partita: tipo (derby, big match, decisiva) e meteo. Ogni scelta corregge i gol attesi di una percentuale indicata nella Guida.
+6. Il sito **elabora tutto** e produce l'analisi: risposta consigliata, probabilità, sintesi, quote senza margine, modello statistico, scenari del Sì e del No, contesto, verdetto, controlli finali e qualità dei dati (con cosa manca).
+7. Lo **storico** salva ogni risposta con gioco e numero di domanda. Dopo la partita inserisci il risultato (es. `2-1`, primo tempo `1-0`) e il sito segna da solo se era giusta. Mostra i giochi come nella History di Sisal (15 caselle per gioco), la percentuale di risposte giuste, la serie e il rendimento per tipo di domanda. Ogni voce si può riaprire.
 
 Il sito è statico (HTML, CSS, JavaScript): nessun server, nessun costo, nessun dato inviato fuori dal browser.
 
@@ -37,6 +39,7 @@ docs/              il sito pubblicato
   index.html       viste: Dati, Analisi, Diario, Guida
   styles.css
   engine.js        calcoli: quote, Poisson, normale, fusione
+  context.js       forma, precedenti, assenze, riposo, turnover, motivazione, tipo di partita, meteo
   templates.js     i tipi di domanda: campi, modelli, testi dell'analisi
   parser.js        riconoscimento della domanda incollata
   app.js           interfaccia

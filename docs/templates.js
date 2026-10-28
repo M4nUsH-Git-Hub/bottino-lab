@@ -5,6 +5,9 @@
   'use strict';
   const E = root.BLEngine || (typeof require !== 'undefined' ? require('./engine.js') : null);
   const { num, mean } = E;
+  const C = root.BLContext || (typeof require !== 'undefined' ? require('./context.js') : null);
+  // Stato di un calcolo in corso: righe e effetti del contesto, modalità "senza contesto" per misurarne l'effetto.
+  const CTX = { neutral: false, lines: [], effects: [] };
 
   // ---------- formattazione ----------
   const pct = x => (x == null || !Number.isFinite(x)) ? '—' : (x * 100).toFixed(1).replace('.', ',') + '%';
@@ -40,7 +43,17 @@
     return out;
   }
   function goalLambdas(s) {
-    return { lh: mean([st(s, 'hS'), st(s, 'aC')]), la: mean([st(s, 'aS'), st(s, 'hC')]) };
+    const lh0 = mean([st(s, 'hS'), st(s, 'aC')]), la0 = mean([st(s, 'aS'), st(s, 'hC')]);
+    if (!C) return { lh: lh0, la: la0 };
+    const G = C.goalLambdas(s, lh0, la0, CTX.neutral);
+    CTX.lines.push(...G.lines); CTX.effects.push(...G.effects);
+    return { lh: G.lh, la: G.la };
+  }
+  function ctxMult(s, kind) {
+    if (!C) return { home: 1, away: 1, total: 1 };
+    const M = C.multipliers(s, kind, CTX.neutral);
+    CTX.effects.push(...M.effects);
+    return M;
   }
   function finish(parts, lines, extra) {
     return Object.assign({ pS: mean(parts.map(x => x.p)), parts, lines }, extra || {});
@@ -351,8 +364,9 @@
       },
       model(s) {
         const line = num(s.params.line) ?? 9.5, k = Math.floor(line) + 1, n = names(s), parts = [], lines = [];
-        const ch = mean([st(s, 'hCF'), st(s, 'aCA')]), ca = mean([st(s, 'aCF'), st(s, 'hCA')]);
+        let ch = mean([st(s, 'hCF'), st(s, 'aCA')]), ca = mean([st(s, 'aCF'), st(s, 'hCA')]);
         if (ch != null && ca != null) {
+          const K = ctxMult(s, 'corners'); ch *= K.home; ca *= K.away;
           const L = ch + ca, pP = E.poissonOver(L, line);
           parts.push({ label: 'Modello dei corner attesi', p: pP });
           lines.push(`Corner attesi: ${dec(ch, 1)} per ${n.home} e ${dec(ca, 1)} per ${n.away}, in totale ${dec(L, 1)}.`);
@@ -399,8 +413,9 @@
         const line = num(s.params.line) ?? 4.5, k = Math.floor(line) + 1, parts = [], lines = [];
         const hK = st(s, 'hK'), aK = st(s, 'aK'), ref = st(s, 'ref');
         const teams = (hK != null && aK != null) ? hK + aK : null;
-        const L = teams != null && ref != null ? (teams + ref) / 2 : (teams ?? ref);
+        let L = teams != null && ref != null ? (teams + ref) / 2 : (teams ?? ref);
         if (L != null) {
+          const K = ctxMult(s, 'cards'); L *= K.total;
           const pP = E.poissonOver(L, line);
           parts.push({ label: 'Modello dei cartellini attesi', p: pP });
           lines.push(`Cartellini attesi: ${dec(L, 1)}${teams != null && ref != null ? ` (media tra squadre, ${dec(teams, 1)}, e arbitro, ${dec(ref, 1)})` : ''}.`);
@@ -453,7 +468,8 @@
         const g90 = st(s, 'g90'), mins = st(s, 'mins') ?? 90, oppC = st(s, 'oppC'), lg = st(s, 'leagueC');
         if (g90 != null) {
           const factor = oppC != null && lg ? oppC / lg : 1;
-          const rate = g90 * (mins / 90) * factor, pP = E.poissonOver(rate, line);
+          const K = ctxMult(s, 'goals'), kt = s.params.team === 'away' ? K.away : K.home;
+          const rate = g90 * (mins / 90) * factor * kt, pP = E.poissonOver(rate, line);
           parts.push({ label: 'Modello gol ogni 90 minuti', p: pP });
           lines.push(`${p} segna ${dec(g90)} gol ogni 90 minuti. Con ${Math.round(mins)} minuti previsti${factor !== 1 ? ` e una difesa avversaria che concede ${factor > 1 ? 'più' : 'meno'} della media (×${dec(factor)})` : ''}, i gol attesi sono ${dec(rate)}.`);
           lines.push(`Probabilità che segni: ${pct(pP)}.`);
@@ -494,8 +510,10 @@
       },
       model(s) {
         const line = num(s.params.line) ?? 220.5, n = names(s), parts = [], lines = [];
-        const ph = mean([st(s, 'hP'), st(s, 'aA')]), pa = mean([st(s, 'aP'), st(s, 'hA')]), sd = st(s, 'sd') || 18;
+        let ph = mean([st(s, 'hP'), st(s, 'aA')]), pa = mean([st(s, 'aP'), st(s, 'hA')]);
+        const sd = st(s, 'sd') || 18;
         if (ph != null && pa != null) {
+          const K = ctxMult(s, 'points'); ph *= K.home; pa *= K.away;
           const m = ph + pa, pP = E.normalOver(m, sd, line);
           parts.push({ label: 'Modello dei punti attesi', p: pP });
           lines.push(`Punti attesi: ${dec(ph, 1)} per ${n.home} e ${dec(pa, 1)} per ${n.away}, in totale ${dec(m, 1)} contro una soglia di ${lf(line)}.`);
@@ -551,7 +569,32 @@
   const statSourcesFor = t => (t.sources || []).filter(k => k !== 'oddschecker').map(k => SRC[k]).filter(Boolean);
   const isInvertible = t => !!(t.sideNames || t.ways === 3);
 
-  const api = { list: TEMPLATES, byId, factorsFor, sourcesFor, oddsSourcesFor, statSourcesFor, isInvertible, SRC, COMMON_CHECK, fmt: { pct, dec, lf } };
+  // Pesi delle stime: il modello pesa più della frequenza stagionale; forma e precedenti poco (campioni piccoli).
+  function weightFor(label) {
+    if (/^Modello/.test(label)) return 0.5;
+    if (/^Frequenza storica/.test(label)) return 0.25;
+    if (/^Stima personale/.test(label)) return 0.5;
+    return 0.1;
+  }
+  // Esegue il modello del tipo di domanda e aggiunge le stime da forma e precedenti.
+  // opts.neutral = true calcola la stessa stima senza il contesto, per misurarne l'effetto.
+  function runModel(s, opts) {
+    const t = byId(s.type);
+    CTX.neutral = !!(opts && opts.neutral); CTX.lines = []; CTX.effects = [];
+    let m;
+    try { m = t.model(s); } finally { CTX.neutral = false; }
+    const extra = C ? C.freqParts(s) : [];
+    const parts = m.parts.map(p => Object.assign({ w: weightFor(p.label) }, p)).concat(extra);
+    const sw = parts.reduce((a, p) => a + p.w, 0);
+    const pS = parts.length ? parts.reduce((a, p) => a + p.w * p.p, 0) / sw : null;
+    return Object.assign({}, m, {
+      parts, pS,
+      lines: CTX.lines.concat(m.lines, extra.map(x => x.line)),
+      effects: CTX.effects.slice()
+    });
+  }
+
+  const api = { list: TEMPLATES, byId, runModel, weightFor, factorsFor, sourcesFor, oddsSourcesFor, statSourcesFor, isInvertible, SRC, COMMON_CHECK, fmt: { pct, dec, lf } };
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
   else root.BLTemplates = api;
 })(typeof window !== 'undefined' ? window : globalThis);
