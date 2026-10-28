@@ -411,6 +411,22 @@ def diff_probabili(old, new, rosa, now):
 
 # ── Giro completo ─────────────────────────────────────────────────────────────
 
+def fc_debug_excerpt(text, names, before=70, after=25):
+    """Righe della pagina attorno ad alcuni giocatori: serve solo a tarare il parser."""
+    lines = [l.strip() for l in text.splitlines() if l.strip()]
+    out = []
+    for name in names:
+        idx = [i for i, l in enumerate(lines) if norm(name) in norm(l)]
+        out.append(f"===== {name}: {len(idx)} righe contengono il nome =====")
+        if idx:
+            i = idx[0]
+            out += [f"{k:5d} | {lines[k][:160]}" for k in range(max(0, i - before), min(len(lines), i + after))]
+    return "\n".join(out)
+
+
+DEBUG_FC = None
+
+
 def run(rosa, prev, do_news=True, do_fc=True):
     now = now_utc()
     prev = prev or {}
@@ -438,6 +454,9 @@ def run(rosa, prev, do_news=True, do_fc=True):
             text = fc_fetch_text()
             if text.count("%") < 100:
                 raise RuntimeError(f"pagina incompleta o bloccata ({text.count('%')} percentuali)")
+            if DEBUG_FC:
+                with open(DEBUG_FC, "w", encoding="utf-8") as f:
+                    f.write(fc_debug_excerpt(text, ["Lucumì", "Pulisic"]))
             snap = fc_parse(text, rosa)
             out["changes"] = (diff_probabili(prev.get("probabili"), snap, rosa, now) + out["changes"])[:CHANGES_MAX]
             out["probabili"], out["probabili_updated"] = snap, iso(now)
@@ -459,7 +478,10 @@ def main(argv=None):
     ap.add_argument("--out", required=True)
     ap.add_argument("--no-news", action="store_true")
     ap.add_argument("--no-fc", action="store_true")
+    ap.add_argument("--debug-fc", help="scrive un estratto della pagina delle probabili per tarare il parser")
     a = ap.parse_args(argv)
+    global DEBUG_FC
+    DEBUG_FC = a.debug_fc
     with open(a.rosa, "rb") as f:
         rosa = parse_rosa_csv(f.read())
     prev = None

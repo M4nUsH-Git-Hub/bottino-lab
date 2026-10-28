@@ -9,6 +9,11 @@ on:
   schedule:
     - cron: '7,37 5-21 * * *'
   workflow_dispatch:
+    inputs:
+      debug:
+        description: 'Salva un estratto della pagina delle probabili (per tarare il parser)'
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -56,16 +61,17 @@ jobs:
         run: |
           EXTRA=""
           if [ "${{ steps.plan.outputs.fc }}" = "no" ]; then EXTRA="--no-fc"; fi
+          if [ "${{ inputs.debug }}" = "true" ]; then EXTRA="$EXTRA --debug-fc fc_debug.txt"; fi
           python scripts/fanta/update.py --rosa data/fanta/rosa.csv --prev prev.json --out fanta.json $EXTRA
 
       - name: Pubblica sul ramo dati
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          mkdir out && cp fanta.json out/ && cd out
+          mkdir out && cp fanta.json out/ && { [ -f fc_debug.txt ] && cp fc_debug.txt out/ || true; } && cd out
           git init -q -b fanta-data
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add fanta.json
+          git add -A
           git commit -qm "Fanta: dati aggiornati $(date -u +%Y-%m-%dT%H:%MZ)"
           git push -q -f "https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git" fanta-data
