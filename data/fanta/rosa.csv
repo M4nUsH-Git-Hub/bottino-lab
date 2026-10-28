@@ -1,0 +1,26 @@
+﻿Ruolo;Nome;Squadra;Costo d'acquisto;Quotazione Attuale;FVMp;Media Voto;Fanta Media;Partite Giocate (a voto);Prestito
+P;Daffara;Parma;1;5;1;0;0;0;
+P;Corvi;Parma;2;5;5;6;4,33;6;
+P;Maignan;Milan;30;15;26;6,17;5,33;6;
+D;Ramon;Como;2;13;18;6,25;6,75;6;
+D;Lucumì;Juventus;2;8;9;6;5,8;5;
+D;Gila;Milan;20;13;16;6,33;6,25;6;
+D;Scalvini;Atalanta;1;9;11;5,83;5,83;6;
+D;Vojvoda;Udinese;1;7;9;5,67;5,67;6;
+D;Zortea;Bologna;1;7;9;6;6;4;
+D;Akanji;Inter;12;13;17;5,8;5,8;5;
+D;Bastoni;Inter;22;12;19;6;5,9;5;
+C;Cacciamani;Torino;1;9;13;6,08;6,25;6;
+C;Atta;Fiorentina;15;14;28;5,4;5,4;5;
+C;Colpani;Monza;1;8;7;5,75;6,5;4;
+C;Koopmeiners;Juventus;1;8;7;6,25;7,25;4;
+C;Jones C.;Inter;18;12;14;6;6;4;
+C;Modric;Milan;20;12;21;6,08;6,25;6;
+C;Pulisic;Milan;40;25;76;6,5;7,67;3;
+C;Politano;Napoli;26;11;18;5,9;6,6;5;
+A;Diao;Como;23;14;32;6,33;7,33;6;
+A;Neres;Napoli;6;5;7;5,83;5,83;3;
+A;Woltemade;Juventus;153;21;25;5,67;5,67;3;
+A;Adams C.;Torino;2;12;12;6,5;8;4;
+A;Vitinha O.;Genoa;1;6;6;5,6;5,5;5;
+A;De Ketelaere;Atalanta;46;15;32;5,75;5,75;6;

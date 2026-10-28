@@ -27,6 +27,8 @@ jobs:
         with:
           node-version: 22
       - run: npm test
+      - name: Test della raccolta Fanta
+        run: python3 -m unittest discover -s tests/py
 
   deploy:
     if: github.event_name != 'pull_request'

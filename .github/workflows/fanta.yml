@@ -1,0 +1,71 @@
+name: Fanta · notizie e probabili
+
+# Ogni 30 minuti (circa dalle 6 alle 23, ora italiana) raccoglie le notizie sui giocatori della rosa;
+# una volta all'ora legge anche le probabili formazioni di Fantacalcio.it.
+# Il risultato (fanta.json) va sul ramo "fanta-data": il sito lo legge da lì, senza ripubblicarsi.
+# Per un giro immediato: Actions → "Fanta · notizie e probabili" → Run workflow.
+
+on:
+  schedule:
+    - cron: '7,37 5-21 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fanta
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Dati del giro precedente
+        run: |
+          if git fetch -q --depth=1 origin fanta-data 2>/dev/null; then
+            git show FETCH_HEAD:fanta.json > prev.json || echo '{}' > prev.json
+          else
+            echo '{}' > prev.json
+          fi
+
+      - name: Decide se leggere le probabili
+        id: plan
+        run: |
+          # Probabili una volta all'ora (al giro dei :07) e sempre negli avvii manuali.
+          if [ "${{ github.event_name }}" = "schedule" ] && [ "$(date -u +%M)" -ge 30 ]; then
+            echo "fc=no" >> "$GITHUB_OUTPUT"
+          else
+            echo "fc=yes" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Browser per le probabili
+        if: steps.plan.outputs.fc == 'yes'
+        run: |
+          pip install -q playwright==1.48.0
+          python -m playwright install --with-deps chromium
+
+      - name: Raccolta
+        run: |
+          EXTRA=""
+          if [ "${{ steps.plan.outputs.fc }}" = "no" ]; then EXTRA="--no-fc"; fi
+          python scripts/fanta/update.py --rosa data/fanta/rosa.csv --prev prev.json --out fanta.json $EXTRA
+
+      - name: Pubblica sul ramo dati
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          mkdir out && cp fanta.json out/ && cd out
+          git init -q -b fanta-data
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add fanta.json
+          git commit -qm "Fanta: dati aggiornati $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push -q -f "https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git" fanta-data
