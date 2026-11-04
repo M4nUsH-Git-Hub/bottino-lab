@@ -85,12 +85,29 @@
   const teamName = side => (state.event[side] || '').trim() || (side === 'home' ? 'Casa' : 'Ospite');
   const initials = name => name.split(/[\s\-.]+/).filter(Boolean).slice(0, 2).map(w => w[0]).join('').toUpperCase() || '?';
   const pl = (n, one, many) => `${n} ${n === 1 ? one : many}`;
+  // Link diretto alla partita su Sisal: /scommesse-matchpoint/evento/calcio/<competizione>/<casa>-<ospite>,
+  // con i nomi italiani usati anche nel quiz (es. champions-league/lens-como, spagna/liga/real-sociedad-...).
+  const slug = s => String(s || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+  const SISAL_COMP = [
+    [/champions/i, 'champions-league'], [/europa league/i, 'europa-league'], [/conference/i, 'conference-league'],
+    [/serie a/i, 'serie-a'], [/serie b/i, 'serie-b'], [/coppa italia/i, 'coppa-italia'],
+    [/liga|laliga|primera/i, 'spagna/liga'], [/premier/i, 'inghilterra/premier-league'], [/bundesliga/i, 'germania/bundesliga'],
+    [/ligue 1/i, 'francia/ligue-1'], [/eredivisie/i, 'olanda/eredivisie'], [/primeira|portogallo/i, 'portogallo/primeira-liga']
+  ];
+  function sisalUrl() {
+    const h = state.event.home, w = state.event.away;
+    if (!h || !w || !/calcio/i.test(state.event.sport || 'Calcio')) return null;
+    const comp = (SISAL_COMP.find(([re]) => re.test(state.event.comp || '')) || [])[1];
+    if (!comp) return null;
+    return `https://www.sisal.it/scommesse-matchpoint/evento/calcio/${comp}/${slug(h)}-${slug(w)}`;
+  }
+
   // Collegamenti già pronti per la partita della domanda (ricerca mirata sul sito giusto).
   function quickLinks(kind) {
     const h = state.event.home || '', w = state.event.away || '', q = `${h} ${w}`.trim();
     const g = (site, extra) => `https://www.google.com/search?q=${encodeURIComponent(`site:${site} ${q}${extra ? ' ' + extra : ''}`)}`;
     const L = kind === 'odds' ? [
-      ['Sisal', g('sisal.it', 'quote')], ['Bet365', 'https://www.bet365.it/'], ['Goldbet', g('goldbet.it', 'quote')],
+      [sisalUrl() ? `Sisal · ${h}–${w}` : 'Sisal', sisalUrl() || g('sisal.it', 'quote')], ['Bet365', 'https://www.bet365.it/'], ['Goldbet', g('goldbet.it', 'quote')],
       ['Eurobet', g('eurobet.it', 'quote')], ['OddsChecker', g('oddschecker.com', '')]
     ] : [
       ['Sky Sport', g('sport.sky.it', state.event.comp && /champions|europa/i.test(state.event.comp) ? 'Champions League' : '')],
@@ -129,7 +146,7 @@
     $('oddsHead').innerHTML = `<tr><th>Bookmaker</th><th>${esc(L[0])}</th><th>${esc(L[1])}</th>${three ? `<th>${esc(L[2])}</th>` : ''}<th class="num">Margine</th><th class="num">Prob. Sì</th></tr>`;
     const cell = (grp, i, k, val, lab) => `<td><input id="o_${grp}_${i}_${k}" type="text" inputmode="decimal" aria-label="${esc(lab)}" data-group="${grp}" data-i="${i}" data-k="${k}" value="${esc(val)}"></td>`;
     let html = state.odds.map((r, i) => `<tr>
-      <td class="bkcell"><input id="o_odds_${i}_bk" type="text" placeholder="${i === 2 ? 'Goldbet, Eurobet…' : 'Bookmaker'}" aria-label="Bookmaker" data-group="odds" data-i="${i}" data-k="bk" value="${esc(r.bk)}"><small>${['organizza il quiz', 'riferimento internazionale', 'a tua scelta'][i] || 'extra'}</small></td>
+      <td class="bkcell"><input id="o_odds_${i}_bk" type="text" placeholder="${i === 2 ? 'Goldbet, Eurobet…' : 'Bookmaker'}" aria-label="Bookmaker" data-group="odds" data-i="${i}" data-k="bk" value="${esc(r.bk)}"><small>${['organizza il quiz', 'riferimento internazionale', 'a tua scelta'][i] || 'extra'}${i === 0 && sisalUrl() ? ` · <a href="${sisalUrl()}" target="_blank" rel="noopener">apri la partita ↗</a>` : ''}</small></td>
       ${cell('odds', i, 'a', r.a, L[0])}${cell('odds', i, 'b', r.b, L[1])}${three ? cell('odds', i, 'c', r.c, L[2]) : ''}
       <td class="num" id="om${i}">—</td><td class="num" id="op${i}">—</td></tr>`).join('');
     const o = state.opening;
