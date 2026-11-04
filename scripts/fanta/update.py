@@ -481,11 +481,13 @@ def fc_fetch_text():
         if DEBUG_FC:
             # struttura HTML della prima sezione "Dettaglio calciatori", per attribuire le assenze alle squadre
             html_dbg = page.evaluate("""() => {
-              const h = [...document.querySelectorAll('*')].find(e => e.children.length === 0 && e.textContent.trim() === 'Infortunati' && !e.closest('nav, header, footer, a'));
-              if (!h) return 'intestazione non trovata';
-              let a = h;
-              for (let i = 0; i < 8 && a.parentElement; i++) { a = a.parentElement; if (a.innerText.includes('Squalificati') && a.innerText.includes('Diffidati')) break; }
-              return a.outerHTML.replace(/<(script|style|svg)[\\s\\S]*?<\\/\\1>/g, '').slice(0, 15000);
+              const c = [...document.querySelectorAll('*')].filter(e => e.children.length === 0 && e.textContent.trim() === 'Infortunati' && !e.closest('nav, #main-header, footer'));
+              if (!c.length) return 'intestazione non trovata';
+              const h = c[0]; const chain = []; let a = h;
+              for (let i = 0; i < 10 && a; i++) { chain.push(a.tagName + '.' + a.className + ' len=' + (a.innerText || '').length); a = a.parentElement; }
+              let pick = h; a = h;
+              while (a.parentElement && (a.parentElement.innerText || '').length < 5000) { a = a.parentElement; pick = a; }
+              return 'candidati ' + c.length + '\\n' + chain.join('\\n') + '\\n-----\\n' + pick.outerHTML.replace(/<(script|style|svg)[\\s\\S]*?<\\/\\1>/g, '').slice(0, 14000);
             }""")
             with open(DEBUG_FC + ".html.txt", "w", encoding="utf-8") as f:
                 f.write(html_dbg)

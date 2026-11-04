@@ -1,0 +1,52 @@
+name: Dati partite
+
+# Ogni ora (circa dalle 7 alle 24, ora italiana) aggiorna i dati delle partite usati per compilare
+# da soli statistiche, forma, precedenti e contesto: football-data.org (serve il segreto
+# FOOTBALL_DATA_TOKEN), notizie da Sky Sport e testate affidabili, assenze di Serie A dalla sezione Fanta.
+# Il risultato (matches.json) va sul ramo "match-data", da cui lo legge il sito.
+# Per un giro immediato: Actions → "Dati partite" → Run workflow.
+
+on:
+  schedule:
+    - cron: '20 6-22 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: match-data
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Dati precedenti e assenze di Serie A
+        run: |
+          if git fetch -q --depth=1 origin match-data 2>/dev/null; then git show FETCH_HEAD:matches.json > prev.json || echo '{}' > prev.json; else echo '{}' > prev.json; fi
+          if git fetch -q --depth=1 origin fanta-data 2>/dev/null; then git show FETCH_HEAD:fanta.json > fanta.json || echo '{}' > fanta.json; else echo '{}' > fanta.json; fi
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Raccolta
+        env:
+          FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
+        run: python scripts/match/matchdata.py --out matches.json --prev prev.json --fanta fanta.json
+
+      - name: Pubblica sul ramo dati
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          mkdir out && cp matches.json out/ && cd out
+          git init -q -b match-data
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -qm "Dati partite $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push -q -f "https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git" match-data
