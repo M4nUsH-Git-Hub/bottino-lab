@@ -388,13 +388,16 @@ def _parse_block(lines, d, e):
         i += 1
     if i < e and norm(lines[i]).startswith("ultimo aggiornamento"):
         b["updated"] = lines[i][len("Ultimo aggiornamento"):].strip()
-    sec, items = None, {k: [] for k in set(SECTION_NAMES.values())}
+    sec, items, raw = None, {k: [] for k in set(SECTION_NAMES.values())}, {k: [] for k in set(SECTION_NAMES.values())}
     for k in range(i, e):
         n = norm(lines[k])
         if n in SECTION_NAMES:
             sec = SECTION_NAMES[n]
-        elif sec and not n.startswith("nessun"):
-            items[sec].append(lines[k])
+        elif sec:
+            raw[sec].append(lines[k])
+            if not n.startswith("nessun"):
+                items[sec].append(lines[k])
+    b["raw"] = raw
     bal, _ = _pairs(items["ballottaggi"], 0, len(items["ballottaggi"]), lambda k: False)
     b["ballottaggi"] = bal
     b["squalificati"] = [norm(x) for x in items["squalificati"]]
@@ -405,6 +408,73 @@ def _parse_block(lines, d, e):
             nxt = lst[k + 1] if k + 1 < len(lst) else ""
             b[key][norm(nm)] = nxt if len(nxt) > 25 else ""
     return b
+
+
+def _entries(lst, with_notes):
+    """Righe di una sezione → voci: ("MARK",) per "Nessun calciatore", (nome, nota) per un giocatore."""
+    out = []
+    for line in lst:
+        n = norm(line)
+        if n.startswith("nessun"):
+            out.append(("MARK", ""))
+        elif with_notes and out and out[-1][0] != "MARK" and len(line) > 25 and not out[-1][1]:
+            out[-1] = (out[-1][0], line)
+        else:
+            out.append((line, ""))
+    return out
+
+
+def _owner_from_note(note, home, away):
+    """"out contro il Como": il giocatore è della squadra che non è il Como."""
+    m = re.search(r"contro\s+(?:il|lo|la|l'|i|gli|le)?\s*([a-z][a-z .'-]+)", norm(note))
+    if not m:
+        return None
+    opp = m.group(1).strip()
+    if _same_team(opp.split(",")[0], home) or norm(home).startswith(opp[:5]):
+        return "away"
+    if _same_team(opp.split(",")[0], away) or norm(away).startswith(opp[:5]):
+        return "home"
+    return None
+
+
+def split_absences(b):
+    """Assenze della partita divise per squadra. Ogni sezione elenca prima la casa e poi l'ospite;
+    "Nessun calciatore" segna un elenco vuoto. Se entrambi gli elenchi hanno nomi si usa la nota
+    ("out contro il Como"); i casi ancora incerti finiscono in "da_verificare"."""
+    res = {side: {"infortunati": [], "squalificati": [], "dubbio": [], "diffidati": []} for side in ("home", "away")}
+    unknown = []
+    for key, notes in (("infortunati", True), ("dubbio", True), ("squalificati", False), ("diffidati", False)):
+        ent = _entries((b.get("raw") or {}).get(key, []), notes)
+        marks = [i for i, x in enumerate(ent) if x[0] == "MARK"]
+        players = [(i, x) for i, x in enumerate(ent) if x[0] != "MARK"]
+        if not players:
+            continue
+        if marks:
+            # un elenco è vuoto: se il segno viene per primo è vuota la casa, quindi i nomi sono dell'ospite
+            side = "away" if marks[0] == 0 else "home"
+            for _, (nome, nota) in players:
+                res[side][key].append({"nome": nome, "nota": nota})
+        else:
+            for i, (nome, nota) in players:
+                side = _owner_from_note(nota, b["home"], b["away"]) if nota else None
+                if side:
+                    res[side][key].append({"nome": nome, "nota": nota})
+                else:
+                    unknown.append({"nome": nome, "nota": nota, "tipo": key})
+    return res, unknown
+
+
+def serie_a_teams(blocks):
+    """Per ogni squadra di Serie A della pagina: avversario, orario e assenze."""
+    out = {}
+    for b in blocks:
+        res, unknown = split_absences(b)
+        for side, other in (("home", "away"), ("away", "home")):
+            if not b.get(side):
+                continue
+            out[b[side]] = dict(res[side], avversario=b.get(other, ""), casa=side == "home", kickoff=b["kickoff"],
+                                aggiornato=b["updated"], da_verificare=unknown)
+    return out
 
 
 def _same_team(a, b):
@@ -542,6 +612,7 @@ def run(rosa, prev, do_news=True, do_fc=True):
            "news": prev.get("news") or [], "probabili": prev.get("probabili"),
            "probabili_updated": prev.get("probabili_updated"),
            "probabili_parser": prev.get("probabili_parser"),
+           "serie_a": prev.get("serie_a") or {},
            "changes": prev.get("changes") or []}
 
     if do_news:
@@ -571,6 +642,7 @@ def run(rosa, prev, do_news=True, do_fc=True):
             old = prev.get("probabili") if prev.get("probabili_parser") == FC_PARSER_VERSION else None
             out["changes"] = (diff_probabili(old, snap, rosa, now) + out["changes"])[:CHANGES_MAX]
             out["probabili"], out["probabili_updated"] = snap, iso(now)
+            out["serie_a"] = serie_a_teams(fc_blocks(text))
             out["probabili_parser"] = FC_PARSER_VERSION
             status.update(ok=True, found=len(snap))
             log(f"[probabili] partite lette {len(fc_blocks(text))}, giocatori trovati {len(snap)} su {len(rosa)}")

@@ -91,7 +91,8 @@ class TestFanta(unittest.TestCase):
         "Ballottaggi", "Nessun ballottaggio", "Bastoni", "55%", "Akanji", "45%",
         "Squalificati", "Nessun calciatore", "Nessun calciatore",
         "Diffidati", "Nessun calciatore", "Bastoni",
-        "Infortunati", "Jones C.", "Risentimento agli adduttori, rientro dalla fine di ottobre",
+        "Infortunati", "Correia T.", "Risentimento muscolare al flessore, out contro l'Inter",
+        "Jones C.", "Risentimento agli adduttori, rientro dalla fine di ottobre",
         "In dubbio", "Nessun calciatore", "Thuram", "Affaticamento, da valutare nella rifinitura",
         # partita 2
         "Genoa", "Juventus", *[f"Nome{i}" for i in range(22)],
@@ -127,6 +128,19 @@ class TestFanta(unittest.TestCase):
         self.assertEqual([(b["home"], b["away"]) for b in blocks], [("Venezia", "Inter"), ("Genoa", "Juventus"), ("Milan", "Bologna")])
         self.assertEqual(blocks[1]["modules"], ["3-5-2", "3-5-2"])
         self.assertEqual(blocks[1]["updated"], "28/10/2026 - 09:10")
+
+    def test_split_absences(self):
+        teams = U.serie_a_teams(U.fc_blocks(self.PAGE))
+        inter, ven = teams["Inter"], teams["Venezia"]
+        self.assertEqual([x["nome"] for x in ven["infortunati"]], ["Correia T."])     # "out contro l'Inter" → Venezia
+        self.assertEqual([x["nome"] for x in inter["dubbio"]], ["Thuram"])            # casa vuota → ospite
+        self.assertEqual([x["nome"] for x in inter["diffidati"]], ["Bastoni"])
+        self.assertEqual([x["nome"] for x in inter["da_verificare"]], ["Jones C."])   # nessun indizio
+        self.assertEqual([x["nome"] for x in teams["Juventus"]["infortunati"]], ["Yildiz"])
+        self.assertEqual([x["nome"] for x in teams["Milan"]["squalificati"]], ["Gila"])  # ospite vuoto → casa
+        self.assertEqual(teams["Bologna"]["squalificati"], [])
+        self.assertFalse(teams["Juventus"]["casa"])
+        self.assertEqual(teams["Juventus"]["avversario"], "Genoa")
 
     def test_fc_parse(self):
         r = U.fc_parse(self.PAGE, self.rosa)

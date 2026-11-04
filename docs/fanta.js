@@ -49,7 +49,34 @@
   };
 
   // ---------- caricamento ----------
+  const COMP = { CL: 'Champions League', SA: 'Serie A', PL: 'Premier League', PD: 'Liga', BL1: 'Bundesliga', FL1: 'Ligue 1', DED: 'Eredivisie', PPL: 'Primeira Liga' };
+  // Prossime partite della squadra con la competizione, dai dati partite (football-data.org).
+  function nextFixtures(p) {
+    const M = window.BLMatch;
+    const t = M && M.data ? M.findTeam(p.squadra) : null;
+    if (!t || !(t.next || []).length) return [];
+    return t.next.filter(n => Date.parse(n[0]) > Date.now() - 2 * 3600e3).slice(0, 2).map(n => ({
+      comp: n[1], compName: COMP[n[1]] || n[1], casa: n[2] === 1, opp: n[3],
+      when: new Date(n[0]).toLocaleString('it-IT', { weekday: 'short', day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' })
+    }));
+  }
+  function fixturesCell(p) {
+    const nx = nextFixtures(p);
+    if (!nx.length) return esc(matchShort(p));
+    return nx.map(n => `<div class="nfx"><span class="comp c-${n.comp}">${esc(n.compName)}</span> ${n.casa ? 'contro' : 'a casa del'} ${esc(n.opp)} <span class="muted">· ${esc(n.when)}</span></div>`).join('');
+  }
+  function compOfNews(title) {
+    const t = title.toLowerCase();
+    if (/champions/.test(t)) return 'Champions League';
+    if (/europa league/.test(t)) return 'Europa League';
+    if (/conference/.test(t)) return 'Conference League';
+    if (/coppa italia/.test(t)) return 'Coppa Italia';
+    if (/nazional/.test(t)) return 'Nazionale';
+    return '';
+  }
+
   async function load(force) {
+    if (window.BLMatch) window.BLMatch.load(force).then(() => { if (data) render(); });
     if (loading) return;
     loading = true; lastError = '';
     render();
@@ -188,7 +215,7 @@
         <td><span class="role r-${p.ruolo}">${p.ruolo}</span> <b>${esc(p.nome)}</b></td>
         <td>${esc(p.squadra)}</td>
         <td class="stcell">${statusBadge(p)}${note ? `<span class="pnote">${esc(note)}</span>` : ''}</td>
-        <td class="small">${esc(matchShort(p))}</td>
+        <td class="small fxcell">${fixturesCell(p)}</td>
         <td class="num">${p.fm ? dec(p.fm) : '—'}</td>
         <td class="num">${p.mv ? dec(p.mv) : '—'}</td>
         <td class="num">${p.pv ?? '—'}</td>
@@ -199,7 +226,7 @@
     $('fRosa').innerHTML = `
       <div class="panel-head"><h2>La rosa</h2><span class="muted small">${data.probabili_updated ? `Probabili lette ${ago(data.probabili_updated)}` : ''}</span></div>
       <div class="tablewrap"><table class="rosa">
-        <thead><tr><th>Giocatore</th><th>Squadra</th><th>Nelle probabili</th><th>Prossima partita</th><th class="num">FM</th><th class="num">MV</th><th class="num">PV</th><th class="num">Quot.</th><th class="num">Costo</th></tr></thead>
+        <thead><tr><th>Giocatore</th><th>Squadra</th><th>Nelle probabili</th><th>Prossime partite</th><th class="num">FM</th><th class="num">MV</th><th class="num">PV</th><th class="num">Quot.</th><th class="num">Costo</th></tr></thead>
         <tbody>${rows}</tbody></table></div>
       <p class="muted small">FM fantamedia, MV media voto, PV partite a voto, dall'export della rosa. Per cambiare la rosa basta sostituire data/fanta/rosa.csv nel repository (o chiederlo a Claude).</p>`;
   }
@@ -232,7 +259,7 @@
       </div>
       <div class="newslist">${list.length ? list.slice(0, 80).map(n => `
         <article class="nitem ${n.sky ? 'sky' : ''} ${Date.parse(n.first_seen) > prevVisit && prevVisit ? 'new' : ''}">
-          <div class="n-meta"><span class="ncat c-${n.category}">${CAT[n.category] || 'Notizia'}</span><b>${esc(n.source)}</b><span>${esc(ago(n.ts || n.first_seen))}</span>${Date.parse(n.first_seen) > prevVisit && prevVisit ? '<span class="pill si">Nuova</span>' : ''}</div>
+          <div class="n-meta"><span class="ncat c-${n.category}">${CAT[n.category] || 'Notizia'}</span>${compOfNews(n.title) ? `<span class="comp">${compOfNews(n.title)}</span>` : ''}<b>${esc(n.source)}</b><span>${esc(ago(n.ts || n.first_seen))}</span>${Date.parse(n.first_seen) > prevVisit && prevVisit ? '<span class="pill si">Nuova</span>' : ''}</div>
           <a href="${esc(n.link)}" target="_blank" rel="noopener">${esc(n.title)}</a>
           ${(n.players || []).length ? `<div class="n-players">${n.players.map(x => `<span>${esc(x)}</span>`).join('')}</div>` : ''}
         </article>`).join('') : `<p class="empty">${all.length ? 'Nessuna notizia con questi filtri.' : 'Ancora nessuna notizia: arriveranno al prossimo giro di raccolta.'}</p>`}</div>`;

@@ -23,7 +23,7 @@
       answers: { si: 'Sì', no: 'No' },
       event: { sport: t.sport, comp: '', home: '', away: '', when: '' },
       params: Object.assign({}, t.defaults.params),
-      odds: [emptyRow('Sisal'), emptyRow(), emptyRow()],
+      odds: [emptyRow('Sisal'), emptyRow('Bet365'), emptyRow('Goldbet')],
       opening: emptyRow(),
       stats: Object.assign({}, t.defaults.stats || {}),
       sample: { nH: '', nA: '' },
@@ -38,7 +38,7 @@
     answers: { si: 'Sì', no: 'No' },
     event: { sport: 'Calcio', comp: 'Ligue 1, 8ª giornata', home: 'Paris Saint-Germain', away: 'Lione', when: 'Lun 26/10/2026, 20:30' },
     params: { period: '1T', line: '1.5', side: 'pos' },
-    odds: [{ bk: 'Sisal', a: '1,85', b: '1,80', c: '' }, emptyRow(), emptyRow()],
+    odds: [{ bk: 'Sisal', a: '1,85', b: '1,80', c: '' }, emptyRow('Bet365'), emptyRow('Goldbet')],
     opening: emptyRow(),
     stats: { hS: '0,43', hC: '0,57', aS: '0,86', aC: '0,43', hPct: '14', aPct: '43' },
     sample: { nH: '7', nA: '7' },
@@ -85,6 +85,21 @@
   const teamName = side => (state.event[side] || '').trim() || (side === 'home' ? 'Casa' : 'Ospite');
   const initials = name => name.split(/[\s\-.]+/).filter(Boolean).slice(0, 2).map(w => w[0]).join('').toUpperCase() || '?';
   const pl = (n, one, many) => `${n} ${n === 1 ? one : many}`;
+  // Collegamenti già pronti per la partita della domanda (ricerca mirata sul sito giusto).
+  function quickLinks(kind) {
+    const h = state.event.home || '', w = state.event.away || '', q = `${h} ${w}`.trim();
+    const g = (site, extra) => `https://www.google.com/search?q=${encodeURIComponent(`site:${site} ${q}${extra ? ' ' + extra : ''}`)}`;
+    const L = kind === 'odds' ? [
+      ['Sisal', g('sisal.it', 'quote')], ['Bet365', 'https://www.bet365.it/'], ['Goldbet', g('goldbet.it', 'quote')],
+      ['Eurobet', g('eurobet.it', 'quote')], ['OddsChecker', g('oddschecker.com', '')]
+    ] : [
+      ['Sky Sport', g('sport.sky.it', state.event.comp && /champions|europa/i.test(state.event.comp) ? 'Champions League' : '')],
+      ['Probabili Fantacalcio.it', 'https://www.fantacalcio.it/probabili-formazioni-serie-a'],
+      ['UEFA', g('uefa.com', '')], ['FotMob', g('fotmob.com', '')], ['Sofascore', g('sofascore.com', '')],
+      ['Flashscore', g('flashscore.it', '')]
+    ];
+    return L.map(([n, u]) => `<a class="qlink" href="${u}" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-link"/></svg>${esc(n)}</a>`).join('');
+  }
   const srcLinks = list => list.map(x => `<a href="${x.u}" target="_blank" rel="noopener"><b>${esc(x.n)}</b><span>${esc(x.w)}</span></a>`).join('');
 
   // ---------- costruzione dei moduli ----------
@@ -114,7 +129,7 @@
     $('oddsHead').innerHTML = `<tr><th>Bookmaker</th><th>${esc(L[0])}</th><th>${esc(L[1])}</th>${three ? `<th>${esc(L[2])}</th>` : ''}<th class="num">Margine</th><th class="num">Prob. Sì</th></tr>`;
     const cell = (grp, i, k, val, lab) => `<td><input id="o_${grp}_${i}_${k}" type="text" inputmode="decimal" aria-label="${esc(lab)}" data-group="${grp}" data-i="${i}" data-k="${k}" value="${esc(val)}"></td>`;
     let html = state.odds.map((r, i) => `<tr>
-      <td><input id="o_odds_${i}_bk" type="text" placeholder="Bookmaker" aria-label="Bookmaker" data-group="odds" data-i="${i}" data-k="bk" value="${esc(r.bk)}"></td>
+      <td class="bkcell"><input id="o_odds_${i}_bk" type="text" placeholder="${i === 2 ? 'Goldbet, Eurobet…' : 'Bookmaker'}" aria-label="Bookmaker" data-group="odds" data-i="${i}" data-k="bk" value="${esc(r.bk)}"><small>${['organizza il quiz', 'riferimento internazionale', 'a tua scelta'][i] || 'extra'}</small></td>
       ${cell('odds', i, 'a', r.a, L[0])}${cell('odds', i, 'b', r.b, L[1])}${three ? cell('odds', i, 'c', r.c, L[2]) : ''}
       <td class="num" id="om${i}">—</td><td class="num" id="op${i}">—</td></tr>`).join('');
     const o = state.opening;
@@ -123,7 +138,7 @@
       <td class="num" id="omO">—</td><td class="num" id="opO">—</td></tr>`;
     $('oddsBody').innerHTML = html;
     $('btnAddRow').hidden = state.odds.length >= MAX_ROWS;
-    $('oddsSrc').innerHTML = srcLinks(T.oddsSourcesFor(t));
+    $('oddsSrc').innerHTML = quickLinks('odds');
   }
 
   function renderStatFields() {
@@ -194,7 +209,7 @@
     $('w').value = state.w;
   }
 
-  function renderAll() { fillStatic(); renderParams(); renderOdds(); renderStatFields(); renderForm(); renderContext(); update(); }
+  function renderAll() { fillStatic(); renderParams(); renderOdds(); renderStatFields(); renderForm(); renderContext(); update(); applyAutoMarks(); }
 
   // ---------- calcolo ----------
   function compute(s) {
@@ -351,11 +366,77 @@
     $('chipPct').textContent = r.noData ? '' : pct(Math.max(r.p, 1 - r.p));
     $('chip').className = 'chip ' + (r.noData ? '' : si ? 'si' : 'no');
     renderMatchup(r);
+    renderFolds(r);
+    $('vSignals').innerHTML = signalsHTML(signals(r), 4);
     $('promptText').textContent = buildPrompt(r);
     if (!$('view-recap').hidden) $('recap').innerHTML = recapHTML(r);
     checkQuestionMatch();
     store.set(DRAFT_KEY, state);
+    scheduleAutosave(r);
     return r;
+  }
+
+  function renderFolds(r) {
+    const a = state.auto, filled = new Set((a && a.filled) || []);
+    const S = ansLabel('si');
+    $('fold3st').textContent = `${S} = ${r.desc.si}`;
+    const nStats = [...filled].filter(x => x.startsWith('s_')).length;
+    $('fold4st').innerHTML = nStats ? `<span class="okmark">✓</span> compilate in automatico${r.m.pS != null ? ` · ${S} ${pct(r.m.pS)}` : ''}` : (r.m.pS != null ? `${S} ${pct(r.m.pS)}` : 'da compilare');
+    const games = ['home', 'away'].map(s => C.parseScores(state.ctx[s].last5).length);
+    $('fold5st').innerHTML = filled.has('c_home_last5') ? `<span class="okmark">✓</span> ultime 5 di entrambe${filled.has('m_h2h') ? ' e precedenti' : ''}` : (games[0] + games[1] ? `${games[0]} + ${games[1]} partite` : 'da compilare');
+    const eff = (r.m.effects || []).length;
+    $('fold6st').innerHTML = (a ? '<span class="okmark">✓</span> riposo, impegni e classifica · ' : '') + (eff ? `${eff} fattori nel calcolo` : 'nessun fattore') + ' · assenze: scegli tu';
+  }
+
+  // ---------- segnali: quello che conviene sapere prima di rispondere ----------
+  function signals(r) {
+    const out = [], S = ansLabel('si'), N = ansLabel('no'), info = (state.auto && state.auto.info) || {};
+    if (!r.noData) {
+      const lose = Math.round((1 - r.conf.c) * 10);
+      out.push({ ic: 'i-alert', cls: r.conf.level === 0 ? 'warn' : '', t: Math.abs(r.p - 0.5) < 0.005 ? 'Testa o croce: qualunque risposta perde circa 5 volte su 10.' : `La risposta ${pick(r.p)} perde circa ${lose} volte su 10.` });
+    }
+    if (r.pM != null && r.m.pS != null && Math.abs(r.pM - r.m.pS) >= 0.10) {
+      out.push({ ic: 'i-scale', cls: 'warn', t: `Quote e statistiche non concordano: mercato ${pct(r.pM)}, statistiche ${pct(r.m.pS)}. Il mercato di solito sa qualcosa in più (assenze, turnover).` });
+    }
+    ['home', 'away'].forEach(side => {
+      const name = teamName(side), abs = info[side + 'Abs'];
+      if (abs) {
+        const inf = (abs.infortunati || []).map(x => x.nome), sq = abs.squalificati || [];
+        if (inf.length || sq.length) out.push({ ic: 'i-user', cls: 'warn', t: `${name}: fuori ${[...inf, ...sq.map(x => (x.nome || x) + ' (squalificato)')].slice(0, 6).join(', ')}.` });
+        const dub = (abs.dubbio || []).map(x => x.nome);
+        if (dub.length) out.push({ ic: 'i-user', cls: '', t: `${name}: in dubbio ${dub.slice(0, 4).join(', ')}.` });
+        if (side === 'home' && (abs.da_verificare || []).length) out.push({ ic: 'i-user', cls: '', t: `Assenti nella partita, squadra da verificare: ${abs.da_verificare.slice(0, 5).map(x => x.nome).join(', ')}.` });
+      }
+      const nx = info[side + 'Next'];
+      if (nx && nx.days <= 4) out.push({ ic: 'i-swapcup', cls: nx.comp === 'CL' ? 'warn' : '', t: `${name}: tra ${nx.days} giorni ${nx.comp === 'CL' ? 'Champions League' : 'campionato'} contro ${nx.opp}${nx.comp === 'CL' ? ', possibile turnover' : ''}.` });
+      (info[side + 'News'] || []).filter(n => (n.alerts || []).length).slice(0, 2).forEach(n => {
+        out.push({ ic: 'i-news', cls: 'warn', t: `${n.source}: ${n.title}`, link: n.link, sky: n.sky });
+      });
+    });
+    if (C.supportsScores(state.type)) {
+      const t = T.byId(state.type), inv = isInv(t, state);
+      ['home', 'away'].forEach(side => {
+        const g = C.parseScores(state.ctx[side].last5);
+        const cnt = C.countEvent(state.type, state.params, g.map(x => C.asMatch(x, side)));
+        if (cnt.n >= 4) {
+          const yes = inv ? cnt.n - cnt.k : cnt.k;
+          if (yes === 0 || yes === cnt.n) out.push({ ic: 'i-form', cls: '', t: `Ultime ${cnt.n} di ${teamName(side)}: ${S} della domanda ${yes} volte su ${cnt.n}.` });
+        }
+      });
+    }
+    return out;
+  }
+  function signalsHTML(list, max) {
+    if (!list.length) return '';
+    return `<ul class="sig">${list.slice(0, max || 99).map(s => `<li class="${s.cls}"><svg class="ic" aria-hidden="true"><use href="#${s.ic}"/></svg><span>${s.link ? `<a href="${esc(s.link)}" target="_blank" rel="noopener">${esc(s.t)}</a>` : esc(s.t)}</span></li>`).join('')}</ul>`;
+  }
+
+  // ---------- salvataggio automatico nello storico ----------
+  let saveTimer;
+  function scheduleAutosave(r) {
+    clearTimeout(saveTimer);
+    if (state.example || !state.question || r.noData) return;
+    saveTimer = setTimeout(() => saveToDiary(true), 1200);
   }
 
   function renderMatchup() {
@@ -409,7 +490,51 @@
     $('qSuggest').hidden = true;
     $('detected').hidden = false;
     $('detected').innerHTML = describeDetection(res);
-    toast('Domanda riconosciuta: controlla le caselle');
+    state.sid = String(Date.now());
+    autoFill(true);
+  }
+
+  // Cerca la partita nei dati automatici e compila statistiche, forma, precedenti e contesto.
+  async function autoFill(fromParse) {
+    const st = $('autoStatus');
+    st.className = 'autostatus wait'; st.textContent = 'Cerco i dati della partita…';
+    const data = window.BLMatch ? await window.BLMatch.load() : null;
+    if (!data || !data.teams) {
+      st.className = 'autostatus off';
+      st.textContent = 'Dati automatici non disponibili: inserisci le quote e, se vuoi, le statistiche a mano.';
+      state.auto = null;
+    } else {
+      const res = window.BLMatch.fill(state);
+      if (!res.ok) {
+        st.className = 'autostatus off';
+        st.textContent = C.supportsScores(state.type) ? 'Partita non trovata nei dati automatici (copriamo Champions e i principali campionati): il resto va a mano.' : 'Per questo tipo di domanda i dati vanno inseriti a mano.';
+        state.auto = null;
+      } else {
+        const fx = res.fixture, th = res.teams.home, ta = res.teams.away;
+        state.auto = { filled: res.filled, info: res.info, when: data.updated, fixture: fx ? { utc: fx.utc, comp: fx.comp, compName: fx.compName } : null, names: { home: th.short, away: ta.short } };
+        st.className = 'autostatus ok';
+        st.textContent = `Dati automatici: ${th.short} – ${ta.short}${fx ? ` · ${fx.compName}` : ''} · aggiornati ${agoTxt(data.updated)}`;
+      }
+    }
+    renderAll();
+    applyAutoMarks();
+    if (state.auto) ['fold3', 'fold4', 'fold5', 'fold6'].forEach(id => { $(id).open = false; });
+    if (fromParse) {
+      toast(state.auto ? 'Fatto: ora inserisci le quote' : 'Domanda riconosciuta: inserisci le quote');
+      const first = $('o_odds_0_a');
+      if (first) { first.scrollIntoView({ block: 'center', behavior: 'smooth' }); setTimeout(() => first.focus({ preventScroll: true }), 300); }
+    }
+  }
+  function applyAutoMarks() {
+    document.querySelectorAll('.auto').forEach(el => el.classList.remove('auto'));
+    ((state.auto && state.auto.filled) || []).forEach(id => { const el = $(id); if (el) el.classList.add('auto'); });
+  }
+  function agoTxt(iso) {
+    const m = Math.round((Date.now() - Date.parse(iso)) / 60000);
+    if (!Number.isFinite(m)) return '';
+    if (m < 60) return `${Math.max(1, m)} min fa`;
+    const h = Math.round(m / 60);
+    return h < 24 ? `${h} ${h === 1 ? 'ora' : 'ore'} fa` : `${Math.round(h / 24)} giorni fa`;
   }
 
   // Se il testo della domanda indica un tipo o una soglia diversi da quelli impostati, lo segnala.
@@ -485,6 +610,9 @@
       <div class="barlbl"><span>${esc(S)} ${r.noData ? '' : pct(r.p)}</span><span>${esc(N)} ${r.noData ? '' : pct(1 - r.p)}</span></div>
       <div style="margin-top:6px;font-size:14px">${r.noData ? 'Mancano i dati per una stima.' : `${esc(r.conf.text)}: la risposta ${esc(pick(r.p))} ha circa il ${pct(r.conf.c)} di probabilità.`}</div></div></div>`;
     h += `<div class="keypoints"><b>In sintesi</b><ul>${keyPoints(r).map(x => `<li>${esc(x)}</li>`).join('')}</ul></div>`;
+    const sg = signals(r);
+    if (sg.length) h += `<h3>Da sapere</h3>${signalsHTML(sg)}`;
+    h += newsHTML();
 
     h += `<h3>La domanda</h3>`;
     h += `<p class="qbox">${esc(s.question || 'Testo della domanda non inserito')}</p>`;
@@ -546,9 +674,18 @@
     if (!r.noData && r.conf.level === 0) h += `<div class="callout">Siamo sotto il 55%: scegli il lato indicato, ma il margine è minimo. Notizie dell'ultima ora (formazioni, meteo) possono ribaltare la scelta.</div>`;
 
     h += `<h3>Prima di confermare</h3><ul>${(t.checklist || []).concat(T.COMMON_CHECK).map(x => `<li>${esc(x)}</li>`).join('')}</ul>`;
-    h += `<h3>Dove controllare</h3><div class="srcs">${srcLinks([...new Set(T.oddsSourcesFor(t).concat(T.statSourcesFor(t)).concat([T.SRC.salva]))])}</div>`;
+    h += `<h3>Apri la partita su</h3><div class="quicklinks">${quickLinks('match')}</div>`;
+    h += `<h3>Quote</h3><div class="quicklinks">${quickLinks('odds')}</div>`;
     h += `<p class="disclaimer">Stima statistica a scopo informativo per un quiz gratuito: nessun risultato è garantito.</p>`;
     return h;
+  }
+
+  function newsHTML() {
+    const info = (state.auto && state.auto.info) || {};
+    const rows = ['home', 'away'].flatMap(side => (info[side + 'News'] || []).map(n => Object.assign({ side }, n)));
+    if (!rows.length) return '';
+    rows.sort((a, b) => (b.sky - a.sky) || (Date.parse(b.ts || 0) - Date.parse(a.ts || 0)));
+    return `<h3>Notizie</h3><div class="rnews">${rows.slice(0, 8).map(n => `<a class="rn ${n.sky ? 'sky' : ''}" href="${esc(n.link)}" target="_blank" rel="noopener"><span class="rn-meta"><span class="badge ${n.side}" aria-hidden="true">${esc(initials(teamName(n.side)))}</span><b>${esc(n.source)}</b>${(n.alerts || []).length ? `<span class="pill warn">${esc(n.alerts.join(', '))}</span>` : ''}</span><span>${esc(n.title)}</span></a>`).join('')}</div>`;
   }
 
   function recapText(r) {
@@ -613,11 +750,13 @@ Chiudi con i dati pronti da copiare nelle caselle di Bottino Lab: quote, statist
   function snapshot() {
     const s = clone(state);
     delete s.paste; delete s.example;
+    if (s.auto && s.auto.info) { delete s.auto.info.homeNews; delete s.auto.info.awayNews; }
     return s;
   }
-  function saveToDiary() {
+  function saveToDiary(silent) {
     const r = compute(state);
-    if (r.noData) { toast('Inserisci almeno le quote prima di salvare'); return; }
+    if (r.noData) { if (!silent) toast('Inserisci almeno le quote prima di salvare'); return; }
+    if (!state.sid) state.sid = String(Date.now());
     const d = diary(), now = new Date();
     const entry = {
       id: String(now.getTime()), ts: now.toISOString(),
@@ -626,13 +765,15 @@ Chiudi con i dati pronti da copiare nelle caselle di Bottino Lab: quote, statist
       type: state.type, params: clone(state.params), question: state.question, event: title(state),
       home: state.event.home || '', away: state.event.away || '', comp: state.event.comp || '',
       pickSide: r.p >= 0.5 ? 'si' : 'no', pick: pick(r.p), p: r.p, conf: r.conf.c, pM: r.pM, pS: r.m.pS, quality: r.quality.level,
-      result: { ft: '', ht: '', val: '' }, outcome: '', res: '', snap: snapshot()
+      result: { ft: '', ht: '', val: '' }, outcome: '', res: '', snap: snapshot(), sid: state.sid
     };
     // Stessa domanda già salvata (stesso gioco, numero e testo): la aggiorna invece di duplicarla.
-    const i = d.findIndex(e => e.question === entry.question && e.event === entry.event && String(e.game || '') === entry.game && String(e.qn || '') === entry.qn);
-    if (i >= 0) { entry.id = d[i].id; entry.result = d[i].result || entry.result; d[i] = judge(entry); toast('Risposta aggiornata nello storico'); }
-    else { d.push(entry); toast('Salvata nello storico'); }
-    saveDiary(d); renderDiary();
+    const i = d.findIndex(e => (e.sid && e.sid === entry.sid) || (e.question === entry.question && e.event === entry.event && String(e.game || '') === entry.game && String(e.qn || '') === entry.qn));
+    if (i >= 0) { entry.id = d[i].id; entry.ts = d[i].ts || entry.ts; entry.date = d[i].date || entry.date; entry.result = d[i].result || entry.result; d[i] = judge(entry); if (!silent) toast('Risposta aggiornata nello storico'); }
+    else { d.push(entry); if (!silent) toast('Salvata nello storico'); }
+    saveDiary(d);
+    if (!$('view-diario').hidden) renderDiary();
+    $('saveStatus').innerHTML = `<svg class="ic" aria-hidden="true"><use href="#i-clock"/></svg>Salvata nello storico alle ${new Date().toLocaleTimeString('it-IT', { hour: '2-digit', minute: '2-digit' })}`;
   }
 
   // Valuta l'esito dal risultato inserito: per gol ed esito usa il punteggio, per corner/cartellini/punti il totale, per il resto Sì/No.
@@ -770,6 +911,7 @@ Chiudi con i dati pronti da copiare nelle caselle di Bottino Lab: quote, statist
   let nameTimer;
   document.addEventListener('input', e => {
     const el = e.target, g = el.dataset.group;
+    if (el.classList.contains('auto')) el.classList.remove('auto');
     if (el.dataset.res) { onResult(el); return; }
     if (g === 'params') { state.params[el.dataset.k] = el.value.replace(',', '.'); }
     else if (g === 'stats') state.stats[el.dataset.k] = el.value;
@@ -878,8 +1020,8 @@ Chiudi con i dati pronti da copiare nelle caselle di Bottino Lab: quote, statist
     renderAll(); $('detected').hidden = true; $('pasteBox').focus(); toast('Pronto per una nuova domanda');
   });
   $('btnExample').addEventListener('click', () => { state = clone(EXAMPLE); renderAll(); $('detected').hidden = true; toast('Esempio PSG–Lione caricato'); });
-  $('btnSave').addEventListener('click', saveToDiary);
-  $('btnSave2').addEventListener('click', saveToDiary);
+  $('btnSave').addEventListener('click', () => saveToDiary(false));
+  $('btnSave2').addEventListener('click', () => saveToDiary(false));
   $('btnCopyRecap').addEventListener('click', () => copyText(recapText(compute(state)), 'Analisi copiata', $('recap')));
   $('btnPrompt').addEventListener('click', () => copyText($('promptText').textContent, 'Prompt copiato', $('promptText')));
   $('btnPrint').addEventListener('click', () => window.print());
@@ -921,5 +1063,11 @@ Chiudi con i dati pronti da copiare nelle caselle di Bottino Lab: quote, statist
 
   buildTypeSelect();
   renderAll();
+  if (state.auto) {
+    $('autoStatus').className = 'autostatus ok';
+    $('autoStatus').textContent = `Dati automatici: ${state.auto.names.home} – ${state.auto.names.away}${state.auto.fixture ? ` · ${state.auto.fixture.compName}` : ''} · aggiornati ${agoTxt(state.auto.when)}`;
+    ['fold3', 'fold4', 'fold5', 'fold6'].forEach(id => { $(id).open = false; });
+  }
+  if (window.BLMatch) window.BLMatch.load();
   showView();
 })();
