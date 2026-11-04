@@ -168,7 +168,8 @@ def alerts_of(text_norm):
 
 
 NAME_STOP = {"fc", "ac", "as", "ss", "ssc", "cf", "sc", "rc", "afc", "cfc", "us", "sl", "cp", "sk", "fk", "bv", "vfb", "vfl", "tsg", "1907", "1909", "1913"}
-TV_WORDS = ("diretta streaming", "dove vedere", "in tv", "diretta tv", "streaming gratis", "canale tv")
+TV_WORDS = ("diretta streaming", "dove vedere", "in tv", "diretta tv", "streaming gratis", "canale tv",
+            "basket", "eurocup", "eurolega", "euroleague", "nba", "pallavolo", "volley", "calcio femminile", "women")
 
 
 def common_name(t):
@@ -213,9 +214,12 @@ def serie_a_absences(fanta):
     return (fanta or {}).get("serie_a") or {}
 
 
+TRANSLIT = str.maketrans({"ı": "i", "ø": "o", "ł": "l", "đ": "d", "ð": "d", "þ": "th", "æ": "ae", "œ": "oe", "ß": "ss"})
+
+
 def _surname_tokens(nome):
-    """"Konè M." → {"kone"}, "Milinkovic-Savic V." → {"milinkovic-savic", "milinkovic", "savic"}."""
-    toks = [w for w in F.norm(nome).replace(".", " ").split() if len(w) > 2]
+    """"Konè M." → {"kone"}, "Milinkovic-Savic V." → {"milinkovic-savic", "milinkovic", "savic"}, "Yıldız" → {"yildiz"}."""
+    toks = [w for w in F.norm(str(nome).lower().translate(TRANSLIT)).replace(".", " ").split() if len(w) > 2]
     out = set(toks)
     for w in toks:
         out |= {p for p in w.split("-") if len(p) > 2}

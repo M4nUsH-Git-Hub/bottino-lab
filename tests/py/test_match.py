@@ -84,6 +84,10 @@ class TestMatch(unittest.TestCase):
         self.assertEqual([x["nome"] for x in teams[1]["absences"]["da_verificare"]], ["Sconosciuto"])
         self.assertEqual(teams[1]["absences"]["infortunati"], [])   # Zaccagni è della Lazio, non del Napoli
 
+    def test_special_letters(self):
+        self.assertTrue(M.in_squad("Yildiz", ["Kenan Yıldız"]))
+        self.assertTrue(M.in_squad("Hojlund", ["Rasmus Højlund"]))
+
     def test_no_token(self):
         out = M.run("", {}, prev={"fixtures": [1], "updated": "x"})
         self.assertFalse(out["source"]["ok"])
