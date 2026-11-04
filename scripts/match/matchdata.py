@@ -167,9 +167,19 @@ def alerts_of(text_norm):
     return cat, keys
 
 
+NAME_STOP = {"fc", "ac", "as", "ss", "ssc", "cf", "sc", "rc", "afc", "cfc", "us", "sl", "cp", "sk", "fk", "bv", "vfb", "vfl", "tsg", "1907", "1909", "1913"}
+TV_WORDS = ("diretta streaming", "dove vedere", "in tv", "diretta tv", "streaming gratis", "canale tv")
+
+
+def common_name(t):
+    """Nome con cui i giornali italiani chiamano la squadra: "RC Lens" → "Lens", "Como 1907" → "Como"."""
+    words = [w for w in (t["short"] or t["name"]).split() if w.lower().strip(".") not in NAME_STOP and not w.isdigit()]
+    return " ".join(words) or t["short"]
+
+
 def team_news(t, aliases, now, sleep=1.0):
-    terms = team_terms(t, aliases)
-    q = t["short"]
+    terms = team_terms(t, aliases) + [F.norm(common_name(t))]
+    q = common_name(t)
     feeds = [F.gnews_url(f'site:sport.sky.it "{q}" when:3d'), F.gnews_url(f'"{q}" calcio when:2d')]
     raw, errors = [], 0
     for u in feeds:
@@ -186,6 +196,8 @@ def team_news(t, aliases, now, sleep=1.0):
         tn = F.norm(it["title"] + " " + it["desc"])
         iid = F.item_id(it["title"])
         if not src or iid in seen or not any(f" {x} " in f" {tn} " or tn.startswith(x) for x in terms):
+            continue
+        if any(w in tn for w in TV_WORDS):
             continue
         seen.add(iid)
         cat, alerts = alerts_of(tn)

@@ -54,6 +54,11 @@ class TestMatch(unittest.TestCase):
         self.assertIn("lione", M.team_terms(lyon, aliases))
         self.assertIn("lyon", M.team_terms(lyon, aliases))
 
+    def test_common_name(self):
+        self.assertEqual(M.common_name({"short": "RC Lens", "name": "Racing Club de Lens"}), "Lens")
+        self.assertEqual(M.common_name({"short": "Como 1907", "name": "Como 1907"}), "Como")
+        self.assertEqual(M.common_name({"short": "Man City", "name": "Manchester City FC"}), "Man City")
+
     def test_alerts(self):
         cat, al = M.alerts_of(M.F.norm("Como, Fabregas pensa al turnover contro il Lens"))
         self.assertIn("turnover", al)
