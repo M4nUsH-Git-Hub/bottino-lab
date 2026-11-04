@@ -71,6 +71,19 @@ class TestMatch(unittest.TestCase):
         self.assertEqual(teams[1]["absences"]["infortunati"][0]["nome"], "Jones C.")
         self.assertIn("absences", teams[2])
 
+    def test_absences_resolved_with_squads(self):
+        teams = {1: {"short": "Napoli", "name": "SSC Napoli", "squad": ["Vanja Milinković-Savić", "Rasmus Højlund"]},
+                 2: {"short": "Lazio", "name": "SS Lazio", "squad": ["Mattia Zaccagni"]}}
+        info = {"Napoli": {"avversario": "Lazio", "infortunati": [], "dubbio": [],
+                           "da_verificare": [{"nome": "Milinkovic-Savic V.", "nota": "", "tipo": "dubbio"},
+                                             {"nome": "Zaccagni", "nota": "", "tipo": "infortunati"},
+                                             {"nome": "Sconosciuto", "nota": "", "tipo": "infortunati"}]},
+                "Lazio": {"avversario": "Napoli", "infortunati": [], "dubbio": [], "da_verificare": []}}
+        M.attach_absences(teams, info)
+        self.assertEqual([x["nome"] for x in teams[1]["absences"]["dubbio"]], ["Milinkovic-Savic V."])
+        self.assertEqual([x["nome"] for x in teams[1]["absences"]["da_verificare"]], ["Sconosciuto"])
+        self.assertEqual(teams[1]["absences"]["infortunati"], [])   # Zaccagni è della Lazio, non del Napoli
+
     def test_no_token(self):
         out = M.run("", {}, prev={"fixtures": [1], "updated": "x"})
         self.assertFalse(out["source"]["ok"])

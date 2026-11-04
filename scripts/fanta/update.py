@@ -391,6 +391,8 @@ def _parse_block(lines, d, e):
     sec, items, raw = None, {k: [] for k in set(SECTION_NAMES.values())}, {k: [] for k in set(SECTION_NAMES.values())}
     for k in range(i, e):
         n = norm(lines[k])
+        if _is_footer(lines[k]):
+            break
         if n in SECTION_NAMES:
             sec = SECTION_NAMES[n]
         elif sec:
@@ -408,6 +410,16 @@ def _parse_block(lines, d, e):
             nxt = lst[k + 1] if k + 1 < len(lst) else ""
             b[key][norm(nm)] = nxt if len(nxt) > 25 else ""
     return b
+
+
+FOOTER_STARTS = ("probabili formazioni serie a per il fantacalcio", "quali sono i ballottaggi", "consigli fantacalcio",
+                 "le nostre app", "strumenti", "supporto", "seguici")
+
+
+def _is_footer(line):
+    """Fine dei dati della pagina: testi della redazione, orari delle notizie, menu in fondo."""
+    n = norm(line)
+    return n.startswith(FOOTER_STARTS) or len(line) > 220 or re.fullmatch(r"\d{1,2}:\d{2}", n) is not None
 
 
 def _entries(lst, with_notes):

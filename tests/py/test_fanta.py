@@ -120,7 +120,7 @@ class TestFanta(unittest.TestCase):
         "Diffidati", "Nessun calciatore", "Nessun calciatore",
         "Infortunati", "Nessun calciatore", "Nessun calciatore",
         "In dubbio", "Nessun calciatore", "Nessun calciatore",
-        "Footer del sito", "Privacy",
+        "Probabili formazioni serie A per il Fantacalcio", "Quali sono i ballottaggi potenziali?", "11:32", "Le nostre app", "Privacy",
     ])
 
     def test_fc_blocks(self):
@@ -139,6 +139,7 @@ class TestFanta(unittest.TestCase):
         self.assertEqual([x["nome"] for x in teams["Juventus"]["infortunati"]], ["Yildiz"])
         self.assertEqual([x["nome"] for x in teams["Milan"]["squalificati"]], ["Gila"])  # ospite vuoto → casa
         self.assertEqual(teams["Bologna"]["squalificati"], [])
+        self.assertEqual(teams["Bologna"]["dubbio"], [])                               # il fondo pagina non entra
         self.assertFalse(teams["Juventus"]["casa"])
         self.assertEqual(teams["Juventus"]["avversario"], "Genoa")
 

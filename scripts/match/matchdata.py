@@ -213,12 +213,44 @@ def serie_a_absences(fanta):
     return (fanta or {}).get("serie_a") or {}
 
 
+def _surname_tokens(nome):
+    """"Konè M." → {"kone"}, "Milinkovic-Savic V." → {"milinkovic-savic", "milinkovic", "savic"}."""
+    toks = [w for w in F.norm(nome).replace(".", " ").split() if len(w) > 2]
+    out = set(toks)
+    for w in toks:
+        out |= {p for p in w.split("-") if len(p) > 2}
+    return out
+
+
+def in_squad(nome, squad):
+    st = _surname_tokens(nome)
+    return bool(st) and any(st & _surname_tokens(p) for p in squad or [])
+
+
+def _same(name, t):
+    n = F.norm(name)
+    return n in (F.norm(t["short"]), F.norm(t["name"]), F.norm(common_name(t))) or F.norm(t["short"]).startswith(n + " ")
+
+
 def attach_absences(teams, absences):
+    """Assenze di Serie A dalla sezione Fanta. Quelle senza squadra certa vengono assegnate con la rosa ufficiale."""
     for t in teams.values():
         for name, info in absences.items():
-            if F.norm(name) in (F.norm(t["short"]), F.norm(t["name"])) or F.norm(t["short"]).startswith(F.norm(name) + " "):
-                t["absences"] = info
-                break
+            if not _same(name, t):
+                continue
+            info = {k: (list(v) if isinstance(v, list) else v) for k, v in info.items()}
+            opp = next((o for o in teams.values() if _same(info.get("avversario", ""), o)), None)
+            left = []
+            for x in info.get("da_verificare") or []:
+                mine = in_squad(x["nome"], t.get("squad"))
+                theirs = in_squad(x["nome"], (opp or {}).get("squad"))
+                if mine and not theirs:
+                    info.setdefault(x.get("tipo", "infortunati"), []).append({"nome": x["nome"], "nota": x.get("nota", "")})
+                elif not mine and not theirs:
+                    left.append(x)
+            info["da_verificare"] = left
+            t["absences"] = info
+            break
 
 
 # ── Giro completo ─────────────────────────────────────────────────────────────
@@ -253,6 +285,13 @@ def run(token, aliases, fanta=None, prev=None, do_news=True):
         except Exception as e:
             log(f"[dati] classifica {c}: {e}")
     teams, fixtures = build(matches, standings, names, now)
+    # rose ufficiali di Serie A: servono ad assegnare gli assenti alla squadra giusta
+    try:
+        for tm in api.get("/competitions/SA/teams").get("teams", []):
+            if tm.get("id") in teams:
+                teams[tm["id"]]["squad"] = [p.get("name", "") for p in tm.get("squad") or []]
+    except Exception as e:
+        log(f"[dati] rose Serie A: {e}")
     log(f"[dati] competizioni {len(status['comps'])}/{len(COMPS)}, partite {len(matches)}, squadre {len(teams)}, in arrivo {len(fixtures)}")
 
     # precedenti per le partite più vicine
@@ -276,6 +315,8 @@ def run(token, aliases, fanta=None, prev=None, do_news=True):
         log(f"[notizie] squadre {len(ids)}, notizie {n_items}, errori {n_err}")
 
     attach_absences(teams, serie_a_absences(fanta))
+    for t in teams.values():
+        t.pop("squad", None)
     status["ok"] = bool(status["comps"])
     return {"version": 1, "updated": F.iso(now), "source": status, "competitions": names,
             "fixtures": fixtures, "teams": {str(k): v for k, v in teams.items()},
