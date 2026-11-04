@@ -478,6 +478,17 @@ def fc_fetch_text():
             page.mouse.wheel(0, 4000)
             page.wait_for_timeout(400)
         text = page.eval_on_selector("body", "e => e.innerText")
+        if DEBUG_FC:
+            # struttura HTML della prima sezione "Dettaglio calciatori", per attribuire le assenze alle squadre
+            html_dbg = page.evaluate("""() => {
+              const h = [...document.querySelectorAll('*')].find(e => e.children.length === 0 && e.textContent.trim() === 'Infortunati');
+              if (!h) return 'intestazione non trovata';
+              let a = h;
+              for (let i = 0; i < 8 && a.parentElement; i++) { a = a.parentElement; if (a.innerText.includes('Squalificati') && a.innerText.includes('In dubbio')) break; }
+              return a.outerHTML.replace(/<(script|style|svg)[\\s\\S]*?<\\/\\1>/g, '').slice(0, 15000);
+            }""")
+            with open(DEBUG_FC + ".html.txt", "w", encoding="utf-8") as f:
+                f.write(html_dbg)
         browser.close()
     return text
 

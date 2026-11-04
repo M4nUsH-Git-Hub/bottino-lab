@@ -68,7 +68,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          mkdir out && cp fanta.json out/ && { [ -f fc_debug.txt ] && cp fc_debug.txt out/ || true; } && cd out
+          mkdir out && cp fanta.json out/ && { cp fc_debug.txt* out/ 2>/dev/null || true; } && cd out
           git init -q -b fanta-data
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
