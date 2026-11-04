@@ -44,6 +44,8 @@ jobs:
           node-version: 22
       - name: Segna la versione
         run: node scripts/stamp-version.mjs
+      - name: Pacchetto dell'estensione
+        run: cd extension && zip -r ../docs/bottino-lab-estensione.zip . -x '.*'
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

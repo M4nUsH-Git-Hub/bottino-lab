@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<style>
+  :root { --ink:#13201A; --mint:#BFEBD8; --accent:#0E6E52; --muted:#5A6B62; --bg:#EEF2EF; }
+  body { margin:0; width:290px; font:14px/1.45 system-ui,-apple-system,"Segoe UI",sans-serif; background:var(--bg); color:var(--ink); }
+  header { background:var(--ink); color:#EEF2EF; display:flex; align-items:center; gap:8px; padding:10px 12px; }
+  header img { width:26px; height:26px; }
+  header b { font:800 18px/1 "Arial Narrow",system-ui,sans-serif; text-transform:uppercase; letter-spacing:.5px; }
+  header b span { color:var(--mint); }
+  main { padding:12px; display:flex; flex-direction:column; gap:10px; }
+  button { font:inherit; font-weight:700; border:0; border-radius:8px; padding:11px 12px; background:var(--accent); color:#fff; cursor:pointer; }
+  button:disabled { opacity:.6; cursor:default; }
+  #status { min-height:1.4em; color:var(--muted); }
+  #status.ok { color:var(--accent); font-weight:600; }
+  #status.err { color:#B03A44; }
+  small { color:var(--muted); font-size:12px; }
+</style>
+</head>
+<body>
+<header><img src="icons/icon48.png" alt=""><b>Bottino <span>Lab</span></b></header>
+<main>
+  <button id="send" type="button">Invia questa pagina</button>
+  <div id="status" role="status"></div>
+  <small>Sulla pagina del quiz manda la domanda; sulla pagina di una partita manda le quote. Se selezioni del testo, viene inviato solo quello.</small>
+</main>
+<script src="popup.js"></script>
+</body>
+</html>

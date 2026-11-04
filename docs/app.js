@@ -1006,6 +1006,62 @@ Chiudi con i dati pronti da copiare nelle caselle di Bottino Lab: quote, statist
     }
   });
 
+  // ---------- dati inviati dall'estensione (pagina del quiz o del bookmaker) ----------
+  const ROW_OF = [[/sisal/i, 0, 'Sisal'], [/bet365/i, 1, 'Bet365'], [/goldbet/i, 2, 'Goldbet'], [/eurobet/i, 2, 'Eurobet'], [/snai/i, 2, 'Snai'], [/lottomatica/i, 2, 'Lottomatica'], [/betflag/i, 2, 'Betflag']];
+  let importMarkets = [], importSrc = null;
+  function handleImport(p) {
+    const I = window.BLImport;
+    if (!I || !p || !p.text) return;
+    const blocks = I.quizBlocks(p.text);
+    if (blocks.length) {
+      location.hash = '#dati';
+      $('pasteBox').value = blocks[0].text;
+      applyParse();
+      toast('Domanda ricevuta dall\'estensione');
+      return;
+    }
+    const ms = I.markets(p.text);
+    if (!ms.length) { location.hash = '#dati'; toast('Nella pagina non ho trovato né la domanda né quote leggibili'); return; }
+    let host = '';
+    try { host = new URL(p.url).hostname.replace(/^www\./, ''); } catch (e) { /* indirizzo non valido */ }
+    const row = ROW_OF.find(([re]) => re.test(host)) || [null, 2, host.split('.')[0]];
+    importSrc = { host, row: row[1], bk: row[2], url: p.url };
+    importMarkets = I.rank(ms, { type: state.type, params: state.params, home: state.event.home, away: state.event.away }).slice(0, 10);
+    location.hash = '#dati';
+    renderImport();
+    $('importBox').scrollIntoView({ block: 'center', behavior: 'smooth' });
+  }
+  function renderImport() {
+    const box = $('importBox');
+    if (!importMarkets.length) { box.hidden = true; return; }
+    box.hidden = false;
+    const best = importMarkets[0];
+    box.innerHTML = `<div class="ib-head"><b>Quote lette da ${esc(importSrc.host)}</b><span class="muted small">scegli il mercato della domanda: va nella riga ${esc(importSrc.bk)}</span><button class="btn ghost small" type="button" data-imp="close">Chiudi</button></div>
+      <div class="ib-list">${importMarkets.map((m, i) => `<button type="button" class="ib-m ${i === 0 && best.score > 4 ? 'best' : ''}" data-imp="${i}">
+        <span class="ib-t">${esc(m.title || 'Mercato senza nome')}${i === 0 && best.score > 4 ? ' <span class="pill si">Consigliato</span>' : ''}</span>
+        <span class="ib-o">${m.outcomes.map(o => `<span>${esc(o.text)} <b>${String(o.odd.toFixed(2)).replace('.', ',')}</b></span>`).join('')}</span></button>`).join('')}</div>`;
+  }
+  function useImport(i) {
+    const m = importMarkets[i];
+    const o = m && window.BLImport.toOdds(m, { type: state.type, params: state.params });
+    if (!o) return;
+    while (state.odds.length <= importSrc.row) state.odds.push(emptyRow());
+    const r = state.odds[importSrc.row];
+    r.bk = importSrc.bk.charAt(0).toUpperCase() + importSrc.bk.slice(1); r.a = o.a; r.b = o.b; r.c = o.c;
+    importMarkets = []; renderImport();
+    renderOdds(); update();
+    toast(`Quote ${r.bk} inserite: ${m.title}`);
+  }
+  window.addEventListener('message', e => {
+    if (e.source !== window || !e.data || e.data.type !== 'bottino-lab-import') return;
+    handleImport(e.data.payload);
+  });
+  document.addEventListener('click', e => {
+    const b = e.target.closest('[data-imp]');
+    if (!b) return;
+    if (b.dataset.imp === 'close') { importMarkets = []; renderImport(); } else useImport(Number(b.dataset.imp));
+  });
+
   $('btnParse').addEventListener('click', applyParse);
   $('pasteBox').addEventListener('keydown', e => { if (e.key === 'Enter' && (e.ctrlKey || e.metaKey)) applyParse(); });
   // Il testo incollato sostituisce quello già presente: la casella contiene una domanda alla volta.

@@ -106,6 +106,7 @@
               <tbody id="oddsBody"></tbody>
             </table>
           </div>
+          <div class="importbox" id="importBox" hidden></div>
           <div class="btns" style="margin-top:10px"><button class="btn ghost small" id="btnAddRow" type="button">Aggiungi bookmaker</button></div>
           <div class="summary" id="oddsSummary"></div>
           <div class="where"><span>Apri le quote</span><div class="quicklinks" id="oddsSrc"></div></div>
@@ -286,6 +287,22 @@
       <li><svg class="gi" aria-hidden="true"><use href="#i-clock"/></svg><b>Risultato</b><span>a fine partita, nello Storico</span></li>
     </ol>
 
+    <h2 class="gtitle">Estensione per Chrome</h2>
+    <div class="gext">
+      <div class="gext-main">
+        <b>Un clic al posto del copia e incolla</b>
+        <span>Sulla pagina del quiz manda la domanda. Sulla pagina Sisal della partita legge le quote: scegli il mercato e la riga si compila.</span>
+        <a class="btn pri" href="bottino-lab-estensione.zip" download>Scarica l'estensione</a>
+      </div>
+      <ol class="gext-steps">
+        <li>Estrai lo zip in una cartella</li>
+        <li>Apri <span class="mono">chrome://extensions</span></li>
+        <li>Attiva <b>Modalità sviluppatore</b></li>
+        <li><b>Carica estensione non pacchettizzata</b> e scegli la cartella</li>
+        <li>Fissa l'icona del sacco nella barra</li>
+      </ol>
+    </div>
+
     <h2 class="gtitle">Da ricordare</h2>
     <div class="grules">
       <div><svg class="gi" aria-hidden="true"><use href="#i-odds"/></svg><b>Le quote contano di più</b><span>Pesano il 60%. Il margine del bookmaker viene tolto da solo.</span></div>
@@ -336,6 +353,7 @@
 <script src="templates.js"></script>
 <script src="parser.js"></script>
 <script src="matchdata.js"></script>
+<script src="importer.js"></script>
 <script src="app.js"></script>
 <script src="fanta.js"></script>
 </body>
