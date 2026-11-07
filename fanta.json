@@ -1,0 +1,3852 @@
+{
+ "version": 1,
+ "updated": "2026-11-07T17:43:07Z",
+ "rosa": [
+  {
+   "ruolo": "P",
+   "nome": "Daffara",
+   "squadra": "Parma",
+   "costo": 1.0,
+   "qt": 5.0,
+   "fvm": 1.0,
+   "mv": 0.0,
+   "fm": 0.0,
+   "pv": 0.0
+  },
+  {
+   "ruolo": "P",
+   "nome": "Corvi",
+   "squadra": "Parma",
+   "costo": 2.0,
+   "qt": 5.0,
+   "fvm": 5.0,
+   "mv": 6.0,
+   "fm": 4.33,
+   "pv": 6.0
+  },
+  {
+   "ruolo": "P",
+   "nome": "Maignan",
+   "squadra": "Milan",
+   "costo": 30.0,
+   "qt": 15.0,
+   "fvm": 26.0,
+   "mv": 6.17,
+   "fm": 5.33,
+   "pv": 6.0
+  },
+  {
+   "ruolo": "D",
+   "nome": "Ramon",
+   "squadra": "Como",
+   "costo": 2.0,
+   "qt": 13.0,
+   "fvm": 18.0,
+   "mv": 6.25,
+   "fm": 6.75,
+   "pv": 6.0
+  },
+  {
+   "ruolo": "D",
+   "nome": "Lucumì",
+   "squadra": "Juventus",
+   "costo": 2.0,
+   "qt": 8.0,
+   "fvm": 9.0,
+   "mv": 6.0,
+   "fm": 5.8,
+   "pv": 5.0
+  },
+  {
+   "ruolo": "D",
+   "nome": "Gila",
+   "squadra": "Milan",
+   "costo": 20.0,
+   "qt": 13.0,
+   "fvm": 16.0,
+   "mv": 6.33,
+   "fm": 6.25,
+   "pv": 6.0
+  },
+  {
+   "ruolo": "D",
+   "nome": "Scalvini",
+   "squadra": "Atalanta",
+   "costo": 1.0,
+   "qt": 9.0,
+   "fvm": 11.0,
+   "mv": 5.83,
+   "fm": 5.83,
+   "pv": 6.0
+  },
+  {
+   "ruolo": "D",
+   "nome": "Vojvoda",
+   "squadra": "Udinese",
+   "costo": 1.0,
+   "qt": 7.0,
+   "fvm": 9.0,
+   "mv": 5.67,
+   "fm": 5.67,
+   "pv": 6.0
+  },
+  {
+   "ruolo": "D",
+   "nome": "Zortea",
+   "squadra": "Bologna",
+   "costo": 1.0,
+   "qt": 7.0,
+   "fvm": 9.0,
+   "mv": 6.0,
+   "fm": 6.0,
+   "pv": 4.0
+  },
+  {
+   "ruolo": "D",
+   "nome": "Akanji",
+   "squadra": "Inter",
+   "costo": 12.0,
+   "qt": 13.0,
+   "fvm": 17.0,
+   "mv": 5.8,
+   "fm": 5.8,
+   "pv": 5.0
+  },
+  {
+   "ruolo": "D",
+   "nome": "Bastoni",
+   "squadra": "Inter",
+   "costo": 22.0,
+   "qt": 12.0,
+   "fvm": 19.0,
+   "mv": 6.0,
+   "fm": 5.9,
+   "pv": 5.0
+  },
+  {
+   "ruolo": "C",
+   "nome": "Cacciamani",
+   "squadra": "Torino",
+   "costo": 1.0,
+   "qt": 9.0,
+   "fvm": 13.0,
+   "mv": 6.08,
+   "fm": 6.25,
+   "pv": 6.0
+  },
+  {
+   "ruolo": "C",
+   "nome": "Atta",
+   "squadra": "Fiorentina",
+   "costo": 15.0,
+   "qt": 14.0,
+   "fvm": 28.0,
+   "mv": 5.4,
+   "fm": 5.4,
+   "pv": 5.0
+  },
+  {
+   "ruolo": "C",
+   "nome": "Colpani",
+   "squadra": "Monza",
+   "costo": 1.0,
+   "qt": 8.0,
+   "fvm": 7.0,
+   "mv": 5.75,
+   "fm": 6.5,
+   "pv": 4.0
+  },
+  {
+   "ruolo": "C",
+   "nome": "Koopmeiners",
+   "squadra": "Juventus",
+   "costo": 1.0,
+   "qt": 8.0,
+   "fvm": 7.0,
+   "mv": 6.25,
+   "fm": 7.25,
+   "pv": 4.0
+  },
+  {
+   "ruolo": "C",
+   "nome": "Jones C.",
+   "squadra": "Inter",
+   "costo": 18.0,
+   "qt": 12.0,
+   "fvm": 14.0,
+   "mv": 6.0,
+   "fm": 6.0,
+   "pv": 4.0
+  },
+  {
+   "ruolo": "C",
+   "nome": "Modric",
+   "squadra": "Milan",
+   "costo": 20.0,
+   "qt": 12.0,
+   "fvm": 21.0,
+   "mv": 6.08,
+   "fm": 6.25,
+   "pv": 6.0
+  },
+  {
+   "ruolo": "C",
+   "nome": "Pulisic",
+   "squadra": "Milan",
+   "costo": 40.0,
+   "qt": 25.0,
+   "fvm": 76.0,
+   "mv": 6.5,
+   "fm": 7.67,
+   "pv": 3.0
+  },
+  {
+   "ruolo": "C",
+   "nome": "Politano",
+   "squadra": "Napoli",
+   "costo": 26.0,
+   "qt": 11.0,
+   "fvm": 18.0,
+   "mv": 5.9,
+   "fm": 6.6,
+   "pv": 5.0
+  },
+  {
+   "ruolo": "A",
+   "nome": "Diao",
+   "squadra": "Como",
+   "costo": 23.0,
+   "qt": 14.0,
+   "fvm": 32.0,
+   "mv": 6.33,
+   "fm": 7.33,
+   "pv": 6.0
+  },
+  {
+   "ruolo": "A",
+   "nome": "Neres",
+   "squadra": "Napoli",
+   "costo": 6.0,
+   "qt": 5.0,
+   "fvm": 7.0,
+   "mv": 5.83,
+   "fm": 5.83,
+   "pv": 3.0
+  },
+  {
+   "ruolo": "A",
+   "nome": "Woltemade",
+   "squadra": "Juventus",
+   "costo": 153.0,
+   "qt": 21.0,
+   "fvm": 25.0,
+   "mv": 5.67,
+   "fm": 5.67,
+   "pv": 3.0
+  },
+  {
+   "ruolo": "A",
+   "nome": "Adams C.",
+   "squadra": "Torino",
+   "costo": 2.0,
+   "qt": 12.0,
+   "fvm": 12.0,
+   "mv": 6.5,
+   "fm": 8.0,
+   "pv": 4.0
+  },
+  {
+   "ruolo": "A",
+   "nome": "Vitinha O.",
+   "squadra": "Genoa",
+   "costo": 1.0,
+   "qt": 6.0,
+   "fvm": 6.0,
+   "mv": 5.6,
+   "fm": 5.5,
+   "pv": 5.0
+  },
+  {
+   "ruolo": "A",
+   "nome": "De Ketelaere",
+   "squadra": "Atalanta",
+   "costo": 46.0,
+   "qt": 15.0,
+   "fvm": 32.0,
+   "mv": 5.75,
+   "fm": 5.75,
+   "pv": 6.0
+  }
+ ],
+ "sources": {
+  "news": {
+   "ok": true,
+   "when": "2026-11-07T17:43:07Z",
+   "feeds": 28,
+   "errors": 0,
+   "items": 51,
+   "error": ""
+  },
+  "probabili": {
+   "ok": true,
+   "when": "2026-11-07T00:04:11Z",
+   "found": 25,
+   "error": ""
+  }
+ },
+ "news": [
+  {
+   "id": "kone verso una maglia da titolare: le probabili formazioni di roma-sassuolo",
+   "title": "Koné verso una maglia da titolare: le probabili formazioni di Roma-Sassuolo",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxORVlTOVZGX1U3cEhNcDQ5YXJ2OXZwei1PUFhxem5mLXBHVTRJMXpQZ0xINVNnMGpseEtidDQ5WFluWEJvX0c1dHpYTDdGcFVqMmdBS0pMT1dhSlBhVE5nbW15Wm1lUzFBWjBiaVVDbDlfUU8yU1BtZU0zaWFaX3VzWVZ4LS1mbnpFSVYwb1ZndU92S05aaEZkRw?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-11-07T16:28:31Z",
+   "players": [],
+   "category": "formazione",
+   "first_seen": "2026-11-07T17:43:07Z"
+  },
+  {
+   "id": "como, le ultime sui rientri di chalobah e diao e la presenza di papaccioli in vista dell'inter",
+   "title": "Como, le ultime sui rientri di Chalobah e Diao e la presenza di Papaccioli in vista dell'Inter",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNUjNnUUZ0eXZ2ejRGTkJqT3BTb0ItRVNJTGZDVHlzWk9PU1pyTFcwV3hkblI4VHU2bVVZZFpQQVZwWHVUV20tOUVUb2dQOUhyNmR1ZWJoZ3pGOTltWHZ4WmRKRkxqRXlEdU5rYTFwOXotMTdDSjJsdTdKc3BnanIxb0VIM0lUbzU4LVZHVVExRHBMek1zQ3RDQWY0WDNpRnpXRFpVcWhBbWlrYVlPNGJEZkVwb0ZKRmpEMzFqd9IBwgFBVV95cUxQaGFXSEwwNGhETVNwaU90bEo4dTdleVNVYVlXX04taUhkMUVYNnNnRGVsOElsUm9BVnI2a19BLVVNV0tGQkRodzBvVjltR2NmSUhpNVRrbzBnRDNfaVJncmZQZ1lRUmxtcUMzSGI2dDlscWtDX2k0WmZEVFNYWDhrdTR4U3dfbVpMMktKeld4LVBiYUo2UndPa25Ud3dLYVdMbHFTZlYtbzhLMWV2d2JCRkprdHFLX3lSQWo2aFc3ZHp5UQ?oc=5",
+   "source": "Gazzetta dello Sport",
+   "sky": false,
+   "ts": "2026-11-07T15:33:03Z",
+   "players": [
+    "Diao"
+   ],
+   "category": "recupero",
+   "first_seen": "2026-11-07T17:43:07Z"
+  },
+  {
+   "id": "como, fabregas: \"chalobah e diao non ci saranno contro l'inter\"",
+   "title": "Como, Fabregas: \"Chalobah e Diao non ci saranno contro l'Inter\"",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQSHdpQ0EyVl9LMm1hMm8zY3R6OEJPRFZ5aEI5QkhoSkJGcHdaS2hoZm40a3RGWUExV2Q2OTh1ZnZ1b1kxSVF5RlBMaGFpajVGY2pVU2xYdmhoQ0VNYmxnVmxwWEFyWkstS3pPeHRic1NLNmJxcFpNWXNOblNFMTY2R1M1RWN6eDNqSmtKU3A2RG4wQUZBYmx1dkZqYVRnZksxdlAyWW1GdzFPYk50cVVLdGRTdXdEV1YtUmV2ZGlsZWLSAcYBQVVfeXFMTnoybWg1ZndGTmNPYzhZVGhhQ1FfemJCemhvc2FxSFphTUdzMFZ6aUtOV2xTejFqbWtFckNlU09pRVUxMmhiTHROb244SzZFLWNHSE5sLXg1VW5xTjJqckFmNGJpOWpGY0l6Z29CTjN2T3hQNWxtSHdXSzlsaDBnX1doN0Y0MGFpR0lyeXBEc1lHWDkwRG1sdmYzbWxRWmlHcWxmSjBnSkM1UlpBdmVHR21WNWR3VEEwWDM0cWJSdVJDVnhYVTFB?oc=5",
+   "source": "Fantacalcio.it",
+   "sky": false,
+   "ts": "2026-11-07T14:21:00Z",
+   "players": [
+    "Diao"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-07T17:43:07Z"
+  },
+  {
+   "id": "inter como, le probabili formazioni della partita di serie a",
+   "title": "Inter Como, le probabili formazioni della partita di serie A",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOUVFaeWJQWGlFMTJWUDVDODAwSGUwdGFYdnpHQk5pa0lsOENCMVRQN24yUW9ZTlJhSnVEUndZSWRSN24xd19fUnU1MWxiTVdfcEV2TVU4UTA1Mlk3dlF2S2lNbzVkYmFPSkpVRnZQeUhGQVdkNF9TbEFibWFDWWxDZFFfWF85ZGVmUi1uX2g0TkFGMU5n?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-11-07T14:12:53Z",
+   "players": [],
+   "category": "formazione",
+   "first_seen": "2026-11-07T17:43:07Z"
+  },
+  {
+   "id": "fiorentina-juventus, le probabili formazioni della partita di serie a",
+   "title": "Fiorentina-Juventus, le probabili formazioni della partita di serie A",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOM0xXdldBY0M5dndjOWdTaVp6X21tcngzQ01oRklBanZES0Z6S0ZvNWVJVWNuTG5LTDlBQVRRZkg3THVfQkgySUN3UVQwb2NXa1VVbUVnN2wtbEFiWm40UGNXczBOWTJlWnRUa01pampFbGQ5N3hsOVUwcFppaTVzSzhGeU1VMld1TEJROUxCY3JPOWFuVDRuQUxOZkdMNU9x?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-11-07T13:43:19Z",
+   "players": [],
+   "category": "formazione",
+   "first_seen": "2026-11-07T17:43:07Z"
+  },
+  {
+   "id": "formazioni ufficiali - la scelta su adams, cacciamani, belghali, fazzini, coulibaly, stulic, oyono e mendy",
+   "title": "FORMAZIONI UFFICIALI - La scelta su Adams, Cacciamani, Belghali, Fazzini, Coulibaly, Stulic, Oyono e Mendy",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNNGlTb09lRUpFd2I0UFFpVnhwOENQa3EzVzFvRm5GZWJuY05SNUY4SzV6WUF1OUs2VkJFRlVLWVdxQXlMQV9lLVVaVi1CaG9la19zQlBMMG5TUGIzd3FBQzhSLXA1cUNJZXhjSWF4WnBHWDFCR2ZCNXlDTjAtelk5WUlFNF8tb3ZCcWV0YjJvazAzX3Jsbjc0eFpPRXM4TGhmMnFSMFByN19qLVNmN01zajBVaGdMeGNpTnVwTG13WjNPdkNwSlHSAcsBQVVfeXFMT0lpdkMtdHZ4VzZSM0Q0SXN4VW9iYjM4RmRzay1tcER1eDdmZ0VNOXp2YTh3cGhTSEQwbHhQSnZzVkR2bFBFTVdyVUxFSVVGaVRtZnhXS0V6ajExTkcwM19hVlhFNEdxZmhFVnZkb1g1NDNfVWhkekVJenRXWkpPdkF3WGtXUDVuT2tLQkNCa0FZb3VoRlJON3hJNkFvVTdLWDFMVWxqYUs1WVJDdFVYNGg3UzUta1IyYjh5RjVlVXc4dFV0Um1XVlhhLVU?oc=5",
+   "source": "SOS Fanta",
+   "sky": false,
+   "ts": "2026-11-07T13:30:51Z",
+   "players": [
+    "Cacciamani"
+   ],
+   "category": "formazione",
+   "first_seen": "2026-11-07T17:43:07Z"
+  },
+  {
+   "id": "torino-lecce, le formazioni ufficiali: adams fuori! da belghali a cacciamani, tiago gabriel e stulic, le scelte",
+   "title": "Torino-Lecce, le formazioni ufficiali: Adams fuori! Da Belghali a Cacciamani, Tiago Gabriel e Stulic, le scelte",
+   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPZkd0cUlVMXJtSFVPZklLZnpKUEliS0NrRTByTG1PM09ZNlVxRy1ySHMzU0tEelNXUDlPcWhKS1VxOW83TU1KVEJ2am5ybUZDV01pT3RCUS1SUzV3Tl9wMzZSeU9mcWhua0NRQW1vNjl0cUpWRmY1NUFYajBvNlBaSUZETF9LWC01RGstZHdJOWU2RF9VaDBaOTJVb0MxVkFKVGZlZDlfMHE4ZDBHenlUalU4SGQ1R1JMTm1Yc0hjZHhZWnhuOFpJOEFob08yN1oz0gHWAUFVX3lxTFB0MTl5NGZSZU5ZMmVNZ0NkY1l0SjRqdzJYeklqa0UzNHdjNEptT2dXWWdjWE9yTjdPcV83WUZVTTB5c1I3aEZRV3Rqd1RpU01hNXl5RVBXX0hlSGR2dUdROWp4Vm5nOHBzRDZndU9kakhYZmtKb2RPdGlhVXZnU21rc1NkVjRmQk90cUlqWGJxRC00dXVZR1JraFRjU09TWWFreDB3dHR0UGtUUGpDNlhNaXhhZHVIMF9Ba1hUY1VUMXFTVDBFcThsZkRFSHRRMWFiaVhOcHc?oc=5",
+   "source": "SOS Fanta",
+   "sky": false,
+   "ts": "2026-11-07T13:00:10Z",
+   "players": [
+    "Cacciamani",
+    "Adams C."
+   ],
+   "category": "formazione",
+   "first_seen": "2026-11-07T17:43:07Z"
+  },
+  {
+   "id": "fiorentina, vanoli: \"domani e la partita. atta non recupera, ranieri si\"",
+   "title": "Fiorentina, Vanoli: \"Domani è La partita. Atta non recupera, Ranieri sì\"",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNd2ljekFpUlI4bHVJOTJUNXRncUxFemdyaUJiUlN0VGlMUVFlWTFwbmVHdXh4YzdVSE40VTZKblVTNzdwZlg3UjRCd0UzX05tZGtnaUl5bl9OVExvb2F2NndBbVZkM2xHWnR6cHpwTTFNalMzS2VGd3NGTFlndVNBMzBscHVCVmpiS09kX3Y5ZEtYY2JyR3dGaUJuVUdYX0ZGWk5TVGhXMml5YTdDTEtJRlhKeDliVnJra0pn0gHAAUFVX3lxTE9Yb2lpUHhsU0pQakNlSHNVZGdoSWt3X1dhUjgzRkdZMW1GOV9aYXRQNmpsdEx1bGxiQVp6Zk5UTkRuVEJSRXBoaVJXOExfbnJKR3Q2QUZneWxCV1ZEUWpWUXFUNzc2TmhUcW1OUjZ6N2ZQa293VmZTQXd1cEFHRUxLc0YwejhWd3I5N0lKMTc4R19VdHJobXM1T0YwUDBQMDdYNlhUSkI4WW9PSGt1MEE3cmVZaDBMblkxRElkaU1RNw?oc=5",
+   "source": "Fantacalcio.it",
+   "sky": false,
+   "ts": "2026-11-07T11:45:00Z",
+   "players": [
+    "Atta"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-07T17:43:07Z"
+  },
+  {
+   "id": "milan, l'eterno modric: tra record e sogno scudetto a 41 anni",
+   "title": "Milan, l'eterno Modric: tra record e sogno scudetto a 41 anni",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOU0dFT3UtR00yTTljWU5RbXVPaHZFZWtCTVZvYVZsT0wxVVZQazh3cmhDZmVoMmtRV1dDR0dhX2JRUFFEa2xlcnJweXI3RV9BaXBLSVg2ekgtemI0anhpMzRhMnc5MlVIaXVtTXFETk1GWmZYcS1CNXZzSGR1eS1sOExvMGFkMjFtQkdWczY3ZEJZNmxuTkt5bjk5UF9PcEE1TUhrYXNwY0dQbW9nX2Jj0gG0AUFVX3lxTE5kUkU0NXdOWnFzQUFoNkNOZllTTWxCOVF1Wk5BdjdXR05iYnB2eE9DQ0c3VkJCdk1JQ244WDdkejJFVTJSZGpsOHJxSDlBeFBYeGtwNjZFYkZiZENmdm4tNDVFblFHeDVEQm5QZHc5ZDA4NTVUN0NITXR4U3JDUjdEZEM5YV9RVmFfVVZwSUxOemVKMWRia2JEMFZCNUlBeXlSTjFWQ3loMzh6X3pjVnY3bkl0Ng?oc=5",
+   "source": "Gazzetta dello Sport",
+   "sky": false,
+   "ts": "2026-11-07T11:39:05Z",
+   "players": [
+    "Modric"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-07T17:43:07Z"
+  },
+  {
+   "id": "torino-lecce, le probabili formazioni: dai recuperi di belghali e cacciamani a mandragora, coulibaly e stulic",
+   "title": "Torino-Lecce, le probabili formazioni: dai recuperi di Belghali e Cacciamani a Mandragora, Coulibaly e Stulic",
+   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOT1hjdnQ5Q2c4cnFVcjgzOFBoamtGVkpIZjRvZVdVUGxFQm5XazVidmFpX2kwUVFkWnJqaTI0S2lSd0d1TC1uT0dHRTVhWHc0XzJITlcwb2R4b3pkRHZwZlI1OXVGU1pyb093VWx2SmhBWUZWOG9sQVpEb1dNWnFOYTlpQ2xaUldOVzBOUl9WWmJHTlFqNjE4c0FGV1k1ZUY1RlF4YXZwbkJtMWhnOGdsbFQxZDhkUVFRaXdEZTE4WUNYcDRZX1JhN3lqVTdpclFQcVBZbmlHTm_SAd4BQVVfeXFMT3Q2NDRCdldBYlFSQjB6WHoxNWUtZmp1QmtNejh3OWNvSFBRSW9RXzNpYnQ0YldxaVZSbVZaMUczeUpCSTZxQlV0TXVzNlhoeXYyWWNma213RW9UcjJNdHhMdGZSNFFWcjFiU2lEMG5DeGZ2eWJjU0lKM0dBTVBvaEZFMXN6cVVWRWJJNGZ3dXJhWVFRY0NQOUYyS3FkSTA1dmpjSGdSdDR4aU1uLTZLM0dpeVhjbl9pM1VEV1dQMlpYZWZERi1aZThoR2drQlVFWkdJYnRoM2d0dFF6cjJB?oc=5",
+   "source": "SOS Fanta",
+   "sky": false,
+   "ts": "2026-11-07T11:00:02Z",
+   "players": [
+    "Cacciamani"
+   ],
+   "category": "formazione",
+   "first_seen": "2026-11-07T11:39:29Z"
+  },
+  {
+   "id": "torino, i convocati anti-lecce: ok mandragora e cacciamani",
+   "title": "Torino, i convocati anti-Lecce: ok Mandragora e Cacciamani",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNYkU0QVhjU25XNkJHQldQbUc4aXNHeVdSSFg4S3FSaXBndmVKYzFWdjVfS0lvQk44TmhSdGxTU00teXoyQ29oenlEWl8yYVlqeVhRVG5Fcl9fTGNRQTdRNll0RllJV0tJUjNXQmU2d2dGMGhCbUxrbWlETVdoV0NoQ1RXM0JVanI0WDdVWVh2Sm5WZS11Q2pIaVppdGlNRWtMZVdGWENJQUl4Nl9ac0s4QzZUREE1dmkwTE96b9IBwgFBVV95cUxQLW10Sm5EU2gzMmFNdnBvcFdhTC1jeE1jX1VBQzg4emJMaTBnNlVheGVQZ0xwMEJqSV9OaV8xQTNsUkM2SFM1WmMxeEhkUXhZNnpEQ3ZrU0tSUzlQZXNnSl9WanNWOHpTWEJobTdGQlFYeHViTzRkaHVWdTJhOWR3VFMyZE1RcXRVVFNIMWd3R1FIdWJKVUFicTl5elZING5rczNLQWlUcWtHTURqb3RLVlVaTTBFUnRxQ0VwMmZJRmpTQQ?oc=5",
+   "source": "Fantacalcio.it",
+   "sky": false,
+   "ts": "2026-11-07T10:40:00Z",
+   "players": [
+    "Cacciamani"
+   ],
+   "category": "recupero",
+   "first_seen": "2026-11-07T11:39:29Z"
+  },
+  {
+   "id": "fiorentina, pellegrino ha convinto vanoli: e lui il titolare in attacco. ancora out atta",
+   "title": "Fiorentina, Pellegrino ha convinto Vanoli: è lui il titolare in attacco. Ancora out Atta",
+   "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOeERXWjhXZlJPVFNzRnI2b2JobHRkVlJnb1RpdF80T1MzN2Q5OVljcmhydTNsR3JlckNnRW1TOXFwSnhWRWFaQkVPTlRMUWE1S1pGeVBjM0xMQUlfU0Z6UUNlc3F4X0gxZDNLVUJOcXhxRzFQbDE0OUZYUG4zSVUzaUtxYzk3Uml5Tkc5YkwyQXFPYzBKeWphLXRSWmxhWG1sN0FYV0xsaEwyWGZIeEd0emd1SElyVTc5NlB0aWZqRmRhbEFWVm9VNXJGWGtwOXMyUHJvZUdtSGlfYUnSAeABQVVfeXFMTlZ1NmpDMnNTRlVLQ2tlYXhvQjRCQjRKUGdIdV9vY2Vuc3U2bzdZYVNyS0RPa1dVUXowMUdWNDl2aVZkd1pmMWFKajR6OU1wNDFlZGN5OVZtTGhqLTFDNzFvVGZzS3VtUkF0S3lEemlOdjFaa3hua1NyVm9KSV9zWnh4Qkp3aml0QmZBRnlZd0tKR3FrSWlSNVpYMUxXUnBjQzI3SHVpSTVJTmxGY1lmREJENWI4UjVTOV9kS0Q4VkJZTXduVWFmUENmVTBzWVgzb3RJUnRneFc1VlJXWnZBZWY?oc=5",
+   "source": "Gazzetta dello Sport",
+   "sky": false,
+   "ts": "2026-11-07T10:16:18Z",
+   "players": [
+    "Atta"
+   ],
+   "category": "infortunio",
+   "first_seen": "2026-11-07T11:39:29Z"
+  },
+  {
+   "id": "news - tavares, di lorenzo, mckennie, conceicao, pavlovic, ranieri, atta, cacciamani, molina, mancini: le novita",
+   "title": "NEWS - Tavares, Di Lorenzo, McKennie, Conceicao, Pavlovic, Ranieri, Atta, Cacciamani, Molina, Mancini: le novità",
+   "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQR29OQVgyV041N0ZTR2lvMXlndUl2ZWgwbF9sTUZlNmdZX2pHWnlSZ2RuSENLNkN5N3NGYjROUTdXaHpDX24yQmd0bTdtNXlZbVlJS0tGZXpSQllvLU9qVUdOSDhoc1RlUGJPSzJNRTQwbjZwR2VwYlBWVjZNVENZeEszdEZnUk90SE92WWM0Zl9nZGhfVHdKQnJMeUZCX3N5M2JCRmh1UFBaMjlydl96dFB4SFY5cTRmMkwzR1I4QVoxZXk0Y2JqVWZOVzFKbExhRTlxc1NIMXpLY0dfeGfSAeMBQVVfeXFMUDFLUEF5eHZBaXVvSzdvajZ1dnE5aVktc2JPSGN0NDlNZS1HbTZHbUNGREQ3T1VaTUxHUk5KdzgxX1NnZmZ4dTdoWUplOU1JRDJXRkxiaGxOa1VhdXlXb3ozMFg2QnlYSVdVM3VNMUx3SEY2RWdua0RHZ2RCMlJQeUhUMkp0czNfemhIZFZsZ1prUkRhUDU0NGRKNkx1VTZDRm9JUlVRaDFrWGpjQW1WdzhDM0NzOWVqZzlNeFYzcXJubjhYS0VBWTlmUTlDYXhvaDloS3ZaZTF6WktMYXRxblhlYTA?oc=5",
+   "source": "SOS Fanta",
+   "sky": false,
+   "ts": "2026-11-07T10:15:51Z",
+   "players": [
+    "Cacciamani"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-07T17:43:07Z"
+  },
+  {
+   "id": "le probabili formazioni di monza-atalanta",
+   "title": "Le probabili formazioni di Monza-Atalanta",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQQXI5MElrUmNtZ3FXTlllWnk2dE9vci03Qll2bTJZUnpDWmswUmV2VG50MU0wT1Bac2pwVUxlWUwzdURXZjU0RTlNYlQ3b3l2aE1TaVVZZ3d5c1VRS0pUVjBqT2htS0Q5dzhvaUYzRFlYUk8tUS10ZkVES3lRTWM2VVp5X3htLVFHMjVIcGhCRHp2SmduelAtMjhn?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-11-07T09:53:02Z",
+   "players": [],
+   "category": "formazione",
+   "first_seen": "2026-11-07T17:43:07Z"
+  },
+  {
+   "id": "monza-atalanta, le probabili formazioni della partita di serie a",
+   "title": "Monza-Atalanta, le probabili formazioni della partita di serie A",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQQXI5MElrUmNtZ3FXTlllWnk2dE9vci03Qll2bTJZUnpDWmswUmV2VG50MU0wT1Bac2pwVUxlWUwzdURXZjU0RTlNYlQ3b3l2aE1TaVVZZ3d5c1VRS0pUVjBqT2htS0Q5dzhvaUYzRFlYUk8tUS10ZkVES3lRTWM2VVp5X3htLVFHMjVIcGhCRHp2SmduelAtMjhn?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-11-07T09:53:02Z",
+   "players": [],
+   "category": "formazione",
+   "first_seen": "2026-11-07T11:39:29Z"
+  },
+  {
+   "id": "fiorentina, rifinitura decisiva per ranieri: cosa filtra sul recupero e le ultime su atta in vista della juve",
+   "title": "Fiorentina, rifinitura decisiva per Ranieri: cosa filtra sul recupero e le ultime su Atta in vista della Juve",
+   "link": "https://news.google.com/rss/articles/CBMigAJBVV95cUxPbGNZd0tRdmFESERJWV9ZUVd6eHBiUDhTdHg4VV9aMWt5cGZrQ1dfbnlGRUI5b0xVcE9zc1pOVmtKdHoza2hjY2N0V3FGX3k1UVR1b01jQnFuOXB6TDJmXzgyWjd2elRaTW9ST1pJQk9oT3h5dUFpNWpsUkpqRk5yYm9xRGdnOXR1RTdDa2lUQWNocFl2M3gtQmtyNUw1MHJCakFwV25nTlBFazJ3c19HTGlRbGNDY0VwVVhSWDBDdHRFdkVRUnp5YmFZbmZGV29MYjB3U3FZZ3ptN1lrV0NUMks1QjVoaU9tWFB6ZkxLcmU0Q1I0dGNuM3l4b2ZpQWpU0gGGAkFVX3lxTE9ITTdfY2RJWDY0ajhFSFpwWlFwNmVqbkpHVldrcVhoYlN2WEduSFdnVl9xZzhOZURHdUJVYVdib2hZand1MS1uWGRpRERlMTh6OUU2cEJnVlBfZjI3eGwyVXl3bHBrbkVFcDMydVhacHRjR2d5TTZxbnBtYVdhRXV6ZlIxM2VteGE2WUpZVk4xYUtDMmpYY3FHYU5FWjdNRzRxTmR5Z3hHNk9EbnBlM2hVMTA5Y0prbXprZzI0Uzl6c3NvOVRvcGFMcEw3ZEhhUUhWaDBkVDNwM2Q2Z1dLQXAwVTBybmxCaUFqR0J6NkUzUWtWMHptYlhlVlJZRHNCZmJQNjVNWnc?oc=5",
+   "source": "SOS Fanta",
+   "sky": false,
+   "ts": "2026-11-07T09:30:20Z",
+   "players": [
+    "Atta"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-07T11:39:29Z"
+  },
+  {
+   "id": "news - tavares, di lorenzo, mckennie, conceicao, pavlovic, ranieri, atta, cacciamani, molina e occhio a cambiaso",
+   "title": "NEWS - Tavares, Di Lorenzo, McKennie, Conceicao, Pavlovic, Ranieri, Atta, Cacciamani, Molina e occhio a Cambiaso",
+   "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQR29OQVgyV041N0ZTR2lvMXlndUl2ZWgwbF9sTUZlNmdZX2pHWnlSZ2RuSENLNkN5N3NGYjROUTdXaHpDX24yQmd0bTdtNXlZbVlJS0tGZXpSQllvLU9qVUdOSDhoc1RlUGJPSzJNRTQwbjZwR2VwYlBWVjZNVENZeEszdEZnUk90SE92WWM0Zl9nZGhfVHdKQnJMeUZCX3N5M2JCRmh1UFBaMjlydl96dFB4SFY5cTRmMkwzR1I4QVoxZXk0Y2JqVWZOVzFKbExhRTlxc1NIMXpLY0dfeGfSAeMBQVVfeXFMUDFLUEF5eHZBaXVvSzdvajZ1dnE5aVktc2JPSGN0NDlNZS1HbTZHbUNGREQ3T1VaTUxHUk5KdzgxX1NnZmZ4dTdoWUplOU1JRDJXRkxiaGxOa1VhdXlXb3ozMFg2QnlYSVdVM3VNMUx3SEY2RWdua0RHZ2RCMlJQeUhUMkp0czNfemhIZFZsZ1prUkRhUDU0NGRKNkx1VTZDRm9JUlVRaDFrWGpjQW1WdzhDM0NzOWVqZzlNeFYzcXJubjhYS0VBWTlmUTlDYXhvaDloS3ZaZTF6WktMYXRxblhlYTA?oc=5",
+   "source": "SOS Fanta",
+   "sky": false,
+   "ts": "2026-11-07T09:25:51Z",
+   "players": [
+    "Cacciamani"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-07T11:39:29Z"
+  },
+  {
+   "id": "napoli-lazio, le probabili formazioni della partita di serie a",
+   "title": "Napoli-Lazio, le probabili formazioni della partita di serie A",
+   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQajVDYnIzNlZhaWJJcDFTdDB6Um9KaTB0dnpveDRTdjYtdGl3QlpiSzRheWgzdGRUYk1KTzFGbGFKd0laanloQUJFUmllZ1JjM3ZjT3JXS0lpa0MxQWJMei1pYnJyNWhjNVhtbDFDUmxxVk9lVlZCTE9PWGJxUEM3ZnVKOVRsRmh3SVh2aFRfMkV0WnVDeHVj?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-11-07T08:42:45Z",
+   "players": [],
+   "category": "formazione",
+   "first_seen": "2026-11-07T11:39:29Z"
+  },
+  {
+   "id": "koopmeiners, la rivincita che vale 59 milioni: cosa ha fatto spalletti per cambiare tutto",
+   "title": "Koopmeiners, la rivincita che vale 59 milioni: cosa ha fatto Spalletti per cambiare tutto",
+   "link": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxQdElDczBmZ1F0cVlHNlZZTWdyZDc2d29BZzY5b1Q3XzZ1QUtEd21FTmZEM0dUa2lNUDVJU2t0TmdWWEMxRTIxQjk0ckREQmNZeTI1OGhIdUtMbE9ZWXJYYng0UEw3clI2ajRSakZiUHNzcWtJa0t6RUcwc0RQeUhmb1FIaHFRbVNHTW5Ed20zOTcxRWxQblVtbjNNOGZSX0lNQTlyUkRHREJaWVdrYUhnMW5NQTNuTjg3VlpvZklNUnJqSUZFa2VxSWRPd1ZRN2EtZWdqSGF5bmY2X0R0UVJ2MFEyaEtMUmNFX3REcU5BRnlDeFpGTXo00gH6AUFVX3lxTFBaMjN1M0ZvRks4WGU4eGdjUXJ3Nlk1N0RtX1pHWGxnV0ZGVDYzX3Vxbm5qOXlHRi0xWW0xRXRUUTlOWW5UaHdmc0RNOS03YTkzUmhqUnlJSkxPdFhaY2kxNlBicUMtb2RaX3NlcUJodnRaanFHUmZpZE42VlRBeU5ZQWcwZ0JqZEpHRi00V19TYkVzQ3BFbzl4VTAyT0NtbDBaLTJINHp4TXItSEpMODJOVGlGZUpFQ21ZUjlDd3EtOGFnbmFhMVlreWJ5RkI3VEp2SWN5ZW9qRllhTkU5M0Z0VlJpRUVSR2lVdURnbXZJdjcxdlIwbnRWZWc?oc=5",
+   "source": "Tuttosport",
+   "sky": false,
+   "ts": "2026-11-07T07:36:09Z",
+   "players": [
+    "Koopmeiners"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-07T11:39:29Z"
+  },
+  {
+   "id": "juve, ecco la formula: alajbegovic accende kolo muani e woltemade, il tridente che tenta spalletti",
+   "title": "Juve, ecco la formula: Alajbegovic accende Kolo Muani e Woltemade, il tridente che tenta Spalletti",
+   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNMFloWDlLWEs1dGJwSlFkeWR6THA0SHVhTFAzby05b2l3MDlrSHBiSWJPVmdHbmhlWnFWdk9mTXRMamU2RXZ3d1M1UnRUZjRNbmhITTVKd0xha1VMY2dDOHE3OTZzNjdyZi1rcmxLSF96enBpNVJKQWl2MjV4dHhpcGhzZHNMbnU4QzNRc0ZrbkpzdzQ0dVc1X2Y1OGdiUXhkb3lqOFc0WldkdU5EWGZTNkZzWHc5cmtJZEHSAb8BQVVfeXFMTkQtTW1COTl1dnNteEJmREl2eUcwNXFQWXB1SkJxZ1hfR0Q4M3B0X2lWbHpzbDRsaElGN0NMUWJJZV9YaWJLTWpYYlRYM3BTUTZoNV9ZSVg0ekFZaE0xYVhybjJJWklrU2JXU2JfN01CTkdCWHUwZ2ZqdktLSWwya1YzS3FvZmF2ODdSeXhvYmdrNkd5NkV6Rkx0UF9YaFphVF9PUmRCcVozWUZSRVFyQzhzdFBYRzN6SjBLTXJBRUE?oc=5",
+   "source": "Gazzetta dello Sport",
+   "sky": false,
+   "ts": "2026-11-07T06:51:40Z",
+   "players": [
+    "Woltemade"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-07T11:39:29Z"
+  },
+  {
+   "id": "kolo muani e woltemade promossi, ma l'equivoco del vero 9 va risolto sul mercato",
+   "title": "Kolo Muani e Woltemade promossi, ma l'equivoco del vero 9 va risolto sul mercato",
+   "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPWUNRQUx0Q1U1ZDluZEpRQ2l6aWFkdHBnOG9WbWw2cFJGTzFIRmpucjJrS1Q4Q2Y2alBHQUU3bElfX29ia1dYeVZEZzFfNlhEUmJ6NW9fUjA5TUt2YlJwTFg4SmV6dmFiSk5IS00wd2dKY0toYnNJRnhrcU1qYkFDY3R3bFl0UzZQREdxcVV4TW5QeUlvR3hjdHNXUUswaGFucW9MbVVoUDg0T09kSHRXaHpXbmRsUTItTVMzTWZRY1pycEhkaUxFc0RXRE9Qci1HUWt3R1hrcS11clFNaXpnSXcwY3hGd201X2tTYw?oc=5",
+   "source": "Tuttosport",
+   "sky": false,
+   "ts": "2026-11-07T06:35:00Z",
+   "players": [
+    "Woltemade"
+   ],
+   "category": "mercato",
+   "first_seen": "2026-11-07T11:39:29Z"
+  },
+  {
+   "id": "torino-lecce, le probabili formazioni: da belghali a coulibaly, cacciamani, mandragora, stulic e gineitis",
+   "title": "Torino-Lecce, le probabili formazioni: da Belghali a Coulibaly, Cacciamani, Mandragora, Stulic e Gineitis",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPSzdYeTIwWXVTTzV1VWl3dXpzYldtY0xSdDQ5VUV4U0dvNmlDRExOVzl2aFk1Z25WdU5MRHpiUU9KZEJlSDVIbzlLTFZFS19nd0kybkYwRmVhanl5dWlhM25vSGc5b3czSTVlQlZ3c0FBVEJSbzVVVHh6aHhsaU5ZQktQWTFLWVh3d0RmMENscFd5djYxZC1vV290ekpGNE9fT19reHNiQjNwbVlITW1qaXI4eFlJNVlXeDNn0gHAAUFVX3lxTE5JWXlHRXVNVWNoQzZXbzlvREJyWVVQbExMSG9MVlpGRERPT20td243V3A4QlNXaDRPNTZlNTRXelZqQ1hmRk9HV2YtUTI4V3o5MlJlcnkxb29hbFVwX3pJbE5iUnFlaGRRV2ZvUXctQjdnd1M5WVZLQnRuUloxRDQ0WWVUcW1WTTFDVGh2N2FnQ0xCRVktMW93UmVRVlJUMUxRU0F0VWFyQVhTbjBiUkxtXzZWMnV6MWw2NW53SFhTTg?oc=5",
+   "source": "SOS Fanta",
+   "sky": false,
+   "ts": "2026-11-06T18:00:43Z",
+   "players": [
+    "Cacciamani"
+   ],
+   "category": "formazione",
+   "first_seen": "2026-11-06T19:55:29Z"
+  },
+  {
+   "id": "le probabili formazioni di cagliari-frosinone",
+   "title": "Le probabili formazioni di Cagliari-Frosinone",
+   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOM0xIaVZTRVVsNElxUW9BdWNsRjJJTFRtNzlsdzlUbUpteTZXSENWYWNRM3B0UjEzWTBjWTh5QTlBOWlCamVjbFZzMTk2bW1UZW9FSDFVX1hSXzhnaXFlZjhvVkI5Tzctb1RSVENzZEpDTTJDNXZGVFU0OTJqNGZxd1lHWFFNcF9PT1VrQ2RfVm51VVVxaGxKMEJUanFob2c?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-11-06T16:41:16Z",
+   "players": [],
+   "category": "formazione",
+   "first_seen": "2026-11-06T19:55:29Z"
+  },
+  {
+   "id": "cagliari-frosinone, le probabili formazioni della partita di serie a",
+   "title": "Cagliari-Frosinone, le probabili formazioni della partita di serie A",
+   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOM0xIaVZTRVVsNElxUW9BdWNsRjJJTFRtNzlsdzlUbUpteTZXSENWYWNRM3B0UjEzWTBjWTh5QTlBOWlCamVjbFZzMTk2bW1UZW9FSDFVX1hSXzhnaXFlZjhvVkI5Tzctb1RSVENzZEpDTTJDNXZGVFU0OTJqNGZxd1lHWFFNcF9PT1VrQ2RfVm51VVVxaGxKMEJUanFob2c?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-11-06T16:41:16Z",
+   "players": [],
+   "category": "formazione",
+   "first_seen": "2026-11-06T19:55:29Z"
+  },
+  {
+   "id": "squalificati e indisponibili como 2026/27: infortunati chalobah, diao, kean e rodriguez",
+   "title": "Squalificati e indisponibili Como 2026/27: infortunati Chalobah, Diao, Kean e Rodriguez",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQdEpvMkxRWVRhYW9iTzJNUk9LUkNJelZGazF0UlFubE1sbmpNeXZuVThaMDlMU2xKN08yVVd6dVpoTXJGZE9BWk9mbFFwb3htZDVobTkzd214c2pCUFJiczFNTmIycDMyMzJvR09pUkdxNlFGYlBzYTVFZmVrLUdFaVgzc1R3VU9UTGs0cGRuUGlQZTczb3R0X3JRVU9sRWZCcjFDWkdackl3RUt3Z3VfY1VPRWlLUGNvTHEtMk5WbkZqSC00?oc=5",
+   "source": "DAZN",
+   "sky": false,
+   "ts": "2026-11-06T16:36:00Z",
+   "players": [
+    "Diao"
+   ],
+   "category": "infortunio",
+   "first_seen": "2026-11-07T00:04:11Z"
+  },
+  {
+   "id": "torino-lecce, le probabili formazioni: due ballottaggi a testa per abate e di francesco",
+   "title": "Torino-Lecce, le probabili formazioni: due ballottaggi a testa per Abate e Di Francesco",
+   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPaG92amN1eC1aZE5oM2txajhtRVdQN0p4ZHhLTkxhQldaZUpLMkhPRVlITHNTeTdwUElNMkJuVURQNmQwVDF2T0l6dXhXcUliVFp2SWtWWlBIbWU5OEhQTjRtNkx0T09uaC1CaldXSEZNM2FHeFdycGY5NTlnUGpBT05UcHlXZV9GNmFQbFhDbXhLU1Y4eV9j?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-11-06T16:23:12Z",
+   "players": [],
+   "category": "formazione",
+   "first_seen": "2026-11-06T19:55:29Z"
+  },
+  {
+   "id": "parma bologna, le probabili formazioni della partita di serie a",
+   "title": "Parma Bologna, le probabili formazioni della partita di Serie A",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNQXBNdElGbWVDOVVqRzVlOHZIN3hPY29pNWN2cWR3ZlRwdUxpMEJMaS01UkhETkV4XzFEdDRTZFpTdmg1bjY3SlBEQTRSVmNRWEptWFVva2hhVW9PR00xNnA2dnNlOHhlZ3ZOOVpZb3pPLTR5TFhXV0o0R25obGN6eW5vdGlIWmNYT3lDSktDdDFJeWdyRFo2dw?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-11-06T16:22:37Z",
+   "players": [],
+   "category": "formazione",
+   "first_seen": "2026-11-06T19:55:29Z"
+  },
+  {
+   "id": "genoa-milan, le probabili formazioni: da el shaarawy, messias e pavlovic a moreira, pulisic e cisse, le novita",
+   "title": "Genoa-Milan, le probabili formazioni: da El Shaarawy, Messias e Pavlovic a Moreira, Pulisic e Cisse, le novità",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOY1FIZ0pLX2o3Wk1HQ0czZ3RYN3lJT3pURFFjcWtuZUVUYWxFSzhiYm52MVlkR0FOdnl0eFBKcEVOX21xYWZQZnRWX3JYZVlHNy1xU1E5RjhiWF9mZlpmN0xTZENaWEdpTmJCeVBIak1ieXRIWUpKQnFwYmhYZlR0MjJzemhEeERNQXNOaEI0MVl1MUhLeWF4bnpUaV83N1JSY2RCODZZalZfNTY5Z015WU9WNNIBuAFBVV95cUxPcWpCREY2MFZocjVKNVNUN2M2cy00NXhjSm5oYXRndlRQMzNPYzVqVjZpdlhrYXd5ME5aTzFaYUZBNkpNQWNLY0l6R3pmVDVpeWg4VVRsNW1JbXFfek9qSW8tencxRDBCdXB4OENPZVpFNnZoYU1sX21xQUk4VVEtbE5WZzlPYUdtNWpWa0ZuU2NCUTBfY2hNME1mTWZGMHNPYWFmNUkxVTZvVnhyYndQMjV5SlVuTmhV?oc=5",
+   "source": "SOS Fanta",
+   "sky": false,
+   "ts": "2026-11-06T16:00:39Z",
+   "players": [
+    "Pulisic"
+   ],
+   "category": "formazione",
+   "first_seen": "2026-11-06T19:55:29Z"
+  },
+  {
+   "id": "roma sassuolo, le probabili formazioni della partita di serie a",
+   "title": "Roma Sassuolo, le probabili formazioni della partita di Serie A",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxORVlTOVZGX1U3cEhNcDQ5YXJ2OXZwei1PUFhxem5mLXBHVTRJMXpQZ0xINVNnMGpseEtidDQ5WFluWEJvX0c1dHpYTDdGcFVqMmdBS0pMT1dhSlBhVE5nbW15Wm1lUzFBWjBiaVVDbDlfUU8yU1BtZU0zaWFaX3VzWVZ4LS1mbnpFSVYwb1ZndU92S05aaEZkRw?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-11-06T16:00:12Z",
+   "players": [],
+   "category": "formazione",
+   "first_seen": "2026-11-06T19:55:29Z"
+  },
+  {
+   "id": "abate: \"come stanno belghali e cacciamani! mandragora, braganca, zapata, casadei e vi do un titolare\"",
+   "title": "Abate: \"Come stanno Belghali e Cacciamani! Mandragora, Braganca, Zapata, Casadei e vi do un titolare\"",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5fcE8tYXhTaXZkU1o0THdtZUtMdkRoekpTMEY1NE9NYzlJZ2RvdzR6bGVYR0VEMG9oSnFvNlBPWXZRRXFtaVhPa0xkZlN3MmNDcDEwQkNDWE9NQThqY3NBazloc1lqV25FTkRudNIBckFVX3lxTFA1WndpcHBzV0NacnZwRHExNXRiM0ttMVpkTko0a2s3ZzAtMnpRSmUySEtWaGU1dlBqQ0E2aWxWaWlmVEw2b3FlZ0hORjAyUnlNTDAtVk9ROTV5a0VfdEZiV2VNd0pJRFZCVlI5a3F4VGZTUQ?oc=5",
+   "source": "SOS Fanta",
+   "sky": false,
+   "ts": "2026-11-06T14:40:00Z",
+   "players": [
+    "Cacciamani"
+   ],
+   "category": "formazione",
+   "first_seen": "2026-11-06T19:55:29Z"
+  },
+  {
+   "id": "fiorentina-juventus, le probabili formazioni: cosa filtra su mastantuono, njie, koopmeiners, muani e mckennie",
+   "title": "Fiorentina-Juventus, le probabili formazioni: cosa filtra su Mastantuono, Njie, Koopmeiners, Muani e McKennie",
+   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNbTAzWk5FeldydnZjRlZOcUV4eWV6VWs0Z1NzZ2swR0Q4LV91ZFhmMWc0eHF6N0tKTjFmRmZKRndwaXZhelU0X1B6QnRfblVSU2hlMG1KWE5qNzlxLWxTLWJPNjdQOE11N1FWRE1qWFcyLTVKeWJpNFRPM1FaczN5V1dHaE5mWFBoa3VXOS1kQjhrak1ZOF9UU2ltU3E0SFRxZ1Y2d19TbWFOZUJlSU9MZkM4YzYwWGc3QlF6ZERpMU9BNGhERjBzSmNnS0hhbndL0gHWAUFVX3lxTE1zUWJoQm4tZWE5Q0ZKZ0VkMHR1Y1hMY1F6Q0s5NGVfNnBOcmxzLUpST1g2SWJTR2RjM1dlTFZrZTdrRUFJSnM5d3kzZGhWUTJ3YVYzbFR1S1V1U3YyMHJoOFZRbkptdlJhVGxWX2hjVDVKMVE2YTEyWWtXY0NObWo0UUtGNFJFNVBsOXFLazIzS2pqNEFzMGFOLW5tYS1qLTRuU2N3QnJVQWVPUjRsMUdhRGNVNGZ3Q0Y1UGtjTWMwMVpiUHBOTWNUdnJEbnJuWUUyd2VBTHc?oc=5",
+   "source": "SOS Fanta",
+   "sky": false,
+   "ts": "2026-11-06T14:00:00Z",
+   "players": [
+    "Koopmeiners"
+   ],
+   "category": "formazione",
+   "first_seen": "2026-11-06T19:55:29Z"
+  },
+  {
+   "id": "jones e stones a disposizione di chivu per inter-como: le ultime news",
+   "title": "Jones e Stones a disposizione di Chivu per Inter-Como: le ultime news",
+   "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNZUNlWG5GVlZSRmRZVWNEYzhpQW9qbWw0VGozWHlTZnF6aW5MaXkteTVURnFpYk5WbEZkZXpFS1I2NVJVcEJEVURFeVNKalI4S3ZrdzRSbWJIci05aHl3UTRoZnRUOFZfQzZVbVptUU9QLW9id3pjNlM5UnRNN1VoWg?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-11-06T13:43:21Z",
+   "players": [
+    "Jones C."
+   ],
+   "category": "recupero",
+   "first_seen": "2026-11-06T19:55:29Z"
+  },
+  {
+   "id": "spagna, prima convocazione per jacobo ramon del como",
+   "title": "Spagna, prima convocazione per Jacobo Ramon del Como",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNOC1HYTNpWHVzbzIwOEtQZlNocG9DblNuQWQxTEJuelZ3SnNkc0Y3ak9qUm1WekJYR2lkTmhTSHlkSE5JTXQtLWc3eEMwYTNzc1d4RXZXczgxMnBidlVGM3lDSmVway1wZXhfZW43V1htekJIblQ1OFdhdVVNbUdJRzZocTNzMnppTVpwbFQxYllGQkM0d3lwWjNhNzlhZ3AzT1E?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-11-06T13:30:16Z",
+   "players": [
+    "Ramon"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-06T19:55:29Z"
+  },
+  {
+   "id": "le probabili formazioni di roma–sassuolo",
+   "title": "Le probabili formazioni di Roma–Sassuolo",
+   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQejRZNXJsQUpTU2JLSGk3WGRfV2JKWUZwRk1iUWp1d2xJa3RvcTg5Q3NSTGlvTkF2SXkzVGlUSjFWNE5ndlFvLUxYajUtM0RnRlBXdFd2aGpMMkxGaUZvN2M5U2tGWnVoN19yMmtJMmxqWXJVSkV0eFJSUTNVbzUzYW1kTXhzQ1I0NFI3RTlR?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-11-06T13:20:03Z",
+   "players": [],
+   "category": "formazione",
+   "first_seen": "2026-11-06T19:55:29Z"
+  },
+  {
+   "id": "le probabili formazioni di genoa–milan",
+   "title": "Le probabili formazioni di Genoa–Milan",
+   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNVHBNN3J0OTFrYjN5OVE2eFpmN21RZUQ5WUI1Zzc2U2puaUdyMVFnakQyS2Q3NXJjNjBfek9ad2JKUFk0VzdySDJQakk0WmV0X1dJR3RzWFQ5ZzVPN191UEh2UGlCSHdwZW1GTTBNeWJqcXNFQm1mRzF6ZTNhZ21ta2JCZ01uLTQ5eHo4?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-11-06T13:20:02Z",
+   "players": [],
+   "category": "formazione",
+   "first_seen": "2026-11-06T19:55:29Z"
+  },
+  {
+   "id": "le probabili formazioni di cagliari–frosinone",
+   "title": "Le probabili formazioni di Cagliari–Frosinone",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQNlFreG5KX2ctbUoteTRRWDlnR3ZOU25YZWtOLU1VVDdZeFJYTWhZRVNITGhZVEN5ZzBja3FTSlVsWWRJQUZJODFmMFVUUi1BSG5iYUVFUU1CT21oN2E2Vjh2U0pTLTB4N0lnc2oyalpnaVNDTzg1T1MxVVpBbklxMTRfc0FCbmdTTXZxRVpQOWJnV0tf?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-11-06T13:20:01Z",
+   "players": [],
+   "category": "formazione",
+   "first_seen": "2026-11-06T19:55:29Z"
+  },
+  {
+   "id": "le probabili formazioni di parma–bologna",
+   "title": "Le probabili formazioni di Parma–Bologna",
+   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNWjRZeGRJRTBnQTJ3U1d2TW1Fb2gyeU5SZ3N3ZWl4ZkNqZ1Nvand2aWRveHpWMGFuZnlpSFQxRy1Wd2pRRmQydXNra3U3aXV2c0JtRC1DZHd2WGZsLXVESWFkYkVPUDlZTDZTYnk3LTBVeHRfU2R0YXNJQUVPc292NVd6UEcta1BSbzdlWVlB?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-11-06T13:20:00Z",
+   "players": [],
+   "category": "formazione",
+   "first_seen": "2026-11-06T19:55:29Z"
+  },
+  {
+   "id": "le probabili formazioni di torino–lecce",
+   "title": "Le probabili formazioni di Torino–Lecce",
+   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQQ3ZsQ21QN0pGczhJcDN1VUpxM1lackhGQmd4c0dmNUZCRmNDN3V5QU9WMVA5cHNqSGViSEdSMkJhdHNVNmpZSVdBb1A0ZnI4cUxEWVJsbDVYejZ6NWh0alpidG9CcVNZSnYtYTJXMkh6T3cxZW5KMXhjRDl0UjdVdDNEQ0Qyd3UzSEN1Sg?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-11-06T13:19:58Z",
+   "players": [],
+   "category": "formazione",
+   "first_seen": "2026-11-06T19:55:29Z"
+  },
+  {
+   "id": "juve, koopmeiners e il \"dilemma\": analisi a sky",
+   "title": "Juve, Koopmeiners è il \"dilemma\": analisi a Sky",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPTmtDLXZKXy0tb053RDJnYkNaWWRoVWwtbzN4RThmb1RlWWhGLTRlUzdoOVp6RF9DaWlVZGlhblpkM0FwT0hBcTFjb3I5WTNiMHZhMzZHWDlsaWdzSVhpUHZRWTRrN2s2bTBZNTVXVlJpeU9vc3dvVDdkbERMeVBIZVJsVGZBcnhYaHBiNklOLVUzeWRGM0JnWGJYVUxkeUwzVkgxS09Sdw?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-11-06T11:57:03Z",
+   "players": [
+    "Koopmeiners"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-06T12:52:01Z"
+  },
+  {
+   "id": "serie a, le probabili formazioni della 11^ giornata",
+   "title": "Serie A, le probabili formazioni della 11^ giornata",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPdzc2UDNyZEpvVE5NbE1PblMtaTJwQ3pyM2RyYVc3MGt4T2xUd04zOGtUcXVyU21wLVRjWDA2X3cybUwxeUxGZ3Y1OHF5Zjk1MVZsUFdrVFNVcGRkdXJhMWNDVGdYcnR3bHExVkNyTFBzcW9hYVBiQ05md0duM0dVUmV5RzlhM05QMUdJOWpOaTRNNEkyT0pYQWlKeW9CblU2?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-11-06T11:43:42Z",
+   "players": [],
+   "category": "formazione",
+   "first_seen": "2026-11-06T12:52:01Z"
+  },
+  {
+   "id": "spagna, prima chiamata per jacobo ramon del como",
+   "title": "Spagna, prima chiamata per Jacobo Ramon del Como",
+   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQZTdBUEEyS29JbmlhVG52SC10UkNSSFprUFhzWHFRSlVEaDJKbWZEd1Jtd0Q3LVFzYU5sQWVzajFXTlBoUGh1Nm4yQW10QlZjVnRuMmJsdUpvRmZVSUZycEtyOVgxcFB6elFsVzVuZGtWNEk4YVRHeXlUM2FTaUFzdnhRSnBIWjFxLXY4VEEyUGF2OTBpTmhDQVlack5xam8?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-11-06T11:16:47Z",
+   "players": [
+    "Ramon"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-06T12:52:01Z"
+  },
+  {
+   "id": "spalletti: \"ci ridevano in faccia dopo il nec! su kolo muani, boga, ekhator, lucumi e kalulu poverino...\"",
+   "title": "Spalletti: \"Ci ridevano in faccia dopo il NEC! Su Kolo Muani, Boga, Ekhator, Lucumì e Kalulu poverino…\"",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQTk1iR0VuOG5WQU1iUlUxOGt4bkxpcm96eENmQ1F1X1I4WXVJRENUbHRiVjNqRzdHTW9VQ2pyWktDcXg4S05HNVpHbFJERk5pRUFFVmM5UDlWR1h6SFYtYnBvbGdQaExzTVFWYnVydGNFa3JsVnhxeXdTTndZTGFOeGUtanJKVzAteGYxeUtmUllrMUZ2MWsxb2VTM0xENW5FUFg5XzRKN2ZGcTdLV2VNTdIBtgFBVV95cUxNQ3hLenVYbGZ1N3doZXFZYTl2TlAwam1yU3RUNDJla1RqdkY4UEpQTGdELWs5QXl1QVB1eWtoM3ptZWd3YjJ3eGJKUTV0RnZoU3g3cTRkeF9aeHdlYVBIZVV4Wlc1aEpvVWNkS19yMGY3SWtYVU4wOXNRTnFJVVdlQ1k3ajk4Yld1UG1TUjNFNEFaakJNUmh2dkdjTG9fRmNCaWpaeVZFNEd3WWxtZWVTUFpEclp0QQ?oc=5",
+   "source": "SOS Fanta",
+   "sky": false,
+   "ts": "2026-11-06T11:11:45Z",
+   "players": [
+    "Lucumì"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-06T01:29:47Z"
+  },
+  {
+   "id": "nations league: spagna; tra i 26 convocati anche il difensore del como ramon",
+   "title": "Nations League: Spagna; tra i 26 convocati anche il difensore del Como Ramon",
+   "link": "https://news.google.com/rss/articles/CBMigwJBVV95cUxPX0pGQVBUUnY0WTBBZWJXaExKUDEtc05XSjgwVnVTc3RlS3NfUzNRM1NianhGckdla0xpeUxvcnN2cklNZTJiTll2aG5Pc0FrX3AxVXFOOHVseEgwNExTRDBBM2ZkZ3psOGRHeVcwQ244cEJZRl9wd0x1bVpfcDNkX2ZoR2dXZ3FYY2s5ZE5helgydE11R1laUDdERzM2eHg4LVBVY1REdXB1TnpsXzVlcmVQRjE2ek9QS1RudWd5NllnVTl0ZklxNmlpUUpZbHpZYng5Rm1CQTRIcVRIUnZmeDBESGJvSXVHQUU4bWNUdTRuMjhNRTV4MERkSWhBZlR2RXpj0gGIAkFVX3lxTE8wOGNlbWRGLWFkdjhWTEh4TU16RC1IdVVFNExkSDVvckd5c3BROUpaOEQwdVVWc2RpYzRoVzNzdVFQSlVaUVJPYnJGYnlqcXh2T1lsUGVYMDdaZmw1NU9PWFBlb1BLMHRtMkxSUzlRMENHWFo2SWt3QmUxeENsSTFsREJWVFBDcjR4b0J3VGl1NmVHTU10YkVOYk1KaWtCckpJbV82b0c3eE5qOGM3TGRrU0RJWDhKdlFWVlprSFhPcG9QdGJ0LTBWa1pPQUk2VlRsVG81WFVhR2NicmM3QTU0RjVsVi1xUW5rWjNBamI4d3hvQU5KWkF3S3ptMUJHalZ6MU1RVjRqYg?oc=5",
+   "source": "ANSA",
+   "sky": false,
+   "ts": "2026-11-06T11:09:00Z",
+   "players": [
+    "Ramon"
+   ],
+   "category": "recupero",
+   "first_seen": "2026-11-06T19:55:29Z"
+  },
+  {
+   "id": "toro, cacciamani torna in gruppo. mandragora ancora in bilico",
+   "title": "Toro, Cacciamani torna in gruppo. Mandragora ancora in bilico",
+   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNTjlFeUxKU0IydTROc2RYRElUVkhWNHByNklVUWJOeXZVM1ZVTk03WWNvakxiQmVlRXNPZDdTQWJSNUU1RVFDbl9Cb21aWTB1WHViWENjc2ZUVDlOSWM5WlpOTjRQdGVfZU5mZmJSME9vQlIzRjNtQ2l2aklxcnFGYTViSUJtUkN4NFUxaUlKQjJrdHh1Q2FkMDhLNHRINHFsOW13TTcyQU1mODR1dFdzZ3M5a0UzVHlKWGRzUGltVjYxb19PMTlmRUFZSTJSQk3SAdQBQVVfeXFMTlY0VFkxM0VNazktdUFTalFRYVFxcHFDNkc1bURxcnp2NmJZZXVZcHNOMGs2bEZuUENzUHI5U0FhMkJjdmM2cnpDeFo1MExqdzFVb3d3alVLUDdxbThwNHZzMUxVcUttUUl3Tnd3VXBYV2JMZ3Fvb096MmotUW9nY1VZM1d2WHdwYUtwWkZlYjNrY2U1c1p6RF9SclhtUUZOdklobVU2QmNkZlc3a3RkeWVONjl2X2VuX1JMbkVYcTRfX3p5cmQzX3Zpckhua0wyTF81bzk?oc=5",
+   "source": "Gazzetta dello Sport",
+   "sky": false,
+   "ts": "2026-11-06T10:51:40Z",
+   "players": [
+    "Cacciamani"
+   ],
+   "category": "recupero",
+   "first_seen": "2026-11-06T12:52:01Z"
+  },
+  {
+   "id": "fiorentina, atta migliora ma resta in dubbio per domenica",
+   "title": "Fiorentina, Atta migliora ma resta in dubbio per domenica",
+   "link": "https://news.google.com/rss/articles/CBMigAJBVV95cUxQWDZNSUVBRi0tbkZVQU84a2dDZVd0ZmZKdHItMzNuYlg1cy1UclNTTWVhNDFkenVoYVFyNXhxVF9uVDMyQzJKbmIzZkVsUWJ6aERMZDhKblhvRjZtbDRVMk1Ic0N0eUJPcWE4YTJfYmZSdUNOT3lCZGdxekNUYzZBSWhwMHVWS2hZamZCTjJ1cFhWTG9tRzBsbnJfYVk2T1otcTg1MVRraDBod25TQk9qejYtMjlkVHRCaHdVNEtubV9QSmpiYkxWb3J3SVh3QTRkNkZreEJFblc4bi1lSXE1c2g4cjY1TlI0anloV2pwc2thSld4RVpjYkVWeEFwSjZC0gGGAkFVX3lxTFB2dVhKMUl0LTdndExYZFloVWtrMkNJTlhIZ3V3REFmdTdOQlpKcGtGY01Tb0s0Vzd2aER0SmJGaUFsX1pZakdxN1Z0OXlWZ0tTTkF1MU5pRjY2UmNpcmwwOERlcFV1N245V2cyd0dVVVlGSWdaU3RMZTdFdGxPMW5xclRiN01VQW1xQTctS1lMNTZ0Q01uemNkWUlPX01USkhVcUxGN181UVRJZEJpb0lDOTVwSjhmWjlZZ2Vkb1hpV2xWZkpjMTJrbGJSSDRqMFFrYTVEeXY4U1hWLU9jNkdrd19DbWs5b0Fscm1qLVA1N2hwdUpmTWJTLUpHWE9zQk1wdkZDZlE?oc=5",
+   "source": "Gazzetta dello Sport",
+   "sky": false,
+   "ts": "2026-11-06T10:34:49Z",
+   "players": [
+    "Atta"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-06T12:52:01Z"
+  },
+  {
+   "id": "toro: cacciamani returns to team training, mandragora still in doubt",
+   "title": "Toro: Cacciamani returns to team training, Mandragora still in doubt",
+   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQbTZxeTZDTlR4MWE3b25MeVFuaXV0a3ZjZS1DLU1OVk9fZFhuZzBjaXZuZnFxQXNycnQyUTlfeVQ3RFJqMmd4UGxpWnFqSy02MW12QlZDVDRuc1FHZWJ6WEtDN0NUcGhLNkhjYmxQLXRKVE5LcEVqRmRyc0FnT0l6Mm1WZUNUSWFNaXdpazhGMGh0N0RSTmJ6S1U5U2tPeDVCeVU4UmVtZTFYYVFsdUIxY1dKUmpjdlRocXNfeExXR0plNkl3OElYOUxsbkZoZ9IB0wFBVV95cUxNNUNwZE5abFp6YUZ1ZHJzZlNRUlhoSkxEaHpfSVB3ZFJPSHJQZXFJeUJwU1VXQzRoOU5adEpKeHJuOWRiZEw3LTNBSExuOUFqb3p0S0ZkQVJqdWg1TTBGZVVXNkhUVlFZRXpUSFhTRGZsSXc3V2gwaklyc2szQTI0MjFpMkRKa1ZUcHMtc1B5alFucmZGRnFLdi1LdmlEakdUeHN5czFBajNpSHVjU2NSNUJRQkhieENXTC0zbkhDX1hLY0hVZ1NtR3lhNjRxcnNESXQw?oc=5",
+   "source": "Gazzetta dello Sport",
+   "sky": false,
+   "ts": "2026-11-06T10:33:59Z",
+   "players": [
+    "Cacciamani"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-06T12:52:01Z"
+  },
+  {
+   "id": "torino, cosa le ultime sul possibile rientro di cacciamani con il lecce e la gestione di mandragora",
+   "title": "Torino, cosa le ultime sul possibile rientro di Cacciamani con il Lecce e la gestione di Mandragora",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOVFphRUwtQ05xSy1uM1l0aE5BUXZDUVBEXzBYel9YUkhRNVpxLV95MHlJNnJFaFdfQWZqLVpUYVZ1YXZZVlNYR1E1T0JFWlFjSzhRNGJwVzAxTzFyYnJNLXQyUS1oSVVBVnd6aWE3MU81R2E5UEJjZTkzZUFLZWhsdm9JYTJsSW12aGJEc2ZhZXdvYm5VLVIyWVZsTFNRRXhMVmfSAacBQVVfeXFMT1lVZTQtS0xwbVhFa1ZZc1hGaWxaMXp2WmtSWVF6OFJVWTdUV2Z3VXR2U0h3UFRtaXhoeVZfRHVDdUF3eVZIRUpnendvd0tvSWRLRHpkeWZrb3kwS2haTklNQ054eURFX2wtdTllbHJNZXI1WnlIVFRia2Z0WUY2OHpFSlY1VFJaWG13eWRKTE5iT2s2b2JKR0dDcHpDZWFXRldRVTY5UkE?oc=5",
+   "source": "SOS Fanta",
+   "sky": false,
+   "ts": "2026-11-06T10:30:47Z",
+   "players": [
+    "Cacciamani"
+   ],
+   "category": "recupero",
+   "first_seen": "2026-11-06T12:52:01Z"
+  },
+  {
+   "id": "fiorentina, atta improving but remains doubtful for sunday",
+   "title": "Fiorentina, Atta improving but remains doubtful for Sunday",
+   "link": "https://news.google.com/rss/articles/CBMilgJBVV95cUxPSURxVjFzYXVGRzFHNkVmajlJeVdxeWR1bGZkSk9CMC1fSVh3LWdoMmZRUlZGMHp0eEpKOGpWQUkzMExmTVQwajJyMTEycVdkcXpsQmZTWmZieGRWRjdOcHZFR2JiZFdVUVZQRVVUNGJBZ2c3eUV5a1ZENm5SeC00MFF3ZXZIcURlcmYtV29fRzZlSG5jdzdnZ1M2OGRkZDdBN05CeVRRMmJFd3Vic3dJcGRwTy01WFphRThoM1ZfZ2xPdk5kdTNVaHVSYXplYjc4ekhCWVpvTkw5WXZCbFc5YmZpREx4WnRlUk5CRUQyTGs5LVRhcS0zQmgxV25QUmY0ZXVERWxrYjBIenR2QXFaM2Y4QkJDZ9IBlgJBVV95cUxPSURxVjFzYXVGRzFHNkVmajlJeVdxeWR1bGZkSk9CMC1fSVh3LWdoMmZRUlZGMHp0eEpKOGpWQUkzMExmTVQwajJyMTEycVdkcXpsQmZTWmZieGRWRjdOcHZFR2JiZFdVUVZQRVVUNGJBZ2c3eUV5a1ZENm5SeC00MFF3ZXZIcURlcmYtV29fRzZlSG5jdzdnZ1M2OGRkZDdBN05CeVRRMmJFd3Vic3dJcGRwTy01WFphRThoM1ZfZ2xPdk5kdTNVaHVSYXplYjc4ekhCWVpvTkw5WXZCbFc5YmZpREx4WnRlUk5CRUQyTGs5LVRhcS0zQmgxV25QUmY0ZXVERWxrYjBIenR2QXFaM2Y4QkJDZw?oc=5",
+   "source": "Gazzetta dello Sport",
+   "sky": false,
+   "ts": "2026-11-06T10:28:11Z",
+   "players": [
+    "Atta"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-06T12:52:01Z"
+  },
+  {
+   "id": "juve, segnali da alkmaar: perche vale la pena salire sui carri di koopmeiners e kolo muani",
+   "title": "Juve, segnali da Alkmaar: perché vale la pena salire sui carri di Koopmeiners e Kolo Muani",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPQ05yX29OU0NfUHNCTGU2ZHRtMmxLMlB2dDBObWU1OHZ6UXBTVTRvNlg2OVRXVkdWdDhOd0M1ZU4xbS1nVnowR1JfVzFTY1ZneUdGZm4wdHZMdFZQYzVkQWJLYm5FUlo3TmRIVXdGS0psUTdkbnpXY3N4bnloOGdOUk4ta2JITFl5N29FdmwtRmJsS0hXR3ZHY2xtVWxCQldsQnJFWks4emlGcEJ0X0tOaTlsd2tfUUFNaWJTbtIBwgFBVV95cUxOYmJuZzVLUGdScm1yNm9vMk9XZzkxUUc3eHBwalFNaS1wSW5ZOW56cGJ2Sk45SmY5dHNpYVRmTW03Nlg2X2RvQ3FjQUlESTk2bDJleW9nNm9BbWsxQ05TVGxyY1I0dVk3aW9BMTJWdzVITWxlYnA1QzdDVzFMWTJuNTJEdGlSaUFVcW04enZwZUdyMW1STDY0Q1pOS2NHZE1nbDB1Y3dhZlZxT2h2YklTNTdyaGZFY3R0WTdCUUNtZWV0dw?oc=5",
+   "source": "Gazzetta dello Sport",
+   "sky": false,
+   "ts": "2026-11-06T09:47:49Z",
+   "players": [
+    "Koopmeiners"
+   ],
+   "category": "gol",
+   "first_seen": "2026-11-06T12:52:01Z"
+  },
+  {
+   "id": "ds como: \"niente rischi: quando rientra kean! douvikas, la verita su paz e ramon al real e sul premio scudetto\"",
+   "title": "Ds Como: \"Niente rischi: quando rientra Kean! Douvikas, la verità su Paz e Ramon al Real e sul premio scudetto\"",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPWlAzZEhoNHBiZTB1MGVsNnBKSDVhQXNlV19yOW1lZ1pDWHRqQi1adkxyc2ZPY3gzaFNLVU45SEhnclJxdS1OSFduTzAyd2tDa0h6UVcxbjAzenBkeEg4WHNwUnoxUVRkMXlmZHczQS1oRW5UaTdlOFV3dmQ3d1R2bWEwa010ZktZLVhKUUJ0UHN4M09uMHBTX29CazZFdkhNU21UZWF0eGdiWmY5eVZB0gG0AUFVX3lxTE5sNGstelR6UXppdnhHMlpxTWFoLWw0WWVwUGZNSTRnN2xUaVZYVFgxNG5CbnM5MWpUS2FvbXhST2VZTmZyVjNqWGp6ZFhpc2ZsaEZJS0RMdk1yN2VEUUE5WjEzQXZqQTVEQnJMZ3c4NGIxaTNkY3pqQVMweTVNeThab3lyMDh6NDk5T0FxVkd0RFZmOTB1UTJ0dTJQWEpyQWg3aEgzQ1RULS1lSDZMYlE3ckZ2QQ?oc=5",
+   "source": "SOS Fanta",
+   "sky": false,
+   "ts": "2026-11-06T09:15:45Z",
+   "players": [
+    "Ramon"
+   ],
+   "category": "recupero",
+   "first_seen": "2026-11-06T12:52:01Z"
+  },
+  {
+   "id": "le probabili formazioni di venezia-udinese",
+   "title": "Le probabili formazioni di Venezia-Udinese",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNMENUSS05ZHJ1Sy1uZGRSYkhWdUM1a2lwQWVBbzYzTXdYdVFDd1VMb2FkMlZFRDF3TWdkWWpYSnB6WWdUOW1Jc0kzLTFhT1BHUDNuRDhOM1BBczB4WU9xZnlnYnBLY0dkTWpQTzRaX2RiMHhodS1WNE04cHhUV2wwMEtOUlAxRHFmT2h3eGtoMWpJbW9oa3JURTV4aw?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-11-06T09:13:05Z",
+   "players": [],
+   "category": "formazione",
+   "first_seen": "2026-11-06T19:55:29Z"
+  },
+  {
+   "id": "venezia-udinese, le probabili formazioni della partita di serie a",
+   "title": "Venezia-Udinese, le probabili formazioni della partita di Serie A",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNMENUSS05ZHJ1Sy1uZGRSYkhWdUM1a2lwQWVBbzYzTXdYdVFDd1VMb2FkMlZFRDF3TWdkWWpYSnB6WWdUOW1Jc0kzLTFhT1BHUDNuRDhOM1BBczB4WU9xZnlnYnBLY0dkTWpQTzRaX2RiMHhodS1WNE04cHhUV2wwMEtOUlAxRHFmT2h3eGtoMWpJbW9oa3JURTV4aw?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-11-06T09:13:05Z",
+   "players": [],
+   "category": "formazione",
+   "first_seen": "2026-11-06T12:52:01Z"
+  },
+  {
+   "id": "fiorentina, con la juventus senza atta. speranze per ranieri",
+   "title": "Fiorentina, con la Juventus senza Atta. Speranze per Ranieri",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOUWVFRnRTLVl1R3FGMVhPRVVqWjEzT2tvVk8zLXZXYVgxZFJxa2VzUjEwazFGMGYyQjBUMnF2Nm5ab2xuUVRObHFzWF9PMlVsTDJ3Tlc3YUt2QUdTQTVkWF9sMDVSTXZzUFJyclJsMHp0LWYzQ1YyWE0wS2IyTVNwVno5ZWxQMEJTakdLWW9DcjJONzF6UnNzdGtFNmRFSmx4R2JvaXA3TG9fV1ZoTjc3TG1zY1lWWVFiUG1jeWR1MNIBxAFBVV95cUxOQU1JMFVLMi1ES1UyMW1IUTZlNXQzTmNWNDd5Z2RDM3BqZy16RWlBRWxIVkxHTkdhQ0dac2RDQW1VNzBxT1lfOTc2Y1lJSlpMZFVRN2pfanI5bFVpR1R6aGc0T3NCYUx2N3RNVmlYMENFZktFdHRBdVZRZ25OSUhBckFJcU5aSjQzU2JicUNVRi1EVEpxcU00VjlpdEVfaEYwVERNSmpPMnF0Qk1QQWVxREtEeWRheWRiXy0wWjF0TnFoUjNN?oc=5",
+   "source": "Fantacalcio.it",
+   "sky": false,
+   "ts": "2026-11-06T08:25:00Z",
+   "players": [
+    "Atta"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-06T12:52:01Z"
+  },
+  {
+   "id": "video. koopmeiners, gol dell'ex all'az alkmaar davanti agli occhi del fratello",
+   "title": "VIDEO. Koopmeiners, gol dell'ex all'Az Alkmaar davanti agli occhi del fratello",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPNXFXcTBrMkMydFF2TmtSVk54d2RQR0cxWFNvQVF6TDhhaHJfZl95MVUxRjdBbkRUOF9HMXdfVXRhUUJYR0Y4LS1RNDRFQWJWdm5nZmVMRTQ2UGkyeWY3UnJ1Y0hyUlU2MEdEaG11VUhqMlRuYmlDRGRYZTNRdVYwWGlPc2tTamV2NWlFLTJGSmt4TGhmSFNqU1lHVFppZHJfVEdYemNLM1I2TGRP?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-11-06T07:37:42Z",
+   "players": [
+    "Koopmeiners"
+   ],
+   "category": "gol",
+   "first_seen": "2026-11-06T12:52:01Z"
+  },
+  {
+   "id": "torino, sorriso per abate: rientra cacciamani, speranza per mandragora",
+   "title": "Torino, sorriso per Abate: rientra Cacciamani, speranza per Mandragora",
+   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNVUJ6c1otQzA3Nl8wMG1kbW1UNHdZclpCd283S3pIUjBMcTdLSEE0QmRwSGo3a1k1ZjZMeFB0WnVSRHBsUWRpbDJmZjJZTjB2ZzBRTWZBTkp2RGdEVVA3ZE1XdUhpVDh4TDdibXplUHZlaTk5aWE2NHBERm9JV05WZEZjb3I3SGp1V0VXekg0QkJGb1k3Rno2Y2M2djg4WXNfY2lSaTZpV0ZqMmZ1YXJwSGRkVXluZWtmQVdZWUlfTEY0MTdxa3dZYkFfRdIB0AFBVV95cUxNbzJ4MjUtT1Atb2g0MXBuNTIzcGxmOGhtMFVjYUhVMEFEZWZveXBwUEpqQXJWOWJxbTZyRXctelZWS2xENkdyOTkxMWlSZHRvYU55RGtpOFFrYUhtdVBoV01icTFxbEF4cjhYV3RQWTBVWlA0aEpla0JsSmZYUWY0ZXpfQzdCWHhhdVhBUXFydnFXWnVkODczRnljbnRXcUhDZkRJSGpLNC12ZVZOUVRRV1N3bW5RbHlBOHdHMmM1eloycW4zb1VRUVNUa3pGOW1k?oc=5",
+   "source": "Fantacalcio.it",
+   "sky": false,
+   "ts": "2026-11-06T07:03:00Z",
+   "players": [
+    "Cacciamani"
+   ],
+   "category": "recupero",
+   "first_seen": "2026-11-06T12:52:01Z"
+  },
+  {
+   "id": "pagelle az alkmaar-juve: gatti a tutto campo, koop segnali forti, kolo brilla. woltemade e spalletti...",
+   "title": "Pagelle AZ Alkmaar-Juve: Gatti a tutto campo, Koop segnali forti, Kolo brilla. Woltemade e Spalletti...",
+   "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPLS14dVFKLVRiX3J4ZUZvRGxSd2ZjUExNUGhJdFNWNnVPZThFQWg5OUxFQ3k3MEdQOVUyRnpMcmlvM3h4S3JuaExXbzlUYUxjbGdjUWFUQTJWc2NmVmVfRjRsanlTdGFZUWI1eG1DR2dqTF9ZNzF4X1dfeWpjOXlLZTlnbkp3cjBzVTVfMTVaTjBQcGVvajJxMzd0UTNEY0NuMDNzT3RyNXd3SG1lVGprNm9tcHFrcVY3WTBNVVVLYlpBTUZjMXpQOXRRUGZDTzdtSVJvY3VFLXpoOXpMc2xZdW5PU1dDVXhsRUFMVUl5N25UUURhSzhVTU54NS1KZkdSMXBCdNIBhwJBVV95cUxPM3BJcW4tZWtTYl9lRFl2WE4zTkMtMHlBQ1N1UUcxODJoVnpKODhkZUFwdms1MVdUQkc1T1BLOEdVNTRCRGNPck9XTVJHTjdKRmgzTm4wb3lEVU0xcnNBV2VEbG5ZdDBQcWJfRDBXeUw0SFo4TUdSVUctbEdZQU9sQi1NcmJxZ1NZTUU4UnJoZk5SQldXc2tqZmZtbDB0REhGWmx5MXVtbGsxSURQTGp3Y0ZEQ0lzOU5aMExrRUF2NmQyd1duaG5ZY0o2NzExTU1BdUdFcGMtUUFUd1ZiMWp6VXNZdDN1TkZNOGxqVHdzc0hBRmpKaGhqb29Ib3NmWkJkeEk0OEhoYw?oc=5",
+   "source": "Tuttosport",
+   "sky": false,
+   "ts": "2026-11-06T06:41:00Z",
+   "players": [
+    "Woltemade"
+   ],
+   "category": "gol",
+   "first_seen": "2026-11-06T12:52:01Z"
+  },
+  {
+   "id": "believe - curtis jones e le ambizioni dell'inter streaming | dazn it",
+   "title": "BELIEVE - Curtis Jones e le ambizioni dell'Inter Streaming | DAZN IT",
+   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxONlJNUzI5TWY4ZjNTMHBwNFlLRmEtbkstY3RHUzRRRkl5c0lFamNjRG1sZzUwVEFkWGwwVThCQ1RYSTZ2Yzk3YzNNbGxIT24zLTNzYmZMc3pvRnZ5bExRYzJMVldvajdLYzMyNDhZUURKdmoxU0t0dGpsTHZ1R2ZFVUtyeXVmaTdKTllZQzhydVJKVkdFM2c?oc=5",
+   "source": "DAZN",
+   "sky": false,
+   "ts": "2026-11-06T00:00:00Z",
+   "players": [
+    "Jones C."
+   ],
+   "category": "news",
+   "first_seen": "2026-10-28T17:08:34Z"
+  },
+  {
+   "id": "video. juve, koopmeiners scherza sul fratello: 'nella ripresa gli ho ricordato che eravamo 2-0'",
+   "title": "VIDEO. Juve, Koopmeiners scherza sul fratello: 'Nella ripresa gli ho ricordato che eravamo 2-0'",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNa05OX0pGa0h6NnFEbnl3ZVVCVkZJNzFYOTFiTzBrN3VnczkxVTFGcUhZenhlN0VBYm4xeWVFWnJfUEhaakJibU05bnJWUkZaZWNJZUVwOUNYbEI0aE53MDJkcEM4MjVZbi1HZDRQbk5aRmFXQkJla1NxN0w0NHI2Y3hBOWFqaEpRdF82SXRYR0RsaVAzbG1RR2NXWnZneWp4eXpF?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-11-05T23:38:49Z",
+   "players": [
+    "Koopmeiners"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-06T01:29:47Z"
+  },
+  {
+   "id": "koopmeiners: \"il gol, mio fratello, la coreografia dei tifosi... troppe emozioni ad alkmaar\"",
+   "title": "Koopmeiners: \"Il gol, mio fratello, la coreografia dei tifosi... Troppe emozioni ad Alkmaar\"",
+   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNZGVNTzVVbFFncFdiNjVaMUgxMTBDOFBpTDN3cWRYQWItRXdGVUhJeklHTlltREROR0IzZ3p4eHdvYXZkaXNZMzdESHVHVkZjWVR4Q01JZExLNW5KRldEMTBzaFRnWlhXTzMtd1pxSlJuaUpTT19NZUpFUjRCMXRaWmt6SVF4a2FvNjRCNDgtd0V1MV80WWdvRTFHamctN0dTNC14ZGFHRWctWVo1aUh1ZzE0NFJna2s2QjduMl9B0gHDAUFVX3lxTFBhdzNfSVA4NHM0WjNTZ3h0WXYySW5CcEEycFNnaHVrRlpJbDY0NDdEX09qOElDM25MTzdnQXFMNGRfMFA4OGdxZE14NWpHMWx0Q0F3OXhiTnZXb1ZSNThPWW5jZ2M5RW5IRlVjdDd0UWs3Z0wwZ3M2a2NLN01UZlQxUkg4Z2JFQTNfYk80TDhMeWItdWdvZWFIWkM4aWE4c3J0TGhuMWI1VGFWdHpiVUQ1RjRyTWc4V0dhQUZlMUNpcm5Obw?oc=5",
+   "source": "Gazzetta dello Sport",
+   "sky": false,
+   "ts": "2026-11-05T23:19:32Z",
+   "players": [
+    "Koopmeiners"
+   ],
+   "category": "gol",
+   "first_seen": "2026-11-06T01:29:47Z"
+  },
+  {
+   "id": "az alkmaar-juventus 1-2, europa league highlights: l'ex koopmeiners la risolve cosi!",
+   "title": "Az Alkmaar-Juventus 1-2, Europa League highlights: l'ex Koopmeiners la risolve così!",
+   "link": "https://news.google.com/rss/articles/CBMijAJBVV95cUxPelZ5dVdJcFpNSmNkcGlQRU14OHRZYmtidW5BWUNkcmF4RVE3R09lNi00WnFKNkZtQ3FQY0ZwSXpiTHhGZ0x5ZkVzNC10NFVSeDFpaXotUl9FMTBXOTgwS3BJUjkxQ0sxeXFiY3hfXzRSYkVZTzNtQVdwSlRTQl9VTmw5NmRKelZ6c0pPMVpqcFBuZVFKdWRnSC1xMDlNanpPRmR4VVZDTERWQ18yYWdNOWJrUlNLbExEc0dXV2FBRlJMSkdOcEEwbWNmOXQzbDZxaVlWUFpSSDZOZVpIV1c2YXJHb3c5TG9CRk0wVmViT0lVZUR1akZrR0RGdUszWHJuUkRPOG9LampmNGJn0gGSAkFVX3lxTFB2SERDa0JJdTg0R2VxWFh1ME9rSnEzclJUZFVRSDJtN29oVzFMN1VPRm1ZcDB5MHRnVXNaWE5zLTFYZDQzRll4RnlhZk5FMXg3ekhiaEhaeDhyd1ZmNllRQmNzdGwtTDBfUThDd3d2dnJQRlVYRkRjSEMtYmhnUDNFUUVzV3RlbDZJa0F1U1pZMmF0SkRMMk5JMW5iMGFkWDBVanRRVTU3cWs0SzlMdGdZSmdVQTJOLTJ1aDZtX1VaNjVTQVhKZVZ3UGFmcFV4NGJLUmx4TUpwVUJ2VUJucmUzTGc0SDVqSXRzNTlic3pMeTdVUDhRVndGYmJHczJ5RFdDbzJnSExYcE4zWWlOM2RDNUE?oc=5",
+   "source": "Gazzetta dello Sport",
+   "sky": false,
+   "ts": "2026-11-05T22:34:35Z",
+   "players": [
+    "Koopmeiners"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-06T01:29:47Z"
+  },
+  {
+   "id": "koopmeiners, gol dell'ex all'az alkmaar davanti al fratello",
+   "title": "Koopmeiners, gol dell'ex all'Az Alkmaar davanti al fratello",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPQlZZS1JCUU5Yelh4YnUyNmVHRkQ0bUYwY0E2OG8tZ2FpZHd6b2hEUVFpWFl0c1FtVndQSUlxRjRnb05mZFFSVTVIMTVMeGtnVkx2bDVydzl0UDdSQjBnMmVCUVJ0MG1weTdLbnA5MHF0X3pUU3ZjejhPN0pQS09KUkhHUFhld1lmXzdxc2tWcmxqV21fR21RNmRGRmtCZEkyeGlWX1RLNnlILTAx?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-11-05T22:01:25Z",
+   "players": [
+    "Koopmeiners"
+   ],
+   "category": "gol",
+   "first_seen": "2026-11-06T01:29:47Z"
+  },
+  {
+   "id": "l'eurojuve col fattore k: koopmeiners e kolo muani, sbancata alkmaar!",
+   "title": "L'EuroJuve col fattore K: Koopmeiners e Kolo Muani, sbancata Alkmaar!",
+   "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPWXIxUG9LS3JsWkpvLXk5c2Iyd05OdndqV2FLczJxQXQxOHp3a3VCMU5xQkZaRG9wSTRZeDhlQUREaEJTQThpMWkyUjVGS3h1ZnphcnhDcmhJanpIRWp3enJIQzd5NFhWNG5icTFxUW5rRlY4eWo1YzRqVnRGZVp4SkpLUjRTUVd0NkNKaU1NSFNoUUxQSlhJaTlwMHhGM3lMQlpmR3Bqd210YUxJNkh1TkVKdkFtYWJTM1RQaTF3cUd0Z1BkbUswcjh4N2pMa0t2eUNVa29PYmFBNi1l0gHfAUFVX3lxTE8xOFV5bkl1RTcyVDFtQUw0R211M0F3d3BLVFJZU1BJVllqNE9VM1NWVUZNcms1LWZSY2RCNGJDaGJuSVNpWmJuZkg0WXdtT3h0WEFoY1JrcU9hZndZdlA3MUN2R0loMUoxMFNBY0pZNmMzcjQ5Mlc2NXVHUmFzOE5HVFpLWnh5QWlDRGpYZEtTRnVPbWl3OEozaERKNVFUNXBZOVNLQUF3LUpqcW5LcmdSMW5FWV9mRlJiMk5PRUVacHhUaXg5Y0RMX0lUd3hFSFJyZGdvc1RCT29aR2RsbW8?oc=5",
+   "source": "Tuttosport",
+   "sky": false,
+   "ts": "2026-11-05T22:00:38Z",
+   "players": [
+    "Koopmeiners"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-06T01:29:47Z"
+  },
+  {
+   "id": "torino, ottimismo per belghali e speranza cacciamani: le ultime su mandragora, fortini e rodriguez",
+   "title": "Torino, ottimismo per Belghali e speranza Cacciamani: le ultime su Mandragora, Fortini e Rodriguez",
+   "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPQ0pNTHVVN2tiajJxUjU1WlBHdGxwT2Y4TklLbTFnUXNNQkRKNmRJblM5dVljRDBjekVORU9jREk2cVdIN0xreUlRU1NOMjZ4SFFZT2dNMVN6bGZBMDZDSXRDQWxFVWpZSVl5cUptSnJNSUx1dmNobWJmUktDQmljT3BKRTZ6YU1mLUpKUkVERU91bW9pcjljdW85aGV2N1JYM29CT1BrQml6OVBYUVNtRVp5SlR3TzZQYnl1eWJaY0Eta19hMnAwbVBwN1RaelE4VnYwLdIB2gFBVV95cUxNczRCWmlwR21aZF9WRlZYS2dqdmxDWkVUT21CYk0xMDVraVVOamE4RWlMZDhsenVELWdlLU03b1hCVkcxNm04WUYxclZ5V3BSWDZCU3o5Q3d3UGFwR1RicjEwVHEtTkxMQkttQXZwVVk3YkxMY0dZOWVFRExUdkpzSUZaTlpWVTI4b3BxYUpKek5yVWlYSlJJUDlyVC1OcUZsTFo1X0xsRUEySEJlQVpnY0xxVlZVNVZNRzNDOFlMT29JTlNrSVpwUm5ZT2EwT252dzFfWVlnbE02dw?oc=5",
+   "source": "SOS Fanta",
+   "sky": false,
+   "ts": "2026-11-05T22:00:34Z",
+   "players": [
+    "Cacciamani"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-06T01:29:47Z"
+  },
+  {
+   "id": "milan-ferencvaros, le pagelle: de winter, errore da 4. pulisic 5: si e dimenticato il derby",
+   "title": "Milan-Ferencvaros, le pagelle: De Winter, errore da 4. Pulisic 5: si è dimenticato il derby",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOMndYdjRKdFY0MU9YQi1OdWZqRV9ycTkwRGsxd2pqdlY0QjE5NE81R3JTaXJ4OWVVWFlSWEhacDdTeUJDSUNQSHFsRHNVZDJXWjJUN3RRRWxnZkZZdnZSTDRpRTl4aEdOMnlWNTU0ZzFKRXdDQWltWUpnYVVVbTliRjRhWjl0VzRIVk5pUlk4TzV4U1VHTkZ2UldsMk1PRXkxdWVR0gGoAUFVX3lxTFBydGgzRTQ5d0NCQXUzTVFYOWRTN3l0V2lOMk9LMDFnd05hazM1S1kwcUsza183Mko1QVlOcV9OU09PMk1NUUhOVkhqWUZBcWVtZ01MbXdJWi1oSUtkSlo2dXpJUDhBbGZQZlNickRuMWFZVWdaSVZIZHdOVUNDQ05LTFdtMDhwWXg5WTg1OXhQV1pVNzdJOVNOUjhkQU1URENEeUozcllpVg?oc=5",
+   "source": "Gazzetta dello Sport",
+   "sky": false,
+   "ts": "2026-11-05T21:42:54Z",
+   "players": [
+    "Pulisic"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-06T12:52:01Z"
+  },
+  {
+   "id": "la juve batte l'az e ringrazia koopmeiners, profeta in patria",
+   "title": "La Juve batte l'Az e ringrazia Koopmeiners, profeta in patria",
+   "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNWlBMWDJ4aXVnU2tSMXpEUDhlTnB5Z3VFUlVZX1cxWWNVdXQ5eUVoclAxbHRXRG1ISWxZVk5JeHpnMGowQmFvRzZjUTREN1paNHZlRDI1blZyY1J6aGJpRnY1OGdJN2ZUOFI5QjFRVV9oQWVla19pNEtXZjd0QjJJeHNMcTRUNFE3MkJaemhaaVVNOXg4WVVzMXBrOE00dS0weHFzXy1DMXVMTk01ZUJoMTBsUERCN2JwdE83UklHZjFldXlTOGNXMzM3MjFJUjBiOEJfbE14TXBCd1lXNmloWU40MnhrSEpXOE8yTlFNONIB7wFBVV95cUxNWlBMWDJ4aXVnU2tSMXpEUDhlTnB5Z3VFUlVZX1cxWWNVdXQ5eUVoclAxbHRXRG1ISWxZVk5JeHpnMGowQmFvRzZjUTREN1paNHZlRDI1blZyY1J6aGJpRnY1OGdJN2ZUOFI5QjFRVV9oQWVla19pNEtXZjd0QjJJeHNMcTRUNFE3MkJaemhaaVVNOXg4WVVzMXBrOE00dS0weHFzXy1DMXVMTk01ZUJoMTBsUERCN2JwdE83UklHZjFldXlTOGNXMzM3MjFJUjBiOEJfbE14TXBCd1lXNmloWU40MnhrSEpXOE8yTlFNOA?oc=5",
+   "source": "Rai Sport",
+   "sky": false,
+   "ts": "2026-11-05T21:22:00Z",
+   "players": [
+    "Koopmeiners"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-06T01:29:47Z"
+  },
+  {
+   "id": "europa league: az-juve, coreografia per i fratelli koopmeiners avversari",
+   "title": "Europa League: Az-Juve, coreografia per i fratelli Koopmeiners avversari",
+   "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQOGpwbXVXOF9UT01wSjRDSnZHMkIxMVRYUk8yckt3UEFaMmRPbWVfY09xbnNNWGdieUdfV19YVGZidk5Rcmxkbi1TbWNBUWYtNWJXWWY3Mk85ampjMDlwNUt3YWJ5enY2eGVDc096S0dKaWhyWmwwUWlPa1ZJOFk0WU1wZ1R1WC01aTgzdXBsVnBMempHZjJVZU5GSGFvUTllR09GaGstblhkM1pReTNJUUVMWlFkZGc0bzVLOWFmeDV0eHRQcVFUVW9SdnROdmdOWnN4RERzdmpRTmNPcmlFaUVRREtBZXBJREcyWlpVdUxhUdIB9wFBVV95cUxNYnIyaktBZ2phejFfbnVuOGRCMG0zYVc4a19fR2tPa1hoSUNpdENWbVgxNGZtNE5yVWFRR0lBVWlYX19mVVR5VFg3bXRYTlJLZVZaUm1YbUZZX3FSTmRmdWxkYzdmUEJmVUJPWE9ZSXJUcTBxbm9JOVRNMVJuanFaQnBfMV8wM045cDdyMG00cHVvZmdGQnMzUm5JZ05Vdm9Cb1B5V3A1dVRLcG8xZDNnSUtZYUE4NzNOMHR6bzVyRm92eVl5R3dlZkRtN2x2Vy1YM2dxSDZteno5ZGNueDdxaEFHWUdXYld2T1g1c0RvRXBRSVpWems0?oc=5",
+   "source": "ANSA",
+   "sky": false,
+   "ts": "2026-11-05T20:05:00Z",
+   "players": [
+    "Koopmeiners"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-05T20:38:15Z"
+  },
+  {
+   "id": "italia u21, i convocati di baldini: prima chiamata per kouadio e inacio. tornano cacciamani ed ekhator",
+   "title": "Italia U21, i convocati di Baldini: prima chiamata per Kouadio e Inacio. Tornano Cacciamani ed Ekhator",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOcFc3WmtUTEZnSE80MXNJempNdS1WaDRlVjN0TWR5bFc1VUFHaERwSkJObFNUR2lJbENyZ0RYLXo1bEluQTFOWTFJR0pZYkY4REFEdURCUVQwUlZQZDlEYVNMVVZTSC1TM29CbXdoQlhKalR3MGdLMHNFZ1NUV09iZmd1QWVJalpxRmtSS2Z5TW9mc2VT0gGUAUFVX3lxTE5wVzdaa1RMRmdITzQxc0l6ak11LVZoNGVWM3RNZHlsVzVVQUdoRHBKQk5sU1RHaUlsQ3JnRFgtejVsSW5BMU5ZMUlHSlliRjhEQUR1REJRVDBSVlBkOURhU0xVVlNILVMzb0Jtd2hCWEpqVHcwZ0swc0VnU1RXT2JmZ3VBZUlqWnFGa1JLZnlNb2ZzZVM?oc=5",
+   "source": "Gazzetta dello Sport",
+   "sky": false,
+   "ts": "2026-11-05T19:00:04Z",
+   "players": [
+    "Cacciamani"
+   ],
+   "category": "recupero",
+   "first_seen": "2026-11-05T20:38:15Z"
+  },
+  {
+   "id": "milan, amorim: \"strano giocare senza pavlovic ma diawara e all'altezza! modric, maignan e perche gioca rabiot...\"",
+   "title": "Milan, Amorim: \"Strano giocare senza Pavlovic ma Diawara è all'altezza! Modric, Maignan e perchè gioca Rabiot...\"",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPaThWOGFpX2tFOXV1WUItZzBBcmxDYWo3OHVrX3BvY2tMT3VEOEVyQkotY1N5UHRjamItZ09vbjRLNUNlUnFuUHhsbmQtZHNFcU1iNTRoeDYxdlhSSm42a2h0dXlZRjVtdUR2VUhCTWlsNWdfbkJxUGtjRTYwMV9Bek16TlBSazE1Z2QyR1RORjQ4NDduOHUwQUFn0gGfAUFVX3lxTE5VZ0JveUZmTm5yZ3hTeFVyRnlXR0pMYWRCRi1FUnVENU9zNFFJNXlIRl9VX01QbGI2bjMwRTA0UXkxd29VWmRMTnBQdGRrSW5VN2ZiQVhlMFBQOWE2cUw1WXRFbFh6NXFNRkhaenNJd1ZmQTk4MDZWbS1jNVhUUXdHQ09Lc2NJUlkxZkpNX3hLcG5JRVVQWjN1clEtZFoxcw?oc=5",
+   "source": "SOS Fanta",
+   "sky": false,
+   "ts": "2026-11-05T17:30:42Z",
+   "players": [
+    "Maignan",
+    "Modric"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-05T20:38:15Z"
+  },
+  {
+   "id": "germania, i convocati di klopp per la nations league: la scelta su bisseck e woltemade",
+   "title": "Germania, i convocati di Klopp per la Nations League: la scelta su Bisseck e Woltemade",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOZU9aZXZSTDdsQ0FXUVp5X0xsX0sxR3BRX1Z3cUFmNXd6VTVEU1ZVcWx5ZFBsUS1sRzNNVkFOeEFVbllrY1lxQ25DUU11WHVTQno2SVZjWGNlVEc4Nk0yelVuZlJfNTlvWWR4cTVlb0pvUkJCWkllZ0YwYlZ2YUlIbW9qYU5OdUNLbWdsWmMyZk5xM3dYVHBjTQ?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-11-05T17:16:46Z",
+   "players": [
+    "Woltemade"
+   ],
+   "category": "recupero",
+   "first_seen": "2026-11-05T20:38:15Z"
+  },
+  {
+   "id": "milan e atalanta, le formazioni ufficiali in europa: da scamacca e modric a rowe, elmas, moreira e ramos, le scelte",
+   "title": "Milan e Atalanta, le formazioni ufficiali in Europa: da Scamacca e Modric a Rowe, Elmas, Moreira e Ramos, le scelte",
+   "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPdXBSU0lxVkdPUmE3aU1SUVhMRXQ1aUZjeFVUNE9xMGdSSGJYREs1S3lvdXg3VmFCeTFHYmltaHphUjdoeWJnRGgwbHJTVWRYd2o5RkZxazFvSkowTUp0M0hxblpxYWpiQ0QtRWk1MDRPU1QtNGc2YWNYZHp3UkVxT2hzeGsyOFZTZ21XOGFBZUpUNnhmSHBoRC13NGFvVVhoU0o1SDBlRFBnSy1LNnktTkZ0ZzVDLUo5cmRnU3p4bVRtQ25wZ1pNbmF2dVZaQ3puS0ROZGl1ZVhkd9IB3wFBVV95cUxPTXdWOVY1Y2VzVHRyYm4xYVdOdjZpUW54cWVGcFNWZ0VraTlQcFBhVHJncUZ5RFFBNHBpZkVfdzdONWlsck9oNDUwazlFLTlvclB0SE9wM2VCblhEYWV4blZaZlZpbzVKRVgtMWprTnZwNEpUUFdodUV4NjNRMUpiV1RFQkhnNXItYlBCS3RMU1dvZVI4WDRsYXdmOE50VXY5UFNPNWE4bkRiYnNsMUVQR2lmanU3NXdwQjMzWjFpMHRkMGlJOHZxWlZfWFNIalNPdGFwQl9Uazhkc2JDdWdJ?oc=5",
+   "source": "SOS Fanta",
+   "sky": false,
+   "ts": "2026-11-05T17:15:00Z",
+   "players": [
+    "Modric"
+   ],
+   "category": "formazione",
+   "first_seen": "2026-11-05T20:38:15Z"
+  },
+  {
+   "id": "milan e atalanta, le formazioni ufficiali in europa: da scamacca e modric a rowe, moreira e ramos, le scelte",
+   "title": "Milan e Atalanta, le formazioni ufficiali in Europa: da Scamacca e Modric a Rowe, Moreira e Ramos, le scelte",
+   "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNRTJNSl8xUDVER2p3eC1XTHBoNHZENXJLYndRRFVfQU5lTHEyZWhhMTVwY3lxNlg2cGZyODJBSzdDZ0hQdVU2dnh2dG1MckFYYlp1ckxzSElwWWNMQWRjRHliU3BNR2NtTnJhbG5Md1VoM2FlYmVHdUE4RlhLX0lSR3ZkWjVBclI4amstNnVHckhlZUJCWEJRdHJWZC1YcVh0OGhLRUlWTEpUeXFsUTAwWUY3WHJ1eGk1UWg3bUFWc0FnTENTemdnbTBUNkhHblJuNk9fX1N0ZmhCTmRhRVZXXzdB0gHiAUFVX3lxTE1FMk1KXzFQNURHand4LVdMcGg0dkQ1cktid1FEVV9BTmVMcTJlaGExNXBjeXE2WDZwZnI4MkFLN0NnSFB1VTZ2eHZ0bUxyQVhiWnVyTHNISXBZY0xBZGNEeWJTcE1HY21OcmFsbkx3VWgzYWViZUd1QThGWEtfSVJHdmRaNUFyUjhqay02dUdySGVlQkJYQlF0clZkLVhxWHQ4aEtFSVZMSlR5cWxRMDBZRjdYcnV4aTVRaDdtQVZzQWdMQ1N6Z2dtMFQ2SEduUm42T19fU3RmaEJOZGFFVldfN0E?oc=5",
+   "source": "SOS Fanta",
+   "sky": false,
+   "ts": "2026-11-05T16:30:00Z",
+   "players": [
+    "Modric"
+   ],
+   "category": "formazione",
+   "first_seen": "2026-11-07T00:04:11Z"
+  },
+  {
+   "id": "juventus, la probabile formazione in europa league: le ultime su alajbegovic, boga, muani, koopmeiners e kelly",
+   "title": "Juventus, la probabile formazione in Europa League: le ultime su Alajbegovic, Boga, Muani, Koopmeiners e Kelly",
+   "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOOWFpWFU3LUJDUjlMek02bkF6TjV5Z0g1b0lFeW1CbjZScHY4ekVPYVFtclEzZVJyOHFvSjFiWXJrOFFIMDdKbzl4MEVxWXFoTF83MURsc3U5TDA5WTVib1Z5czU3eFFsMVd5U1MxM1d0QW5mV3p0SmtGSmtaTG9zZWVOZUthSEdSTmpFSFppN1BrV3htTXZIOHVjMUZBQXVOVkNnSEtCdjhqdzhuT2VnQW9ENHZ3ODhIcVNDSWJBMVRKS1VVX2lsdXFDSlNlWW04Smh30gHYAUFVX3lxTE9FTXRkMHh5UTNHc0NYemMxMTY3NmJoZEZaUjlJcS1WMmxfdm1jT2J2aW96dmsyVkwybXdnQko2a1IzbVpEdzlJRVk3c1daYVMzYmJqSXU5ZzZuZ2taTm5XaG5qblBBWER4V3F6aXFfcDRkWTdtOWxtaWJiWlQ3LTNzc2QtRjVaNHZIWVJ0X01US190MmgwMkowSnRSZ05qY3RFT2h3UWdycjRmTzZDUExHTnV6S2VHNzNaR3pVVE16a25OTTREcUxwSHRoRVRfQWFpVzVwcElraA?oc=5",
+   "source": "SOS Fanta",
+   "sky": false,
+   "ts": "2026-11-05T16:00:33Z",
+   "players": [
+    "Koopmeiners"
+   ],
+   "category": "formazione",
+   "first_seen": "2026-11-05T20:38:15Z"
+  },
+  {
+   "id": "az alkmaar-juventus, sfida 'in famiglia' per i fratelli koopmeiners: insieme hanno anche... scritto un libro",
+   "title": "AZ Alkmaar-Juventus, sfida 'in famiglia' per i fratelli Koopmeiners: insieme hanno anche... scritto un libro",
+   "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPeXdjTGRUS2J0WEN6c3ZhNlYzeWgzTUMxTFV1VjBMd2xCZ1RCWVNUaW9GN18xVC1wSy1LMDFvNjd5eFpJN1BGSS1YQWRtZHpMTFBkT3FwSVgzYjhSTDg0U0dpWkNBRERBazlNWmVBYXZEZ2wta3FnYVlLU1IyalNhWEtNSnV1c0ZWZERZOVFsNWI5MUg5YVFmeVlDYjBPbFJYSWp6MmtHTFNYcjI4cFZSNjc3MVkxbGVkbElrVmZGR1RuNWtscUltVXBXZlNMOEtXbEVv?oc=5",
+   "source": "DAZN",
+   "sky": false,
+   "ts": "2026-11-05T14:56:44Z",
+   "players": [
+    "Koopmeiners"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-05T20:38:15Z"
+  },
+  {
+   "id": "i fratelli koopmeiners protagonisti di az-juve e di... un libro per bambini: \"ci piace mostrare come...\"",
+   "title": "I fratelli Koopmeiners protagonisti di AZ-Juve e di... un libro per bambini: \"Ci piace mostrare come...\"",
+   "link": "https://news.google.com/rss/articles/CBMigwJBVV95cUxOYnpJSTFScHdPOWJVeXlWYnpwQmRacVNZRThueUo2ek54Mk5jZkZKalhHN2FwNDlva3FHekhCY0RueEhfZ2NROVo0YjEtSlZkOWstSmVMUDhvb2RMX05tNFJFSUpPTmhvVVJ5bVMwcV9LWWlRUWJNbjVrbkllVkVkNkVRald1b3BxSG1NdEtDdUl1TkxlRUY5UnN3RlNaTnVSOTdmMGNxRS1KaTU2cDNsTHJmOG92czd6bmFtaWxrMUNCTEFLYXlXS3JNRUx3bnFGeW9jTEdKeEl6RHpHa2YxT2xheEhaWDZlVUhfazNzeGhycnkyd2IxVmpPMW9QRmR0SlZZ0gGGAkFVX3lxTE5sdWZyLXpvbzNQeGoxdlBKVGJsSk5scVc3OHhINmFDLWg1aGtZTDFLazNaWU9sdEE4a1VVUHNMajE4NTQ5WTJxaUtuSjdwV2lZeGU4QVVNNzNOZVR3Q2NtNWJGSVZuVFFHcjhNRWZZNjZET19KR2xVZ0Q2NEZZUVlFMzg1OTVFN2dYanVzak9xODk3U1RYWFRFTUk0SVJodlF3WGQxVlIyeGNHUlF1NFRodE5BMGYxNUhUQUMtYnVoRXdoakVkeEktRkIwM3g4WDNBdXhRVi1EUTFwMjFyNEt2ZmN2V284TUpkZkx1eXNQWVhPUTYwZXd3QV9pYXVDNUl1eGxRQWc?oc=5",
+   "source": "Tuttosport",
+   "sky": false,
+   "ts": "2026-11-05T12:10:00Z",
+   "players": [
+    "Koopmeiners"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-05T13:05:21Z"
+  },
+  {
+   "id": "napoli, spogliatoio spaccato: con chi ce l’aveva politano, chi e con allegri. il retroscena",
+   "title": "Napoli, spogliatoio spaccato: con chi ce l’aveva Politano, chi è con Allegri. Il retroscena",
+   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOcWNNUGswR1RzUE9IZk9mQ1ZjcEhFckg1TXpvRUdaMnp3ZWh5TGJMOVlIT2ppUFlIZ1NqZ2JScHk2b1RCUlpid2ktX2JhMmtHOUotNkt4WXVUUG80anZFZUR4VU1WWm81WEVPRy1JUFdFRDlXVnh3X0YwaGdqUUtyOWVfcHUtTzA1TzYyWUtNTmExMzRTb0lndkQ1cHJTbkRMZ3hoeDRTWlhmc3JNSVZ4bXpINlAzUTlNckHSAb8BQVVfeXFMT2IzNmFQVUJPUW9xVzV0UDFlaEQzX0xreG1WQXBBRGJhUGpnUHc0UlZYcnBPMTFFdU1zeFFISzd2bzlvM2E0aC03dGUydWhnX3RVRW91cms3ZjF0eXlRaTREbDhiaEZsNGVHUUpKajc3NXJVTm43X0RUQXZIN1NKWEVETDlqUERMVHgxSUJQWEg0Z28xNE5XRUwtbWFmWElKZVBWN0ptMVFsZlBBdUFEY0pHcGxkQ0E4QTVaekt4bGs?oc=5",
+   "source": "Gazzetta dello Sport",
+   "sky": false,
+   "ts": "2026-11-05T11:47:57Z",
+   "players": [
+    "Politano"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-05T13:05:21Z"
+  },
+  {
+   "id": "inter, contro il como chivu ritrova stones e jones. e lautaro scalda i motori",
+   "title": "Inter, contro il Como Chivu ritrova Stones e Jones. E Lautaro scalda i motori",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOUW5GUVhxWElnbV9kRm12UlhMMm9yR0JtRVdHTzFvb1IybFMxUWJuZU55clFxLUd1X05yaEFmeThiUE51QmtOSUtOYURVWFYxTUlKRkhNcmdrSnhaOWxoNnFFZ2JGTkxtLTQzRHVvLWVfRWJ4ZmhSUC1WaWJGb2VxNDV0SHZfMEpGdUtEaG9zZE80am1yUmFLb0x3XzFkamZySFExTy0tbVFXbHhLVnhoSVpxLUx0dnNqcHFRUEEtczNtdVVTbGfSAcsBQVVfeXFMTUVhaGx5XzFYT2tBTllWLW1nYzNhMXZVbDZhWDlIZDNfaEwwZm1taFU0TlZnUUZQcXZQTE5LN2x5emNELW5NZzRNTTdaYWdjdml3VEJ3bjlJRVZ5UzZpcWVJeTdqazFQZy10YklPVVRYei1ha1pzd1VzemhjRnpvOGt0eS1kdEYyYkNWYVpBUWVpRXF5R1JySjRxaXRIelNrTXplOWJsZXc0MWJvLUF2aGU3SkpvZUNRRm5zX1MyWW9SNUcxd3Z4Y1ZjWXc?oc=5",
+   "source": "Gazzetta dello Sport",
+   "sky": false,
+   "ts": "2026-11-05T11:12:44Z",
+   "players": [
+    "Jones C."
+   ],
+   "category": "news",
+   "first_seen": "2026-11-05T13:05:21Z"
+  },
+  {
+   "id": "koopmeiners contro koopmeiners: az alkmaar-juve e una questione di famiglia",
+   "title": "Koopmeiners contro Koopmeiners: Az Alkmaar-Juve è una questione di famiglia",
+   "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOR3F6OFNnZzRLQ1ViSjAtREFjY3g0blR3WU1MMWZkeTZxNk1jeG84YUtNOGlSVjl0dzBoSzdHRzQtSXhhd18waV95Z1VldUJnVXdiZTVNbFBEZWlmUXROdXNiaVR6SHdzVHA3aHdydUxrY0ZaNEwwdlNGRGEwck4yQ3dxTFFYTU85S3JLTXotbUxfUmlEU3l5YXo5RGp4SkxIZUlHdl9idXdENVdHQWlvaXJzYm9GQ09GSVNkYUl1Y3d4cmVtU2F3LVk5OVNObUtqaDJEcUpVWkpubjAzTElpaE5hemZtclk10gHrAUFVX3lxTE5fbmVmMHBsTUI0OHEzTkt0bUV2NkF3Y21KOTZubHVhTEQtTmdRaDNadzBmODVMa252bjdIdmJtSzFSdzFrLVZkdU80d0E0eGhwMnZWX29RTmprY2xyZFktaElCUUU3Q2NxazhOYm9rem9FZG5Ya1B3N2FXSTAtd0R2OUlqdndaQTl2eVdHQXE2Y1ZpZV9EVXlIdmU1SFV0cVlLTTZ0NmhCd0dnMDRZeFRfY2gzQi1TVWd3RzhsbFJVMnpobjJnNF84ODd1ajJoVWsxUGxQa3ozMkh5alVrTTJycmhSUW5zSDVGQTQ?oc=5",
+   "source": "Corriere dello Sport",
+   "sky": false,
+   "ts": "2026-11-05T09:47:02Z",
+   "players": [
+    "Koopmeiners"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-05T13:05:21Z"
+  },
+  {
+   "id": "alta tensione napoli, dalla lite lucca-de bruyne alle parole di politano e hojlund: e caos dopo la champions",
+   "title": "Alta tensione Napoli, dalla lite Lucca-De Bruyne alle parole di Politano e Hojlund: è caos dopo la Champions",
+   "link": "https://news.google.com/rss/articles/CBMilAJBVV95cUxNWlVrblpIWWVEVjhUdnFJNmRtSVNQUTQ2allVYy1BMzhscTA1UFBOaGd2WjhQMHc2Y3ZOSklZRkJlLTdIRDZ1M1JBVUZxQktGZ1Z0UjBLeUJhdFY1V2tTN3psbGVwby0tcnZxSzl6T3pSSnRJTER0Z09oM09RRmFYaVZaYlBGcWtFVXNUNGRjRWpNMzJuSGFaQ2VDb1J2NUJCYVpZanVHLW9fc3A4eWlldnhsT3czT2FheU1OVml2UkdoM3phSjJaVW9DeEZzTUVzSHZrQUhKanVjMFg2TDFKcGg4VjBxMm5mZWN6eHNfS3NJV0h1ekZ6TUtDU2NWZHFsYWxPQnlydGlKU0o0dWxCVHVwNmjSAZcCQVVfeXFMUHpFTkd0VlF5cUtMVTk4NXFTOXFhb3N5QVhHVmh6QnpnOU1BVmx2RjJqZGsyOF8zcGRhR2JNa2hKY3ZJYVJNVlNCRUhEc01oMlJyUnMwLXJmX29odGZmOS1PQUZPZ0RJekhUS0d0VmxTbURPNkpOaFFsNGxXczBmLXlxV1Z4eHlSOGpiUlQzWFowX0FOVDZYbi1RMWhQYnQ0X2xoaUVWN0pDZDZGdzJzZDI5X3NMQkJWUl9oOEpVdzBSYkRxRGhoSzFJR01aZ3M3MDNTQVRCZFBGeDRvbi1CZ1pBS1hVOHA2Zk9saVVoVmFvUEVtS3JXdm5ENGtaUGtyLWVKdVNSeFluQXlsQ0ZqV3ZSRlQ1aVNj?oc=5",
+   "source": "Corriere dello Sport",
+   "sky": false,
+   "ts": "2026-11-05T09:22:00Z",
+   "players": [
+    "Politano"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-05T13:05:21Z"
+  },
+  {
+   "id": "inter, le ultime verso il como: da stones e jones alla data del possibile ritorno di lautaro",
+   "title": "Inter, le ultime verso il Como: da Stones e Jones alla data del possibile ritorno di Lautaro",
+   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQaDJZLXNkYkgzSndwQml0ckVDU2N6Qm96bDhkWlkzY2o2MkhJMENSTnFIeVcwZUFxUTM2VElFRFg3Y0lpaklYeUlFT2FlV1NRZ3F6WkhGZVFxaWhpMkJINm0yaUJIcVg5TG4xSHgtdEk3elFJMU8tMzdxWHMtYWNFcW5TVXhJSWstXzh2VmFLejZIQdIBlwFBVV95cUxOcmlrY0JhLVZsbk1pa1Njb01xZXVDMEt0dHpYR2V4dlpZTlpsM2I1aENLcjNpWVI4STZ2cEswN0VGdFpkUDJJMVJiVzlCOGswd1BkQ3RvZ05wOFBkQndaY0J5dnJuakNIZlZjWjQyQU9XdGM0V1FEWWpPaE9ZT3d0c1FFRTlZdHRSRGZId3RqTXFlOENLMXZV?oc=5",
+   "source": "SOS Fanta",
+   "sky": false,
+   "ts": "2026-11-05T09:00:48Z",
+   "players": [
+    "Jones C."
+   ],
+   "category": "news",
+   "first_seen": "2026-11-05T13:05:21Z"
+  },
+  {
+   "id": "napoli, sfogo politano dopo il porto: a chi si riferiva? video commento",
+   "title": "Napoli, sfogo Politano dopo il Porto: a chi si riferiva? VIDEO COMMENTO",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQMDVaWG9hMUVWOExGVmRLWmhGZjh0NVRISkVBTkx6QmV1cmFXMWY1eml4TFpheVN4U3lYMVRfUVVaT25NbS1VRnoxaEFiYnVwSm9mTURpT1RDVDJPdGMwS2paUEtFa0VXaVRkcnp4UXJaanJfcUZnWHZpQ3dpSFBhbnpjTDk0R3lEbWRtMnA5ZGZBRDZZZ0llZmtqQ0ludUVC?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-11-05T08:48:53Z",
+   "players": [
+    "Politano"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-05T13:05:21Z"
+  },
+  {
+   "id": "napoli, sfogo politano dopo il porto: a chi si riferiva?",
+   "title": "Napoli, sfogo Politano dopo il Porto: a chi si riferiva?",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNVTJFV2Vaa3JvMzRxcEhvdzByOVEyNnV5a0ZON2Y2ajRaemZzSllXYlBNTTlqdHBNR1NuaW9MNXNMTnBMZ3AtMkR1UzNFaHcxOXZ5MlRfaTZWYnVqV012WndhOXJ2azhycGRSX0U4c1pBeEpnRmJwWVJzQW9SeW0tMVk0S2FmTU56OVZxbEVZUmkwTmVFdkZvTUFOM0FsNjhUeHgycjVlSWw2YlJWdVRTeVoxVQ?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-11-05T08:29:10Z",
+   "players": [
+    "Politano"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-05T13:05:21Z"
+  },
+  {
+   "id": "politano, l'intervista dopo il ko del napoli col porto",
+   "title": "Politano, l'intervista dopo il ko del Napoli col Porto",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOYUdDcUpEQXR4UUpLRXRMV1dTVUZFM0g2cExDcDVZVTVPUU1mdzZtT2c3dzVVQ2FSMlktVDRqRlI3RzV6eFNQSDRwdkZFM3NlQ0hQdHVPaTRTY0hFd0UtemJnTVhxS2p0Y25iUnItVGdvemNnaVZQc1hPd0Rua0c4YXk2YW5Ucy1laXhlamtzbGNlSkFmVWVnN1AtSXRMQmFRTFlxX1huOHRTbmVm?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-11-04T23:00:57Z",
+   "players": [
+    "Politano"
+   ],
+   "category": "infortunio",
+   "first_seen": "2026-11-05T01:02:24Z"
+  },
+  {
+   "id": "polveriera napoli, politano: \"parliamo solo noi italiani\". hojlund: \"guardiamoci tutti allo specchio, anche il club\"",
+   "title": "Polveriera Napoli, Politano: \"Parliamo solo noi italiani\". Hojlund: \"Guardiamoci tutti allo specchio, anche il club\"",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNbTQtY2xUQ1BLUURPc2M3aUZtTVF3NURSZlZFcFpWUUxmV256ZWxRSnphYkdNWEtvQmpSS2FkZThZc3IwU0VBTjJuU205VF8xX3A4RFdUVENsX2l3eXJLVnJ3ZjVSMkEyTzJkVTZvMEhGT0VhdDBRM2t0aVdjM0p0VmRybVBnSkhUeW92REk4VkVEQVIzbGV4YlZB0gGfAUFVX3lxTE9OMTRzSkZ2bVBhcEJaVjF3NGcwNllsLURDMUU0MVoyZUxuNGwwdjV6OWQ5XzZLMzVwTDYxZlk3cnhqR2RqQllUOHVTTXNLdjVCeTJGYURaaWctMEJSSjRRZjhPaEpVWmo3Z0ljMHkydllqUC1fMVFOd2Fqd0dRSi1ETTRIUlljQk5GUjR4c1RfSnNkSW9PRWJlc0RVTC12NA?oc=5",
+   "source": "Gazzetta dello Sport",
+   "sky": false,
+   "ts": "2026-11-04T22:54:07Z",
+   "players": [
+    "Politano"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-05T13:05:21Z"
+  },
+  {
+   "id": "il napoli e diviso! politano: \"parliamo solo noi italiani\". hojlund: \"tutto il club si guardi allo specchio\"",
+   "title": "Il Napoli è diviso! Politano: \"Parliamo solo noi italiani\". Hojlund: \"Tutto il club si guardi allo specchio\"",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNbTQtY2xUQ1BLUURPc2M3aUZtTVF3NURSZlZFcFpWUUxmV256ZWxRSnphYkdNWEtvQmpSS2FkZThZc3IwU0VBTjJuU205VF8xX3A4RFdUVENsX2l3eXJLVnJ3ZjVSMkEyTzJkVTZvMEhGT0VhdDBRM2t0aVdjM0p0VmRybVBnSkhUeW92REk4VkVEQVIzbGV4YlZB0gGfAUFVX3lxTE9OMTRzSkZ2bVBhcEJaVjF3NGcwNllsLURDMUU0MVoyZUxuNGwwdjV6OWQ5XzZLMzVwTDYxZlk3cnhqR2RqQllUOHVTTXNLdjVCeTJGYURaaWctMEJSSjRRZjhPaEpVWmo3Z0ljMHkydllqUC1fMVFOd2Fqd0dRSi1ETTRIUlljQk5GUjR4c1RfSnNkSW9PRWJlc0RVTC12NA?oc=5",
+   "source": "Gazzetta dello Sport",
+   "sky": false,
+   "ts": "2026-11-04T22:54:07Z",
+   "players": [
+    "Politano"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-05T01:02:24Z"
+  },
+  {
+   "id": "napoli, politano: \"bisogna stare zitti e chiedere scusa. siamo con il mister\"",
+   "title": "Napoli, Politano: \"Bisogna stare zitti e chiedere scusa. Siamo con il mister\"",
+   "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPOTRUc2szVFRpYWlocFdmcHc4c0NwOGExdFZJUXZ6V3U2b3B5OEVZajF6bllDX05JS1Z4OGdocHBTTE9HcDlvM2hSMFFOSHl1dW1sdl9ub1pvQS1lWmR6Qmp2ZGNnQllsYm1IcEdKTnlpck1lMXRfNnVfTHl1THhQYWoyVFpNOTRaVW5PSmlMbW5aRWhnZGZ5bm5MazdqWjdVYUVqak5OMGRVZGpjQjc4d3RHZFVLVDFfcklmcU4yaDYtYmNTQXp4VmszWlJEdDkwUGY4cWFabG40Y3B2QW1leVV6NG9Peldk0gHuAUFVX3lxTE53aExHTS1YLXVnVnBDRlZZaWhpYlpQT2VSVVNBUU5HcFQ3QkhUWEZGZTFxRzV4TnZUSXZtb1ZNblh3cFV4MFNjQVZ3NnBPbzBUbFYwcUxGVzNET2dIb09CaGV0T0tMYlFKcDhwM2FTYlhfX2FSM2ZhcWlDbkxUYWh0YUZnLUl1MGRoMG9OTDIxUHpiU1NlcFRaSHd2NGJoa1RodENXdWEzUmtjNG43YUlhbm5lTUhmQ1pIOXREVWpUbWpZaVpKeDQ3aXA0LWZWM2tOWXJLVThOZko3WVdTbEMyQmk3cGdPWUZwODdmQWc?oc=5",
+   "source": "Fantacalcio.it",
+   "sky": false,
+   "ts": "2026-11-04T22:44:00Z",
+   "players": [
+    "Politano"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-05T01:02:24Z"
+  },
+  {
+   "id": "“ci metto sempre io la faccia”, polveriera napoli: bordata politano! allegri: “nulla da rimproverare”",
+   "title": "“Ci metto sempre io la faccia”, polveriera Napoli: bordata Politano! Allegri: “Nulla da rimproverare”",
+   "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxORXluX0V6YjNIWkhSSklnS2RzaEt4VmFVWkNNQ2w4RVBUWUMtYVpLN1JrZHZYa05MSnNLdFFCMXd0Vks2WDA0RWZaTzMyejFSV3MyWFdHV2hod2J3UGw2Vm1ZbjBreUgxUEtZNFFKVlYzRDBUM2xwVlFyN2RiOFlvWGxGeUQyNkdpemdQdldGd0xyMUVyR205YXd4d2NhM2E5MXE1WGFSek5yWkI0WWFvSjNXY2FMMkkxN0dhdUo0czBzSTZjT3ZBYWt4OWYwZHVIb1FIR1NXUF82cnROSWdMZmc1cDBnNWxoeDl6VTllQmVFN0U2NTVHMWhoalFpQk3SAYICQVVfeXFMUFVTRXBhQmRjdktfWWkyMVhmYldtdXpMREx1RXhmQU1mbFZkMVM4NmdhcUlzYUdmN0dnQ3FEM3owbmhmX24wTHRXc0VtY1N2Vk9jQjQ4SnNISl9lX09rMS1GNVlhdndjM0QtNlVENUV5V2FFZm9OY09RNDlaUVQ3aVlwd1gyS0ZTdDNYT2twcTRZYmxkYlktUVJyOUgyMkxxRkh0ajBzTElselVZdVR0aDNiSnNlN040YnRsUVRGcEprSWg2dm13OUdZTlFqSS1jRVRKTzNreFpzV0Mxdk5VbUhBS1JJZW02Rk5wREZVcnZMbDlTUVFEU1NoTWMtaEdTRnBB?oc=5",
+   "source": "Tuttosport",
+   "sky": false,
+   "ts": "2026-11-04T22:38:43Z",
+   "players": [
+    "Politano"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-05T01:02:24Z"
+  },
+  {
+   "id": "pulisic sblocca la gara: il vantaggio del milan sull'udinese",
+   "title": "Pulisic sblocca la gara: il vantaggio del Milan sull'Udinese",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOM3pLVWNPUEpqWFVQRThrekp2ZHdfem1VR0xRM1Z6SmRTa1dMalp0V3Q5eUUxbE9lbU5ELXBVNXRDbnBqTlZlUEdyak91d3hTNkVXRmhzX1BoeDNlZUZQNW55NEhjdlRaek1XMUx5YUE0TFJjbWlUUkZmZ2Zzd3BFQ09jTW5vTWRMdWdqVGZzdFF2VFphbnRObTY4X21mSGdIeFFLeVRKdTVPSGp1Y1lHNGthdm40QlAwN0dmdmZyTHJyLVp2ZWc?oc=5",
+   "source": "Corriere dello Sport",
+   "sky": false,
+   "ts": "2026-11-04T22:37:41Z",
+   "players": [
+    "Pulisic"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-02T22:27:26Z"
+  },
+  {
+   "id": "politano furioso dopo il ko del napoli: \"non so dare una risposta, sono abbastanza inca**ato\"",
+   "title": "Politano furioso dopo il ko del Napoli: \"Non so dare una risposta, sono abbastanza inca**ato\"",
+   "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxObFVaTmY5TFVhVlBDMFRKNmJfX3JuaVFxbC1ZYmp1M3pDXzNybUtQSTBoc3RsSzRJa1RONWEzYS1ZNHN4dG0zVHU0WDJ2N0RDM3BPSWw2WFhadmNxT2xLclBnM3FPTEVoN0VTcGZVM2pwYl84ZHdqYi03ZHdJMVhKX09iMXJ4VXR6NGhGTmJXRHVkcmNTT3NBVEkxSTNsZ180N0NxaUJCTDk4N002MnlHTmNPMjR6UGw2MWdkVjFsNWlOZ0thUUVZNVVXUEVKWEhnRHhtdmtfVGVma3lhNGZ2WmVqMDRIWGR5S05aOFVmeEYzNTdQMW1pQklCR3AyUlI5ZEE?oc=5",
+   "source": "Corriere dello Sport",
+   "sky": false,
+   "ts": "2026-11-04T22:19:50Z",
+   "players": [
+    "Politano"
+   ],
+   "category": "infortunio",
+   "first_seen": "2026-11-05T13:05:21Z"
+  },
+  {
+   "id": "verso fiorentina-juventus, cosa filtra sul recupero di ranieri e attese novita per atta",
+   "title": "Verso Fiorentina-Juventus, cosa filtra sul recupero di Ranieri e attese novità per Atta",
+   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOZEh1STdKajhmaEYyRkh6X1VCMkg2d0JvNk9wQXRIOHoyYVI5clV3b1NtZWlXQU5xYjczUUtLOWl4a1lGd1BEc2l0NHNTSE11Z0hLVGFORXhaWVJFejVWbVRCT3E2Q21mdm9GTGJCVUFfWEh3N3Z5UGcyQ1RmWWliTjVkdlQtYnVQckl5MHU1ZDRTaWJBLVHSAZsBQVVfeXFMTkVqb05yZzQ3c1FkeTBqa3JaLUJQakRyWW5QeFZid2JSRlRiWlE1Vi1HUnlFcTFBNGdFaXIyZEhfOFU4M1A3TTV5Ui1wcWRlaVd6Zk14cnlFSk54eUp6YjQ5SWVUb3Z2Q19GV3RVLUo3X25UQVIwTVItczZkZTBiM2V6YU10Yjd4MWRNUGVLNTdUX1Y3YlB0Xzh5azg?oc=5",
+   "source": "SOS Fanta",
+   "sky": false,
+   "ts": "2026-11-04T21:00:05Z",
+   "players": [
+    "Atta"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-05T01:02:24Z"
+  },
+  {
+   "id": "video. az-juventus, koopmeiners sfida il fratello: 'sara una serata speciale'",
+   "title": "VIDEO. Az-Juventus, Koopmeiners sfida il fratello: 'Sarà una serata speciale'",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPb0dvRHJoNGpaTENWcmhuVXZ0OFhqN3Rkeno2SzQ4YzJoLV9ieFdWeHUzZWdKeUlzOXF5VVYzczBKQzh6eVBDbWRMRWpMTVU4WG5CVUlwMm9aUTQyR3pwaFNYZDliWlB2MGZFR2YzYVNwalBmdzF5YnFpMnZHOGdyZ2dHWXpaQ1NOZFdJOEJZX1dTSl9CY0lKOQ?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-11-04T19:38:42Z",
+   "players": [
+    "Koopmeiners"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-05T01:02:24Z"
+  },
+  {
+   "id": "usa, i convocati di pochettino: la decisione su mckennie e pulisic",
+   "title": "Usa, i convocati di Pochettino: la decisione su McKennie e Pulisic",
+   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBHam14eHJBRy1DbFVneVJJOW50N2l1VUUwT1hQeDIwZ3ZRU1ZkZUM1MVBlSjRXODBYeVFpbVBFN296YXhpOVBTcm91dUYtc3I3cXliTEdIaW42VVhVX3dvbVlSR1Y1SjRfM29lLXVjTUg?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-11-04T19:36:33Z",
+   "players": [
+    "Pulisic"
+   ],
+   "category": "recupero",
+   "first_seen": "2026-11-04T20:23:39Z"
+  },
+  {
+   "id": "koopmeiners: \"az? serata speciale e con mio fratello...\"",
+   "title": "Koopmeiners: \"Az? Serata speciale e con mio fratello...\"",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPQWdhQVFLWWNoVlphY0kydWpWR293dnl3YmsxX2pkc0hYWUQ0c0F2R3dTVFZ3SmN2ek1FcFQyVmZzSGlKU3MwV1c2b19sSkJjSGNBeXVYd1FXZFFrN0Rjc3JOZTAyU0RFRWZLTkRGZHlRZ2FtSS1mY1ZlcDhIa0p3NEQzZzd4MnFaNFNtSnB0SEFMNU9lTDRXNnYzU281aE4tZGJ2OEVvcWpCcGM?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-11-04T18:51:31Z",
+   "players": [
+    "Koopmeiners"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-05T01:02:24Z"
+  },
+  {
+   "id": "atalanta-kairat almaty, le probabili formazioni del match di conference league",
+   "title": "Atalanta-Kairat Almaty, le probabili formazioni del match di Conference League",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNN29fcWJJRERvNTMtWGJfdldkcTVVX1dlNFB6ZU83QlpHbVBBd0Rod2JGRW1iWjVkb1VjRjFVRTBwVnNjWC0zVUx5RHhhQkNsSDB3X2dwQV9BOUMwOWdYSUY3bXJOZHBCZVFEY1dzN1ZGd3pKUzJIem9mcWgzZ2htc0NNb0Q1MkE5REhXT0ViNlRyTHNpdVVrMUlNTFNKZEVSOFM4SXhadw?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-11-04T18:42:29Z",
+   "players": [],
+   "category": "formazione",
+   "first_seen": "2026-11-04T20:23:39Z"
+  },
+  {
+   "id": "az alkmaar-juventus, le probabili formazioni della partita di europa league",
+   "title": "AZ Alkmaar-Juventus, le probabili formazioni della partita di Europa League",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOaEV4X2c4WTNXeExWVzhjUkliQV9mQU1pdU0wd0dMUDYzRUFvYnhMUFpaR3J6MnlMZUVBU2FNWjN4X0dXUzRsbnlVcGdFTVAxZmZwLXRnd29CcldRVDFVd3lxaFRmZllnQnBjSXBtWkNscVBlSGIyTUlEMmhJUTdZTXdiOVpkWHJFTHp2dURvT2Z6OWNHVmpjSlN1MGpYRmhORG9EX2ExZw?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-11-04T18:23:20Z",
+   "players": [],
+   "category": "formazione",
+   "first_seen": "2026-11-04T20:23:39Z"
+  },
+  {
+   "id": "milan-ferencvaros, le probabili formazioni del match di europa league",
+   "title": "Milan-Ferencvaros, le probabili formazioni del match di Europa League",
+   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOTjVaYTR5TUlQcHFJQzQyUnhRSDNwd0YwNnk0QzNLS0x3V1B6OVdZNmJmMkw5VVhSLVpsWmxPT3pqdkw2OHdCSzNqUm94ZlRJZ0N4VFBrdFY5UVNoU0p3Q2Z3b0R1Q3RXVmFLUHotMGtHcTdCN1dBOTJoaWdkU0RUR0FIVE40UWExQnphN3JUYXlzc1d2bXd2Wk1JUkFLRGJLQS1hUA?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-11-04T17:46:53Z",
+   "players": [],
+   "category": "formazione",
+   "first_seen": "2026-11-04T20:23:39Z"
+  },
+  {
+   "id": "az-juve, sfida tra... koopmeiners. peer: \"c'e una cosa per cui teun viene elogiato nel suo club\"",
+   "title": "AZ-Juve, sfida tra... Koopmeiners. Peer: \"C'è una cosa per cui Teun viene elogiato nel suo club\"",
+   "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOQ1NoVHVGY2hfMGRyS2lQVER6ZVpGV2FTeU1LYjJLT0Z2R3F5bXRYVEVZSWh5WVUtb3RXN05DLW5VX1N0bmxGZ3AwQzk3TlhuZ0szZ0xRYklWbW5xZUh4ZkNoeXFvWWRiRnBJeWJEZ1RNeTJUVG8wWUVlUTdOU09IeTRkb1A3ckRCaE9FOFAwYkYyaUs4LS1JSmRtZjhpSkJrZzQ2ZmVoQUlTaU5TM0NOSExZZU5mMGZhbFM1SVNBQlJmeVFidEJ0a3N0SlJqRFJoNU5oWGZYQURpbVpOLUJLMmhNU0dGZ21TNGxUSDhPSXRaUdIB9AFBVV95cUxOODc2bnA5Q1JaZjVoSWFfRGlGTmcwTE90UGRLbkRtU295c0dWbEgwYmZuZUpZeXN2dGh0cmNYS05wYjFzTkV5TVVCQWZ0M0FWRlJNbm9UU2NFMG02UWo3OENYaTg2WjZFS3BQZExRUDk1OUZWQ0dMVE5oc21lT3BEaloxY0lyazhyVzJQQUdoTUp2cWNCd3pTbEU2aUhvaGJxUTVaampfc0hsbFNIZEtfdnRUVDM5Qmx0UEJTWWd2WEtIYkJfWWdlZjlQWnVtektCQlFJQ2xPUjgxaGNVWFE1OVZNMXozc2o1cldLOUZaT2gwSWdG?oc=5",
+   "source": "Tuttosport",
+   "sky": false,
+   "ts": "2026-11-04T17:35:00Z",
+   "players": [
+    "Koopmeiners"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-04T20:23:39Z"
+  },
+  {
+   "id": "flash - inter, stones e jones tornano parzialmente in gruppo! la loro gestione e cosa filtra verso il como",
+   "title": "FLASH - Inter, Stones e Jones tornano parzialmente in gruppo! La loro gestione e cosa filtra verso il Como",
+   "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQbWdJT2gzM29RUTMwZEVxTkt5SkM3NjZsOHd5UmZlRXlYR1BONlprZEZaNEF6S1JxeEZvNlUwd1ptQmxfNmNVLW85TGN3TkdoaklUSWdHRzhELTlaNllINXJacFVoaTJpcXh3YzZqQXI1bFllbG8tNl9qMktDWlJBRkdwamI4MEJWLVZUQ0x6c1I0WDMxN0prU2ZqVVk4enRIcFdFeU9tb0JQR0JETHo5TThLS3p2QjZhR3poSGkxRlFGQVdab3V0N090N2s4b0NOSHU4Y0NMS2ZNOS1KdEpv0gHkAUFVX3lxTFBIZ1FEV3F5YkNickR3MDlMQkpkLXpCYXN4dDJMTmtmUkpJR3poZk9pMW1ubzJaUFFnNVh0SXd2T1JIUjAtaUJPeXh1XzgtdWVDQWJvMmI0ckhTSVFMNjhxWnJaTlF4OF9MUkMwNW95YmpsOTV1UjV0dHk3bWdqQzN5bUhjX1BETkxQWG5GOTVKYm9UdFluMkY1TTlqNnREQVFmZl8xbDVxVUhSWUNrT3d2R0FCZGVFeEFmeFUwQkx2SDFhMWJ5MmZRMTVnQXhRSGJmUm5mZUZPWUViampxZTNCN2t6dg?oc=5",
+   "source": "SOS Fanta",
+   "sky": false,
+   "ts": "2026-11-04T16:15:13Z",
+   "players": [
+    "Jones C."
+   ],
+   "category": "news",
+   "first_seen": "2026-11-04T20:23:39Z"
+  },
+  {
+   "id": "az alkmaar-juventus, peer koopmeiners: \"sara speciale giocare contro mio fratello teun\"",
+   "title": "Az Alkmaar-Juventus, Peer Koopmeiners: \"Sarà speciale giocare contro mio fratello Teun\"",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPVHRRSU1mUC1KdlU2cTFMdWpxcFo3ZUxpcTV6MDhKSm9aWUdUSVR3X2tvMlJSbEN5d2JPZ3BVbXFNUmJHNHBRaENBNmNBT3kwZnZIM0U3RWcxNTNnNFlad0wxMmkyUk80dFZ2NDhNMmhiUUt4a0JGVWNScW9hV2hVaEhJYUVBX20yYW1JUW4tZDVqOUloNXNSREZyRjRheEk0X1hFLWhIVVpjZw?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-11-04T16:04:48Z",
+   "players": [
+    "Koopmeiners"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-04T16:16:24Z"
+  },
+  {
+   "id": "c'e un libro per bambini in olanda che racconta la storia dei fratelli koopmeiners",
+   "title": "C'è un libro per bambini in Olanda che racconta la storia dei fratelli Koopmeiners",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOWFRhQlZRckVFaUdhaGFhSWM4UDdwbTlmX3d6ZUlES1dyZ3JGeG95R25nd1hhTVhEN3NiRTVDYnk2eHp4Z05kYjdYejRYeXFDZmFqMTB1aGNsYmNGNzdDTWN6Q1FMaXI4YnNKMzF5QWxLaUFOU0RxN19YVUprZkpRZFpESTFGamxkc21kQUFYbldFblhPVkNqYXUzYVZSbUFKOHfSAacBQVVfeXFMTVBDNzJQYm1lU3FqcjNObzQwbkNOSUIzSURNR1VHQ0NKYTdnS2U3aXlIQ2VNUWxJU0tpck1OTDhtckk5Qy11WjVzci1sdnFRdTNiYXBUTy1aLWxha1FVY0dGUjJUR3F1UkE1OUVCRGFIZVd6ZFBDWWV2TDBFemdSTnFNTnlONFZ2MGNobUU3VG1OVElOb1p1b1BTRGNXRG5ReU1ZTGd4QkU?oc=5",
+   "source": "Gazzetta dello Sport",
+   "sky": false,
+   "ts": "2026-11-04T15:45:28Z",
+   "players": [
+    "Koopmeiners"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-06T12:52:01Z"
+  },
+  {
+   "id": "peer koopmeiners: \"sara speciale giocare contro teun\"",
+   "title": "Peer Koopmeiners: \"Sarà speciale giocare contro Teun\"",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNRlZ3cXNNUlplUXB3YkktU2JKMHFNZlJtNXlpdUNGUURBSHJjbUlqbHZqc0JQQjBrU1BZeDYwa1V4WVJlSHRnUXdVazJ6akNjaHNla1E2VTJrZ0t3c1hra1hPY0VIdUNwRDBFWGY4LWg2SmFaWnNUWDV3c0pZWUxvbGJweHZ2SzVBblVQZU4tM1RvM3hZd3F0YWhuSXM3TGNQNDdWdFVjZV9yOWhiSW9VR1FocVk?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-11-04T15:32:01Z",
+   "players": [
+    "Koopmeiners"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-04T16:16:24Z"
+  },
+  {
+   "id": "ferencvaros-milan, le probabili formazioni",
+   "title": "Ferencvaros-Milan, le probabili formazioni",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQcmV6TnprbFBaWV9QVUN5cHZWYWZpU1prYjhkRzg1dTRCY3V4UEpadDViZS1hZEVTaGV3THRxaUFabFFwN1cxZ1pLZjYwMlp6VEpFSWJHNW1xcEsxS3lrZUlnZjJwQ3Zyc3FpQkx0UkdRQjBzYlk3aHYwNVBBWjEtZVd6aG5jWm5MQmpfaFJrMEpNX2g4cUg4RUw3NVZzekxsOElyb2ZoRmk?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-11-04T15:20:14Z",
+   "players": [],
+   "category": "formazione",
+   "first_seen": "2026-11-05T01:02:24Z"
+  },
+  {
+   "id": "inter, jones e stones parzialmente in gruppo: obiettivo como",
+   "title": "Inter, Jones e Stones parzialmente in gruppo: obiettivo Como",
+   "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQNlB0a25PaGsxRnpsRDBjdlFTYjlqNUNJNFFXZHdScExHSVFvV2hUQWdabXRfaWQ4dEFpMDB6OF96MlhfTTZad2JKNUZSUUxpTDBxMThTd05TanBGT3FMRXhNQkZzVy0yNUs4aUFKanpiYkhjdEx0QU9BalZ0ZDI0MzRQQUpqVDFy?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-11-04T14:30:57Z",
+   "players": [
+    "Jones C."
+   ],
+   "category": "news",
+   "first_seen": "2026-11-04T15:59:19Z"
+  },
+  {
+   "id": "inter, doppio recupero contro il como: ci saranno stones e jones",
+   "title": "Inter, doppio recupero contro il Como: ci saranno Stones e Jones",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQQWZmWEVvaVh6MUtka0xUZHZPUmJnMVBFSnlCRWpUSllkSG41YjdablFzVlFPc0N1SDlrZ05sWDZteXpMV08yUktZYkdUdWt5cXI0S3hkVldEOUJsMFBYSGlSd3Bsb3dCX0xJeWN5TE8wVWtkXzV0VkhEa1JKalROZl9MUnFLTDFNT1NnSFR3ZVNZVnlZM2x2cnlqa2d5WVptbE5KdVZ1c0ZiN25XVjhhZl9jMXRDLTJtZ0c1dDNXWENJUkFp0gHKAUFVX3lxTE53SFJ5UjZiVjVmR0oxaWotc0tZTDNVaUFQYlI2UEZHaFpiYVNEeDRKWDdzQzh5LVNSMXE5MUVwbjFBRHM0QkRtcnllYl9BdDBNMWkwR2hhWjFVVFFDS09YdXA3SklHS3BGQlN1MDVGNGV6Qi1PQldhcGNNSXkxQWhvNEtUMlZWX3dTNXVsVUNtaUtscTQwX0dNYnFxWG5uVGhDZWNXN2JVRl9tRUgzTEhuRF9uM2VWUkQyNGhDd3pWLTNoY3Nwck91LWc?oc=5",
+   "source": "Fantacalcio.it",
+   "sky": false,
+   "ts": "2026-11-04T13:32:00Z",
+   "players": [
+    "Jones C."
+   ],
+   "category": "news",
+   "first_seen": "2026-11-04T15:59:19Z"
+  },
+  {
+   "id": "flash - inter, stones e jones tornano in gruppo! la loro gestione e cosa filtra verso il como",
+   "title": "FLASH - Inter, Stones e Jones tornano in gruppo! La loro gestione e cosa filtra verso il Como",
+   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQbzVkTFZ0YzFXZ3FHelAtUlhSdkJLSXBPZnFqQ1lMTWRrM25WdjRRR1F1VHhYT1B4eXhmOVpSYjdpd2s4UFdwUzJudXZ6RGlndkcyZUpFZmhTQl9IbWk1YnNBNTNoMEg4ZnQzQnZsTEZ4ZkRZcUJ3czZoMkFmTWRBNGlRZDdPZVcyblEtZ2RzY25FYmF1MXA5ajlfTmRYTDZzNkF5d3ZRQWJ5b3pMZWdHMkF3aHpIc2lDM0w2dlFQOW5EOHIyOHIzS2Job1FNZ9IBzgFBVV95cUxQbzVkTFZ0YzFXZ3FHelAtUlhSdkJLSXBPZnFqQ1lMTWRrM25WdjRRR1F1VHhYT1B4eXhmOVpSYjdpd2s4UFdwUzJudXZ6RGlndkcyZUpFZmhTQl9IbWk1YnNBNTNoMEg4ZnQzQnZsTEZ4ZkRZcUJ3czZoMkFmTWRBNGlRZDdPZVcyblEtZ2RzY25FYmF1MXA5ajlfTmRYTDZzNkF5d3ZRQWJ5b3pMZWdHMkF3aHpIc2lDM0w2dlFQOW5EOHIyOHIzS2Job1FNZw?oc=5",
+   "source": "SOS Fanta",
+   "sky": false,
+   "ts": "2026-11-04T13:15:13Z",
+   "players": [
+    "Jones C."
+   ],
+   "category": "news",
+   "first_seen": "2026-11-04T15:59:19Z"
+  },
+  {
+   "id": "lens-como, le probabili formazioni",
+   "title": "Lens-Como, le probabili formazioni",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPNDZXbU04Z0U2MFdpSU5ZLWZlak1uZHZrVFJ5cXRzbzFrTGxrMXVyNHlNZDFrenNCd1pRQlVsY2FhNEJoNzVxWVRkY1dzT2cyY0dCNDFSVUxWaEZTR3ZaTUR1bHNuSHM0ZUpSLXlNNEk4NnFGTFNQNV9IMFBVazFVdXdGNHdheExoOWZxa1RLU0UyOHVYYXNZTlRIOFprOFo1cEE?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-11-04T11:18:32Z",
+   "players": [],
+   "category": "formazione",
+   "first_seen": "2026-11-04T12:55:01Z"
+  },
+  {
+   "id": "l'altro koopmeiners, l'azzurro 2008 dal barcellona e il vento che sposta: juve, che squadra e l'az",
+   "title": "L'altro Koopmeiners, l'azzurro 2008 dal Barcellona e il vento che sposta: Juve, che squadra è l'AZ",
+   "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxPR3hXbExBbmVVZWEtQTBPLVBrd0wzdTlfcUlpQ3IzeE1HT2lfQzFRWXZyRzc5OUpseHo1VV9kS2hMNFRYY094WVB3NG96bFJ2UE5xYVFaYnRyMGNUNHA4VVpjd0xyTUJTRERWb0dOdm42UXVPRW5oT1doR0NDV2tSU0o3clJDVGx6S0tVZTZMV0l5RjU1TXJ4aGxadDFDZ0RDQ21LMlNEM0c3aDgzczBIZ0FMMDEtaUJGWWgzRkF5dXBkc1FGbFRSMm1wNjlhdDVGR05mTFM3dTJBa0NkckVrcWlXcXlJOXlBNWEybXIwb2lPQUg1Vlg3NVBOWHRTd2vSAYICQVVfeXFMUDU4N3RaRzBMYmo4N0ZybVZWMEFrcmkwNVJQb2xpQ0F5amdHSGRvQUcyMGhPLUV4OXBCaThPZmYyZkp3bDI4WE14U19YRXl1NFdETlc4ZXpwT0VPdjRmYWVRa0VYbzRrOWUwa1o5RUEybEZIbk5pRXJ3TlJQNlpPQUFTVlctb1MzLWxJcEZOOFd6M0h6SEdmczMzZUVXOTBzUDJ3Q0xpQTdaNFRDQmFaZDRrRGlWQnZRcWtXQWl5eTZocFd2T0VNT2NhZ1RIa2ExdUF4c3RPU0hiR1BOOWpTU1U4bjhiaG5VRkdyMkprT0pVa0ZRVDV5SmdIeTBpSlg5aTBn?oc=5",
+   "source": "Tuttosport",
+   "sky": false,
+   "ts": "2026-11-04T11:04:00Z",
+   "players": [
+    "Koopmeiners"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-04T12:55:01Z"
+  },
+  {
+   "id": "napoli, politano: \"c'e stanchezza, periodo complicato\"",
+   "title": "Napoli, Politano: \"C'è stanchezza, periodo complicato\"",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNcHh2SWVDSUEzV2RYem1IUnpLNjBpZEJwYmsyYnVGeUpYSmhpdWk1RHFGX2VOWjg1YjJVbE5qQWpzalN4YlZ6bURfeWd5VUUzWElqQ29vVVpJS090UGNOYmlwSWNtb3h1U1RTX1ZERldxWFRJN3lHck9heWR2alI2T3JWWnRGWUpWUkNFUzNzaW9iLWJlZ1A5UkkyVTVPZmtaUmVrb0hCWUNyUElHSE5hYy1MMNIBuAFBVV95cUxQY2wxRkU5Vmt5Z2NQeVBDck5QMktqcUxtMEhneFNEOWx1NE9fU2tsaVVmbk9EZE93amtXbEtfQmhQNXlIa0U2eEhQRDB6d2V5ekwtdzhfT2J0TWhnY2lYUExtRmxBd0J6TE9TTzNkVFVIWG1WbXlWTlJwSVlIQWZuTUxYQ1F5cUpZcmk0MVN3UUQxN25PMnR3M1F3TEQ1Z2ZvdnVra1IzNTd6d2RVdVVlREo4SDJyRXN0?oc=5",
+   "source": "Fantacalcio.it",
+   "sky": false,
+   "ts": "2026-11-04T10:49:00Z",
+   "players": [
+    "Politano"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-04T12:55:01Z"
+  },
+  {
+   "id": "dida: \"maignan come me, la parata nel derby e pazzesca. amorim ha tutto per fare bene\"",
+   "title": "Dida: \"Maignan come me, la parata nel derby è pazzesca. Amorim ha tutto per fare bene\"",
+   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOelZqSVE2dnVFNk93VVdwR2szMThGMHpjQS1HQTB4dDYwQXlEcnEwX0QyVDhuR29WUzJ0SURfNVd1TzI5VDJKbS1VNXBJYUpwcHJxVFdrZDZpMHhrQWlQelY5b3dkUU9FRGd6c1Z4dlRHSTJabEtVWWpHVDRCX3BoYnltRTkyMHNCZjFnM2VaMk41MmhNOHViTEtMczQ4dnfSAaQBQVVfeXFMUGFlR2hEelhqNncyM1B5V2lNWkpzMF92NHdKdVk2LXlRSkR6QkZ5VnJwQUdMTHFyMnhvZXFvVXRZMS03cHlFbHRseEhmanlzaVhTSTdDN29NRVFQeHNXMVc2NmcwSkV5T2VRUFBUZzVpR05kajVpcGluSERYNG1Td2V4dEduLW84bmVWdW45MzNhdjVBYks5S2pFQnV2NzZLUUVrUzQ?oc=5",
+   "source": "Gazzetta dello Sport",
+   "sky": false,
+   "ts": "2026-11-04T08:55:22Z",
+   "players": [
+    "Maignan"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-04T12:55:01Z"
+  },
+  {
+   "id": "woltemade, piu utile kolo muani? la juve ad alkmaar si affida al suo re di coppa",
+   "title": "Woltemade, più utile Kolo Muani? La Juve ad Alkmaar si affida al suo re di coppa",
+   "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNbzBNbk11azM0T1dfRWhiTHYxMFY5cmZkTDBqS3JpSHdIZHNleVdZeW1lc1Z4MkN6bU9pYlJ6V2VMNEt0RVhxb1lsS3BEaUsyVEdRbndvQ1lTZjBSOG1scm8zczJoX2FVLV9rTXdjY2VGNERZN091UG5wZDZZYWc0TDBsNF9EU3A5RXo5ZGdyNUp3dk9XblEzQkxaTWxjVGVuZjlLUW1kbFNKdG1DUjF0NG4tTEhJWkRZSlBia3hQNmpRMEU1ekdWTWNXN19maGZPdFlEN3ZFU0dWS3NNZEVxLW9wczRzMXPSAewBQVVfeXFMT3kyaXJiWUd1SHlVQkt5LUhId2pCVWV2RV9PT2tuMlFQZzdQRUpvM2xXeW1UZVpzbWlFd1Vid0hSZGdhLWxRUllrZEZjTGU3VXlxQzRaWGRfUVU0ZS0xeXBuVHN5SFFDaTNUTzR6ZElpMVhBTzB0TkJ1c1hOQ2ViX1BvbC1nTGRaMHBxRUkxZmFRSnotZVAzcDFfazY5UkhDLThtNGZ3SEZhcl9mbEJKeGpETEdrOTRDbW4zMWdLeF9rNEwyOXBvNUU4RTd1RnpqNHkzb0FrYU1MZGVfdGVmcFA2QjBfNWVtRXRqOVI?oc=5",
+   "source": "Gazzetta dello Sport",
+   "sky": false,
+   "ts": "2026-11-04T07:01:14Z",
+   "players": [
+    "Woltemade"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-04T12:55:01Z"
+  },
+  {
+   "id": "le probabili formazioni di porto-napoli",
+   "title": "Le probabili formazioni di Porto-Napoli",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQZWxzUXBoY1pmS2xWcFBSRzZfcEYwRFpmVkJZUjFDU29SSEFsVExyYnFvQ0ZnazJHNFhlT3FQV2x6cUVxZkdvYk9zZGs4RjVwUnQySFBlMks2Tk9Ua0J6d3pOSG9USl91SUpMUkkyUHFKcnJqS1NVNnVRVWlaRTBCSGk1amd0dThIeVhkQ01TSkJtWTdDc1VjVWRLX3hRWWZLc0E?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-11-03T21:54:30Z",
+   "players": [],
+   "category": "formazione",
+   "first_seen": "2026-11-04T00:34:33Z"
+  },
+  {
+   "id": "lens-como, le probabili formazioni del match di champions league",
+   "title": "Lens-Como, le probabili formazioni del match di Champions League",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxQYUFVTTN2ODNCUkZ6SGVya213T3gxcTl6MmlXeU0ycllrRGtNenE0YkxLaG1GOG1qaHlac21vVTFoRmNUYktXWnlsOGgxcTM2UEZWM3BsZENWMXl2Q3NxMlhEZUJBM1JTekxHVFIwT1M1YktEbFpjazJzM1AtNUNDTHVzS2xydVo0cEl6MXVMcTQzOWVFMTlzY3lYckFGdw?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-11-03T20:32:37Z",
+   "players": [],
+   "category": "formazione",
+   "first_seen": "2026-11-04T00:34:33Z"
+  },
+  {
+   "id": "porto-napoli, politano: \"tiriamo fuori l'orgoglio per rimettere a posto le cose\"",
+   "title": "Porto-Napoli, Politano: \"Tiriamo fuori l'orgoglio per rimettere a posto le cose\"",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQWkpGYkwwZktUZUxncTZUcDAteWhPUFB0bTAzc3QzX1BSRzBsYkFhZDRDRVdVa3U1WDFIVW1UUF9ycm42dEZVbVF2UUhETGtuYlBPUnphQUowQW1BVThMcDR0UEZYWVVIUUl6UEtZa0lHcXI1R0I5SEJPbHgwdWZ1cEFrT3hSMldGblplR3NSMzQ0RW4xTnIzY0ln?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-11-03T18:28:03Z",
+   "players": [
+    "Politano"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-03T20:04:35Z"
+  },
+  {
+   "id": "napoli, politano: \"infortuni? niente alibi. sul mio ruolo...\"",
+   "title": "Napoli, Politano: \"Infortuni? Niente alibi. Sul mio ruolo...\"",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQQXFYejgyT0dlOGg1S3dUTmN5d3IyRmUwTWZuYXF5MnFoTDc4WEFaSXVneEFDZUxuUU0ycnBFOGZDSzVNa2NrejdzNnljMjB1cHJBeERDdHFwbnZMaGZucGNKZUZLdXRBZF9hb0ppM2V3VHg5SlBLbWdHT3hCd3N2dnBoQllwNEtLb2d6WTNPVTBrY2pHR0MwWUxuWVFXUVY5Zk1EZlR3VEMwbERmTXNzNTBVc1pIeW_SAbwBQVVfeXFMTTRsRlNvRDh3X3oyTFVZVTdVbVhCczhSOE9wQzl4eThDTGE5V1UzTG9pRWs1dWlTcGV0di1KWmRWaXFLOFBXLVlreGZkOXVjTHlDQ29JQnNqMllZb0RmajdVVGRFOVdBV04xNFFCaDM4MXYzOXFId1ZodFowellRSXg0YjFvSnltUUhFaTJFeVZSOEJwS0diRk5LTkVNdUtyU1VfcnF3eHJIQ0RzNnNFQkYtem5LbS1aMTdJZE4?oc=5",
+   "source": "Fantacalcio.it",
+   "sky": false,
+   "ts": "2026-11-03T17:39:00Z",
+   "players": [
+    "Politano"
+   ],
+   "category": "infortunio",
+   "first_seen": "2026-11-03T20:04:35Z"
+  },
+  {
+   "id": "squalificati e indisponibili como 2026/27: infortunati chalobah, diao e kean",
+   "title": "Squalificati e indisponibili Como 2026/27: infortunati Chalobah, Diao e Kean",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQdEpvMkxRWVRhYW9iTzJNUk9LUkNJelZGazF0UlFubE1sbmpNeXZuVThaMDlMU2xKN08yVVd6dVpoTXJGZE9BWk9mbFFwb3htZDVobTkzd214c2pCUFJiczFNTmIycDMyMzJvR09pUkdxNlFGYlBzYTVFZmVrLUdFaVgzc1R3VU9UTGs0cGRuUGlQZTczb3R0X3JRVU9sRWZCcjFDWkdackl3RUt3Z3VfY1VPRWlLUGNvTHEtMk5WbkZqSC00?oc=5",
+   "source": "DAZN",
+   "sky": false,
+   "ts": "2026-11-03T16:15:00Z",
+   "players": [
+    "Diao"
+   ],
+   "category": "infortunio",
+   "first_seen": "2026-10-28T10:40:26Z"
+  },
+  {
+   "id": "fiorentina, infortunati e indisponibili per la prossima partita: ancora fuori atta",
+   "title": "Fiorentina, infortunati e indisponibili per la prossima partita: ancora fuori Atta",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQQ2V6NjQya185QjJ2a0xTMHRLdGZwZGpPWVpmLUR6dWR1am9TZGNLbkhQNFMzbXNHaUh6VDZiazhUeUxKVFhOTXRTNXdPb3hscWExajlGVkdTWU1BTENqZkI0TW41ZHpCallfcVZGaEh0MTR1MVBUT1dtNU1KMkdHcUVkTDhBdkROLVNiWlhXbm5xbnJ0d3o1RS1jSXNGRmJrNF9yMmN3?oc=5",
+   "source": "DAZN",
+   "sky": false,
+   "ts": "2026-11-03T14:55:09Z",
+   "players": [
+    "Atta"
+   ],
+   "category": "infortunio",
+   "first_seen": "2026-11-04T00:34:33Z"
+  },
+  {
+   "id": "manchester united-roma, le probabili formazioni",
+   "title": "Manchester United-Roma, le probabili formazioni",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQdnFJLXVvdlZuT1ZNZS1GT0cyX01kaDFCM0oxQXBGXzgzTm1Kb2pSSFViU1lISXhoUHVJc1hYb2VSbHpRQzdMazlZWDFKQjdhVFBVVXY3eEpibFFSWmhnczc3UkotUWhQLW5Fcm1DUG4zMkE0VFNFR2VCVzZlNjREMU5YZ0FFQy1rZGRRalcyZzhMeUE1YkRRUUZibWZJd00za1Q2X0VZTjRzQlpKT0Z5S0hHOA?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-11-03T12:22:41Z",
+   "players": [],
+   "category": "formazione",
+   "first_seen": "2026-11-03T12:43:43Z"
+  },
+  {
+   "id": "flash - torino, stop belghali per un problema al ginocchio: cosa filtra! per fortini, cacciamani e mandragora...",
+   "title": "FLASH - Torino, stop Belghali per un problema al ginocchio: cosa filtra! Per Fortini, Cacciamani e Mandragora...",
+   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNQlVSRVMzdUNqeHYyUEladjBsSjR6Yy1Eem9CT3drUW5nbkI4aUNPaVNjSEt1bjNoLU5lTEJnWG55b1F0cjMzMEt2cmM4d1UyZjNzb094RlhfTFRMbEJWUVZMWmxSX1p3NG8xN1B6czVYemZia0p3OEFoVXhfRUV2Sk9mdXFfcnVDWV8zcHNQZDc2d1g4anE2ZkZOY3hCbDBfUWpiekI2UExsSHNoRXUwRDhPTzBINzN6Y3pJVlhuWnBCRnQ0X2VNLWc5NkzSAdIBQVVfeXFMTUhkbU0xb20wZVVGT0JuYmtfSVd3UVhoT2ZMSllpUEdrcnVLbHdibUxBeEt0MTJEWlFvOHRQcEVlYWlYUXNwbFFBOFdaYTFXZXdrYlJIMktteEdpYVpWT3hFRjRqYUxPSUktWWxDeUVrTHpFN29UeGJIYThvYUx2OTYyYWd0RlFVaHdNYjBTa2pKTDYyTEJsSHhHMGlWSnA5U1c1YlhmbXFlSDVSUzBLS0E2cUZaTUotUS1PQXpGbTlmX2RvSlBfRGJsZ3pQaVlxR2tB?oc=5",
+   "source": "SOS Fanta",
+   "sky": false,
+   "ts": "2026-11-03T11:45:25Z",
+   "players": [
+    "Cacciamani"
+   ],
+   "category": "infortunio",
+   "first_seen": "2026-11-03T12:43:43Z"
+  },
+  {
+   "id": "le pagelle di milan-inter: moreira crea, maignan conserva. barella da incubo, le scelte avventate di chivu",
+   "title": "Le pagelle di Milan-Inter: Moreira crea, Maignan conserva. Barella da incubo, le scelte avventate di Chivu",
+   "link": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxOQW9VS1dlTDZ0WHFMOFFibGVXZkNJRkM2UmRpemJvdENFNDJmTVo2MmZZNGxNZW04SGhLVU1BcmNiR2Q3dWpxcVNEWmNyM1JRWDJtTmRMSThfempaZGEzUUlkaDJlb2dkM0k3YU4ycjNnenVxbmFmQktWUHNyUVlSaTNtcEdobkNhTVF3amxVeGgxUUFhWkNUa3pib0ZOTUs3c2VCMk9Fdjl6Y2k4TkJ4WkJsbG5VNHN5anVGeUp3dnZSM3dPaXhsSHprY3VvdFZxQUxxSjBzRG9zUHZNX1hqNGpJZTg5c25PZFhyUUJJTU43U0VSTVJyTC1UOERldTYxa3VFT20yZ1rSAYsCQVVfeXFMTWNXVkVNOHB5RzFlZEpDcjlTUUcxZ0o1d2h6SG40amlvTXVDbHltSHUwaFBJckNhWWJHN1NVYnlwN29Dd2k0ejNWbF9NVVp4QnVEcWh0eXM4UDJoa1JHY3NSWFk2djRIekZXMmZUOHJzcUNHYWplVXhwbENfRE5TZm1CcXhSUXVqdmlmRVJMbFIwdm5HdTdnWFk1dVA4T21rRXMxdEJ0c1dCZXpqYWIzdl84SFVOTmhDS1pVWTZNWmNKUUIzQU12eUhPb3NnZElLSTBlVFJTTW05UkQzMmtRSXRxWFp1UUs0NlQyTFpQcXEzMnRPNl9NUWpnYXVSMXptZDF2a3NvaUQwOXlv?oc=5",
+   "source": "Corriere dello Sport",
+   "sky": false,
+   "ts": "2026-11-03T07:05:55Z",
+   "players": [
+    "Maignan"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-01T11:47:41Z"
+  },
+  {
+   "id": "da belghali a cacciamani: il toro spera per il lecce",
+   "title": "Da Belghali a Cacciamani: il Toro spera per il Lecce",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOcFFvSFIwajZtVDAzSnFfQWZLSnVoUl9DaDdXQ3BKOU5pcnQwSU1BNHJ4UTg4b2RYeHpzRjhtMWhDTE0wUFpmaUhoX3I5ZF9yZThhVEdyZkJyb2dRLWw5NlNEc1pZN3NqeHV6OTg4Q1ZvLVhtR2lKMGszUl9ZRlFRSmNsaTVsTm9hNGxROVFUaGU2VlVRLUxkT1p6aDJKQlk1cW9WWU1tbW1Tdm44Q3RCWkZZdF9lT3lhN2xJRGtoYm1fYnFK0gHHAUFVX3lxTE9jdEo5bDJ3anR5NzFHZUtvUGFJVl91SXNod2FXRjF3cFM5azNNUXVYd2ZVdWRkd2FTVDg5dXZSUGtUbV8wRUNVamJnenhmc3dKME12a3h6ZG1qTzZ5M0Z3LXBURjBEaUxBaVp4d29za28zc0JrUUlRQTMyaTczb0Zjak9YOVl3NU42a1I1TGZiZXh0NDRidXNtZWFwaFhWUXlzb01tUEU4bmNITGFVR1h3VGpvSVRxMkY5QlNnM3RVRE9yajlfSEU?oc=5",
+   "source": "Tuttosport",
+   "sky": false,
+   "ts": "2026-11-03T05:15:00Z",
+   "players": [
+    "Cacciamani"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-03T12:43:43Z"
+  },
+  {
+   "id": "pioli: “c’e un giocatore dell’inter che ammiro davvero molto da anni! e jones mi piace tantissimo”",
+   "title": "Pioli: “C’è un giocatore dell’Inter che ammiro davvero molto da anni! E Jones mi piace tantissimo”",
+   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPU1dIWHloTUVZYU1kbVNiSEJIVHJUVnVjS1ZIdXlQRXo4dTZJdDlneEpkWUMtbDV2a2l0RjBuSmVyMldSdEk5U3JGbERWcEtHRV9OOTJPVlRGS3NlRHZEa3ZYY0FMQVBpQ0dkWk8zSS1GeDF1Q09DNUxVdG0xS3l0ZlpwQ2RtVUY4a05MXzdNbm5iWEZOeFHSAZsBQVVfeXFMUGNzMmVReXhrLVJpbXVzbmZiRFc0X0xZZ1R6d0VldUpyazc5c09WTnhHT2tIODJNNEZnaVBPOHVuRl9oa3VCdUJ2R2xHZjdiUmJXaFRYd0lCb0RmLTlPdXFPenJJZWU5NEFXZFpNQlNNaGE5ZU8tckdBcjU5Wm5xcVlHSExoN2I4Z3I3YVdHd29ucEtDZjI3MkZQcXc?oc=5",
+   "source": "SOS Fanta",
+   "sky": false,
+   "ts": "2026-11-02T22:00:07Z",
+   "players": [
+    "Jones C."
+   ],
+   "category": "news",
+   "first_seen": "2026-11-02T13:24:11Z"
+  },
+  {
+   "id": "le probabili formazioni di manchester united-roma",
+   "title": "Le probabili formazioni di Manchester United-Roma",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQdkwwTEFJY0NfeGZjbDlLeXI4RU5pcy1PSTZMeDlHVXlmY2dmQzVjaTBta3RDTmxSdEJDUTdsSzJvaVEtVzkxU21PbmZVaUhUaW5hUGN4dDl6VlFyVnVsTHgwWWNFNXJDRTdDdC05U2lYT3ZtbERObTUzd0VuRlNqRDlHZm0xQ29vZE9VT1J4NHMxRTFXdnFiQlNfT2FYTWtCMTZlMUFR?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-11-02T21:40:05Z",
+   "players": [],
+   "category": "formazione",
+   "first_seen": "2026-11-02T22:27:26Z"
+  },
+  {
+   "id": "thuram: \"barella e bastoni sono leader veri, quello che hanno detto e giusto\"",
+   "title": "Thuram: \"Barella e Bastoni sono leader veri, quello che hanno detto è giusto\"",
+   "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPSy1wdE4yTGtNb3phZ0xGenU2R3pRVk5RWFJWSlRDejAyT1Q1cjdUcmYxcjhBbW5JSWVHdTNKMThBdUlSU2g5Z09QZUZuNUJhZGprbE96ZC1uV0RCWjd3VnZpaXNZUXptZUFuYkQxWEVfUjNnSmJuMUVNS0FIWUhGdlc1SlpiN1hhbnc5U1M1dzBOTnpuZE1LLWtpU2hjYlVGLWhzZkx5VnFXZkJlcm9sRUp2cXVrNlFPRWZQVmJPeXFzRlZXekpmdzBlMUpGamRoTGfSAdcBQVVfeXFMUGZJS0VhOEhyblR6UmMyU0VpcVBzcXppTF9uSlV4Yy1hTjFETkRhcTJfZGRMTkpnYWFES3VQN1R3M0RJYnpldHpqOHlwSDNGR0U0TkNVRUVpZVJlNDlUWk53SENxVlJkejZLU190WFVCMGR4c1ZKMmI4Znoza1lkLVJIOUdJUlBhT21ydUZuQlV6Tm4tUXI1cXZvb29zeWI5VTd6N29PTUx2WUNncU8xOF9YQlpqREVja0djbFUtNWZYa2I3clJDM2VVMF9QQ3B0VVlzXzRYX0U?oc=5",
+   "source": "Gazzetta dello Sport",
+   "sky": false,
+   "ts": "2026-11-02T20:01:15Z",
+   "players": [
+    "Bastoni"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-03T20:04:35Z"
+  },
+  {
+   "id": "thuram: \"barella e bastoni leader veri, analisi giusta\"",
+   "title": "Thuram: \"Barella e Bastoni leader veri, analisi giusta\"",
+   "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNS1Y5RnpBVUZicUJDZmZOVHZEb0kzSVhad256UWtFQXBpMkJmNTQ1MjVETW1XYk44SzhtdXdzTF9vMDRDWFBubUZaYW13UDF5MldQckpXSkpJbUFJM1Bvcks5MWdXSHZ1dkc5eE9NeVZNSE4tX19fYjIxdTJCYWc3YklTYjFUOXBqWm1VTDlzUGNZYkJQTFdmWS1qUjhjSXV6OWJyRno1WV9nakg2RzExTFZKMFQ1UFRrTkpyV3BYNTdsLWtXMndEY09QekZVbFN0OWtlOEZpWjU1UQ?oc=5",
+   "source": "Corriere dello Sport",
+   "sky": false,
+   "ts": "2026-11-02T19:19:41Z",
+   "players": [
+    "Bastoni"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-02T22:27:26Z"
+  },
+  {
+   "id": "feyenoord-inter, le probabili formazioni della partita di champions",
+   "title": "Feyenoord-Inter, le probabili formazioni della partita di Champions",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPN2FVRHhYaU1hc3pTQ0pNOF9aX3lpVVlubVhjdGp5NzFhYll5U1VVSENfYkpucjhHQkQxakUtUGtJTk9FQnI5ZkZ5bnpqQ2lqUnlEMF9fQ1doQUFMcDJ5dF9iaUhkM2NZNU5zTml5eldmWGNrckd4Q2xORlptMW54SUxVc3h4Q2RPU1M2M0ZmZG43bF9lczFHUExVM3R4SXpsdjlwWnZR?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-11-02T19:16:13Z",
+   "players": [],
+   "category": "formazione",
+   "first_seen": "2026-11-02T22:27:26Z"
+  },
+  {
+   "id": "feyenoord-inter, le ultime sulle probabili formazioni",
+   "title": "Feyenoord-Inter, le ultime sulle probabili formazioni",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPdTZhTXQwbzN2dG1WVFF5Mm9RaEx6dklnVDN6bndINXAzQ0Foc3hfR0JIWlBZdEhKR1Q4d05NSHBsOXpabjFyVXYzZkhBb3AycnFMMVRjdTFPMldmUERUeUdGOUJwUUktcHF0VEU4YWVobDc1b3pCMko1ZFlWREcxUHZPWERRSmpzalNtYTVPSFVxYzg3a1M1YW9rYXVmU0cxR2pjV1JZSV8zZWF5ME5NSmRMX2hjNEk?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-11-02T16:31:20Z",
+   "players": [],
+   "category": "formazione",
+   "first_seen": "2026-11-02T22:27:26Z"
+  },
+  {
+   "id": "inter, novita su lautaro martinez e curtis jones: cosa filtra verso il como. pavard convocato in champions",
+   "title": "Inter, novità su Lautaro Martinez e Curtis Jones: cosa filtra verso il Como. Pavard convocato in Champions",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPU01hMHpSRFBJRE1nU254ekZQRGR3VURfSEZyZUFzdml2bjVoUDdHX0c5cFF5V1BjVkdhOEFDOEY2ZTRzTllHc3ZIRGxldTNhSmY4MWF5WGpLMVAxVUd3Nm5YUXdPWVFkZTdGbG96cUZ4dlNQTElIZDNYMlZfeDQwbktZdVVTWnphRHRtV0R2SEVIZDVGZmpyeG1aR0owZmdvemVn0gGoAUFVX3lxTE15ak82RW1MRWt6MnJ6WlZNTVdXV0lpZHphclIxVUFGSm5DNXotM2stQUJEVURsbkw3YUdPU01tVncyWC1SUDdUSEtoMzlMNTgxMHR4aGFpalpNQ3ZkOFJPQ3ZCNE9KVURxV1ZMUU5qN0d2T0pfNng2bTZqZk1Rel94Z29MUll6SjdmdTFHUXV2Y1Y2d25XaFFHeHFGazBUUFd1M21oNTVUZg?oc=5",
+   "source": "SOS Fanta",
+   "sky": false,
+   "ts": "2026-11-02T13:00:03Z",
+   "players": [
+    "Jones C."
+   ],
+   "category": "recupero",
+   "first_seen": "2026-11-02T22:27:26Z"
+  },
+  {
+   "id": "inter, novita su lautaro martinez e curtis jones: cosa filtra sulla convocazione con il como",
+   "title": "Inter, novità su Lautaro Martinez e Curtis Jones: cosa filtra sulla convocazione con il Como",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPU01hMHpSRFBJRE1nU254ekZQRGR3VURfSEZyZUFzdml2bjVoUDdHX0c5cFF5V1BjVkdhOEFDOEY2ZTRzTllHc3ZIRGxldTNhSmY4MWF5WGpLMVAxVUd3Nm5YUXdPWVFkZTdGbG96cUZ4dlNQTElIZDNYMlZfeDQwbktZdVVTWnphRHRtV0R2SEVIZDVGZmpyeG1aR0owZmdvemVn0gGoAUFVX3lxTE15ak82RW1MRWt6MnJ6WlZNTVdXV0lpZHphclIxVUFGSm5DNXotM2stQUJEVURsbkw3YUdPU01tVncyWC1SUDdUSEtoMzlMNTgxMHR4aGFpalpNQ3ZkOFJPQ3ZCNE9KVURxV1ZMUU5qN0d2T0pfNng2bTZqZk1Rel94Z29MUll6SjdmdTFHUXV2Y1Y2d25XaFFHeHFGazBUUFd1M21oNTVUZg?oc=5",
+   "source": "SOS Fanta",
+   "sky": false,
+   "ts": "2026-11-02T13:00:03Z",
+   "players": [
+    "Jones C."
+   ],
+   "category": "news",
+   "first_seen": "2026-11-02T13:24:11Z"
+  },
+  {
+   "id": "modric, 41 anni e una lezione all'inter: il segreto del nuovo milan e la scelta di amorim",
+   "title": "Modric, 41 anni e una lezione all'Inter: il segreto del nuovo Milan e la scelta di Amorim",
+   "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOWFhfd05vZDRMUUdzdE9IMmVZT1J0TGQ0NFF6djZlZHVjYnJUb3M2MUtaY1Y3R09xTHlmUy1IY095OEFyT3FJS0FZaHdFdFJzZmc1cUd1d0FjcVJySDVPTTBXTjFBT25VN2dPX1pXUzQ4ZDZ3bG5uXzBJc2p1RElQMjRnSlZTcG9QUXBWNEZwTHdXUS1iakdRcC04aFRzUlRYMmpGZ2xubTV3ZFRXeXRwUEVXTUpiOU1BTGhEdFg3eW9mbkNKZVpJeWtzNVI0UXlxUy1UMWI2ZzdZanF1aDY3WWZ5Ry03WTBKU0RPZmdVZzE1Q2M?oc=5",
+   "source": "Tuttosport",
+   "sky": false,
+   "ts": "2026-11-02T09:00:04Z",
+   "players": [
+    "Modric"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-02T13:24:11Z"
+  },
+  {
+   "id": "moviola juve-napoli: sozza, primi 45’ da incubo. koopmeiners piu da rosso",
+   "title": "Moviola Juve-Napoli: Sozza, primi 45’ da incubo. Koopmeiners più da rosso",
+   "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNcWVyc3VoR3psUmFrVHBtTkk0TG9mbndUeDl3OFRoVUxEN3FLYU9WOEJmaUU5QmEtSUtRTFJxTDVYVjYwLXVhamRJblZnWGdfMDN4Q01pSlhVQ2R5OFlHOUg0UVNLc1FJcjA5UlNfUTQ1LVZPeEFDTXBBMm5qR2Uwd1pvclpRTUxPdzA0eUVzblUzMVdyQndIR1J1RXd5QnFZWjBQeXB5WWEtbi1iZExRTGFPbGNodHBjUU1KZUlRVHJkbkFVOEhGZlY1RnNtcTQtOHBOS1lOLXRDbWfSAd4BQVVfeXFMUEsxU0h4N1dtdlZIYVhRRzczb0VMWWdmUFZfbHpyOUk5dm1fWlRFc2dnS0xXM25NLTFkNXVCMzlFX2NnRTd1VU54M2Y3eFl3WF93djFxWkJrSHpCRWVlNFNZZklIbW5rMlRYVjVxWEpaTWxwNjlOckpQRTMxSzlTcnkwVG04LXBTUmpUYU5UX1ZUeTc3VGozbEJQTV9CdUJ3THB3UjVreUplYktSNlVWaXhlc3U3S1VETlp2bk1ZTlVKa3FIUjNKRnA0blEza05NSW81d2x3R1dTSlozb0xR?oc=5",
+   "source": "Corriere dello Sport",
+   "sky": false,
+   "ts": "2026-11-02T08:31:14Z",
+   "players": [
+    "Koopmeiners"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-02T22:27:26Z"
+  },
+  {
+   "id": "inter, anche oggi in gruppo pavard: cosa filtra verso il feyenoord. per stones, provedel e jones...",
+   "title": "Inter, anche oggi in gruppo Pavard: cosa filtra verso il Feyenoord. Per Stones, Provedel e Jones...",
+   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNTFh3UHNHVEc2UVhKbnVkMUEwZkZYUGNfTDMzRG1aNlhFRlJPazNCd1VBdjRvTUVqLWI5ZnJFWGhTM3ZUWllpVTRkeGN4Ti1pTThiNzB5emVvWGtsOUQzS3NZWExjcVdjN2xlQ1ZuN0d5cHNqdDAyaUFOTENHblRVcGExMDd5MGJQTDN0cHZ3QdIBlAFBVV95cUxOUUhfaERXN0tlWXZWLXlTSDZKaEdFa2ZwSXpSLTJxcHR2SnRieUQzYlQweE1CX3pXaFBWbGdtaUtWdUpHbVA1elJnUzZuQ2I4THBKZlJLdnhsVkRiWVVCeGtCb3RjVmJ5bk1leTFDVWdmLUd2XzZTalh1U1N1Y0ZvV0hndnJ4Z1BBZWQ3VWNPY29NZW5G?oc=5",
+   "source": "SOS Fanta",
+   "sky": false,
+   "ts": "2026-11-02T08:00:44Z",
+   "players": [
+    "Jones C."
+   ],
+   "category": "news",
+   "first_seen": "2026-11-02T13:24:11Z"
+  },
+  {
+   "id": "marchegiani spiega la parata irreale di maignan nel derby",
+   "title": "Marchegiani spiega la parata irreale di Maignan nel derby",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNTnlaU0t0Y095RmNYRnVsYjBwdlBCc0VOR1dST195NmQyNk11YTlhbDB0Q3kyUkNvM3BaWkNZMXhEbFg4aENsc0toTVB3Z19fcmtUSlhoR21UZmtsMHZYaVFBdjlEMFBMakk1ZXNObTlWdUlNWGFybWV4cXByaWFtaVo5Z0ozcmctdUpLZGRZeWxqV1k?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-11-02T07:18:05Z",
+   "players": [
+    "Maignan"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-02T13:24:11Z"
+  },
+  {
+   "id": "watch nick woltemade - interview live stream online | dazn it",
+   "title": "Watch Nick Woltemade - Interview Live Stream Online | DAZN IT",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPSnZwOEJVNWtRMGhvNFdKWHJqY1ZTTEFhenA2RVhSQ2dmZHB5QjlLTGNlS21nNXNVMm00Qms2S3p3aVdReWdWNXk2QnZPWExDUkF1bTB5MTV2TUZ4RjA1Tloza0NsZV93MkFDNGx6U3VxM2kzTFVJNE1OZXF2czdkRG5MME4zcERERFBNV2tpWTBRbldaczRaRVZYRQ?oc=5",
+   "source": "DAZN",
+   "sky": false,
+   "ts": "2026-11-02T00:00:00Z",
+   "players": [
+    "Woltemade"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-02T22:27:26Z"
+  },
+  {
+   "id": "modric: \"in estate ho parlato con il milan, vi dico perche sono rimasto! non possiamo permetterci...\"",
+   "title": "Modric: \"In estate ho parlato con il Milan, vi dico perché sono rimasto! Non possiamo permetterci...\"",
+   "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1Eb3FjNjMtRFR0OWdfT293WHVhSFQzX24wRXdoUnBvN2hkUFhvTGgwRjJhVmFHYWJCMmJhUlp1ajM1V05QYWlBZHlqT3NZN05VNFJSX2k0UDlvclR4WkHSAWNBVV95cUxOZUd6UGdza3dmLVB2NnhVdWJ4bWJEVmNJcmZULWQ2dXlWcXExX0IyeWJZN21RQ2lWWXRPZ3A2cVduT2xJMGsxMUxZTlk1Y3VQREFrcHRzcl9qSm4zNnFaUmpVcVk?oc=5",
+   "source": "SOS Fanta",
+   "sky": false,
+   "ts": "2026-11-01T21:30:40Z",
+   "players": [
+    "Modric"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-01T21:57:48Z"
+  },
+  {
+   "id": "le probabili formazioni di atalanta-parma",
+   "title": "Le probabili formazioni di Atalanta-Parma",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQeWZSdkNCUlVPV1ZPbE40aHUwZFYzLVdPNGczWldaQ0k2LXFZb0ZsQ1pYclJOdzktdW8wSDNMeEZNMzZWUDM0UGhiRExUQWp0NlFRcDZySEVZakgxRTdhSEc0QTRDbndHZHhWdm5ERFhqYmlvQ3UzdjJQQlg4dWprRUpJQXNJRll5OEQ2SVZZUndOSmRHWVBobUFB?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-11-01T19:15:47Z",
+   "players": [],
+   "category": "formazione",
+   "first_seen": "2026-11-01T21:57:48Z"
+  },
+  {
+   "id": "juventus-napoli, le formazioni ufficiali: woltemade e kolo dal 1'. allegri con lucca titolare",
+   "title": "Juventus-Napoli, le formazioni ufficiali: Woltemade e Kolo dal 1'. Allegri con Lucca titolare",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOQWZDbDZldUoydmlVVWYxNGF6czJHTERodW04RXhBTkdEUFg0NUtMT3lTMkZYcnBQUG01RkhDdUluYXBEX2s0a0U5QlpIaVJmQ291a2szcnhLa0h1ejF6dkoxVlNKOEZZaHlYdXBZSm8tb3c2N3UtQ1UxWVViWDlrQzRVNjItOTBBUS1xaTdqMEcxYU5rVjlmcjZXanFWZkdlOTFsOXlxZnVlX0JBbEJsTGRqQk3SAboBQVVfeXFMUHJid25zVjVTc05sc3dUZzRtWEFXOWhvcVA5dk5WQnpwSVFOWTR5bmIyWmFLVDJZVlhhd3pMRHBpRTlzWkhsNDVtenQtTGpTT0xLT2cxWGRNNHhYUGNHejZzMWJ4d0cteVctaHkydGR5TnMwNzdZZXZFSXQ4ZkxaZmhlVFpyVU9uUHU3TElWeC1YVXl3cWxmMkRoMUtmUHRqVldENWltUUlfenpPZGNLX2gwU1hPSEgzT19n?oc=5",
+   "source": "Gazzetta dello Sport",
+   "sky": false,
+   "ts": "2026-11-01T18:51:28Z",
+   "players": [
+    "Woltemade"
+   ],
+   "category": "formazione",
+   "first_seen": "2026-11-02T22:27:26Z"
+  },
+  {
+   "id": "sassuolo-fiorentina, le probabili formazioni della partita di serie a",
+   "title": "Sassuolo-Fiorentina, le probabili formazioni della partita di Serie A",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOVjBpMTVEa2VNZmJvUDRhSjRodEo2TVAxMDBjXzVDZjlsUnc2WDEzV2tXejRIckQ1ckZZcGNObFBMcTNfN0ZobGZBNkZVNUNfNkVYdW51cU5fS1g2QWhnQTFfSjlZWXRfbEtuczMydzJlUllha2ZZR2pXZjlteE1OLWVlVmZVQU5fVWJXNS1QVHlfMHZTLUxrckFvSWZBLXk0?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-11-01T18:48:52Z",
+   "players": [],
+   "category": "formazione",
+   "first_seen": "2026-11-01T21:57:48Z"
+  },
+  {
+   "id": "juve-napoli, le formazioni ufficiali: hojlund e milinkovic-savic in tribuna! woltemade, rrahmani, lang...",
+   "title": "Juve-Napoli, le formazioni ufficiali: Hojlund e Milinkovic-Savic in tribuna! Woltemade, Rrahmani, Lang...",
+   "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQOXZNLVMtdTVCWUQ1Z3FjLVlkMzhmUWEyeEZyNk05dHY5VWlyRXItRGlUNzFlRl9CdDd3MjVsSHpmYnlCU2ljN1hUd2VaV0dHQmZJZHY3cHZFa2RiaFRvMlprdE1uYTU0NmpWZUcwWlZjX1E2dG1fMEVoSjZpdDhvLWlfdzhBMU1ISVNEdXF4c0oyeW1zYjNqWWlXZnhwZURJb1B6NGtlRUJES1ZrRmtVWE00QmdyODVBYjdZYjRYQmFka0Z4WkQ4YWNLVV9ZLUNiZzFNVVJsSdIB3AFBVV95cUxNUi1TUzNSUlhEV2ZfMDBUY21PNDFIVTFrVWpHR2hJd2p4eUpLS3ZlY081VFhlZldiTmh0ZlQ0ekJqaTFOdGEweWlJNndyUzRqQkFaRXJzUlR3WlJZV09QdzExbUZCMUF5d21iallqRmk2SldoUlhldDVnUEtLeFg5TW5FN1p1NnlZc2IyWi1RaWx0QVpYNDdRTTFnMEx5a2FrcFhWVGowSVJUdGJqQjhSRklBZE8zUE9hMWJGZ3VXR2hwS2ZEY3dyNlRVUjRmR2w2cFhnUGFaWU1kOXZV?oc=5",
+   "source": "SOS Fanta",
+   "sky": false,
+   "ts": "2026-11-01T18:40:58Z",
+   "players": [
+    "Woltemade"
+   ],
+   "category": "formazione",
+   "first_seen": "2026-11-01T21:57:48Z"
+  },
+  {
+   "id": "fiorentina squad for sassuolo: atta, pongracic and ranieri out",
+   "title": "Fiorentina squad for Sassuolo: Atta, Pongracic and Ranieri out",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQV2Zjd2JKM1NmRFFvOFdiTTE4d3p3cFRmcXM0UjFtdGZLLTRZMjZHd3lXejNKTlFyNE5CdGVRLURDNXpuSTNBeGx4NXhvWUJUZjJlU2laaV8tdk5WNGRuLUNnRk5rdHhlX3N2TllFeG1oc2pqdkg5X1hYTnNwUFpPekd3X0xOQ1FsSk1BMy1ldW9wZFR6b2pwOUJ1em92UTZvLWQzSlhPRDhzal9ldWhzTWJnU09hZE42V0ltN3pZenjSAcYBQVVfeXFMTjEtU3FIUTI0TkMyb3ZPUFQ3UnNPZjNBOFE1bEtKM0dHVERnNVc1UnlMTEdfNGxjc3RHdXpmZ2tMRzZDcHJZWnd0RTgzMU9jWVpQU2h0SjVEWXdnSUo5QVowaVVDOWwyQkxfX29sVDZXUjRiZUxhaXpUQWVRbnUySHhQVm9jQk5GWGdPZ0xJejlnRkFEaW1rOE9LLWhtSGJzWDhUeUNFTUk4S3ZxOEY5VnExZ1B0WndGTkhvWmhsaEFVZms0QkdR?oc=5",
+   "source": "Gazzetta dello Sport",
+   "sky": false,
+   "ts": "2026-11-01T18:34:46Z",
+   "players": [
+    "Atta"
+   ],
+   "category": "infortunio",
+   "first_seen": "2026-11-01T21:57:48Z"
+  },
+  {
+   "id": "fiorentina, i convocati per il sassuolo: out atta, pongracic e ranieri",
+   "title": "Fiorentina, i convocati per il Sassuolo: out Atta, Pongracic e Ranieri",
+   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOOXUyQzdWaHdSbkljb2ktbWR1bEtJb0xsOThxT2xwZjd2RC1qUUJMbEFzU1hFRzh3RURUUlBmMWtNQ0x0WGNPRVZIaW5rUFJ3My1acjNDN1VNb3NnQkQzUGVkd0tMR1dBOFlnTnpQZDdYNHRzV0ZRLUxXRlc0MlZuWDROTmNPWGRCemxua3IxRklxZnBtZl9JcW12TWhWUlhwWFlNdDJoOEw5anJEeEZtOG5zMDZ6NGNkd3fSAb8BQVVfeXFMUGRNSHNSMXRPVHUwazNiSzUxRTNRMnYwUV9kY3hMRndFcnJFR2VpU284aHpkQnNiWlRyS3BxRmFfNEVjdlBnQlB1N2FwejZGeGFQTXdkX1RiTFVrUVozaWJ1OWVrQUpPSmhjM19ZT0wwVWVTUlZkOXJYTGlWQlpSVGp5dkhRaFp2Qks3bTRMU3VoUmwxcGczUXNLckZzaGtJbVNadzcyWmh5OXB5RUxBZE5iWmktSHE3T3BvUl9lTG8?oc=5",
+   "source": "Gazzetta dello Sport",
+   "sky": false,
+   "ts": "2026-11-01T18:32:39Z",
+   "players": [
+    "Atta"
+   ],
+   "category": "infortunio",
+   "first_seen": "2026-11-01T21:57:48Z"
+  },
+  {
+   "id": "lecce-genoa, le formazioni ufficiali: la scelta su colombo, stulic, vitinha, monteiro, el sha e messias",
+   "title": "Lecce-Genoa, le formazioni ufficiali: la scelta su Colombo, Stulic, Vitinha, Monteiro, El Sha e Messias",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQT21LZFlkSXA1ems0YjRqR1RCTVNMS0xmWXlSS0xaWnBoQ1VsSURXeTloUVZPeEdxVTZxRUtPeWVMN3VpZEFILV9zb0U0VWl3M2IxOTFialQ5eGN4clYwamEwd2RObUVqbC0yLU1VeEV5eFBjSzh3dVZqZ1NVZ0ZST19ZdUF3TDNJc2wzajhFQ0tDZE9IczEwdWRZNVlqTFpIMVR4TXFWR3JHREnSAbABQVVfeXFMT0JJN2V4WmVZeWp5UXRqMnIzMG5NeHl3QkI5Sno3SDVwSUlzLTJjdU5oZk9ibEx3c2xEMFFMVUVNQklzdWZrcEVSczloSmNGOVl0TTRzdFhUUzFFZ3Z6S29Yd0lod1RmWW9ObzJXV24wYjl5MEVWSGs4SzBuVlNoM1RNUXk5MnpyZmgzMzRuaDFMNzhmdmFIRS0xd24yMWpPdlFIenIwcGZLTDVRdkdFLVE?oc=5",
+   "source": "SOS Fanta",
+   "sky": false,
+   "ts": "2026-11-01T16:45:17Z",
+   "players": [
+    "Vitinha O."
+   ],
+   "category": "formazione",
+   "first_seen": "2026-11-01T17:54:01Z"
+  },
+  {
+   "id": "l'involuzione di akanji, gli infortuni e certi addii... cosi e crollato il fortino dell'inter",
+   "title": "L'involuzione di Akanji, gli infortuni e certi addii... Così è crollato il fortino dell'Inter",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNMWRybHFQSTdSNF9IWHNubXkteDhqZjU4dlhGeDBvQ1g4bGJ6YXlGVy1hTEVtbUtnREpkU3RYd1ExcGpUMjdUUUtLdzRBY01qekRYOC1MTG94RlpLVVJFQWltaEdHbjVCZmpKeHNFSHdGbkJsaU1IM1RlR2M0ZTBYNjlsdEtQOXFjQzNKNVNKMGU3OTdTdFBPTVVoOXp6NmFpRGFHaXFoZlJubXJvOXk2OUNn0gG3AUFVX3lxTE02UFB3cWFDaDFZbUV5QUJ3OF9SdElVRUlsa3RNNG14ZXRmc0ZHMmwwb1J5NXBORTVXcnhWdGVzM01GLW5JS1A0d2RTd3lMT3NnQ2E4M0l4Y2JyNWtKSDliTzNkSGRKNkhjdHA5Zl8wTnNCQnhIUGZaODk0LUVfTFNFVnRYekcwazVoYkxRWGJRZkQwUlFLMUV6RGdHVFNSbmFVWkRTVFl6S2p6SFY5WmRpemhvU1dVcw?oc=5",
+   "source": "Gazzetta dello Sport",
+   "sky": false,
+   "ts": "2026-11-01T16:01:25Z",
+   "players": [
+    "Akanji"
+   ],
+   "category": "infortunio",
+   "first_seen": "2026-11-01T17:54:01Z"
+  },
+  {
+   "id": "sky - inter, le condizioni di pavard, curtis jones e stones: il punto sull'infermeria nerazzurra",
+   "title": "Sky - Inter, le condizioni di Pavard, Curtis Jones e Stones: il punto sull'infermeria nerazzurra",
+   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNMDBrVVNwOVhrczlzTGpwcHN4ZFM4T215TWJVY0hQTW8yMEhkMk1ZV1d4X3o2MXFmaDYwaHV2cFJyWUh6VUpDQWVoMTFTYnNBN3lLQWZSUlQ3ang3Qi1VVmJ1VkdBUlU5d0c1M2dZUEUxamZWNm9Edm1uMFBKY3EzaWJrOHdXVGFKalpUdk1VUjFQTXFhS2RscVp1b0dYZmJacFJKVEYySUF5cGhLbVNMTEpoenJhSGE1dEpJWTNFSl9kQ0g2YUIyekhjYl9HbmvSAdQBQVVfeXFMUHlCZWgyQlVtbURDaTJvTHZJUVB1Z2RVLTJUX2NrSDVlSDh2cWhfdENNa01IUGhWek1odGpjQjRtdVZ3cEJSdTFRYVF6OGZlRmJzVUY0ek1mTEJWTjRfSy1OYzVEQUJVTTEzZ3M5WjF5cllEZ09ZMWJ0Vk1yeTl4YTgtX3lodDVsM05PWlM3RnJDTnY3NTBEeUYzRnZJeWZmbU42WkJFNVV5Q252QnRjM3hwNHhkS0V4RnFBSmhJWjREVjZYUF9HNkprYWdwUXJ2dUNFUzM?oc=5",
+   "source": "SOS Fanta",
+   "sky": false,
+   "ts": "2026-11-01T15:00:55Z",
+   "players": [
+    "Jones C."
+   ],
+   "category": "news",
+   "first_seen": "2026-11-01T17:54:01Z"
+  },
+  {
+   "id": "sarri: \"spiego le esclusioni di samardzic e come lo gestisco! sulemana, kristensen e scalvini...\"",
+   "title": "Sarri: \"Spiego le esclusioni di Samardzic e come lo gestisco! Sulemana, Kristensen e Scalvini...\"",
+   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9XWWxOeWFvNW5SU1NaOFVObGFXcE9SLWRPazNWUzVoeUhLbHB3aURPWDdBQ0F6SzZZZnFWemhJOHZQc205NmkwMVppaWNPSTE2Tk5aQnJMM25CaDI0b0x1WFVOQTJWMWltYnA2UGtUZ9IBdEFVX3lxTE9kVnZGVFB2S3ZBSUhGQ0ZXa2dOaTBNdkFCakJQREFONWQ1dGlmNnllOEhJTXBMQ0c4djBEcFI1UWxGY3QtQXg1R3BzVk9OR3k3LW1XcFBBSFJtbEU1bzgwcHJtX2d2cm1ObWVRMHY1QjJGcFhl?oc=5",
+   "source": "SOS Fanta",
+   "sky": false,
+   "ts": "2026-11-01T14:30:43Z",
+   "players": [
+    "Scalvini"
+   ],
+   "category": "infortunio",
+   "first_seen": "2026-11-01T17:54:01Z"
+  },
+  {
+   "id": "inter e infortuni, pavard in parte in gruppo: le news sui rientri di lautaro, jones, stones",
+   "title": "Inter e infortuni, Pavard in parte in gruppo: le news sui rientri di Lautaro, Jones, Stones",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNaDI4b0pmdDE2SlNQX3BOODZyMmFjNDROX2llTmN5LXB6VDdxNFBON1FBNGhmeXAwdlNvdS1fSEo2c01jVWdUdXQ0bVlPb2VmbzdLNFI3RzE5VEFVUlZJb2xSdVlBcklBRlFyc1VHMEp0OUJZdFc0ejNqcmRPQ0dlOGRydkJ1cGNtaHlyNWJpZnFCUGsyaDF0RnNTR1g?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-11-01T14:11:06Z",
+   "players": [
+    "Jones C."
+   ],
+   "category": "infortunio",
+   "first_seen": "2026-11-01T17:54:01Z"
+  },
+  {
+   "id": "dietro le frasi allarmanti di chivu, barella e bastoni: l'inter non ha piu fame? i retroscena",
+   "title": "Dietro le frasi allarmanti di Chivu, Barella e Bastoni: l'Inter non ha più fame? I retroscena",
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNRWpzajVoc0xrV2R6dG9tVnE5UWh2UVlteUR3RzA5M3NJamdLMkY4MzlSaHVvYVhNWDEwRWhjdnRSUmxJRlVsaHlhUkFvYnJGOXBVdGwyOEdlMVdjOEZRZFo5dC1TQmVoYmtNTGFxZmwzUUFIamUtZkxRdDlvNnZ0OExHaTZQSm01V2VKeHN2bnpmZExoaHQ5RlZNLTVoN2M5Tk9lQzZPbU5ZZnRtRUJIV2loT3hRZ0R4THhTaGM5MVJzQ3haWVFv0gHMAUFVX3lxTE9GaGlrRFVYNEVHZ2lZZVM4UzR3N2F3dXFBaXlEcTF4NnZ3cUlUUjcwSElqWmRoMmlfN2JkN2NJNG1vU01zTTB1UHROWEdaOVoyN1gzOGJianpINVluMXcwbWNoRTBheVVrVW9LeTVVMm1pdGVzRlNiOHlLQnBSRkRpaUczVG0yLXlnVFpFVzl2UmF3d0p4NHp2MzRjV2QwUk9Ma3ZzT1BuUTk5OUxscFFRZ3E0Yzc3UEJXUVl2RmVaTWpWaWtfNENvdWM5Yg?oc=5",
+   "source": "Gazzetta dello Sport",
+   "sky": false,
+   "ts": "2026-11-01T14:01:59Z",
+   "players": [
+    "Bastoni"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-01T17:54:01Z"
+  },
+  {
+   "id": "juve-napoli, le ultime di formazione: da woltemade a rrahmani, alajbegovic, lang e meret. ekhator convocato",
+   "title": "Juve-Napoli, le ultime di formazione: da Woltemade a Rrahmani, Alajbegovic, Lang e Meret. Ekhator convocato",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQRVdFOEZUX3E3b29paEdOOFBVTWpfT195R0VULWRzRlBfVlBWWS1NUlhGVjU5VHU4R3YySEtWYVFaYmF2NjJHZ2EzQlUtbDA0Tlg3anNHOVQyVWE1Wm5ZLW8wZ3dTakN1b0tGNjlPQWo3YUtaWF9ibmdqOS1GenY5ZGN6bG16cVU4eFVaZGJGWnlCOW5wTkFmTW5kekdYMWY1ZlRYUHhILVlQc3VucmNwQnV30gG3AUFVX3lxTE1fZWNXSHhRcUhwOVp4X200SmFleGpXZmJyYVFlbHEteXRSUXUtVGRwVnZHMWt6emZhYkQ1UEpKZmpfcXRkYnVLS3puZmRjUEF2aVRXYnFhb005bnMzNTVob2hTMVVTRzhKRDVjVUQ2cENmSjRCaVZlZFk0QnVweE1kazJqM1hvS1V2Q0FkUGY3LWNQVDNCaEN4U3NsVks2eGVITk1EbGdaZ0Nrem9TTG01aXMyLTV4TQ?oc=5",
+   "source": "SOS Fanta",
+   "sky": false,
+   "ts": "2026-11-01T14:00:44Z",
+   "players": [
+    "Woltemade"
+   ],
+   "category": "recupero",
+   "first_seen": "2026-11-01T17:54:01Z"
+  },
+  {
+   "id": "infortuni inter: le news su pavard, lautaro, jones e stones",
+   "title": "Infortuni Inter: le news su Pavard, Lautaro, Jones e Stones",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQa19pZFkzN3B3dVE0UWViX1dKZ0NUUFpuLW56QmxoZzVVZmRHU0FSdW5TNG5ZQ1lLZDZLbHI4VlBJbll0QTllRWNBYjZLdkFwQkdvY0ZhREpfVWVfUlB2ZFp6eEdLdTQ1azE0ZWp0TDVFNlNWSmJMdTRUWkFJRmQyVmxsOGxpXzFWWkVnakFqRE5BSnpSV194N0p2OXFsSjlvaGVGbFlQajlSMnNWeUE?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-11-01T13:50:43Z",
+   "players": [
+    "Jones C."
+   ],
+   "category": "infortunio",
+   "first_seen": "2026-11-01T17:54:01Z"
+  },
+  {
+   "id": "dalla follia di bournemouth al miracolo su spence: quando maignan e \"magic\", il milan non perde",
+   "title": "Dalla follia di Bournemouth al miracolo su Spence: quando Maignan è \"Magic\", il Milan non perde",
+   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPZ0dGQmNEcWlCYkZ3WjBWaUUxcE1lTUVvNjBvT0t1dEhNdW9nWjJ5T1J3UFRUelVPOEdZbDduR2lZcXRUWUVSVlJkVENqbDQtTjJYRGxXYUxfV0l6dUtVeEJLS1VFV25neTJUekNMYUgxRF9KYUVhdm1IVHVwLU1VMVRlenRLalJVZDhscXJ3U2N0b3hLUHlVbmM1RmU5dXVCTC1ad3JSVXpBU1NqdVotVnlYdV9wbUdTN1VjWjZaMDU5dnPSAcgBQVVfeXFMUEEyTXNVckFnOHUwRTNkbklDZ21nd2xCR2dLaU4wMG1KZTNTOTBEM2doRjlEVEMxd2p1Skw2QklSNjkzaUlUM1NQa0M2a0x1VHlBcGdseUVXWlp4VXlrZVdIY3dnZ2JMVzI4YS1DS0xfX1JDUjdNOTgtYXJKU01mUHpDNmlEY1llem9nc2RqR1ltX291QkFZQ2pwMzE4N0o0NGh5NzJQUGp1TWl2Qk9YU1E2WFJrVFVESFVYUlhSLUtUZTl5NXdTS0Y?oc=5",
+   "source": "Gazzetta dello Sport",
+   "sky": false,
+   "ts": "2026-11-01T13:41:11Z",
+   "players": [
+    "Maignan"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-01T17:54:01Z"
+  },
+  {
+   "id": "juventus-napoli, woltemade cerca il primo gol in serie a: spalletti punta ancora su di lui",
+   "title": "Juventus-Napoli, Woltemade cerca il primo gol in Serie A: Spalletti punta ancora su di lui",
+   "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPQ21xd2w4QTJkd3Z2aFpWc2RZNlBzSF90cE1oUzItTEE4T2JJMEJNR1R1Y004bHFORTlLMUNLVkhSNFJjSFE3ZHJ6UU5ZS2FOZk9NM0FYXzB0UGRBc01BQXhKOWNneTBLcnMyR3R3c2tSVFR6MGVSUDZiLWNGRXFUVmFGeWZOdEtyUlZzcEowbUpqeWp3TzRxTXgtdlhZVE1HMnd6ZVNKaUE5a1JwV1RrRUo0T3R5bnNFcVZxdUEzQkgtV1p5OEJDRTB3blljQmJ5dFdSZXpyQ2V6WVNKcmNITWZELS1KTk1iWlMwdVZKM3RBNVk?oc=5",
+   "source": "DAZN",
+   "sky": false,
+   "ts": "2026-11-01T13:34:43Z",
+   "players": [
+    "Woltemade"
+   ],
+   "category": "gol",
+   "first_seen": "2026-11-01T17:54:01Z"
+  },
+  {
+   "id": "frosinone vs torino official line-ups: alvini relies on calo, abate backs adams",
+   "title": "Frosinone vs Torino official line-ups: Alvini relies on Calò, Abate backs Adams",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNcDdVV0pYU0g0YllRYkFGTFpOMWtIbVBFck85MnhRaXhiQ1IzMk5pTnEteHAyVzFXa2ZrOWdZek9qX09nRm43bmtjbmVWeXRvVXFzX3I5bXFHclA3eE1sMURBSGpFLW1lSDRuOW00R0M5ZHlabFE2NW9zZkktSjhRMHdqMW9raEtKR0NTcHFSOVRIVGE4ZEE2QWVyZ2xPUFhGWVNjMVhsN2c5ZEpPSTJyRUdSWERYTUQz0gG4AUFVX3lxTE1wN1VXSlhTSDRiWVFiQUZMWk4xa0htUEVyTzkyeFFpeGJDUjMyTmlOcS14cDJXMVdrZms5Z1l6T2pfT2dGbjdua2NuZVZ5dG9VcXNfcjltcUdyUDd4TWwxREFIakUtbWVING45bTRHQzlkeVpsUTY1b3NmSS1KOFEwd2oxb2toS0pHQ1NwcVI5VEhUYThkQTZBZXJnbE9QWEZZU2MxWGw3ZzlkSk9JMnJFR1JYRFhNRDM?oc=5",
+   "source": "Gazzetta dello Sport",
+   "sky": false,
+   "ts": "2026-11-01T13:11:11Z",
+   "players": [
+    "Adams C."
+   ],
+   "category": "news",
+   "first_seen": "2026-11-01T17:54:01Z"
+  },
+  {
+   "id": "frosinone-torino, le formazioni ufficiali: alvini si affida a calo, abate punta su adams",
+   "title": "Frosinone-Torino, le formazioni ufficiali: Alvini si affida a Calò, Abate punta su Adams",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNNEJYYzFVZjRfTGJGM05HSzJPNGF6bzdpZmFTRzVveGVveGRYRENuNHotNC0tdmFfTmFUcmN5WU1ES3lWQjhIQUc5REJUWXhobmp0RjhXazczUW1JeDZXODVhcnUwYVNHNHZldmNvOWdpQnNubFhvM1BUMXJKQzFyTUN0bW9rV1BodFlrcE0zdVQzQ2oxbVViWWNZUzhXZDY5TXVPSmFNSdIBrAFBVV95cUxNNzlsOFRWSU9iVFZ4NjBfazB2YTdzNjNTbmdtdzBfWmM0bTlPZ2ZQRzBicGlnbFI2U0pjT2V0N29PZWhPNUw5RUJfcG44RXlPUjd3YUIzblNCMThZbUU4Y0p2eG5UcERZZDFUS0YweTNwMzNXdnNvdHEtcWNfVGJsSG5WMHRzS3ExMnJoelZrNUItMTBxSVI3SnpMa2NaOF93d3BBMVFnUVYtaERv?oc=5",
+   "source": "Gazzetta dello Sport",
+   "sky": false,
+   "ts": "2026-11-01T13:10:53Z",
+   "players": [
+    "Adams C."
+   ],
+   "category": "formazione",
+   "first_seen": "2026-11-01T17:54:01Z"
+  },
+  {
+   "id": "frosinone-torino, le formazioni ufficiali: la scelta su aboukhlal, cittadini, adams, fitz-jim, schmid e vlasic",
+   "title": "Frosinone-Torino, le formazioni ufficiali: la scelta su Aboukhlal, Cittadini, Adams, Fitz-Jim, Schmid e Vlasic",
+   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOZzQxY19wSW14X29fSHBCVElQZlotaVR4Q0hjcEJhMTBmNjlqZlQ1NWtRM1M2aFB3dXZuSFVYeGxJTXBla2JCVE81Vm1QY01jWEszNnlJbXJ0SG01TVVnWUZINDdtYWxnOE5GclVPbnNXUGJ0U1BwcDVfaWNqQy0ybHVPYXFFR3VydzFYMWlnUktETGZmUFkyQXJ2Zjk1ZVRBa1RXbzBPbWVHUlhGTFB0LWhWZzNPRjNxeU15ZWl1ZUFtTWhwejVmTtIBzgFBVV95cUxQNVI1MzlyaVlPVkloaGZ1WDhjTHZlZmdlc1ZRNkM2WTc4RXl1YlZjNUY4WFQ3dUlzNDBONXVYQXl5N0wyaGszMHdmZHNCa3lCRmJZS3hvU0VoYnBiLTF0SnlTMGdqZF9RVE8yMkxqb3Q4MUxhY0RFaUhuZkFrVUZmOWRSNnVYMHpDSFBHWlJNekZqd01PN2gzWUZPV1ZMNnVJa2dmbno3UEhmWlliaGMwa1pDaHhXWmR5OVNYYllidFJ3WFFjb251R05HaFZRZw?oc=5",
+   "source": "SOS Fanta",
+   "sky": false,
+   "ts": "2026-11-01T13:10:47Z",
+   "players": [
+    "Adams C."
+   ],
+   "category": "formazione",
+   "first_seen": "2026-11-01T17:54:01Z"
+  },
+  {
+   "id": "frosinone-torino, formazioni ufficiali: fuori oyono, ci sono braganca e adams",
+   "title": "Frosinone-Torino, formazioni ufficiali: fuori Oyono, ci sono Bragança e Adams",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNSVVmNTgxQVpwbUZTUmpBdmJYSnJ6Zm1QaDg1ZGl1dDZ3dVNPSVpMalNpeVYxQld5Yy1QZ2pjNURlaWVBdXBIMTZDRGhra3FSZmgtVlFQQUhpY2tkMnlUMzBuclNHMXZGaHFsRzBGWnBSUDltRU9tamNfU0V0MHVBamdtazM3S1BjLVE1LW5LRTZuanJ6djJqcmtleFo0elVRYzdn0gGoAUFVX3lxTE0yeGoxck80WC1Wa2dPSmhJLUdXQmNEYldXUFpaaEVFX0F4NFFuWmV6SmJyYmpNbUFhUElIREU4aVEtcjhkV3JPc2xyT0JwQWtXZ2dodGJPX2o2OEFkaFBFeVdUZEloSVcyRGZfZGVZRVJtYUEzZDFkVUtvMWtEQW1WUkNqNV90TjRBZjJFWDVzLXlRVmpLRHJpeFJXeTZyU1B3VGpBVm1nNw?oc=5",
+   "source": "Fantacalcio.it",
+   "sky": false,
+   "ts": "2026-11-01T13:02:00Z",
+   "players": [
+    "Adams C."
+   ],
+   "category": "formazione",
+   "first_seen": "2026-11-01T17:54:01Z"
+  },
+  {
+   "id": "torino: cacciamani non ce la fa, salta il frosinone",
+   "title": "Torino: Cacciamani non ce la fa, salta il Frosinone",
+   "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQZ1prc2NuUUgzUEdoR1hidnNIdEluNE5QQmRHZTJnWmpNa3lZRUV2RmR4UUZ3ZmtBcEV1UGw5anRsb3drYmo5Z3ROOW53SkdoVHdmT0lXa0ttZDM4SWRTb2dIQ3pnUHFBbTVmN0JnTGxUZndKLVFJTkxKR1Bub0lDSlpDT2lJUGl2WHY2SG9Sa0FteG9FNjV3TVVEaGlIanVSUlBJZXkzUnNhZXl0ZEw4SEtFRFNFM205dllyLVRZVEcyMXpaR1A3cWRxVlZTMHVadDJFWUxXR016R2tkSS1Dbld30gHnAUFVX3lxTE1jc1ktRmw1RGd3UXg5Y01pWXNVbEVpQkhJM1R1SVZkX0pxb3FaVjY1OWdPY2FNNVE5WnhCXzN1ZTRtU2N4b0FlVTF3ZlF4UExoZFhkOS1FcXpTT1VfLUxGZDAtMjVsRU82V1o1T05xMWNmN1dMNGM2WkFTZ0VKQ3cxM2JmTzZYU3A4SEppVGRKTlh0NkRnYWRPZk8zVjQtZUhlRzh5aXktS2c3bFlLVFBaVGxRYVp6cXVoSl9kTU4ydjh3R053VzJia1J2dnYxRHUtV1BVb2g0VzNQalBYSThTVElyVjFrbw?oc=5",
+   "source": "ANSA",
+   "sky": false,
+   "ts": "2026-11-01T11:06:00Z",
+   "players": [
+    "Cacciamani"
+   ],
+   "category": "infortunio",
+   "first_seen": "2026-11-01T11:47:41Z"
+  },
+  {
+   "id": "video. derby, florenzi: 'rabiot e pulisic i leader in campo del milan'",
+   "title": "VIDEO. Derby, Florenzi: 'Rabiot e Pulisic i leader in campo del Milan'",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPMkxiQVF6Y1dZQ1ZJWlZ3bmlXZzJhSUkxdGtLS29PYWZtSk5jTmc2NEtRMnpzVWVKZkZIM0lrTGZIZUtKdUxnLXdaUXdoLWdsMGNCVnBBc25lQm5lQnh5SmxoUmp1MGtZVnN0MTBPUUY5emg1Y0FNaDExUFJkd1lTeDJnY09xOUJWbFlYWjBNUWN6Mk0?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-11-01T10:31:06Z",
+   "players": [
+    "Pulisic"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-01T11:47:41Z"
+  },
+  {
+   "id": "parma, gilardino punta su troilo per blindare la difesa. in porta c'e daffara",
+   "title": "Parma, Gilardino punta su Troilo per blindare la difesa. In porta c'è Daffara",
+   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQU05remV4d1NadmNYN2hiMnE3SVhRSVRUTjNKc3NORG1lMlJubWJxLUYxc2V3dWVjS0NjS1F1eVRCX215VDhoVTlITnpwSk1DeHN1T2w2bXBHUnk2X2dIbDcyaTl6N05IaGNDOXd4RnBVWkNFODA5WE1qbTRLUHpTYktoVjctNFA0RUtVWEx2YVhlblhfclBNMHJDck0tWWt1TkNpUlJHRnVYSi1TS2d4TFo5TGtiYkxidE9UdUxNWGZCOTU0ZkFWTmpIbGZMd9IB0wFBVV95cUxNUDlCR0VYdDhOT1NvLVl2bXREMGd4SjFyNFlYcDJEN0hjcEFwOE80YzhLUm1WTFVpa1BTamhGZ1huZm0zQnlkQTlPZi1IcVdiZ3p1R04wbTBsRkVjQjZXcGRoamYxY2pqcWU0LXN6Sl9abzVDc2hwYWtDZlMtLXpsS3ZSanJ1X2VnYlYteFlDY1V2dDBfdGJJWVBkS3BmZ3lVU0ZKMlhBalFCVnBqbmFVWWx2UUJWSWZaSE1MU1BxS0dPdTFHMVFMZm9JcEgzRFBTczNR?oc=5",
+   "source": "Gazzetta dello Sport",
+   "sky": false,
+   "ts": "2026-11-01T10:15:57Z",
+   "players": [
+    "Daffara"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-01T11:47:41Z"
+  },
+  {
+   "id": "derby, florenzi: \"che leader rabiot e pulisic!\"",
+   "title": "Derby, Florenzi: \"Che leader Rabiot e Pulisic!\"",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQcTZoNThaZTA4VmZoNjVSa0hQR0dEQTI0d2NPTmhnc2tMeU5IS21CbzdHcklUbkRXVDE0cWEtdElaVmpOQWZxUDlublRWaGRNVHJpN3VXZ1BmYXFrcEM4UTZqQzVvdUMxUVZSdGtRTnN0MTZEQTZ6NEsyYnpwX05leWxTTWxYRDMxTU9OUFgycTZQNkJxTkRESzBNaGpnbHlBZFItalBR?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-11-01T09:59:08Z",
+   "players": [
+    "Pulisic"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-01T11:47:41Z"
+  },
+  {
+   "id": "juve-napoli, probabili formazioni: allegri con il tridente, spalletti con kolo-woltemade?",
+   "title": "Juve-Napoli, probabili formazioni: Allegri con il tridente, Spalletti con Kolo-Woltemade?",
+   "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOY0JEX1hWT1F2OG14MHpMR2NDclY3dFRablFKMVVma1BhbFVqVVNFQU5HcHlYdTg0bUFuOWhOUTRyalNJbTU5bC1BLWFpVGUxQ3A4TmM2Wm13bWpqS1NpMW5oNDNIS2xIc2lYamd1RkUyN2FnM1dyNk4xejIxUXNuRDM5M2thWkdYZVVwVGo5Y25kRjNPLTJOVV9CTS00dlhjcnVPSFhzLWFTOUhZVjE4OWZkTElFZFpFcDJVSFEzSGNOZllkX3Q1U0R6TzB4dG5oVE02M0VKanp6TDZISmVFb0ZRSk9rTFpLYnh30gHwAUFVX3lxTE1vRjBlZ2VFUlZlbUFFcEhWS1BxVUN4Rnl0NG9TdlNDYnlrYjg4ZlVCX0VEaTUtR0tadmlTQ3FCWDFWUVNYS1pWUEtKWlZaLW52LWJ5YlBGdnJFZ05VQ01KUUVCd1hybWt1TUJQVkxxNFN3bzV3M29UYmdWVzJRYzJyOHJhaGxKVFVuekVqMU5OUGJXY01OYm5ZMDFiSFEzcG5tbTVCWVhqT09jajdDTkJZNDU3cnR4X1cxSm56eXZjalJnOVo0emp5cm53VExBQTVPYVJLcC04Q0stNFd5V0V5azRvc0FZTUJDelJBU3pnTQ?oc=5",
+   "source": "Gazzetta dello Sport",
+   "sky": false,
+   "ts": "2026-11-01T08:52:28Z",
+   "players": [
+    "Woltemade"
+   ],
+   "category": "formazione",
+   "first_seen": "2026-11-01T21:57:48Z"
+  },
+  {
+   "id": "i voti di milan-inter: la scelta su dimarco e cisse! moreira super, maignan come rabiot, thuram, carlos...",
+   "title": "I voti di Milan-Inter: la scelta su Dimarco e Cisse! Moreira super, Maignan come Rabiot, Thuram, Carlos...",
+   "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPT0Q5YVJvTVNmMGxxbDRZeU9ZVl9mTlJRUXMzam5fYm9uWDJZUllRdXZuQk81aGVvVU1FTFpjSEtNZ2FsMkI3N2V0SF9Kb2QyUzFuaGU0V1FmYmNRZzhMTkRTWFJoSVZybTJYN29abWRoQkJqNHIyQm92MTBHaDY2V2VMcU85OXFvMmlON09kWm9oUExfWGpoVUJmaDdHN3lEdEJBZjFvQlNJc1BhZ3Vla3pVWW5XVnU5aVJEVjM1cUFyd3BQNGNfUHlLOUhxZVI5TzlvLTlFVG15dHZTQlUxN1lR0gHnAUFVX3lxTE8wd0xOcjlDZE1STTdVN2J4WUFrcmwtd0ozN0ZKMm5uMEpkV2IyV0gyZDJSM09sQjh5ZTZJZTJ2M05fY0lrbkdySWNqWUt5amRha2ZLLUJVaVc5WEdVazlIdjJ5bFQ1NER2NDZUd2NtWU1qNlpUNlBSQjM2WVgtNzVhczBLZ1hnaXNUYzNyYjFINjVIZmdSVTFJUjZneVZnTHEzZENpUHI1T3ZLbnZ6QlNPN2tyRUNYT3FRTU1oelFvZG9TZEpldV9BYnFKUU5jX0FoRHVYSUtvMWQzRnRPWXJkVWthdmd2UQ?oc=5",
+   "source": "SOS Fanta",
+   "sky": false,
+   "ts": "2026-11-01T08:45:48Z",
+   "players": [
+    "Maignan"
+   ],
+   "category": "news",
+   "first_seen": "2026-10-31T23:20:13Z"
+  },
+  {
+   "id": "pagelle milan-inter: maignan miracoloso, barella fuori tempo, prof modric, carlos augusto uccellato",
+   "title": "Pagelle Milan-Inter: Maignan miracoloso, Barella fuori tempo, prof Modric, Carlos Augusto uccellato",
+   "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNbWI5MDZQOV9ONjQ5MkRLbzVzcDZFVkxZMVRNV0FaWW5TX0UyUmdDcE1lNnNJSDJqdGJRZXRsTmVQT2tnMDdJWXJPeGhXQW9EVGNvQTlkbEM1TzA3d0Rad2w3RnNvbXRzUUZRRFBhSkY2S2xYSkwtMm9XY1B5SkZhWEdIaW1DUzNyeFNOX29SZm96dk1Kektqc0pWY0FrY2NLWnd3RWpEU1QtVmNjejBraUpVMUFYQmNnaXd1RzlJWlVvUy1jb3dpX1V2cTBSaUVkZUFjSkcxc3h0Q2JPcDhXalRJQ0NjZGM4OF9GV1pnbDA4bk5rOHfSAfgBQVVfeXFMUFhZS2NlQ2xSQXZ0ejFTbG13MzNqZHRFeWNYVnI5a1U5WlhQRXhCek1YTUYwQWM0YWxLM2xNNTFfa0xMaU9SdHNwRkc5VG1NeVotZkEyQVNRVGZpUng5M05qQVRHRzVwZVE2ak9TVlludDFBV0FfYVJZMnRQQW5yLTV0SE02SmdSdTNTSlJvdjMtckxVYWxHN1JlSUVLbTBveEZtUHpDaTI0cWk2MmFRU1ZDYVFhRnB2VmQxR3NBY2pYQ1dubjZ5SEpMSkk3VzdoYURfLW8zRXZ4cDFuakw4VHBnd3ZhanRrX3RuaXo2TVBvUWRUV1ExMHQ?oc=5",
+   "source": "Tuttosport",
+   "sky": true,
+   "ts": "2026-11-01T08:37:49Z",
+   "players": [
+    "Maignan",
+    "Modric"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-01T11:47:41Z"
+  },
+  {
+   "id": "pulisic: \"la vittoria non e una sorpresa! scudetto? rispondo cosi, ora dobbiamo...\"",
+   "title": "Pulisic: \"La vittoria non è una sorpresa! Scudetto? Rispondo così, ora dobbiamo...\"",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNaklCMjJZX2ZxcWpBVHRGT1RYYXd1VV9Ra1Fmd3NnaXRySHhfeWs1V0twS3JDS0VvZWhSeWVzSjdIay14V2RhZnpaaGh6WjdoQmh6MTVMa3RHYmlTYUJkci1reWtSMmtDNmYzM0dWNTZUeHBFTWJMSUJOWEtoQlUySDliNW9IVGFSVWtteTRGUW9XXzVLaVFNMXVhdldfcnZaU0d2Y2dhUDNpTkpLVDZhem80bEE?oc=5",
+   "source": "SOS Fanta",
+   "sky": false,
+   "ts": "2026-11-01T08:00:12Z",
+   "players": [
+    "Pulisic"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-01T11:47:41Z"
+  },
+  {
+   "id": "moviola milan-inter: guida assegna un rigore all'inter, ma e petto di gila. salvato dall'ofr",
+   "title": "Moviola Milan-Inter: Guida assegna un rigore all'Inter, ma è petto di Gila. Salvato dall'OFR",
+   "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNdERhVEh1ci1rc3laenhSTTA3Z1otY05LY2RKM1ZJRUpUV3VZdVpnYWF6aXpBWE5XM3J3dDlwQmpBZFhfTkpiV1ZnMHlTbU9rX3UxQ0Z0bERraDkwQ0l1UFJwV0F1eTNzcGZ5R3pGbzFEREN1aE51RFBwMzV0TXdnZEVJWExscXhZbGVuQmtVaV9SUkFuamxrSkxYV1Qxak9VWmNNUm52cHBzclNpZUNlY3QyX1h5SjlOdXBQQVNmVlhYMkFfWURmV2hKb3AwcW1JeTREVmd4UHo2UHNIS2RXY01oTmNVM2J3WHlWVDFnMzhRMWFv0gH3AUFVX3lxTFB0cDVEMXozTGJUbmtQdnltRjFMYkN3dDhzQ3NJVGtQZmhuYXlIa3VHdUpQdGJhTDE4MWprRHI4ZlhQZTlPcUdjUnhkMTFxcHpRaWJ2V1V0ckk5SlhTdkx3anEzUEZIS0oza3FiT2tSa1lRb1dGSmFrT2ZHWFpFV0xteURQTVdQVVQ0Q3JLN0MyVWNrak1mQWZkNWhndG5nLXduVkNjdGJESlRza2Fqck9CaVAxcWR1TkpNS0kyOEVfaHZhYmJFanJ5WUlLcEpkSlI4N0JJdDUtajdEbUhSUEdWbV90SlprRURNME5mUUFyVW1iMG1IZ0E?oc=5",
+   "source": "Corriere dello Sport",
+   "sky": false,
+   "ts": "2026-11-01T07:19:37Z",
+   "players": [
+    "Gila"
+   ],
+   "category": "gol",
+   "first_seen": "2026-11-01T11:47:41Z"
+  },
+  {
+   "id": "juventus-napoli, le probabili formazioni della partita di serie a",
+   "title": "Juventus-Napoli, le probabili formazioni della partita di Serie A",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNMzQzbEYweEZoV0JRcjUxd0ExYWlHQ3ZPc0gyMlROOWNnUC1RX1NWRWVMNUpkSWdQZVJXMEYyV1dyd1FmMXIyYTNjOVdCOUxaRG1JT2Q1VFpsa01US1JpZEZid21hcllRenVKVS1JYVl4cExlU3RnRF82dXlLVmt1S1JjMTk4Yk9PWWtMZDZ0LUJkSUdCb2dGSmpiOA?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-11-01T06:23:59Z",
+   "players": [],
+   "category": "formazione",
+   "first_seen": "2026-10-30T21:41:36Z"
+  },
+  {
+   "id": "le probabili formazioni di juventus-napoli",
+   "title": "Le probabili formazioni di Juventus-Napoli",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNMzQzbEYweEZoV0JRcjUxd0ExYWlHQ3ZPc0gyMlROOWNnUC1RX1NWRWVMNUpkSWdQZVJXMEYyV1dyd1FmMXIyYTNjOVdCOUxaRG1JT2Q1VFpsa01US1JpZEZid21hcllRenVKVS1JYVl4cExlU3RnRF82dXlLVmt1S1JjMTk4Yk9PWWtMZDZ0LUJkSUdCb2dGSmpiOA?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-11-01T06:23:59Z",
+   "players": [],
+   "category": "formazione",
+   "first_seen": "2026-11-01T11:47:41Z"
+  },
+  {
+   "id": "video. maignan, la parata in milan-inter e mostruosa: l'analisi allo sky sport skill",
+   "title": "VIDEO. Maignan, la parata in Milan-Inter è mostruosa: l'analisi allo Sky Sport Skill",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQS19BbTRWVWUzZ1g1VVJtNnpXRF9USXJqelJhLWNwaFhuWFJZak1nc2tUd1J6blJzSEVuckZiOHB3THlqTFZYZWFidEVHLUVaLXhIYVVXZTlkcFZEX1psVE9VQzQxcC1LRGRNSWk3NHRyaGh5UEd3YWgzbHA1Zm1rT3dqdzNacW1nQTFZMmdXeEtnZWc?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-10-31T23:26:02Z",
+   "players": [
+    "Maignan"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-01T11:47:41Z"
+  },
+  {
+   "id": "milan, la parata di maignan allo sky sport skill",
+   "title": "Milan, la parata di Maignan allo Sky Sport Skill",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQWlRSTjZkNWlkczRHbUtpaGV0dlBBYzQtS3pHX0tEMm5zUFNyTjZWNWQxYVVLR0dXQlJBa0Vac3FXOGZkbk5UWUk3QU5mbmRHT2ZOeW1XQ25jUURLdW93VDFXd3lETldYZExyaFVpR0RHM1RJR0JiX0ZzN0dLcS1OOVRkaXRYTkotRjE5MzdaSlhqVE85TFpMOUtDTEM2OXNCTjR5OFp3?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-10-31T22:46:50Z",
+   "players": [
+    "Maignan"
+   ],
+   "category": "news",
+   "first_seen": "2026-10-31T23:20:13Z"
+  },
+  {
+   "id": "highlights milan-inter 3-1: gol di pulisic, rabiot, bastoni e moreira | dazn news italia",
+   "title": "Highlights Milan-Inter 3-1: gol di Pulisic, Rabiot, Bastoni e Moreira | DAZN News Italia",
+   "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOdXEwQW9nTlh3SGRUR0xLbFl2c2JzblRwdS1IZlJGWlNCalVfRm1HdG5nVGNCdHNrTW5iRlRMMVNDWVpBTGhtY1hVZWQ5dHhxdUdxTWdzYnJCejkyN0NRX3gyZnhtM0stNlVrcUx5cEFMQktuNXBKWEg2bDVNUUFWTldnVEVFWmlQTERWMGFhb0R0MjdBNWVESF9QRS1VNXdYRjhlSnA4RWVuMFpCaUpRNHZ3clM5bFl5alI0YVd2QW8tTVpBNXNROFpZMlAxUlc2TDhUU3QxYkNoVnA1TTA1UA?oc=5",
+   "source": "DAZN",
+   "sky": false,
+   "ts": "2026-10-31T22:25:59Z",
+   "players": [
+    "Bastoni",
+    "Pulisic"
+   ],
+   "category": "gol",
+   "first_seen": "2026-10-31T23:20:13Z"
+  },
+  {
+   "id": "milan-inter, le pagelle: maignan miracoloso, 7,5. barella 4,5: dannoso per chivu",
+   "title": "Milan-Inter, le pagelle: Maignan miracoloso, 7,5. Barella 4,5: dannoso per Chivu",
+   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNdlBzTG5WMXFuWXBOYU1GZVF1ZnJPVFFiTWlBWGlGZnVhVzUtd3lDdVhDQmswTE1FZ2kwRmFMNUxvckp5ckE3QWFObUVoWEpUYVExUktudjZqNXRGODNmaUdoSEtuX0pFanFzdEpwWWx1SG1KRlQ2MnBHaURTR1ZoenJrbjNVLW5EUVV5WlctelNEbEh2amx2MkprTTY4VUE5N1BXc9IBqgFBVV95cUxOeEVjaWNxLW5Ocm5fWUZFVDlzMTBSZWM1Qk5ONmVQUUh3eTM2QVN4U2dZb1VKOXFMOUU4OFdyU1VNeUswWVBaSGtuU3ViTjZYdG9zTGNzc0prMnJiMXpDU2JYdVFXTGROZDA3ajN5RkVjOThpa1J6OVd4RDl3YkdFRV94S1p2QkdrZmwyZDIyV2toOFFnZUwzanZMNUw3enF3X2hNMXRNYlYzUQ?oc=5",
+   "source": "Gazzetta dello Sport",
+   "sky": false,
+   "ts": "2026-10-31T22:01:26Z",
+   "players": [
+    "Maignan"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-01T11:47:41Z"
+  },
+  {
+   "id": "i voti di milan-inter: la scelta su dimarco! moreira super, maignan come rabiot, thuram male ma carlos peggio",
+   "title": "I voti di Milan-Inter: la scelta su Dimarco! Moreira super, Maignan come Rabiot, Thuram male ma Carlos peggio",
+   "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPMHdMTnI5Q2RNUk03VTdieFlBa3JsLXdKMzdGSjJubjBKZFdiMldIMmQyUjNPbEI4eWU2SWUydjNOX2NJa25HckljallLeWpkYWtmSy1CVWlXOVhHVWs5SHYyeWxUNTREdjQ2VHdjbVlNajZaVDZQUkIzNllYLTc1YXMwS2dYZ2lzVGMzcmIxSDY1SGZnUlUxSVI2Z3lWZ0xxM2RDaVByNU92S252ekJTTzdrckVDWE9xUU1NaHpRb2RvU2RKZXVfQWJxSlFOY19BaER1WElLbzFkM0Z0T1lyZFVrYXZndlHSAecBQVVfeXFMTzB3TE5yOUNkTVJNN1U3YnhZQWtybC13SjM3Rkoybm4wSmRXYjJXSDJkMlIzT2xCOHllNkllMnYzTl9jSWtuR3JJY2pZS3lqZGFrZkstQlVpVzlYR1VrOUh2MnlsVDU0RHY0NlR3Y21ZTWo2WlQ2UFJCMzZZWC03NWFzMEtnWGdpc1RjM3JiMUg2NUhmZ1JVMUlSNmd5VmdMcTNkQ2lQcjVPdktudnpCU083a3JFQ1hPcVFNTWh6UW9kb1NkSmV1X0FicUpRTmNfQWhEdVhJS28xZDNGdE9ZcmRVa2F2Z3ZR?oc=5",
+   "source": "SOS Fanta",
+   "sky": false,
+   "ts": "2026-10-31T21:50:48Z",
+   "players": [
+    "Maignan"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-02T13:24:11Z"
+  },
+  {
+   "id": "milan, il gol di pulisic rompe un record: il dato",
+   "title": "Milan, il gol di Pulisic rompe un record: il dato",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPc2xvSjZKa0ExdDdvWHhHZmdPVHl6QUItUHB0UEEtSzFuc3JCaEw5ckZmRHJfenFXTXpRQU5fZTNsMmwxUFNiZTJobVRRbGV2UkNPNWNBUXNJY2FXQnFUMklVaEYtRHpjUW1maWI0NXFMWk9MX0t1a003YkZOUUhER2JwOE94M2RoQTFxbXYwalJpdVFYYzJPc0tlUWktZ09xQW5ZX1BUM3BpQlVKS0MtbdIBtgFBVV95cUxNdTAxU0RESGR2QmdyRmU3eFJ3ekhWTjdIbi1pMUI0aVVIWlZHRkptRGxmTzBLenlOY2tqd2ZhN1ZDQ0xjQ0pYaUVVQjBoZ3RPTXI1WUMwS0l4NThXVzM4T0lLaFQ1NG4tSWx5ZTBTSHBvLWZza2tmbjMzd1FwaldUZjJ3QzVpZ0xIQUVqbjlwcXR2MzFlU0t1aWlfenNabjRrbFlKNWtYVzJpcGE5M3Bpa1hkYnFJZw?oc=5",
+   "source": "Fantacalcio.it",
+   "sky": false,
+   "ts": "2026-10-31T20:57:00Z",
+   "players": [
+    "Pulisic"
+   ],
+   "category": "gol",
+   "first_seen": "2026-10-31T23:20:13Z"
+  },
+  {
+   "id": "como, le ultime su liberali, kean e diao in vista del venezia",
+   "title": "Como, le ultime su Liberali, Kean e Diao in vista del Venezia",
+   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPbXFDc29ObUI2bmQtNzk0R1pZWEdpSlVWYm9KM2hydzFFVmZUMUJpQWZvVmUxZ01ZdnZzaTJWamVVenBDQkl6ZDVrcFpIOG8zdVFQY2ZPX1RVQXRpV3ZHZTF4TWI2R09mRi1YYjRCNS1xOXBrdVVVazhwR3pKQVhKV3RWZHBLNFBCa2M1UGw0YWUwQzZ1T3hWdDdDamNUVmZaLXMzaW02bm5EMVl0SXA3ZWk1TVVkZFBraFhiM2JXYWpfd0E0MlBKcEVuR3TSAdIBQVVfeXFMTXpsaXpPU042WnM4ZFllVzNVTzU4Vm9uV3A3amtkNFh3Z0ZCZy1vSG81MHJCN3g5bEhwQjlZbUEteGVvYUhIWnY5ZndwS19hTTQycHZUX05jZ2VCdW9Dcy1vTUNTRWtsY1Q0cFo2NllteWdrMFpRNjluMzZLUlZuNTdyY04wNTdscFNqU3pjbUpBWUpBdW9qWkNIZUhrdnViZ0E0QkJQdUZ1a0hJTGZIREdGTDJkRk81LWhTVDc1SGZkaGkxYzlsQ2hMOXk3LXhuSEJB?oc=5",
+   "source": "Gazzetta dello Sport",
+   "sky": false,
+   "ts": "2026-10-31T18:56:06Z",
+   "players": [
+    "Diao"
+   ],
+   "category": "news",
+   "first_seen": "2026-10-31T16:02:22Z"
+  },
+  {
+   "id": "udinese-roma, le formazioni ufficiali: la scelta su mora, zaniolo, mancini, palma, balerdi, molina e vojvoda",
+   "title": "Udinese-Roma, le formazioni ufficiali: la scelta su Mora, Zaniolo, Mancini, Palma, Balerdi, Molina e Vojvoda",
+   "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPZlJtOE9pS0xwUXRhUG1Qc3Q2Zm9mVHZhTGFJV2VjYmRlVGdEQmw0VUNJM1RzejRqc0JabTdWWVY5WWVmYVh6Y3lBLTVlUmhsZjBkN2JSOU84OEUtSFprSlRFcVc1b2JURmN1SFpwSmczVEJlOXhHVlR4TmRQdWV1YWpITjRXalloSHRFdU94WExDNk1kODZZcnRObllxZ256TFVJUlZrU2NrOGQ0UG0wVHZGVW5zYVJuck8tWXI1Nl81WlhHbi1qcmo0WUhnbzhNNk80dlJYZ9IB3AFBVV95cUxOZWt4V1V4YktPNkJWalVEZXVqZTk3VEVod1g3RHhFYUEyajdmZnFCQXhMcEd0M250SGtsM1FwaXp3bnQxU1pWWmd2OVJVWWlkZURZOXdwN2h0blBoSUN2bGNNcFowYVNOa1U3amlobFFocDVwTWw1Ym5DUkI1ZFl6LWlEN0JmRmxTMlYyemNhU0NXbVkzbHBVbTlUeUZ0RVluQ1ZhUkJoY2ktaGo3WVlJUVd1N3hUOGs3dG9qcjhyampjTWp0MUpZVFJhSWliT0VWbUZTTXEzVTFURkF2?oc=5",
+   "source": "SOS Fanta",
+   "sky": false,
+   "ts": "2026-10-31T17:45:40Z",
+   "players": [
+    "Vojvoda"
+   ],
+   "category": "formazione",
+   "first_seen": "2026-10-31T19:54:16Z"
+  }
+ ],
+ "probabili": {
+  "Daffara": {
+   "stato": "titolare",
+   "pct": 90,
+   "flags": [],
+   "note": "",
+   "partner": "",
+   "match": {
+    "home": "Parma",
+    "away": "Bologna",
+    "casa": true,
+    "kickoff": "Sabato 07 Novembre, 18:00",
+    "stadium": "Tardini",
+    "aggiornato": "06/11/2026 - 18:37"
+   }
+  },
+  "Corvi": {
+   "stato": "panchina",
+   "pct": 5,
+   "flags": [],
+   "note": "",
+   "partner": "",
+   "match": {
+    "home": "Parma",
+    "away": "Bologna",
+    "casa": true,
+    "kickoff": "Sabato 07 Novembre, 18:00",
+    "stadium": "Tardini",
+    "aggiornato": "06/11/2026 - 18:37"
+   }
+  },
+  "Maignan": {
+   "stato": "titolare",
+   "pct": 90,
+   "flags": [],
+   "note": "",
+   "partner": "",
+   "match": {
+    "home": "Genoa",
+    "away": "Milan",
+    "casa": false,
+    "kickoff": "Domenica 08 Novembre, 15:00",
+    "stadium": "Luigi Ferraris",
+    "aggiornato": "06/11/2026 - 15:11"
+   }
+  },
+  "Ramon": {
+   "stato": "titolare",
+   "pct": 90,
+   "flags": [],
+   "note": "",
+   "partner": "",
+   "match": {
+    "home": "Inter",
+    "away": "Como",
+    "casa": false,
+    "kickoff": "Domenica 08 Novembre, 18:00",
+    "stadium": "Giuseppe Meazza",
+    "aggiornato": "06/11/2026 - 16:44"
+   }
+  },
+  "Lucumì": {
+   "stato": "titolare",
+   "pct": 80,
+   "flags": [],
+   "note": "",
+   "partner": "",
+   "match": {
+    "home": "Fiorentina",
+    "away": "Juventus",
+    "casa": false,
+    "kickoff": "Domenica 08 Novembre, 20:45",
+    "stadium": "Artemio Franchi",
+    "aggiornato": "06/11/2026 - 16:11"
+   }
+  },
+  "Gila": {
+   "stato": "titolare",
+   "pct": 90,
+   "flags": [],
+   "note": "",
+   "partner": "",
+   "match": {
+    "home": "Genoa",
+    "away": "Milan",
+    "casa": false,
+    "kickoff": "Domenica 08 Novembre, 15:00",
+    "stadium": "Luigi Ferraris",
+    "aggiornato": "06/11/2026 - 15:11"
+   }
+  },
+  "Scalvini": {
+   "stato": "titolare",
+   "pct": 85,
+   "flags": [],
+   "note": "",
+   "partner": "",
+   "match": {
+    "home": "Monza",
+    "away": "Atalanta",
+    "casa": false,
+    "kickoff": "Domenica 08 Novembre, 15:00",
+    "stadium": "U-Power Stadium",
+    "aggiornato": "06/11/2026 - 15:15"
+   }
+  },
+  "Vojvoda": {
+   "stato": "titolare",
+   "pct": 100,
+   "flags": [],
+   "note": "",
+   "partner": "",
+   "match": {
+    "home": "Venezia",
+    "away": "Udinese",
+    "casa": false,
+    "kickoff": "Venerdì 06 Novembre, 20:45",
+    "stadium": "Pier Luigi Penzo",
+    "aggiornato": "06/11/2026 - 19:50"
+   }
+  },
+  "Zortea": {
+   "stato": "titolare",
+   "pct": 90,
+   "flags": [],
+   "note": "",
+   "partner": "",
+   "match": {
+    "home": "Parma",
+    "away": "Bologna",
+    "casa": false,
+    "kickoff": "Sabato 07 Novembre, 18:00",
+    "stadium": "Tardini",
+    "aggiornato": "06/11/2026 - 18:37"
+   }
+  },
+  "Akanji": {
+   "stato": "titolare",
+   "pct": 80,
+   "flags": [],
+   "note": "",
+   "partner": "",
+   "match": {
+    "home": "Inter",
+    "away": "Como",
+    "casa": true,
+    "kickoff": "Domenica 08 Novembre, 18:00",
+    "stadium": "Giuseppe Meazza",
+    "aggiornato": "06/11/2026 - 16:44"
+   }
+  },
+  "Bastoni": {
+   "stato": "titolare",
+   "pct": 90,
+   "flags": [],
+   "note": "",
+   "partner": "",
+   "match": {
+    "home": "Inter",
+    "away": "Como",
+    "casa": true,
+    "kickoff": "Domenica 08 Novembre, 18:00",
+    "stadium": "Giuseppe Meazza",
+    "aggiornato": "06/11/2026 - 16:44"
+   }
+  },
+  "Cacciamani": {
+   "stato": "titolare",
+   "pct": 55,
+   "flags": [],
+   "note": "",
+   "partner": "",
+   "match": {
+    "home": "Torino",
+    "away": "Lecce",
+    "casa": true,
+    "kickoff": "Sabato 07 Novembre, 15:00",
+    "stadium": "Olimpico",
+    "aggiornato": "06/11/2026 - 16:40"
+   }
+  },
+  "Atta": {
+   "stato": "assente",
+   "pct": null,
+   "flags": [],
+   "note": "",
+   "partner": "",
+   "match": {
+    "home": "Fiorentina",
+    "away": "Juventus",
+    "casa": true,
+    "kickoff": "Domenica 08 Novembre, 20:45",
+    "stadium": "Artemio Franchi",
+    "aggiornato": "06/11/2026 - 16:11"
+   }
+  },
+  "Colpani": {
+   "stato": "panchina",
+   "pct": 55,
+   "flags": [],
+   "note": "",
+   "partner": "",
+   "match": {
+    "home": "Monza",
+    "away": "Atalanta",
+    "casa": true,
+    "kickoff": "Domenica 08 Novembre, 15:00",
+    "stadium": "U-Power Stadium",
+    "aggiornato": "06/11/2026 - 15:15"
+   }
+  },
+  "Koopmeiners": {
+   "stato": "titolare",
+   "pct": 80,
+   "flags": [],
+   "note": "",
+   "partner": "",
+   "match": {
+    "home": "Fiorentina",
+    "away": "Juventus",
+    "casa": false,
+    "kickoff": "Domenica 08 Novembre, 20:45",
+    "stadium": "Artemio Franchi",
+    "aggiornato": "06/11/2026 - 16:11"
+   }
+  },
+  "Jones C.": {
+   "stato": "panchina",
+   "pct": 55,
+   "flags": [],
+   "note": "",
+   "partner": "",
+   "match": {
+    "home": "Inter",
+    "away": "Como",
+    "casa": true,
+    "kickoff": "Domenica 08 Novembre, 18:00",
+    "stadium": "Giuseppe Meazza",
+    "aggiornato": "06/11/2026 - 16:44"
+   }
+  },
+  "Modric": {
+   "stato": "titolare",
+   "pct": 90,
+   "flags": [],
+   "note": "",
+   "partner": "",
+   "match": {
+    "home": "Genoa",
+    "away": "Milan",
+    "casa": false,
+    "kickoff": "Domenica 08 Novembre, 15:00",
+    "stadium": "Luigi Ferraris",
+    "aggiornato": "06/11/2026 - 15:11"
+   }
+  },
+  "Pulisic": {
+   "stato": "titolare",
+   "pct": 90,
+   "flags": [],
+   "note": "",
+   "partner": "",
+   "match": {
+    "home": "Genoa",
+    "away": "Milan",
+    "casa": false,
+    "kickoff": "Domenica 08 Novembre, 15:00",
+    "stadium": "Luigi Ferraris",
+    "aggiornato": "06/11/2026 - 15:11"
+   }
+  },
+  "Politano": {
+   "stato": "titolare",
+   "pct": 90,
+   "flags": [],
+   "note": "",
+   "partner": "",
+   "match": {
+    "home": "Napoli",
+    "away": "Lazio",
+    "casa": true,
+    "kickoff": "Domenica 08 Novembre, 12:30",
+    "stadium": "Diego Armando Maradona",
+    "aggiornato": "06/11/2026 - 18:38"
+   }
+  },
+  "Diao": {
+   "stato": "assente",
+   "pct": null,
+   "flags": [],
+   "note": "",
+   "partner": "",
+   "match": {
+    "home": "Inter",
+    "away": "Como",
+    "casa": false,
+    "kickoff": "Domenica 08 Novembre, 18:00",
+    "stadium": "Giuseppe Meazza",
+    "aggiornato": "06/11/2026 - 16:44"
+   }
+  },
+  "Neres": {
+   "stato": "assente",
+   "pct": null,
+   "flags": [],
+   "note": "",
+   "partner": "",
+   "match": {
+    "home": "Napoli",
+    "away": "Lazio",
+    "casa": true,
+    "kickoff": "Domenica 08 Novembre, 12:30",
+    "stadium": "Diego Armando Maradona",
+    "aggiornato": "06/11/2026 - 18:38"
+   }
+  },
+  "Woltemade": {
+   "stato": "titolare",
+   "pct": 80,
+   "flags": [],
+   "note": "",
+   "partner": "",
+   "match": {
+    "home": "Fiorentina",
+    "away": "Juventus",
+    "casa": false,
+    "kickoff": "Domenica 08 Novembre, 20:45",
+    "stadium": "Artemio Franchi",
+    "aggiornato": "06/11/2026 - 16:11"
+   }
+  },
+  "Adams C.": {
+   "stato": "titolare",
+   "pct": 80,
+   "flags": [],
+   "note": "",
+   "partner": "",
+   "match": {
+    "home": "Torino",
+    "away": "Lecce",
+    "casa": true,
+    "kickoff": "Sabato 07 Novembre, 15:00",
+    "stadium": "Olimpico",
+    "aggiornato": "06/11/2026 - 16:40"
+   }
+  },
+  "Vitinha O.": {
+   "stato": "panchina",
+   "pct": 60,
+   "flags": [],
+   "note": "",
+   "partner": "",
+   "match": {
+    "home": "Genoa",
+    "away": "Milan",
+    "casa": true,
+    "kickoff": "Domenica 08 Novembre, 15:00",
+    "stadium": "Luigi Ferraris",
+    "aggiornato": "06/11/2026 - 15:11"
+   }
+  },
+  "De Ketelaere": {
+   "stato": "titolare",
+   "pct": 90,
+   "flags": [],
+   "note": "",
+   "partner": "",
+   "match": {
+    "home": "Monza",
+    "away": "Atalanta",
+    "casa": false,
+    "kickoff": "Domenica 08 Novembre, 15:00",
+    "stadium": "U-Power Stadium",
+    "aggiornato": "06/11/2026 - 15:15"
+   }
+  }
+ },
+ "probabili_updated": "2026-11-07T00:04:11Z",
+ "probabili_parser": 2,
+ "serie_a": {
+  "Venezia": {
+   "infortunati": [],
+   "squalificati": [],
+   "dubbio": [],
+   "diffidati": [],
+   "avversario": "Udinese",
+   "casa": true,
+   "kickoff": "Venerdì 06 Novembre, 20:45",
+   "aggiornato": "06/11/2026 - 19:50",
+   "da_verificare": [
+    {
+     "nome": "Sverko",
+     "nota": "Problema all'anca, rientro metà novembre",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Franjic",
+     "nota": "Problema alla spalla, rientro dalla metà di dicembre",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Adorante",
+     "nota": "Problema alla schiena, rientro dalla metà di novembre",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Zanoli",
+     "nota": "Problema muscolare, rientro da metà novembre",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Gueye",
+     "nota": "Problema alla caviglia, rientro da fine gennaio",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Alaba",
+     "nota": "Risentimento muscolare al polpaccio destro, rientro da metà novembre",
+     "tipo": "infortunati"
+    }
+   ]
+  },
+  "Udinese": {
+   "infortunati": [],
+   "squalificati": [],
+   "dubbio": [],
+   "diffidati": [
+    {
+     "nome": "Karlstrom",
+     "nota": ""
+    }
+   ],
+   "avversario": "Venezia",
+   "casa": false,
+   "kickoff": "Venerdì 06 Novembre, 20:45",
+   "aggiornato": "06/11/2026 - 19:50",
+   "da_verificare": [
+    {
+     "nome": "Sverko",
+     "nota": "Problema all'anca, rientro metà novembre",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Franjic",
+     "nota": "Problema alla spalla, rientro dalla metà di dicembre",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Adorante",
+     "nota": "Problema alla schiena, rientro dalla metà di novembre",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Zanoli",
+     "nota": "Problema muscolare, rientro da metà novembre",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Gueye",
+     "nota": "Problema alla caviglia, rientro da fine gennaio",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Alaba",
+     "nota": "Risentimento muscolare al polpaccio destro, rientro da metà novembre",
+     "tipo": "infortunati"
+    }
+   ]
+  },
+  "Cagliari": {
+   "infortunati": [],
+   "squalificati": [],
+   "dubbio": [],
+   "diffidati": [],
+   "avversario": "Frosinone",
+   "casa": true,
+   "kickoff": "Sabato 07 Novembre, 15:00",
+   "aggiornato": "06/11/2026 - 19:51",
+   "da_verificare": []
+  },
+  "Frosinone": {
+   "infortunati": [],
+   "squalificati": [],
+   "dubbio": [],
+   "diffidati": [],
+   "avversario": "Cagliari",
+   "casa": false,
+   "kickoff": "Sabato 07 Novembre, 15:00",
+   "aggiornato": "06/11/2026 - 19:51",
+   "da_verificare": []
+  },
+  "Torino": {
+   "infortunati": [],
+   "squalificati": [],
+   "dubbio": [],
+   "diffidati": [],
+   "avversario": "Lecce",
+   "casa": true,
+   "kickoff": "Sabato 07 Novembre, 15:00",
+   "aggiornato": "06/11/2026 - 16:40",
+   "da_verificare": []
+  },
+  "Lecce": {
+   "infortunati": [],
+   "squalificati": [],
+   "dubbio": [],
+   "diffidati": [],
+   "avversario": "Torino",
+   "casa": false,
+   "kickoff": "Sabato 07 Novembre, 15:00",
+   "aggiornato": "06/11/2026 - 16:40",
+   "da_verificare": []
+  },
+  "Parma": {
+   "infortunati": [],
+   "squalificati": [],
+   "dubbio": [],
+   "diffidati": [],
+   "avversario": "Bologna",
+   "casa": true,
+   "kickoff": "Sabato 07 Novembre, 18:00",
+   "aggiornato": "06/11/2026 - 18:37",
+   "da_verificare": []
+  },
+  "Bologna": {
+   "infortunati": [],
+   "squalificati": [],
+   "dubbio": [],
+   "diffidati": [],
+   "avversario": "Parma",
+   "casa": false,
+   "kickoff": "Sabato 07 Novembre, 18:00",
+   "aggiornato": "06/11/2026 - 18:37",
+   "da_verificare": []
+  },
+  "Roma": {
+   "infortunati": [],
+   "squalificati": [],
+   "dubbio": [],
+   "diffidati": [],
+   "avversario": "Sassuolo",
+   "casa": true,
+   "kickoff": "Sabato 07 Novembre, 20:45",
+   "aggiornato": "06/11/2026 - 18:43",
+   "da_verificare": []
+  },
+  "Sassuolo": {
+   "infortunati": [],
+   "squalificati": [],
+   "dubbio": [],
+   "diffidati": [],
+   "avversario": "Roma",
+   "casa": false,
+   "kickoff": "Sabato 07 Novembre, 20:45",
+   "aggiornato": "06/11/2026 - 18:43",
+   "da_verificare": []
+  },
+  "Napoli": {
+   "infortunati": [],
+   "squalificati": [],
+   "dubbio": [],
+   "diffidati": [],
+   "avversario": "Lazio",
+   "casa": true,
+   "kickoff": "Domenica 08 Novembre, 12:30",
+   "aggiornato": "06/11/2026 - 18:38",
+   "da_verificare": []
+  },
+  "Lazio": {
+   "infortunati": [],
+   "squalificati": [],
+   "dubbio": [],
+   "diffidati": [],
+   "avversario": "Napoli",
+   "casa": false,
+   "kickoff": "Domenica 08 Novembre, 12:30",
+   "aggiornato": "06/11/2026 - 18:38",
+   "da_verificare": []
+  },
+  "Genoa": {
+   "infortunati": [],
+   "squalificati": [],
+   "dubbio": [],
+   "diffidati": [],
+   "avversario": "Milan",
+   "casa": true,
+   "kickoff": "Domenica 08 Novembre, 15:00",
+   "aggiornato": "06/11/2026 - 15:11",
+   "da_verificare": []
+  },
+  "Milan": {
+   "infortunati": [],
+   "squalificati": [],
+   "dubbio": [],
+   "diffidati": [],
+   "avversario": "Genoa",
+   "casa": false,
+   "kickoff": "Domenica 08 Novembre, 15:00",
+   "aggiornato": "06/11/2026 - 15:11",
+   "da_verificare": []
+  },
+  "Monza": {
+   "infortunati": [],
+   "squalificati": [],
+   "dubbio": [],
+   "diffidati": [],
+   "avversario": "Atalanta",
+   "casa": true,
+   "kickoff": "Domenica 08 Novembre, 15:00",
+   "aggiornato": "06/11/2026 - 15:15",
+   "da_verificare": []
+  },
+  "Atalanta": {
+   "infortunati": [],
+   "squalificati": [],
+   "dubbio": [],
+   "diffidati": [],
+   "avversario": "Monza",
+   "casa": false,
+   "kickoff": "Domenica 08 Novembre, 15:00",
+   "aggiornato": "06/11/2026 - 15:15",
+   "da_verificare": []
+  },
+  "Inter": {
+   "infortunati": [],
+   "squalificati": [],
+   "dubbio": [],
+   "diffidati": [],
+   "avversario": "Como",
+   "casa": true,
+   "kickoff": "Domenica 08 Novembre, 18:00",
+   "aggiornato": "06/11/2026 - 16:44",
+   "da_verificare": []
+  },
+  "Como": {
+   "infortunati": [],
+   "squalificati": [],
+   "dubbio": [],
+   "diffidati": [],
+   "avversario": "Inter",
+   "casa": false,
+   "kickoff": "Domenica 08 Novembre, 18:00",
+   "aggiornato": "06/11/2026 - 16:44",
+   "da_verificare": []
+  },
+  "Fiorentina": {
+   "infortunati": [],
+   "squalificati": [],
+   "dubbio": [],
+   "diffidati": [],
+   "avversario": "Juventus",
+   "casa": true,
+   "kickoff": "Domenica 08 Novembre, 20:45",
+   "aggiornato": "06/11/2026 - 16:11",
+   "da_verificare": []
+  },
+  "Juventus": {
+   "infortunati": [],
+   "squalificati": [],
+   "dubbio": [],
+   "diffidati": [],
+   "avversario": "Fiorentina",
+   "casa": false,
+   "kickoff": "Domenica 08 Novembre, 20:45",
+   "aggiornato": "06/11/2026 - 16:11",
+   "da_verificare": []
+  }
+ },
+ "changes": [
+  {
+   "ts": "2026-11-07T00:04:11Z",
+   "nome": "Cacciamani",
+   "squadra": "Torino",
+   "da": {
+    "stato": "assente",
+    "pct": null,
+    "flags": []
+   },
+   "a": {
+    "stato": "titolare",
+    "pct": 55,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-11-06T01:29:47Z",
+   "nome": "Cacciamani",
+   "squadra": "Torino",
+   "da": {
+    "stato": "indisponibile",
+    "pct": 0,
+    "flags": []
+   },
+   "a": {
+    "stato": "assente",
+    "pct": null,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-11-06T01:29:47Z",
+   "nome": "Atta",
+   "squadra": "Fiorentina",
+   "da": {
+    "stato": "indisponibile",
+    "pct": 0,
+    "flags": []
+   },
+   "a": {
+    "stato": "assente",
+    "pct": null,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-11-06T01:29:47Z",
+   "nome": "Diao",
+   "squadra": "Como",
+   "da": {
+    "stato": "indisponibile",
+    "pct": 0,
+    "flags": []
+   },
+   "a": {
+    "stato": "assente",
+    "pct": null,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-11-06T01:29:47Z",
+   "nome": "Neres",
+   "squadra": "Napoli",
+   "da": {
+    "stato": "indisponibile",
+    "pct": 0,
+    "flags": []
+   },
+   "a": {
+    "stato": "assente",
+    "pct": null,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-11-04T15:59:19Z",
+   "nome": "Jones C.",
+   "squadra": "Inter",
+   "da": {
+    "stato": "panchina",
+    "pct": 20,
+    "flags": [
+     "in dubbio"
+    ]
+   },
+   "a": {
+    "stato": "panchina",
+    "pct": 55,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-11-03T20:04:35Z",
+   "nome": "Akanji",
+   "squadra": "Inter",
+   "da": {
+    "stato": "titolare",
+    "pct": 100,
+    "flags": []
+   },
+   "a": {
+    "stato": "titolare",
+    "pct": 80,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-11-03T20:04:35Z",
+   "nome": "Koopmeiners",
+   "squadra": "Juventus",
+   "da": {
+    "stato": "titolare",
+    "pct": 100,
+    "flags": []
+   },
+   "a": {
+    "stato": "titolare",
+    "pct": 80,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-11-03T20:04:35Z",
+   "nome": "Jones C.",
+   "squadra": "Inter",
+   "da": {
+    "stato": "indisponibile",
+    "pct": 0,
+    "flags": []
+   },
+   "a": {
+    "stato": "panchina",
+    "pct": 20,
+    "flags": [
+     "in dubbio"
+    ]
+   }
+  },
+  {
+   "ts": "2026-11-03T20:04:35Z",
+   "nome": "Adams C.",
+   "squadra": "Torino",
+   "da": {
+    "stato": "titolare",
+    "pct": 100,
+    "flags": []
+   },
+   "a": {
+    "stato": "titolare",
+    "pct": 80,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-11-02T22:27:26Z",
+   "nome": "Daffara",
+   "squadra": "Parma",
+   "da": {
+    "stato": "titolare",
+    "pct": 80,
+    "flags": []
+   },
+   "a": {
+    "stato": "titolare",
+    "pct": 100,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-11-02T13:24:11Z",
+   "nome": "Ramon",
+   "squadra": "Como",
+   "da": {
+    "stato": "titolare",
+    "pct": 80,
+    "flags": []
+   },
+   "a": {
+    "stato": "titolare",
+    "pct": 100,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-11-02T13:24:11Z",
+   "nome": "Koopmeiners",
+   "squadra": "Juventus",
+   "da": {
+    "stato": "titolare",
+    "pct": 60,
+    "flags": [
+     "ballottaggio"
+    ]
+   },
+   "a": {
+    "stato": "titolare",
+    "pct": 100,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-11-02T13:24:11Z",
+   "nome": "Woltemade",
+   "squadra": "Juventus",
+   "da": {
+    "stato": "titolare",
+    "pct": 85,
+    "flags": []
+   },
+   "a": {
+    "stato": "titolare",
+    "pct": 100,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-11-02T13:24:11Z",
+   "nome": "Adams C.",
+   "squadra": "Torino",
+   "da": {
+    "stato": "titolare",
+    "pct": 60,
+    "flags": [
+     "ballottaggio"
+    ]
+   },
+   "a": {
+    "stato": "titolare",
+    "pct": 100,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-10-31T23:20:13Z",
+   "nome": "Gila",
+   "squadra": "Milan",
+   "da": {
+    "stato": "titolare",
+    "pct": 80,
+    "flags": []
+   },
+   "a": {
+    "stato": "titolare",
+    "pct": 100,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-10-31T23:20:13Z",
+   "nome": "Bastoni",
+   "squadra": "Inter",
+   "da": {
+    "stato": "titolare",
+    "pct": 80,
+    "flags": []
+   },
+   "a": {
+    "stato": "titolare",
+    "pct": 100,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-10-31T16:02:22Z",
+   "nome": "Zortea",
+   "squadra": "Bologna",
+   "da": {
+    "stato": "titolare",
+    "pct": 60,
+    "flags": [
+     "ballottaggio"
+    ]
+   },
+   "a": {
+    "stato": "titolare",
+    "pct": 100,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-10-31T16:02:22Z",
+   "nome": "Koopmeiners",
+   "squadra": "Juventus",
+   "da": {
+    "stato": "panchina",
+    "pct": 60,
+    "flags": []
+   },
+   "a": {
+    "stato": "titolare",
+    "pct": 60,
+    "flags": [
+     "ballottaggio"
+    ]
+   }
+  },
+  {
+   "ts": "2026-10-30T17:09:08Z",
+   "nome": "Zortea",
+   "squadra": "Bologna",
+   "da": {
+    "stato": "titolare",
+    "pct": 85,
+    "flags": []
+   },
+   "a": {
+    "stato": "titolare",
+    "pct": 60,
+    "flags": [
+     "ballottaggio"
+    ]
+   }
+  },
+  {
+   "ts": "2026-10-30T17:09:08Z",
+   "nome": "Cacciamani",
+   "squadra": "Torino",
+   "da": {
+    "stato": "panchina",
+    "pct": 50,
+    "flags": [
+     "in dubbio"
+    ]
+   },
+   "a": {
+    "stato": "indisponibile",
+    "pct": 0,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-10-30T11:19:47Z",
+   "nome": "Daffara",
+   "squadra": "Parma",
+   "da": {
+    "stato": "titolare",
+    "pct": 100,
+    "flags": []
+   },
+   "a": {
+    "stato": "titolare",
+    "pct": 80,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-10-30T11:19:47Z",
+   "nome": "Ramon",
+   "squadra": "Como",
+   "da": {
+    "stato": "titolare",
+    "pct": 100,
+    "flags": []
+   },
+   "a": {
+    "stato": "titolare",
+    "pct": 80,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-10-30T11:19:47Z",
+   "nome": "Gila",
+   "squadra": "Milan",
+   "da": {
+    "stato": "indisponibile",
+    "pct": 0,
+    "flags": []
+   },
+   "a": {
+    "stato": "titolare",
+    "pct": 70,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-10-30T11:19:47Z",
+   "nome": "Scalvini",
+   "squadra": "Atalanta",
+   "da": {
+    "stato": "titolare",
+    "pct": 55,
+    "flags": [
+     "ballottaggio"
+    ]
+   },
+   "a": {
+    "stato": "titolare",
+    "pct": 90,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-10-30T11:19:47Z",
+   "nome": "Vojvoda",
+   "squadra": "Udinese",
+   "da": {
+    "stato": "panchina",
+    "pct": 60,
+    "flags": []
+   },
+   "a": {
+    "stato": "titolare",
+    "pct": 90,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-10-30T11:19:47Z",
+   "nome": "Zortea",
+   "squadra": "Bologna",
+   "da": {
+    "stato": "titolare",
+    "pct": 100,
+    "flags": []
+   },
+   "a": {
+    "stato": "titolare",
+    "pct": 85,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-10-30T11:19:47Z",
+   "nome": "Akanji",
+   "squadra": "Inter",
+   "da": {
+    "stato": "panchina",
+    "pct": 55,
+    "flags": []
+   },
+   "a": {
+    "stato": "titolare",
+    "pct": 90,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-10-30T11:19:47Z",
+   "nome": "Cacciamani",
+   "squadra": "Torino",
+   "da": {
+    "stato": "titolare",
+    "pct": 100,
+    "flags": []
+   },
+   "a": {
+    "stato": "panchina",
+    "pct": 50,
+    "flags": [
+     "in dubbio"
+    ]
+   }
+  },
+  {
+   "ts": "2026-10-30T11:19:47Z",
+   "nome": "Modric",
+   "squadra": "Milan",
+   "da": {
+    "stato": "panchina",
+    "pct": 60,
+    "flags": []
+   },
+   "a": {
+    "stato": "titolare",
+    "pct": 90,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-10-30T11:19:47Z",
+   "nome": "Pulisic",
+   "squadra": "Milan",
+   "da": {
+    "stato": "panchina",
+    "pct": 55,
+    "flags": []
+   },
+   "a": {
+    "stato": "titolare",
+    "pct": 90,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-10-30T11:19:47Z",
+   "nome": "Woltemade",
+   "squadra": "Juventus",
+   "da": {
+    "stato": "panchina",
+    "pct": 60,
+    "flags": []
+   },
+   "a": {
+    "stato": "titolare",
+    "pct": 85,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-10-30T11:19:47Z",
+   "nome": "Adams C.",
+   "squadra": "Torino",
+   "da": {
+    "stato": "titolare",
+    "pct": 100,
+    "flags": []
+   },
+   "a": {
+    "stato": "titolare",
+    "pct": 60,
+    "flags": [
+     "ballottaggio"
+    ]
+   }
+  },
+  {
+   "ts": "2026-10-30T11:19:47Z",
+   "nome": "Vitinha O.",
+   "squadra": "Genoa",
+   "da": {
+    "stato": "titolare",
+    "pct": 100,
+    "flags": []
+   },
+   "a": {
+    "stato": "panchina",
+    "pct": 60,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-10-29T11:28:02Z",
+   "nome": "Lucumì",
+   "squadra": "Juventus",
+   "da": {
+    "stato": "titolare",
+    "pct": 80,
+    "flags": []
+   },
+   "a": {
+    "stato": "titolare",
+    "pct": 100,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-10-29T11:28:02Z",
+   "nome": "Koopmeiners",
+   "squadra": "Juventus",
+   "da": {
+    "stato": "panchina",
+    "pct": 60,
+    "flags": [
+     "ballottaggio"
+    ]
+   },
+   "a": {
+    "stato": "panchina",
+    "pct": 60,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-10-29T11:28:02Z",
+   "nome": "Woltemade",
+   "squadra": "Juventus",
+   "da": {
+    "stato": "titolare",
+    "pct": 80,
+    "flags": []
+   },
+   "a": {
+    "stato": "panchina",
+    "pct": 60,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-10-29T11:28:02Z",
+   "nome": "Vitinha O.",
+   "squadra": "Genoa",
+   "da": {
+    "stato": "panchina",
+    "pct": 60,
+    "flags": [
+     "ballottaggio"
+    ]
+   },
+   "a": {
+    "stato": "titolare",
+    "pct": 100,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-10-28T17:08:34Z",
+   "nome": "Daffara",
+   "squadra": "Parma",
+   "da": {
+    "stato": "panchina",
+    "pct": 5,
+    "flags": []
+   },
+   "a": {
+    "stato": "titolare",
+    "pct": 100,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-10-28T17:08:34Z",
+   "nome": "Corvi",
+   "squadra": "Parma",
+   "da": {
+    "stato": "titolare",
+    "pct": 80,
+    "flags": []
+   },
+   "a": {
+    "stato": "panchina",
+    "pct": 5,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-10-28T17:08:34Z",
+   "nome": "Scalvini",
+   "squadra": "Atalanta",
+   "da": {
+    "stato": "panchina",
+    "pct": 50,
+    "flags": [
+     "in dubbio"
+    ]
+   },
+   "a": {
+    "stato": "titolare",
+    "pct": 55,
+    "flags": [
+     "ballottaggio"
+    ]
+   }
+  },
+  {
+   "ts": "2026-10-28T17:08:34Z",
+   "nome": "Vojvoda",
+   "squadra": "Udinese",
+   "da": {
+    "stato": "titolare",
+    "pct": 90,
+    "flags": []
+   },
+   "a": {
+    "stato": "panchina",
+    "pct": 60,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-10-28T17:08:34Z",
+   "nome": "Akanji",
+   "squadra": "Inter",
+   "da": {
+    "stato": "panchina",
+    "pct": 55,
+    "flags": [
+     "ballottaggio"
+    ]
+   },
+   "a": {
+    "stato": "panchina",
+    "pct": 55,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-10-28T17:08:34Z",
+   "nome": "Bastoni",
+   "squadra": "Inter",
+   "da": {
+    "stato": "titolare",
+    "pct": 55,
+    "flags": [
+     "ballottaggio"
+    ]
+   },
+   "a": {
+    "stato": "titolare",
+    "pct": 100,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-10-28T17:08:34Z",
+   "nome": "Pulisic",
+   "squadra": "Milan",
+   "da": {
+    "stato": "titolare",
+    "pct": 55,
+    "flags": [
+     "ballottaggio"
+    ]
+   },
+   "a": {
+    "stato": "panchina",
+    "pct": 55,
+    "flags": []
+   }
+  }
+ ]
+}
