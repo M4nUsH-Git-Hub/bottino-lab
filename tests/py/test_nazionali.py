@@ -88,6 +88,12 @@ class TestNazionali(unittest.TestCase):
         self.assertEqual(t["page"], "Italy national football team")
         self.assertEqual((t["level"], t["current"], t["caps"]), ("A", True, 40))
 
+    def test_infobox_new_field_names(self):
+        wt = PLAYER.replace("currentclub", "current_club").replace("nationalteam", "national_team").replace("nationalyears", "national_years").replace("nationalcaps", "national_caps")
+        ib = N.infobox(wt)
+        self.assertTrue(N.club_ok(ib["club"], "Inter"))
+        self.assertEqual(N.pick_team(ib["teams"])["caps"], 40)
+
     def test_youth_only(self):
         t = N.pick_team([{"page": "Italy national under-21 football team", "shown": "Italy U21", "years": "2024–", "open": True}])
         self.assertEqual(t["level"], "giovanile")
