@@ -305,7 +305,11 @@ def months_in(text):
 
 def opponents_in(text):
     """Avversari dalla frase della lista: '... matches against France and Belgium on ...'."""
-    m = re.search(r"against (.+?)(?: on | in |,? to be |\.|$)", plain(text))
+    t = plain(text)
+    each = re.findall(r"(?:against|and)\s+(?:the\s+)?([A-Z][A-Za-z' .-]+?)\s+on\s+(?:\d|[A-Z][a-z]+ \d)", t)
+    if len(each) >= 2:
+        return [x.strip() for x in each]
+    m = re.search(r"against (.+?)(?: on | in |,? to be |\.|$)", t)
     if not m:
         return []
     parts = re.split(r",\s*|\s+and\s+|\s*&\s*", re.sub(r"\bthe\b", "", m.group(1)))
@@ -431,7 +435,7 @@ def squad_rows(body):
     return rows
 
 
-COMP_IT = [(r"nations league", "Nations League"), (r"world cup qualif|fifa world cup qualification", "Qualificazioni Mondiali"),
+COMP_IT = [(r"concacaf nations league", "CONCACAF Nations League"), (r"nations league", "Nations League"), (r"world cup qualif|fifa world cup qualification", "Qualificazioni Mondiali"),
            (r"euro.*qualif|european championship qualif", "Qualificazioni Europei"),
            (r"africa cup of nations qualif|afcon qualif", "Qualificazioni Coppa d'Africa"),
            (r"africa cup of nations|afcon", "Coppa d'Africa"), (r"copa am[eé]rica", "Copa América"),
@@ -474,11 +478,11 @@ def team_code(fx):
 
 
 def parse_team(wt, today, title=""):
-    cur = find_section(wt, r"current squad|current roster|squad")
+    cur = find_section(wt, r"current squad|current roster|latest squad|squad")
     rec = find_section(wt, r"recent call[- ]?ups")
     intro = cur.split("{{nat fs", 1)[0] if cur else ""
     # Solo la frase della lista: "The following players were called up for ...", senza "correct as of" ecc.
-    sents = [x for x in re.split(r"(?<=[.;])\s+(?=[A-Z'*])|<br\s*/?>|\n", intro) if x.strip()]
+    sents = [x for x in re.split(r"(?<=[.;])\s+(?=[A-Z'*\[{])|<br\s*/?>|\n", intro) if x.strip()]
     sents = [x for x in sents if not re.search(r"as of|correct|born|eligible", x, re.I)]
     main = next((x for x in sents if re.search(r"following|called up|named|selected", x, re.I)), "")
     sq_dates = dates_in(main, today.year)
@@ -489,7 +493,7 @@ def parse_team(wt, today, title=""):
     return {"code": code, "name": COUNTRY.get(code, code), "squad": squad_rows(cur), "recent": squad_rows(rec),
             "squad_dates": [d.isoformat() for d in sq_dates], "squad_months": months,
             "opponents": opponents_in(main), "comp": comp_it(main), "intro": plain(main)[:300], "fixtures": fx,
-            "sections": [t for _, t, _ in sections(wt)][:60]}
+            "sections": [t for _, t, _ in sections(wt)][:60], "raw_intro": intro[:500] if not main else ""}
 
 
 def title_country(wt):
@@ -758,6 +762,8 @@ def run(rosa, prev, overrides=None, now=None, do_news=True):
                 f.write(f"   intro: {t['intro']}\n   dates: {t['squad_dates']}\n")
                 if not t["squad"]:
                     f.write(f"   sezioni: {t['sections']}\n")
+                if t.get("raw_intro"):
+                    f.write(f"   testo grezzo: {t['raw_intro']!r}\n")
                 f.write(f"   avversari: {t['opponents']} · comp {t['comp']} · mesi {t['squad_months']}\n")
                 for fx in team_window(t, today)[0]:
                     f.write(f"   {fx}\n")

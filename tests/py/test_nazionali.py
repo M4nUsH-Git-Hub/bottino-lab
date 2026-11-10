@@ -158,6 +158,9 @@ class TestNazionali(unittest.TestCase):
         self.assertEqual(N.months_in("matches in November 2026."), [(2026, 11)])
         self.assertEqual(N.opponents_in("matches against Israel and the Republic of Ireland, on 14 and 17 November 2026."), ["Israel", "Republic of Ireland"])
 
+    def test_opponents_each_date(self):
+        self.assertEqual(N.opponents_in("matches against Slovenia on 13 November and Scotland on 16 November 2026."), ["Slovenia", "Scotland"])
+
     def test_window_from_squad_text(self):
         wt = TEAM.split("==Players==")[1]
         wt = "==Players==" + wt.replace("against {{fb|FRA}} and {{fb|BEL}} on 12 and 15 November 2026", "against Chile on 13 and 17 November 2026")
