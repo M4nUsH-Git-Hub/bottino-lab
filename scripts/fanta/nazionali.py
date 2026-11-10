@@ -69,7 +69,8 @@ COUNTRY = {
     "ANG": "Angola", "BEN": "Benin", "TOG": "Togo", "GNB": "Guinea-Bissau", "UGA": "Uganda", "KEN": "Kenya",
     "JPN": "Giappone", "KOR": "Corea del Sud", "AUS": "Australia", "IRN": "Iran", "KSA": "Arabia Saudita",
     "QAT": "Qatar", "UAE": "Emirati Arabi", "IRQ": "Iraq", "UZB": "Uzbekistan", "JOR": "Giordania", "CHN": "Cina",
-    "NZL": "Nuova Zelanda",
+    "NZL": "Nuova Zelanda", "COM": "Comore", "SDN": "Sudan", "SGP": "Singapore", "MTN": "Mauritania", "LBY": "Libia",
+    "MOZ": "Mozambico", "NAM": "Namibia", "ZIM": "Zimbabwe", "TAN": "Tanzania", "RWA": "Ruanda", "MAD": "Madagascar",
 }
 CODE_OF = {"Italy": "ITA", "France": "FRA", "Belgium": "BEL", "Spain": "ESP", "Germany": "GER", "Netherlands": "NED",
            "Portugal": "POR", "England": "ENG", "Scotland": "SCO", "Switzerland": "SUI", "Croatia": "CRO",
@@ -77,7 +78,12 @@ CODE_OF = {"Italy": "ITA", "France": "FRA", "Belgium": "BEL", "Spain": "ESP", "G
            "Mali": "MLI", "Serbia": "SRB", "Denmark": "DEN", "Austria": "AUT", "Poland": "POL", "Argentina": "ARG",
            "Uruguay": "URU", "Nigeria": "NGA", "Morocco": "MAR", "Ivory Coast": "CIV", "Ghana": "GHA",
            "Turkey": "TUR", "Albania": "ALB", "Norway": "NOR", "Sweden": "SWE", "Georgia": "GEO", "Slovenia": "SVN",
-           "Slovakia": "SVK", "Czech Republic": "CZE", "Ukraine": "UKR", "Greece": "GRE", "Mexico": "MEX", "Canada": "CAN"}
+           "Slovakia": "SVK", "Czech Republic": "CZE", "Ukraine": "UKR", "Greece": "GRE", "Mexico": "MEX", "Canada": "CAN",
+           "Belgium ": "BEL", "Wales": "WAL", "Republic of Ireland": "IRL", "Hungary": "HUN", "Romania": "ROU",
+           "Bosnia and Herzegovina": "BIH", "North Macedonia": "MKD", "Montenegro": "MNE", "Iceland": "ISL",
+           "Finland": "FIN", "Japan": "JPN", "South Korea": "KOR", "Australia": "AUS", "Cameroon": "CMR",
+           "Algeria": "ALG", "Tunisia": "TUN", "Egypt": "EGY", "Ecuador": "ECU", "Paraguay": "PAR", "Peru": "PER",
+           "Venezuela": "VEN", "Chile": "CHI", "Jamaica": "JAM", "Costa Rica": "CRC", "Panama": "PAN"}
 EN_IT = {k: COUNTRY[v] for k, v in CODE_OF.items() if v in COUNTRY}
 EN_IT.update({"Chile": "Cile", "Haiti": "Haiti", "Sudan": "Sudan", "Israel": "Israele", "Republic of Ireland": "Irlanda",
               "Japan": "Giappone", "Singapore": "Singapore", "Finland": "Finlandia", "San Marino": "San Marino",
@@ -269,26 +275,26 @@ MONTH_RX = r"(January|February|March|April|May|June|July|August|September|Octobe
 
 def dates_in(text, default_year=None):
     """Date scritte all'inglese: '12 and 15 November 2026', '13 November and 16 November 2026',
-    'November 14 and 17, 2026', '5, 9 and 13 October'. L'anno mancante è quello che compare nel testo."""
+    'November 14 and 17, 2026', '5, 9 and 13 October'. Se manca l'anno vale quello della data scritta dopo."""
     t = plain(text)
-    years = [int(y) for y in re.findall(r"\b(20\d\d)\b", t)]
+    days_rx = r"((?:(?<!\d)\d{1,2}(?!\d)(?:st|nd|rd|th)?\s*(?:,|and|&|–|-)\s*)*(?<!\d)\d{1,2}(?!\d))(?:st|nd|rd|th)?"
+    found = []  # (posizione, mese, giorni, anno o None)
+    for m in re.finditer(days_rx + r"\s+" + MONTH_RX + r"(?:,?\s+(\d{4}))?", t):
+        found.append((m.start(), MONTHS[m.group(2).lower()], m.group(1), int(m.group(3)) if m.group(3) else None))
+    for m in re.finditer(MONTH_RX + r"\s+" + days_rx + r"(?:,?\s*(\d{4}))?", t):
+        found.append((m.start(), MONTHS[m.group(1).lower()], m.group(2), int(m.group(3)) if m.group(3) else None))
+    found.sort()
     out = []
-
-    def add(y, mo, days):
+    for k, (_, mo, days, y) in enumerate(found):
+        if y is None:
+            y = next((x[3] for x in found[k + 1:] if x[3]), default_year)
+        if not y:
+            continue
         for d in re.findall(r"\d{1,2}", days):
             try:
                 out.append(date(y, mo, int(d)))
             except ValueError:
                 pass
-    days_rx = r"((?:(?<!\d)\d{1,2}(?!\d)(?:st|nd|rd|th)?\s*(?:,|and|&|–|-)\s*)*(?<!\d)\d{1,2}(?!\d))(?:st|nd|rd|th)?"
-    for m in re.finditer(days_rx + r"\s+" + MONTH_RX + r"(?:\s+(\d{4}))?", t):
-        y = int(m.group(3)) if m.group(3) else next((y for y in years if y >= 2000), default_year)
-        if y:
-            add(y, MONTHS[m.group(2).lower()], m.group(1))
-    for m in re.finditer(MONTH_RX + r"\s+" + days_rx + r"(?:,?\s*(\d{4}))?", t):
-        y = int(m.group(3)) if m.group(3) else next((y for y in years if y >= 2000), default_year)
-        if y:
-            add(y, MONTHS[m.group(1).lower()], m.group(2))
     return sorted(set(out))
 
 
@@ -467,17 +473,19 @@ def team_code(fx):
     return cnt.most_common(1)[0][0] if cnt else ""
 
 
-def parse_team(wt, today):
+def parse_team(wt, today, title=""):
     cur = find_section(wt, r"current squad|current roster|squad")
     rec = find_section(wt, r"recent call[- ]?ups")
     intro = cur.split("{{nat fs", 1)[0] if cur else ""
-    lines = [l for l in re.split(r"<br\s*/?>|\n", intro) if l.strip() and not re.search(r"as of|correct|born|eligible", l, re.I)]
-    # Solo la frase della lista: "The following players were called up for ...".
-    main = next((l for l in lines if re.search(r"following|called up|named|selected", l, re.I)), " ".join(lines))
+    # Solo la frase della lista: "The following players were called up for ...", senza "correct as of" ecc.
+    sents = [x for x in re.split(r"(?<=[.;])\s+(?=[A-Z'*])|<br\s*/?>|\n", intro) if x.strip()]
+    sents = [x for x in sents if not re.search(r"as of|correct|born|eligible", x, re.I)]
+    main = next((x for x in sents if re.search(r"following|called up|named|selected", x, re.I)), "")
     sq_dates = dates_in(main, today.year)
     months = months_in(main) if not sq_dates else []
     fx = fixtures(wt)
-    code = team_code(fx) or flag_code(wt[:6000]) or CODE_OF.get(title_country(wt), "")
+    m = re.match(r"(.+?) (?:men's )?national (?:under-\d\d )?(?:football|soccer) team", title or "")
+    code = team_code(fx) or CODE_OF.get(m.group(1) if m else title_country(wt), "")
     return {"code": code, "name": COUNTRY.get(code, code), "squad": squad_rows(cur), "recent": squad_rows(rec),
             "squad_dates": [d.isoformat() for d in sq_dates], "squad_months": months,
             "opponents": opponents_in(main), "comp": comp_it(main), "intro": plain(main)[:300], "fixtures": fx,
@@ -559,6 +567,7 @@ def status_for(info, team, today, prev_entry, global_window=None):
     in_recent = next((r for r in team["recent"] if same_player(r, wiki, full)), None)
     sq_dates = [date.fromisoformat(d) for d in team["squad_dates"]]
     wnd_dates = [date.fromisoformat(f["date"]) for f in wnd]
+    sq_dates = [d for d in sq_dates if d <= today + timedelta(days=60)]
     squad_current = bool(sq_dates) and bool(wnd_dates) and max(sq_dates) >= min(wnd_dates) - timedelta(days=1)
     if not wnd and sq_dates and max(sq_dates) >= today - timedelta(days=WINDOW_BACK):
         squad_current = True
@@ -694,7 +703,7 @@ def run(rosa, prev, overrides=None, now=None, do_news=True):
     for pg in pages:
         if pg in texts:
             try:
-                teams[pg] = parse_team(texts[pg][1], today)
+                teams[pg] = parse_team(texts[pg][1], today, pg)
             except Exception as e:
                 errors.append(f"{pg}: {type(e).__name__}: {e}"[:160])
 

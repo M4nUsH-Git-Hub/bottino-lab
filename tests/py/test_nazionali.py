@@ -153,6 +153,8 @@ class TestNazionali(unittest.TestCase):
         self.assertEqual(N.dates_in("against Haiti on November 14 and 17, 2026."), [date(2026, 11, 14), date(2026, 11, 17)])
         self.assertEqual(N.dates_in("against Slovenia on 13 November and Scotland on 16 November 2026."), [date(2026, 11, 13), date(2026, 11, 16)])
         self.assertEqual(N.dates_in("against England and Norway on 13 and 17 November respectively.", 2026), [date(2026, 11, 13), date(2026, 11, 17)])
+        self.assertEqual(N.dates_in("for the 2027 Under-21 Championship qualification matches against Finland on 25, 30 September and 6 October 2026; respectively."),
+                         [date(2026, 9, 25), date(2026, 9, 30), date(2026, 10, 6)])
         self.assertEqual(N.months_in("matches in November 2026."), [(2026, 11)])
         self.assertEqual(N.opponents_in("matches against Israel and the Republic of Ireland, on 14 and 17 November 2026."), ["Israel", "Republic of Ireland"])
 
