@@ -27,6 +27,16 @@ Per cambiare la rosa basta sostituire `data/fanta/rosa.csv` con un nuovo export 
 
 Non inclusi rispetto al vecchio bot Discord: la lettura diretta di sport.sky.it (blocca i programmi automatici; le notizie di Sky arrivano comunque da Google News) e i post Instagram di Sky (servono un'app Meta e un token personale).
 
+### Nazionali
+
+Durante le soste la sezione **Nazionali** va in cima alla pagina Fanta: per ogni giocatore della rosa dice se è
+convocato, non convocato, se ha lasciato il ritiro (infortunio, rinuncia) o se la lista non è ancora uscita, con le
+partite della nazionale, gol, presenze, quando rientra e la prima partita di Serie A dopo la sosta. Le liste arrivano
+da Wikipedia (interfaccia ufficiale api.php: sezioni "Current squad" e "Recent call-ups" delle pagine delle nazionali),
+le notizie dalle testate affidabili. Chi è nelle giovanili viene cercato anche nella nazionale maggiore.
+Script: `scripts/fanta/nazionali.py`, gira nel workflow del Fanta. Se un giocatore è abbinato male, si corregge in
+`data/fanta/nazionali.json`.
+
 ## Tipi di domanda
 
 | Tipo | Esempi riconosciuti | Modello |
