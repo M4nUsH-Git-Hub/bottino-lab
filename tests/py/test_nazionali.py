@@ -158,6 +158,12 @@ class TestNazionali(unittest.TestCase):
         self.assertEqual(N.months_in("matches in November 2026."), [(2026, 11)])
         self.assertEqual(N.opponents_in("matches against Israel and the Republic of Ireland, on 14 and 17 November 2026."), ["Israel", "Republic of Ireland"])
 
+    def test_intro_with_comment_and_ref(self):
+        wt = TEAM.replace("The following players were called up for the [[2026–27 UEFA Nations League]] matches against {{fb|FRA}} and {{fb|BEL}} on 12 and 15 November 2026.<br>\n''Caps and goals correct as of 14 October 2026, after the match against {{fb|EST}}.''",
+                          "<!--NOTE: PLEASE LEAVE THE SQUAD DATA IN PROSE. THANKS -->\nThe following players were called up for the matches in November 2026.<ref>{{cite web|title=x}}</ref> Caps and goals correct as of 14 October 2026.")
+        t = N.parse_team(wt, TODAY)
+        self.assertEqual(t["squad_months"], [(2026, 11)])
+
     def test_opponents_each_date(self):
         self.assertEqual(N.opponents_in("matches against Slovenia on 13 November and Scotland on 16 November 2026."), ["Slovenia", "Scotland"])
 
@@ -178,7 +184,7 @@ class TestNazionali(unittest.TestCase):
             N.resolve = lambda p, ov=None: {"wiki": "Alessandro Bastoni", "full": "Alessandro Bastoni",
                                             "team": {"page": "Italy national football team", "current": True, "level": "A"}}
             N.wikitexts = lambda titles: {t: (t, TEAM) for t in titles}
-            prev = {"players": {"Bastoni": {"status": "in_attesa"}}}
+            prev = {"parser": N.PARSER_VERSION, "players": {"Bastoni": {"status": "in_attesa"}}}
             out = N.run([{"nome": "Bastoni", "squadra": "Inter"}], prev, now=NOW, do_news=False)
         finally:
             N.resolve, N.wikitexts = orig_r, orig_w

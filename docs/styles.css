@@ -486,6 +486,8 @@ input.auto,select.auto{border-color:var(--si);background:var(--si-soft)}
 .nz-news a:hover{text-decoration:underline}
 .nz-src{align-self:flex-start}
 .nz-rest{margin-top:12px}
+.nz-more{margin:-4px 0 8px}
+.nz-more summary{cursor:pointer;font-size:13.5px;color:var(--muted)}
 .nz-rest summary{cursor:pointer;font-weight:600;font-size:14px}
 
 @media (prefers-reduced-motion:reduce){.bar i{transition:none}}

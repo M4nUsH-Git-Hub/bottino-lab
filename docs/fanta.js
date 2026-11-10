@@ -320,7 +320,8 @@
     const count = k => rows.filter(([, x]) => x.status === k).length;
     const main = rows.filter(([, x]) => (NZ[x.status] || NZ.sconosciuto)[2] <= 3).sort((a, b) => (NZ[a[1].status][2] - NZ[b[1].status][2]) || a[0].nome.localeCompare(b[0].nome));
     const rest = rows.filter(([, x]) => (NZ[x.status] || NZ.sconosciuto)[2] > 3);
-    const ch = (N.changes || []).filter(c => Date.now() - Date.parse(c.ts) < 10 * 864e5).slice(0, 12);
+    const ch = (N.changes || []).filter(c => Date.now() - Date.parse(c.ts) < 10 * 864e5).slice(0, 20);
+    const chLi = c => `<li class="${Date.parse(c.ts) > prevVisit ? 'new' : ''}"><span class="muted small">${esc(when(c.ts))}</span><div><b>${esc(c.nome)}</b>${c.nat ? ` <span class="muted">(${esc(c.nat)})</span>` : ''}: ${esc(c.da)} → <b>${esc(c.a)}</b></div>${c.note ? `<div class="muted small">${esc(c.note)}</div>` : ''}</li>`;
     const brk = dates.length ? `Sosta dal ${dshort(dates[0])} al ${dshort(dates[dates.length - 1])}` : 'Nessuna sosta per le nazionali nelle prossime 3 settimane';
     // In sosta la sezione va in cima; fuori sosta scende in fondo, compatta.
     const body = $('fBody');
@@ -330,7 +331,7 @@
       <div class="nz-sum">
         ${[['convocato', 'Convocati'], ['lasciato', 'Hanno lasciato il ritiro'], ['in_attesa', 'In attesa della lista'], ['non_convocato', 'Non convocati']].map(([k, l]) => count(k) ? `<span class="nz-c nz-${k}"><b>${count(k)}</b> ${l}</span>` : '').join('')}
       </div>
-      ${ch.length ? `<h3 class="subh">Novità</h3><ol class="timeline">${ch.map(c => `<li class="${Date.parse(c.ts) > prevVisit ? 'new' : ''}"><span class="muted small">${esc(when(c.ts))}</span><div><b>${esc(c.nome)}</b>${c.nat ? ` <span class="muted">(${esc(c.nat)})</span>` : ''}: ${esc(c.da)} → <b>${esc(c.a)}</b></div>${c.note ? `<div class="muted small">${esc(c.note)}</div>` : ''}</li>`).join('')}</ol>` : ''}
+      ${ch.length ? `<h3 class="subh">Novità</h3><ol class="timeline">${ch.slice(0, 4).map(chLi).join('')}</ol>${ch.length > 4 ? `<details class="nz-more"><summary>Altre ${ch.length - 4} novità</summary><ol class="timeline">${ch.slice(4).map(chLi).join('')}</ol></details>` : ''}` : ''}
       ${main.length ? `<div class="nzgrid">${main.map(([p, x]) => nazCard(p, x)).join('')}</div>` : `<p class="empty">${dates.length ? 'Nessun tuo giocatore è nel giro delle nazionali in questa sosta.' : 'Quando si avvicina una sosta qui trovi chi è convocato e chi no.'}</p>`}
       ${rest.length ? `<details class="nz-rest"><summary>Altri ${rest.length} giocatori: ${esc([...new Set(rest.map(([, x]) => (NZ[x.status] || NZ.sconosciuto)[0].toLowerCase()))].join(', '))}</summary><div class="nzgrid">${rest.map(([p, x]) => nazCard(p, x)).join('')}</div></details>` : ''}
       <p class="muted small">Fonte: liste ufficiali delle nazionali riportate su Wikipedia, più le notizie di Sky Sport, Gazzetta e le altre testate affidabili. Le liste si aggiornano pochi minuti o qualche ora dopo l'annuncio del CT. Se un giocatore è abbinato alla nazionale sbagliata, si corregge in data/fanta/nazionali.json (o chiedilo a Claude).</p>`;

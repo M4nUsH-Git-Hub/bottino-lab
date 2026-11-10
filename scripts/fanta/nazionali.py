@@ -33,6 +33,8 @@ RESOLVE_DAYS = 7          # ogni quanto ricontrollare la nazionale di un giocato
 WINDOW_BACK = 4           # partite giocate fino a 4 giorni fa contano ancora nella sosta
 WINDOW_AHEAD = 21         # partite entro 3 settimane = sosta in arrivo
 CHANGES_MAX = 120
+PARSER_VERSION = 3        # cambia quando cambia la lettura: i dati vecchi non si confrontano
+MESI = ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio", "agosto", "settembre", "ottobre", "novembre", "dicembre"]
 DEBUG = None
 TRACE = []
 
@@ -482,6 +484,7 @@ def parse_team(wt, today, title=""):
     rec = find_section(wt, r"recent call[- ]?ups")
     intro = cur.split("{{nat fs", 1)[0] if cur else ""
     # Solo la frase della lista: "The following players were called up for ...", senza "correct as of" ecc.
+    intro = re.sub(r"<!--.*?-->|<ref[^>]*/>|<ref[^>]*>.*?</ref>", " ", intro, flags=re.S)
     sents = [x for x in re.split(r"(?<=[.;])\s+(?=[A-Z'*\[{])|<br\s*/?>|\n", intro) if x.strip()]
     sents = [x for x in sents if not re.search(r"as of|correct|born|eligible", x, re.I)]
     main = next((x for x in sents if re.search(r"following|called up|named|selected", x, re.I)), "")
@@ -529,6 +532,13 @@ def window(fx, today):
         return []
     first = date.fromisoformat(near[0]["date"])
     return [f for f in near if date.fromisoformat(f["date"]) <= first + timedelta(days=10)]
+
+
+def italian(s):
+    """'v. COM, 4 October 2026' → 'contro Comore, 4 ottobre 2026'."""
+    s = re.sub(r"^v\.\s*", "contro ", s or "")
+    s = re.sub(r"\b([A-Z]{3})\b", lambda m: COUNTRY.get(m.group(1), m.group(1)), s)
+    return re.sub(MONTH_RX, lambda m: MESI[MONTHS[m.group(1).lower()] - 1], s)
 
 
 def same_player(row, wiki, full):
@@ -615,7 +625,7 @@ def status_for(info, team, today, prev_entry, global_window=None):
     elif squad_current:
         res["status"] = "non_convocato"
         if in_recent and in_recent.get("latest"):
-            res["note"] = f"Ultima chiamata: {in_recent['latest'][:80]}"
+            res["note"] = f"Ultima chiamata: {italian(in_recent['latest'])[:80]}"
     else:
         res["status"] = "in_attesa"
         res["note"] = "La nazionale non ha ancora annunciato i convocati"
@@ -675,6 +685,9 @@ def run(rosa, prev, overrides=None, now=None, do_news=True):
     now = now or F.now_utc()
     today = now.date()
     prev = prev or {}
+    if prev.get("parser") != PARSER_VERSION:   # lettura cambiata: si riparte senza confronti
+        prev = {"players": {k: {kk: vv for kk, vv in v.items() if kk in ("wiki", "full", "team", "resolved", "squadra")}
+                            for k, v in (prev.get("players") or {}).items()}}
     old = prev.get("players") or {}
     overrides = overrides or {}
     players, errors = {}, []
@@ -749,7 +762,7 @@ def run(rosa, prev, overrides=None, now=None, do_news=True):
             i["news"] = (old.get(n) or {}).get("news", [])
 
     found = sum(1 for i in players.values() if i.get("wiki"))
-    out = {"updated": F.iso(now), "ok": bool(teams) or found > 0, "found": found, "teams_read": len(teams),
+    out = {"parser": PARSER_VERSION, "updated": F.iso(now), "ok": bool(teams) or found > 0, "found": found, "teams_read": len(teams),
            "errors": errors[:8], "players": players, "changes": changes, "news_status": news_status,
            "teams": {pg: {"code": t["code"], "name": t["name"], "squad_dates": t["squad_dates"], "intro": t["intro"],
                           "squad_size": len(t["squad"]), "fixtures": len(t["fixtures"])} for pg, t in teams.items()}}
