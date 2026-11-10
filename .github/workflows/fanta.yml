@@ -1,6 +1,7 @@
 name: Fanta · notizie e probabili
 
-# Ogni 30 minuti (circa dalle 6 alle 23, ora italiana) raccoglie le notizie sui giocatori della rosa;
+# Ogni 30 minuti (circa dalle 6 alle 23, ora italiana) raccoglie le notizie sui giocatori della rosa
+# e le convocazioni in nazionale (Wikipedia);
 # una volta all'ora legge anche le probabili formazioni di Fantacalcio.it.
 # Il risultato (fanta.json) va sul ramo "fanta-data": il sito lo legge da lì, senza ripubblicarsi.
 # Per un giro immediato: Actions → "Fanta · notizie e probabili" → Run workflow.
@@ -64,11 +65,18 @@ jobs:
           if [ "${{ inputs.debug }}" = "true" ]; then EXTRA="$EXTRA --debug-fc fc_debug.txt"; fi
           python scripts/fanta/update.py --rosa data/fanta/rosa.csv --prev prev.json --out fanta.json $EXTRA
 
+      - name: Convocazioni in nazionale
+        run: |
+          # Wikipedia a ogni giro; le notizie sulle convocazioni una volta all'ora.
+          NEWS=""
+          if [ "${{ steps.plan.outputs.fc }}" = "no" ]; then NEWS="--no-news"; fi
+          python scripts/fanta/nazionali.py --fanta fanta.json --prev prev.json --overrides data/fanta/nazionali.json --debug naz_debug.txt $NEWS
+
       - name: Pubblica sul ramo dati
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          mkdir out && cp fanta.json out/ && { cp fc_debug.txt* out/ 2>/dev/null || true; } && cd out
+          mkdir out && cp fanta.json out/ && { cp fc_debug.txt* naz_debug.txt out/ 2>/dev/null || true; } && cd out
           git init -q -b fanta-data
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
