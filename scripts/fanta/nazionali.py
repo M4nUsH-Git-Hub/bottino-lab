@@ -596,7 +596,7 @@ def run(rosa, prev, overrides=None, now=None, do_news=True):
         o = old.get(p["nome"]) or {}
         ov = overrides.get(p["nome"])
         fresh = o.get("resolved") and (now - datetime.fromisoformat(o["resolved"].replace("Z", "+00:00"))) < timedelta(days=RESOLVE_DAYS)
-        if fresh and not ov and o.get("squadra") == p["squadra"]:
+        if fresh and o.get("wiki") and not ov and o.get("squadra") == p["squadra"]:
             players[p["nome"]] = {k: o.get(k) for k in ("wiki", "full", "team", "resolved")}
         else:
             try:
