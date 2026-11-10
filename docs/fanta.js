@@ -170,11 +170,11 @@
   }
 
   function renderHead() {
-    const s = (data && data.sources) || {};
+    const s = Object.assign({}, (data && data.sources) || {}, data && data.nazionali ? { nazionali: Object.assign({ when: data.nazionali.updated }, data.nazionali) } : {});
     const src = (key, label) => {
       const x = s[key];
       if (!x) return `<span class="srcst"><i class="led off"></i>${label}: non ancora letto</span>`;
-      const detail = key === 'probabili' ? (x.ok ? `${x.found} giocatori trovati` : esc(x.error || 'errore')) : (x.ok ? `${x.feeds} ricerche` : esc(x.error || 'errore'));
+      const detail = key === 'nazionali' ? (x.ok ? `${x.found} giocatori riconosciuti` : esc((x.errors || [])[0] || 'errore')) : key === 'probabili' ? (x.ok ? `${x.found} giocatori trovati` : esc(x.error || 'errore')) : (x.ok ? `${x.feeds} ricerche` : esc(x.error || 'errore'));
       return `<span class="srcst" title="${esc(x.error || '')}"><i class="led ${x.ok ? 'on' : 'err'}"></i>${label}: ${detail} · ${ago(x.when)}</span>`;
     };
     $('fHead').innerHTML = `
@@ -184,7 +184,7 @@
         <div class="muted small">${data ? `Dati aggiornati ${ago(data.updated)}${data._sample ? ' · copia di prova locale' : ''}` : loading ? 'Caricamento…' : `Dati non disponibili${lastError ? ` (${esc(lastError)})` : ''}`}</div>
       </div>
       <div class="fh-side">
-        <div class="srcs-st">${src('news', 'Notizie')}${src('probabili', 'Probabili Fantacalcio.it')}</div>
+        <div class="srcs-st">${src('news', 'Notizie')}${src('probabili', 'Probabili Fantacalcio.it')}${data && data.nazionali ? src('nazionali', 'Nazionali') : ''}</div>
         <button class="btn ghost small" type="button" id="fReload">${loading ? 'Carico…' : 'Ricarica i dati'}</button>
       </div>`;
   }
@@ -206,6 +206,11 @@
       <div class="bench">${res.bench.map(p => chip(p, `<span class="ev">${dec(expected(p), 1)}</span>`)).join('')}</div>`;
   }
 
+  function nazBadge(p) {
+    const x = data.nazionali && data.nazionali.players && data.nazionali.players[p.nome];
+    if (!x || !(x.fixtures || []).length || !['convocato', 'lasciato'].includes(x.status)) return '';
+    return ` <span class="pill ${x.status === 'convocato' ? 'si' : 'warn'}" title="${esc(x.note || '')}">${x.status === 'convocato' ? 'In nazionale' : 'Lasciato la nazionale'}</span>`;
+  }
   function renderRosa() {
     const rows = ['P', 'D', 'C', 'A'].map(r => {
       const ps = data.rosa.filter(p => p.ruolo === r);
@@ -214,7 +219,7 @@
         return `<tr>
         <td><span class="role r-${p.ruolo}">${p.ruolo}</span> <b>${esc(p.nome)}</b></td>
         <td>${esc(p.squadra)}</td>
-        <td class="stcell">${statusBadge(p)}${note ? `<span class="pnote">${esc(note)}</span>` : ''}</td>
+        <td class="stcell">${statusBadge(p)}${nazBadge(p)}${note ? `<span class="pnote">${esc(note)}</span>` : ''}</td>
         <td class="small fxcell">${fixturesCell(p)}</td>
         <td class="num">${p.fm ? dec(p.fm) : '—'}</td>
         <td class="num">${p.mv ? dec(p.mv) : '—'}</td>
@@ -265,13 +270,79 @@
         </article>`).join('') : `<p class="empty">${all.length ? 'Nessuna notizia con questi filtri.' : 'Ancora nessuna notizia: arriveranno al prossimo giro di raccolta.'}</p>`}</div>`;
   }
 
+  // ---------- nazionali ----------
+  const NZ = {
+    lasciato: ['Ha lasciato il ritiro', 'warn', 0], convocato: ['Convocato', 'si', 1], in_attesa: ['Lista non ancora uscita', 'neutral', 2],
+    non_convocato: ['Non convocato', 'no', 3], nessuna_sosta: ['Nessuna partita in vista', 'neutral', 4],
+    fuori: ['Fuori dal giro', 'neutral', 5], sconosciuto: ['Da verificare', 'neutral', 6]
+  };
+  const dday = iso => new Date(iso + 'T12:00:00');
+  const dshort = iso => dday(iso).toLocaleDateString('it-IT', { weekday: 'short', day: '2-digit', month: '2-digit' });
+  const wikiUrl = t => `https://en.wikipedia.org/wiki/${encodeURIComponent(String(t).replace(/ /g, '_'))}`;
+  // Prima partita di Serie A del club dopo il rientro dalla nazionale.
+  function nextSerieA(p, after) {
+    const M = window.BLMatch;
+    const t = M && M.data ? M.findTeam(p.squadra) : null;
+    if (!t) return null;
+    const n = (t.next || []).find(x => x[1] === 'SA' && Date.parse(x[0]) > dday(after).getTime());
+    return n ? { when: new Date(n[0]), casa: n[2] === 1, opp: n[3] } : null;
+  }
+  function nazCard(p, x) {
+    const st = NZ[x.status] || NZ.sconosciuto;
+    const fx = (x.fixtures || []).map(f => {
+      const res = f.score ? `<b>${esc(f.score)}</b>` : `<span class="muted">${esc(f.time || '')}</span>`;
+      return `<li><span class="nz-d">${esc(dshort(f.date))}</span><span>${esc(f.home)} – ${esc(f.away)} ${res}</span><span class="comp">${esc(f.comp)}</span>${f.scored ? `<span class="pill si">${f.scored > 1 ? f.scored + ' gol' : 'gol'}</span>` : ''}</li>`;
+    }).join('');
+    const sa = x.return && ['convocato', 'lasciato'].includes(x.status) ? nextSerieA(p, x.return) : null;
+    const gap = sa ? Math.round((sa.when - dday(x.return)) / 864e5) : null;
+    const facts = [];
+    if (x.status === 'convocato' && x.return) facts.push(`${x.done ? 'Sosta finita' : 'Impegnato fino al'} ${esc(dshort(x.return))}${sa ? ` · poi ${sa.casa ? 'contro' : 'a casa del'} ${esc(sa.opp)} ${esc(sa.when.toLocaleDateString('it-IT', { weekday: 'short', day: '2-digit', month: '2-digit' }))}${gap != null && gap <= 4 ? ` <b>(solo ${gap} giorni dopo)</b>` : ''}` : ''}`);
+    if (x.status === 'convocato' && x.long_trip) facts.push('<span class="nz-warn">Viaggio intercontinentale: rientro tardivo e stanchezza, occhio alla prima giornata dopo la sosta</span>');
+    if (x.played != null) facts.push(x.played ? `Ha giocato ${x.played} ${x.played === 1 ? 'partita' : 'partite'} nella sosta` : 'Finora non ha giocato nella sosta');
+    if (x.caps != null) facts.push(`${x.caps} presenze${x.goals_tot != null ? `, ${x.goals_tot} gol` : ''} in nazionale`);
+    const news = (x.news || []).slice(0, 3).map(n => `<a href="${esc(n.link)}" target="_blank" rel="noopener"><b>${esc(n.source)}</b> ${esc(n.title)} <span class="muted">· ${esc(ago(n.ts))}</span></a>`).join('');
+    return `<article class="nzcard nz-${x.status}">
+      <div class="nz-top"><span class="role r-${p.ruolo}">${p.ruolo}</span><div class="nz-who"><b>${esc(p.nome)}</b><span>${esc(p.squadra)}${x.nat ? ` · ${esc(x.nat)}` : ''}</span></div><span class="pill ${st[1]}">${st[0]}</span></div>
+      ${x.note ? `<div class="nz-note">${esc(x.note)}</div>` : ''}
+      ${fx ? `<ul class="nz-fx">${fx}</ul>` : ''}
+      ${facts.length ? `<div class="nz-facts">${facts.map(f => `<span>${f}</span>`).join('')}</div>` : ''}
+      ${news ? `<div class="nz-news">${news}</div>` : ''}
+      ${x.team && x.team.page ? `<a class="nz-src muted small" href="${esc(wikiUrl(x.team.page))}" target="_blank" rel="noopener">Lista e calendario della nazionale ↗</a>` : ''}
+    </article>`;
+  }
+  function renderNaz() {
+    const N = data.nazionali, box = $('fNaz');
+    if (!N || !N.players) { box.hidden = true; return; }
+    box.hidden = false;
+    const rows = data.rosa.map(p => [p, N.players[p.nome] || { status: 'sconosciuto' }]);
+    const active = rows.filter(([, x]) => (x.fixtures || []).length);
+    const dates = active.flatMap(([, x]) => x.fixtures.map(f => f.date)).sort();
+    const count = k => rows.filter(([, x]) => x.status === k).length;
+    const main = rows.filter(([, x]) => (NZ[x.status] || NZ.sconosciuto)[2] <= 3).sort((a, b) => (NZ[a[1].status][2] - NZ[b[1].status][2]) || a[0].nome.localeCompare(b[0].nome));
+    const rest = rows.filter(([, x]) => (NZ[x.status] || NZ.sconosciuto)[2] > 3);
+    const ch = (N.changes || []).filter(c => Date.now() - Date.parse(c.ts) < 10 * 864e5).slice(0, 12);
+    const brk = dates.length ? `Sosta dal ${dshort(dates[0])} al ${dshort(dates[dates.length - 1])}` : 'Nessuna sosta per le nazionali nelle prossime 3 settimane';
+    // In sosta la sezione va in cima; fuori sosta scende in fondo, compatta.
+    const body = $('fBody');
+    if (dates.length) body.insertBefore(box, body.firstChild); else body.appendChild(box);
+    box.innerHTML = `
+      <div class="panel-head"><h2>Nazionali</h2><span class="muted small">${esc(brk)} · aggiornato ${esc(ago(N.updated))}</span></div>
+      <div class="nz-sum">
+        ${[['convocato', 'Convocati'], ['lasciato', 'Hanno lasciato il ritiro'], ['in_attesa', 'In attesa della lista'], ['non_convocato', 'Non convocati']].map(([k, l]) => count(k) ? `<span class="nz-c nz-${k}"><b>${count(k)}</b> ${l}</span>` : '').join('')}
+      </div>
+      ${ch.length ? `<h3 class="subh">Novità</h3><ol class="timeline">${ch.map(c => `<li class="${Date.parse(c.ts) > prevVisit ? 'new' : ''}"><span class="muted small">${esc(when(c.ts))}</span><div><b>${esc(c.nome)}</b>${c.nat ? ` <span class="muted">(${esc(c.nat)})</span>` : ''}: ${esc(c.da)} → <b>${esc(c.a)}</b></div>${c.note ? `<div class="muted small">${esc(c.note)}</div>` : ''}</li>`).join('')}</ol>` : ''}
+      ${main.length ? `<div class="nzgrid">${main.map(([p, x]) => nazCard(p, x)).join('')}</div>` : `<p class="empty">${dates.length ? 'Nessun tuo giocatore è nel giro delle nazionali in questa sosta.' : 'Quando si avvicina una sosta qui trovi chi è convocato e chi no.'}</p>`}
+      ${rest.length ? `<details class="nz-rest"><summary>Altri ${rest.length} giocatori: ${esc([...new Set(rest.map(([, x]) => (NZ[x.status] || NZ.sconosciuto)[0].toLowerCase()))].join(', '))}</summary><div class="nzgrid">${rest.map(([p, x]) => nazCard(p, x)).join('')}</div></details>` : ''}
+      <p class="muted small">Fonte: liste ufficiali delle nazionali riportate su Wikipedia, più le notizie di Sky Sport, Gazzetta e le altre testate affidabili. Le liste si aggiornano pochi minuti o qualche ora dopo l'annuncio del CT. Se un giocatore è abbinato alla nazionale sbagliata, si corregge in data/fanta/nazionali.json (o chiedilo a Claude).</p>`;
+  }
+
   function render() {
     if ($('view-fanta').hidden) return;
     renderHead();
     const ready = !!(data && data.rosa);
     $('fBody').hidden = !ready;
     if (!ready) return;
-    renderXI(); renderRosa(); renderChanges(); renderNews();
+    renderNaz(); renderXI(); renderRosa(); renderChanges(); renderNews();
   }
 
   // ---------- eventi ----------

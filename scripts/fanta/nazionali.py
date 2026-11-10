@@ -34,6 +34,7 @@ WINDOW_BACK = 4           # partite giocate fino a 4 giorni fa contano ancora ne
 WINDOW_AHEAD = 21         # partite entro 3 settimane = sosta in arrivo
 CHANGES_MAX = 120
 DEBUG = None
+TRACE = []
 
 MONTHS = {m: i + 1 for i, m in enumerate(["january", "february", "march", "april", "may", "june", "july",
                                           "august", "september", "october", "november", "december"])}
@@ -97,9 +98,11 @@ def api(params, retries=2):
             req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept-Encoding": "identity"})
             with urllib.request.urlopen(req, timeout=30) as r:
                 data = json.loads(r.read().decode("utf-8"))
-            if "error" in data and data["error"].get("code") == "maxlag" and k < retries:
-                time.sleep(5)
-                continue
+            if "error" in data:
+                TRACE.append(f"API errore {data['error'].get('code')}: {data['error'].get('info', '')[:120]}")
+                if data["error"].get("code") == "maxlag" and k < retries:
+                    time.sleep(5)
+                    continue
             return data
         except Exception:
             if k == retries:
@@ -343,6 +346,7 @@ def resolve(p, override=None):
         cands = search(f'{sur} {club} hastemplate:"Infobox football biography"', 6)
         cands += [c for c in search(f"{sur} footballer {club}", 4) if c not in cands]
     texts = wikitexts(cands)
+    TRACE.append(f"{p['nome']}: candidati {cands[:6]} · testi {len(texts)}")
     best = None
     for c in cands:
         if c not in texts:
@@ -352,6 +356,7 @@ def resolve(p, override=None):
         if not ib:
             continue
         sur_ok = all(w in F.norm(title + " " + ib["name"] + " " + ib["fullname"]) for w in F.norm(sur).split())
+        TRACE.append(f"   {title}: infobox ok, club '{ib['club'][:40]}', cognome {'ok' if sur_ok else 'NO'}, nazionali {len(ib['teams'])}")
         if not sur_ok:
             continue
         score = (2 if club_ok(ib["club"], p["squadra"]) else 0) + (1 if initial and F.norm(title).startswith(initial.lower()) else 0)
@@ -669,6 +674,7 @@ def run(rosa, prev, overrides=None, now=None, do_news=True):
                     f.write(f"   {fx}\n")
             if errors:
                 f.write("\nERRORI\n" + "\n".join(errors))
+            f.write("\n\nTRACCIA\n" + "\n".join(TRACE[:300]))
     log(f"giocatori riconosciuti {found}/{len(rosa)}, nazionali lette {len(teams)}/{len(pages)}, errori {len(errors)}")
     for e in errors[:5]:
         log(f"  {e}")

@@ -460,6 +460,34 @@ input.auto,select.auto{border-color:var(--si);background:var(--si-soft)}
 .gext-main .btn.pri{background:var(--on-ink);color:var(--ink);margin-top:4px}
 .gext-steps{margin:0;padding:14px 14px 14px 34px;background:var(--surface);border:1px solid var(--line);border-radius:12px;display:flex;flex-direction:column;gap:6px;font-size:14px}
 
+.nz-sum{display:flex;flex-wrap:wrap;gap:8px;margin:4px 0 12px}
+.nz-c{padding:6px 12px;border-radius:999px;background:var(--sunk);font-size:14px}
+.nz-c b{font-size:16px;margin-right:2px}
+.nz-c.nz-convocato{background:var(--si-soft);color:var(--si)}
+.nz-c.nz-non_convocato{background:var(--no-soft);color:var(--no)}
+.nz-c.nz-lasciato{background:var(--warn-soft);color:var(--warn)}
+.nzgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:10px;margin-top:10px}
+.nzcard{border:1px solid var(--line);border-left:4px solid var(--line);border-radius:10px;padding:10px 12px;background:var(--surface);display:flex;flex-direction:column;gap:7px;min-width:0}
+.nzcard.nz-convocato{border-left-color:var(--si)}
+.nzcard.nz-non_convocato{border-left-color:var(--no)}
+.nzcard.nz-lasciato{border-left-color:var(--warn)}
+.nz-top{display:flex;align-items:center;gap:8px}
+.nz-who{display:flex;flex-direction:column;min-width:0;flex:1}
+.nz-who span{font-size:13px;color:var(--muted)}
+.nz-note{font-size:13.5px}
+.nz-fx{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:4px;font-size:13.5px}
+.nz-fx li{display:flex;flex-wrap:wrap;gap:4px 8px;align-items:center}
+.nz-d{font-family:var(--f-mono);font-size:12.5px;color:var(--muted);min-width:78px}
+.nz-facts{display:flex;flex-direction:column;gap:3px;font-size:13px;color:var(--muted)}
+.nz-facts b{color:var(--fg)}
+.nz-warn{color:var(--warn)}
+.nz-news{display:flex;flex-direction:column;gap:5px;font-size:13px;border-top:1px solid var(--line);padding-top:7px}
+.nz-news a{color:var(--fg);text-decoration:none}
+.nz-news a:hover{text-decoration:underline}
+.nz-src{align-self:flex-start}
+.nz-rest{margin-top:12px}
+.nz-rest summary{cursor:pointer;font-weight:600;font-size:14px}
+
 @media (prefers-reduced-motion:reduce){.bar i{transition:none}}
 
 /* ---------- stampa: solo il recap ---------- */
