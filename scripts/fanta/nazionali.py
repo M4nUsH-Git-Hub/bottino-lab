@@ -71,6 +71,18 @@ COUNTRY = {
     "QAT": "Qatar", "UAE": "Emirati Arabi", "IRQ": "Iraq", "UZB": "Uzbekistan", "JOR": "Giordania", "CHN": "Cina",
     "NZL": "Nuova Zelanda",
 }
+CODE_OF = {"Italy": "ITA", "France": "FRA", "Belgium": "BEL", "Spain": "ESP", "Germany": "GER", "Netherlands": "NED",
+           "Portugal": "POR", "England": "ENG", "Scotland": "SCO", "Switzerland": "SUI", "Croatia": "CRO",
+           "Kosovo": "KVX", "Colombia": "COL", "Brazil": "BRA", "Senegal": "SEN", "United States": "USA",
+           "Mali": "MLI", "Serbia": "SRB", "Denmark": "DEN", "Austria": "AUT", "Poland": "POL", "Argentina": "ARG",
+           "Uruguay": "URU", "Nigeria": "NGA", "Morocco": "MAR", "Ivory Coast": "CIV", "Ghana": "GHA",
+           "Turkey": "TUR", "Albania": "ALB", "Norway": "NOR", "Sweden": "SWE", "Georgia": "GEO", "Slovenia": "SVN",
+           "Slovakia": "SVK", "Czech Republic": "CZE", "Ukraine": "UKR", "Greece": "GRE", "Mexico": "MEX", "Canada": "CAN"}
+EN_IT = {k: COUNTRY[v] for k, v in CODE_OF.items() if v in COUNTRY}
+EN_IT.update({"Chile": "Cile", "Haiti": "Haiti", "Sudan": "Sudan", "Israel": "Israele", "Republic of Ireland": "Irlanda",
+              "Japan": "Giappone", "Singapore": "Singapore", "Finland": "Finlandia", "San Marino": "San Marino",
+              "Romania": "Romania", "North Macedonia": "Macedonia del Nord", "Estonia": "Estonia", "Hungary": "Ungheria",
+              "Wales": "Galles", "Iceland": "Islanda", "Republic Of Ireland": "Irlanda", "South Korea": "Corea del Sud"})
 UEFA = {"ITA", "FRA", "BEL", "ESP", "GER", "NED", "POR", "ENG", "SCO", "WAL", "NIR", "IRL", "SUI", "AUT", "CRO",
         "SRB", "SVN", "SVK", "CZE", "POL", "HUN", "ROU", "BUL", "GRE", "TUR", "UKR", "DEN", "SWE", "NOR", "FIN",
         "ISL", "ALB", "KVX", "MKD", "MNE", "BIH", "GEO", "ARM", "AZE", "ISR", "CYP", "MLT", "LUX", "EST", "LVA",
@@ -252,27 +264,46 @@ def find_section(wt, rx):
     return ""
 
 
-def dates_in(text):
-    """Date scritte all'inglese: '12 and 15 November 2026', '9 October 2026', 'November 12, 2026'."""
-    out = []
+MONTH_RX = r"(January|February|March|April|May|June|July|August|September|October|November|December)"
+
+
+def dates_in(text, default_year=None):
+    """Date scritte all'inglese: '12 and 15 November 2026', '13 November and 16 November 2026',
+    'November 14 and 17, 2026', '5, 9 and 13 October'. L'anno mancante è quello che compare nel testo."""
     t = plain(text)
-    for m in re.finditer(r"((?:\d{1,2}\s*(?:,|and|&|–|-)\s*)*\d{1,2})\s+([A-Z][a-z]+)\s+(\d{4})", t):
-        mo = MONTHS.get(m.group(2).lower())
-        if not mo:
-            continue
-        for d in re.findall(r"\d{1,2}", m.group(1)):
+    years = [int(y) for y in re.findall(r"\b(20\d\d)\b", t)]
+    out = []
+
+    def add(y, mo, days):
+        for d in re.findall(r"\d{1,2}", days):
             try:
-                out.append(date(int(m.group(3)), mo, int(d)))
+                out.append(date(y, mo, int(d)))
             except ValueError:
                 pass
-    for m in re.finditer(r"([A-Z][a-z]+)\s+(\d{1,2}),\s*(\d{4})", t):
-        mo = MONTHS.get(m.group(1).lower())
-        if mo:
-            try:
-                out.append(date(int(m.group(3)), mo, int(m.group(2))))
-            except ValueError:
-                pass
-    return out
+    days_rx = r"((?:(?<!\d)\d{1,2}(?!\d)(?:st|nd|rd|th)?\s*(?:,|and|&|–|-)\s*)*(?<!\d)\d{1,2}(?!\d))(?:st|nd|rd|th)?"
+    for m in re.finditer(days_rx + r"\s+" + MONTH_RX + r"(?:\s+(\d{4}))?", t):
+        y = int(m.group(3)) if m.group(3) else next((y for y in years if y >= 2000), default_year)
+        if y:
+            add(y, MONTHS[m.group(2).lower()], m.group(1))
+    for m in re.finditer(MONTH_RX + r"\s+" + days_rx + r"(?:,?\s*(\d{4}))?", t):
+        y = int(m.group(3)) if m.group(3) else next((y for y in years if y >= 2000), default_year)
+        if y:
+            add(y, MONTHS[m.group(1).lower()], m.group(2))
+    return sorted(set(out))
+
+
+def months_in(text):
+    """'matches in November 2026' → [(2026, 11)] quando non ci sono i giorni."""
+    return [(int(y), MONTHS[m.lower()]) for m, y in re.findall(MONTH_RX + r"\s+(\d{4})", plain(text))]
+
+
+def opponents_in(text):
+    """Avversari dalla frase della lista: '... matches against France and Belgium on ...'."""
+    m = re.search(r"against (.+?)(?: on | in |,? to be |\.|$)", plain(text))
+    if not m:
+        return []
+    parts = re.split(r",\s*|\s+and\s+|\s*&\s*", re.sub(r"\bthe\b", "", m.group(1)))
+    return [x.strip() for x in parts if x.strip() and not re.search(r"\d", x)]
 
 
 def start_date(s):
@@ -420,7 +451,8 @@ def fixtures(wt):
             continue
         score = plain(prm.get("score", ""))
         m = re.search(r"(\d+)\s*[–-]\s*(\d+)", score)
-        out.append({"date": d.isoformat(), "time": plain(prm.get("time", ""))[:16], "c1": c1, "c2": c2,
+        tm = re.search(r"\d{1,2}[:.]\d{2}", plain(prm.get("time", "")))
+        out.append({"date": d.isoformat(), "time": tm.group(0).replace(".", ":") if tm else "", "c1": c1, "c2": c2,
                     "t1": COUNTRY.get(c1, plain(prm.get("team1", ""))), "t2": COUNTRY.get(c2, plain(prm.get("team2", ""))),
                     "score": f"{m.group(1)}–{m.group(2)}" if m else "", "comp": comp_it(prm.get("round", "")),
                     "place": plain(prm.get("location", "") or prm.get("stadium", ""))[:60],
@@ -439,12 +471,43 @@ def parse_team(wt, today):
     cur = find_section(wt, r"current squad|current roster|squad")
     rec = find_section(wt, r"recent call[- ]?ups")
     intro = cur.split("{{nat fs", 1)[0] if cur else ""
-    lines = [l for l in re.split(r"<br\s*/?>|\n", intro) if l.strip() and not re.search(r"as of|correct", l, re.I)]
-    sq_dates = sorted({d for l in lines for d in dates_in(l)})
+    lines = [l for l in re.split(r"<br\s*/?>|\n", intro) if l.strip() and not re.search(r"as of|correct|born|eligible", l, re.I)]
+    # Solo la frase della lista: "The following players were called up for ...".
+    main = next((l for l in lines if re.search(r"following|called up|named|selected", l, re.I)), " ".join(lines))
+    sq_dates = dates_in(main, today.year)
+    months = months_in(main) if not sq_dates else []
     fx = fixtures(wt)
-    code = team_code(fx)
+    code = team_code(fx) or flag_code(wt[:6000]) or CODE_OF.get(title_country(wt), "")
     return {"code": code, "name": COUNTRY.get(code, code), "squad": squad_rows(cur), "recent": squad_rows(rec),
-            "squad_dates": [d.isoformat() for d in sq_dates], "intro": plain(" ".join(lines))[:300], "fixtures": fx}
+            "squad_dates": [d.isoformat() for d in sq_dates], "squad_months": months,
+            "opponents": opponents_in(main), "comp": comp_it(main), "intro": plain(main)[:300], "fixtures": fx,
+            "sections": [t for _, t, _ in sections(wt)][:60]}
+
+
+def title_country(wt):
+    m = re.search(r"\|\s*(?:name|Name)\s*=\s*([^\n|]+)", wt[:3000])
+    return plain(m.group(1)) if m else ""
+
+
+def team_window(team, today):
+    """Partite della sosta: dal calendario; se la pagina non lo ha, dalla frase della lista dei convocati."""
+    w = window(team["fixtures"], today)
+    if w:
+        return w, True
+    ds = [date.fromisoformat(d) for d in team["squad_dates"]]
+    near = [d for d in ds if today - timedelta(days=WINDOW_BACK) <= d <= today + timedelta(days=WINDOW_AHEAD)]
+    if not near:
+        return [], False
+    opp = team.get("opponents") or []
+    if len(opp) == 1:
+        opp = opp * len(near)
+    out = []
+    for k, d in enumerate(near):
+        o = opp[k] if k < len(opp) else ""
+        out.append({"date": d.isoformat(), "time": "", "c1": team["code"], "c2": "", "t1": team["name"],
+                    "t2": EN_IT.get(o, o) or "da definire", "score": "", "comp": team.get("comp") or "Partita",
+                    "place": "", "g1": "", "g2": "", "approx": True})
+    return out, False
 
 
 def window(fx, today):
@@ -477,7 +540,7 @@ def goals_of(text, wiki, full):
     return n
 
 
-def status_for(info, team, today, prev_entry):
+def status_for(info, team, today, prev_entry, global_window=None):
     wiki, full = info.get("wiki"), info.get("full")
     t = info.get("team") or {}
     res = {"status": "sconosciuto", "note": "", "fixtures": [], "played": None, "scored": 0}
@@ -491,7 +554,7 @@ def status_for(info, team, today, prev_entry):
     if not team:
         res["note"] = "Pagina della nazionale non letta"
         return res
-    wnd = window(team["fixtures"], today)
+    wnd, from_cal = team_window(team, today)
     in_squad = next((r for r in team["squad"] if same_player(r, wiki, full)), None)
     in_recent = next((r for r in team["recent"] if same_player(r, wiki, full)), None)
     sq_dates = [date.fromisoformat(d) for d in team["squad_dates"]]
@@ -499,6 +562,9 @@ def status_for(info, team, today, prev_entry):
     squad_current = bool(sq_dates) and bool(wnd_dates) and max(sq_dates) >= min(wnd_dates) - timedelta(days=1)
     if not wnd and sq_dates and max(sq_dates) >= today - timedelta(days=WINDOW_BACK):
         squad_current = True
+    # Lista con il solo mese ("matches in November 2026"): vale se è il mese della sosta in corso.
+    if not sq_dates and team.get("squad_months") and global_window:
+        squad_current = any((y, m) == (global_window[0].year, global_window[0].month) for y, m in team["squad_months"])
     for f in wnd:
         is1 = f["c1"] == team["code"]
         res["fixtures"].append({"date": f["date"], "time": f["time"], "home": f["t1"], "away": f["t2"], "comp": f["comp"],
@@ -512,6 +578,14 @@ def status_for(info, team, today, prev_entry):
     if not t.get("current") and not in_squad and not recent_in_window:
         res["status"] = "fuori"
         res["note"] = f"Ultima nazionale: {t.get('shown')} ({t.get('years') or '—'})"
+    elif not wnd and squad_current and in_squad:
+        res["status"] = "convocato"
+        res["note"] = "Date delle partite non ancora disponibili"
+    elif not wnd and squad_current:
+        res["status"] = "non_convocato"
+    elif not wnd and global_window:
+        res["status"] = "in_attesa"
+        res["note"] = "Sosta in corso: la lista di questa nazionale non è ancora aggiornata"
     elif not wnd:
         nxt = next((f for f in team["fixtures"] if date.fromisoformat(f["date"]) > today), None)
         res["status"] = "nessuna_sosta"
@@ -527,7 +601,7 @@ def status_for(info, team, today, prev_entry):
         res["note"] = ", ".join(NOTE_CODES[c] for c in in_recent["codes"] if c in NOTE_CODES)
     elif squad_current:
         res["status"] = "non_convocato"
-        if in_recent:
+        if in_recent and in_recent.get("latest"):
             res["note"] = f"Ultima chiamata: {in_recent['latest'][:80]}"
     else:
         res["status"] = "in_attesa"
@@ -624,10 +698,12 @@ def run(rosa, prev, overrides=None, now=None, do_news=True):
             except Exception as e:
                 errors.append(f"{pg}: {type(e).__name__}: {e}"[:160])
 
-    # 3. stato di ogni giocatore
+    # 3. stato di ogni giocatore (la sosta "globale" serve per le nazionali senza calendario)
+    all_w = sorted(date.fromisoformat(f["date"]) for t in teams.values() for f in team_window(t, today)[0])
+    global_window = (all_w[0], all_w[-1]) if all_w else None
     for nome, info in players.items():
         team = teams.get((info.get("team") or {}).get("page"))
-        info.update(status_for(info, team, today, old.get(nome)))
+        info.update(status_for(info, team, today, old.get(nome), global_window))
         if team:
             info["nat"], info["code"] = team["name"], team["code"]
             info["squad_intro"] = team["intro"]
@@ -671,7 +747,10 @@ def run(rosa, prev, overrides=None, now=None, do_news=True):
             for pg, t in teams.items():
                 f.write(f"\n== {pg} [{t['code']}] squad={len(t['squad'])} recent={len(t['recent'])} fixtures={len(t['fixtures'])}\n")
                 f.write(f"   intro: {t['intro']}\n   dates: {t['squad_dates']}\n")
-                for fx in window(t["fixtures"], today):
+                if not t["squad"]:
+                    f.write(f"   sezioni: {t['sections']}\n")
+                f.write(f"   avversari: {t['opponents']} · comp {t['comp']} · mesi {t['squad_months']}\n")
+                for fx in team_window(t, today)[0]:
                     f.write(f"   {fx}\n")
             if errors:
                 f.write("\nERRORI\n" + "\n".join(errors))

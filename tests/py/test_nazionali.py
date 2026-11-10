@@ -150,6 +150,22 @@ class TestNazionali(unittest.TestCase):
     def test_dates(self):
         self.assertEqual(N.dates_in("on 5, 9 and 13 October 2026"), [date(2026, 10, 5), date(2026, 10, 9), date(2026, 10, 13)])
         self.assertEqual(N.dates_in("on November 14, 2026"), [date(2026, 11, 14)])
+        self.assertEqual(N.dates_in("against Haiti on November 14 and 17, 2026."), [date(2026, 11, 14), date(2026, 11, 17)])
+        self.assertEqual(N.dates_in("against Slovenia on 13 November and Scotland on 16 November 2026."), [date(2026, 11, 13), date(2026, 11, 16)])
+        self.assertEqual(N.dates_in("against England and Norway on 13 and 17 November respectively.", 2026), [date(2026, 11, 13), date(2026, 11, 17)])
+        self.assertEqual(N.months_in("matches in November 2026."), [(2026, 11)])
+        self.assertEqual(N.opponents_in("matches against Israel and the Republic of Ireland, on 14 and 17 November 2026."), ["Israel", "Republic of Ireland"])
+
+    def test_window_from_squad_text(self):
+        wt = TEAM.split("==Players==")[1]
+        wt = "==Players==" + wt.replace("against {{fb|FRA}} and {{fb|BEL}} on 12 and 15 November 2026", "against Chile on 13 and 17 November 2026")
+        t = N.parse_team(wt, TODAY)
+        t["code"], t["name"] = "COL", "Colombia"
+        w, from_cal = N.team_window(t, TODAY)
+        self.assertFalse(from_cal)
+        self.assertEqual([(f["date"], f["t2"]) for f in w], [("2026-11-13", "Cile"), ("2026-11-17", "Cile")])
+        info = {"wiki": "Alessandro Bastoni", "full": "Alessandro Bastoni", "team": {"page": "x", "current": True}}
+        self.assertEqual(N.status_for(info, t, TODAY, None)["status"], "convocato")
 
     def test_run_offline(self):
         orig_r, orig_w = N.resolve, N.wikitexts
