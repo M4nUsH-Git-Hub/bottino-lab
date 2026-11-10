@@ -290,6 +290,9 @@ def infobox(wt):
     if not boxes:
         return None
     p = boxes[0][1]
+    if len(TRACE) < 40 and not any(t.startswith("RAW") for t in TRACE):
+        k = wt.lower().find("infobox football")
+        TRACE.append(f"RAW chiavi={list(p)[:15]} pos={boxes[0][2][:3]}\n{wt[max(0, k - 5):k + 900]!r}")
     teams = []
     for k in range(1, 30):
         t = p.get(f"nationalteam{k}")
