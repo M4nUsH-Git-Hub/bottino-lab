@@ -299,7 +299,7 @@
     if (x.status === 'convocato' && x.return) facts.push(`${x.done ? 'Sosta finita' : 'Impegnato fino al'} ${esc(dshort(x.return))}${sa ? ` · poi ${sa.casa ? 'contro' : 'a casa del'} ${esc(sa.opp)} ${esc(sa.when.toLocaleDateString('it-IT', { weekday: 'short', day: '2-digit', month: '2-digit' }))}${gap != null && gap <= 4 ? ` <b>(solo ${gap} giorni dopo)</b>` : ''}` : ''}`);
     if (x.status === 'convocato' && x.long_trip) facts.push('<span class="nz-warn">Viaggio intercontinentale: rientro tardivo e stanchezza, occhio alla prima giornata dopo la sosta</span>');
     if (x.played != null) facts.push(x.played ? `Ha giocato ${x.played} ${x.played === 1 ? 'partita' : 'partite'} nella sosta` : 'Finora non ha giocato nella sosta');
-    if (x.caps != null) facts.push(`${x.caps} presenze${x.goals_tot != null ? `, ${x.goals_tot} gol` : ''} in nazionale`);
+    if (x.caps != null) facts.push(`${x.caps} ${x.caps === 1 ? 'presenza' : 'presenze'}${x.goals_tot != null ? `, ${x.goals_tot} gol` : ''} in nazionale`);
     const news = (x.news || []).slice(0, 3).map(n => `<a href="${esc(n.link)}" target="_blank" rel="noopener"><b>${esc(n.source)}</b> ${esc(n.title)} <span class="muted">· ${esc(ago(n.ts))}</span></a>`).join('');
     return `<article class="nzcard nz-${x.status}">
       <div class="nz-top"><span class="role r-${p.ruolo}">${p.ruolo}</span><div class="nz-who"><b>${esc(p.nome)}</b><span>${esc(p.squadra)}${x.nat ? ` · ${esc(x.nat)}` : ''}</span></div><span class="pill ${st[1]}">${st[0]}</span></div>
@@ -307,7 +307,7 @@
       ${fx ? `<ul class="nz-fx">${fx}</ul>` : ''}
       ${facts.length ? `<div class="nz-facts">${facts.map(f => `<span>${f}</span>`).join('')}</div>` : ''}
       ${news ? `<div class="nz-news">${news}</div>` : ''}
-      ${x.team && x.team.page ? `<a class="nz-src muted small" href="${esc(wikiUrl(x.team.page))}" target="_blank" rel="noopener">Lista e calendario della nazionale ↗</a>` : ''}
+      ${x.team && x.team.page ? `<a class="nz-src muted small" href="${esc(wikiUrl(x.team_page || x.team.page))}" target="_blank" rel="noopener">Lista e calendario della nazionale ↗</a>` : ''}
     </article>`;
   }
   function renderNaz() {

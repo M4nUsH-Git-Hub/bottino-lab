@@ -164,6 +164,24 @@ class TestNazionali(unittest.TestCase):
         t = N.parse_team(wt, TODAY)
         self.assertEqual(t["squad_months"], [(2026, 11)])
 
+    def test_senior_of(self):
+        self.assertEqual(N.senior_of("Spain national under-21 football team"), "Spain national football team")
+        self.assertIsNone(N.senior_of("Spain national football team"))
+
+    def test_youth_called_by_senior(self):
+        orig_r, orig_w = N.resolve, N.wikitexts
+        u21 = TEAM.replace("[[Alessandro Bastoni]]", "[[Someone Else]]")
+        try:
+            N.resolve = lambda p, ov=None: {"wiki": "Alessandro Bastoni", "full": "Alessandro Bastoni",
+                                            "team": {"page": "Italy national under-21 football team", "current": True, "level": "giovanile"}}
+            N.wikitexts = lambda titles: {t: (t, u21 if "under" in t else TEAM) for t in titles}
+            out = N.run([{"nome": "Bastoni", "squadra": "Inter"}], {}, now=NOW, do_news=False)
+        finally:
+            N.resolve, N.wikitexts = orig_r, orig_w
+        p = out["players"]["Bastoni"]
+        self.assertEqual((p["status"], p["nat"]), ("convocato", "Italia"))
+        self.assertIn("maggiore", p["note"])
+
     def test_opponents_each_date(self):
         self.assertEqual(N.opponents_in("matches against Slovenia on 13 November and Scotland on 16 November 2026."), ["Slovenia", "Scotland"])
 

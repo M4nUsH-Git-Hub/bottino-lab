@@ -350,6 +350,14 @@ def infobox(wt):
             "name": plain(p.get("name", ""))}
 
 
+def senior_of(page):
+    """'Spain national under-21 football team' → 'Spain national football team'."""
+    if not page or not is_youth(page):
+        return None
+    out = re.sub(r"\s*(?:under-?\d\d|U-?\d\d|olympic)\s*", " ", page, flags=re.I)
+    return re.sub(r"\s+", " ", out).strip()
+
+
 def is_youth(page):
     return bool(re.search(r"under-?\d\d|\bu-?\d\d\b|olympic|\bb team\b|national b ", page, re.I))
 
@@ -709,8 +717,10 @@ def run(rosa, prev, overrides=None, now=None, do_news=True):
                 players[p["nome"]] = {k: o.get(k) for k in ("wiki", "full", "team", "resolved")}
         players[p["nome"]]["squadra"] = p["squadra"]
 
-    # 2. pagine delle nazionali
-    pages = sorted({(x.get("team") or {}).get("page") for x in players.values() if (x.get("team") or {}).get("page")})
+    # 2. pagine delle nazionali (per chi è nelle giovanili anche la maggiore: può arrivare la prima chiamata)
+    pages = {(x.get("team") or {}).get("page") for x in players.values() if (x.get("team") or {}).get("page")}
+    pages |= {senior_of(pg) for pg in pages if senior_of(pg)}
+    pages = sorted(pages)
     teams = {}
     try:
         texts = wikitexts(pages)
@@ -728,12 +738,23 @@ def run(rosa, prev, overrides=None, now=None, do_news=True):
     all_w = sorted(date.fromisoformat(f["date"]) for t in teams.values() for f in team_window(t, today)[0])
     global_window = (all_w[0], all_w[-1]) if all_w else None
     for nome, info in players.items():
-        team = teams.get((info.get("team") or {}).get("page"))
-        info.update(status_for(info, team, today, old.get(nome), global_window))
+        pg = (info.get("team") or {}).get("page")
+        team = teams.get(pg)
+        st = status_for(info, team, today, old.get(nome), global_window)
+        senior = teams.get(senior_of(pg)) if pg else None
+        if senior:
+            up = status_for(dict(info, team=dict(info["team"], page=senior_of(pg), current=True, level="A")), senior, today, None, global_window)
+            if up["status"] in ("convocato", "lasciato"):
+                st, team = up, senior
+                st["note"] = ("Chiamato in nazionale maggiore. " + st.get("note", "")).strip()
+                st["team_page"] = senior_of(pg)
+        else:
+            st["team_page"] = pg
+        info.update(st)
         if team:
             info["nat"], info["code"] = team["name"], team["code"]
             info["squad_intro"] = team["intro"]
-            if (info.get("team") or {}).get("level") == "giovanile":
+            if (info.get("team") or {}).get("level") == "giovanile" and info.get("team_page") == info["team"]["page"]:
                 m = re.search(r"under-?(\d\d)|\bU-?(\d\d)\b", info["team"]["page"], re.I)
                 info["nat"] = f"{team['name']} U{m.group(1) or m.group(2)}" if m else f"{team['name']} giovanile"
         info["label"] = STATUS_LABEL.get(info["status"], info["status"])
