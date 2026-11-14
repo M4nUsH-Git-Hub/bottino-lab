@@ -1,0 +1,5085 @@
+{
+ "version": 1,
+ "updated": "2026-11-14T12:04:27Z",
+ "rosa": [
+  {
+   "ruolo": "P",
+   "nome": "Daffara",
+   "squadra": "Parma",
+   "costo": 1.0,
+   "qt": 5.0,
+   "fvm": 1.0,
+   "mv": 0.0,
+   "fm": 0.0,
+   "pv": 0.0
+  },
+  {
+   "ruolo": "P",
+   "nome": "Corvi",
+   "squadra": "Parma",
+   "costo": 2.0,
+   "qt": 5.0,
+   "fvm": 5.0,
+   "mv": 6.0,
+   "fm": 4.33,
+   "pv": 6.0
+  },
+  {
+   "ruolo": "P",
+   "nome": "Maignan",
+   "squadra": "Milan",
+   "costo": 30.0,
+   "qt": 15.0,
+   "fvm": 26.0,
+   "mv": 6.17,
+   "fm": 5.33,
+   "pv": 6.0
+  },
+  {
+   "ruolo": "D",
+   "nome": "Ramon",
+   "squadra": "Como",
+   "costo": 2.0,
+   "qt": 13.0,
+   "fvm": 18.0,
+   "mv": 6.25,
+   "fm": 6.75,
+   "pv": 6.0
+  },
+  {
+   "ruolo": "D",
+   "nome": "Lucumì",
+   "squadra": "Juventus",
+   "costo": 2.0,
+   "qt": 8.0,
+   "fvm": 9.0,
+   "mv": 6.0,
+   "fm": 5.8,
+   "pv": 5.0
+  },
+  {
+   "ruolo": "D",
+   "nome": "Gila",
+   "squadra": "Milan",
+   "costo": 20.0,
+   "qt": 13.0,
+   "fvm": 16.0,
+   "mv": 6.33,
+   "fm": 6.25,
+   "pv": 6.0
+  },
+  {
+   "ruolo": "D",
+   "nome": "Scalvini",
+   "squadra": "Atalanta",
+   "costo": 1.0,
+   "qt": 9.0,
+   "fvm": 11.0,
+   "mv": 5.83,
+   "fm": 5.83,
+   "pv": 6.0
+  },
+  {
+   "ruolo": "D",
+   "nome": "Vojvoda",
+   "squadra": "Udinese",
+   "costo": 1.0,
+   "qt": 7.0,
+   "fvm": 9.0,
+   "mv": 5.67,
+   "fm": 5.67,
+   "pv": 6.0
+  },
+  {
+   "ruolo": "D",
+   "nome": "Zortea",
+   "squadra": "Bologna",
+   "costo": 1.0,
+   "qt": 7.0,
+   "fvm": 9.0,
+   "mv": 6.0,
+   "fm": 6.0,
+   "pv": 4.0
+  },
+  {
+   "ruolo": "D",
+   "nome": "Akanji",
+   "squadra": "Inter",
+   "costo": 12.0,
+   "qt": 13.0,
+   "fvm": 17.0,
+   "mv": 5.8,
+   "fm": 5.8,
+   "pv": 5.0
+  },
+  {
+   "ruolo": "D",
+   "nome": "Bastoni",
+   "squadra": "Inter",
+   "costo": 22.0,
+   "qt": 12.0,
+   "fvm": 19.0,
+   "mv": 6.0,
+   "fm": 5.9,
+   "pv": 5.0
+  },
+  {
+   "ruolo": "C",
+   "nome": "Cacciamani",
+   "squadra": "Torino",
+   "costo": 1.0,
+   "qt": 9.0,
+   "fvm": 13.0,
+   "mv": 6.08,
+   "fm": 6.25,
+   "pv": 6.0
+  },
+  {
+   "ruolo": "C",
+   "nome": "Atta",
+   "squadra": "Fiorentina",
+   "costo": 15.0,
+   "qt": 14.0,
+   "fvm": 28.0,
+   "mv": 5.4,
+   "fm": 5.4,
+   "pv": 5.0
+  },
+  {
+   "ruolo": "C",
+   "nome": "Colpani",
+   "squadra": "Monza",
+   "costo": 1.0,
+   "qt": 8.0,
+   "fvm": 7.0,
+   "mv": 5.75,
+   "fm": 6.5,
+   "pv": 4.0
+  },
+  {
+   "ruolo": "C",
+   "nome": "Koopmeiners",
+   "squadra": "Juventus",
+   "costo": 1.0,
+   "qt": 8.0,
+   "fvm": 7.0,
+   "mv": 6.25,
+   "fm": 7.25,
+   "pv": 4.0
+  },
+  {
+   "ruolo": "C",
+   "nome": "Jones C.",
+   "squadra": "Inter",
+   "costo": 18.0,
+   "qt": 12.0,
+   "fvm": 14.0,
+   "mv": 6.0,
+   "fm": 6.0,
+   "pv": 4.0
+  },
+  {
+   "ruolo": "C",
+   "nome": "Modric",
+   "squadra": "Milan",
+   "costo": 20.0,
+   "qt": 12.0,
+   "fvm": 21.0,
+   "mv": 6.08,
+   "fm": 6.25,
+   "pv": 6.0
+  },
+  {
+   "ruolo": "C",
+   "nome": "Pulisic",
+   "squadra": "Milan",
+   "costo": 40.0,
+   "qt": 25.0,
+   "fvm": 76.0,
+   "mv": 6.5,
+   "fm": 7.67,
+   "pv": 3.0
+  },
+  {
+   "ruolo": "C",
+   "nome": "Politano",
+   "squadra": "Napoli",
+   "costo": 26.0,
+   "qt": 11.0,
+   "fvm": 18.0,
+   "mv": 5.9,
+   "fm": 6.6,
+   "pv": 5.0
+  },
+  {
+   "ruolo": "A",
+   "nome": "Diao",
+   "squadra": "Como",
+   "costo": 23.0,
+   "qt": 14.0,
+   "fvm": 32.0,
+   "mv": 6.33,
+   "fm": 7.33,
+   "pv": 6.0
+  },
+  {
+   "ruolo": "A",
+   "nome": "Neres",
+   "squadra": "Napoli",
+   "costo": 6.0,
+   "qt": 5.0,
+   "fvm": 7.0,
+   "mv": 5.83,
+   "fm": 5.83,
+   "pv": 3.0
+  },
+  {
+   "ruolo": "A",
+   "nome": "Woltemade",
+   "squadra": "Juventus",
+   "costo": 153.0,
+   "qt": 21.0,
+   "fvm": 25.0,
+   "mv": 5.67,
+   "fm": 5.67,
+   "pv": 3.0
+  },
+  {
+   "ruolo": "A",
+   "nome": "Adams C.",
+   "squadra": "Torino",
+   "costo": 2.0,
+   "qt": 12.0,
+   "fvm": 12.0,
+   "mv": 6.5,
+   "fm": 8.0,
+   "pv": 4.0
+  },
+  {
+   "ruolo": "A",
+   "nome": "Vitinha O.",
+   "squadra": "Genoa",
+   "costo": 1.0,
+   "qt": 6.0,
+   "fvm": 6.0,
+   "mv": 5.6,
+   "fm": 5.5,
+   "pv": 5.0
+  },
+  {
+   "ruolo": "A",
+   "nome": "De Ketelaere",
+   "squadra": "Atalanta",
+   "costo": 46.0,
+   "qt": 15.0,
+   "fvm": 32.0,
+   "mv": 5.75,
+   "fm": 5.75,
+   "pv": 6.0
+  }
+ ],
+ "sources": {
+  "news": {
+   "ok": true,
+   "when": "2026-11-14T12:04:27Z",
+   "feeds": 28,
+   "errors": 0,
+   "items": 12,
+   "error": ""
+  },
+  "probabili": {
+   "ok": true,
+   "when": "2026-11-14T12:04:27Z",
+   "found": 25,
+   "error": ""
+  }
+ },
+ "news": [
+  {
+   "id": "ravenna-forli, ronaldinho sara titolare: le probabili formazioni del derby di serie c",
+   "title": "Ravenna-Forlì, Ronaldinho sarà titolare: le probabili formazioni del derby di Serie C",
+   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOZVd3c0h1VGhUZEJTYmdLLUpBMmg0V3lGM1JnbkVBRlA4Vi12R1JQM3JYWDZrMHF1cmpCZ3JPNGQyQzNkeXpjdDBNMDRBRXdnbDJVdGpuZUVqcUpBT2ZOTWkzdlFQRG5VZUNKbGJsODdNaFhFa2dhdVB0eXU3WklvenplaXIzSDRRM0V3el8wa3k2ak4wYkhR?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-11-14T10:19:04Z",
+   "players": [],
+   "category": "formazione",
+   "first_seen": "2026-11-14T12:04:27Z"
+  },
+  {
+   "id": "milan, palla a krosche: dirigera il prossimo mercato. stiller nuovo modric? profilo ideale per amorim",
+   "title": "Milan, palla a Krosche: dirigerà il prossimo mercato. Stiller nuovo Modric? Profilo ideale per Amorim",
+   "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxQcTdCbFpQNWlaRTFseFRZU05NZmZYTVk4VnRTSnFnVUE0ZHFpMEJLellfRUhjLUF6OUNKaVVQVk1FSDRpazNCd0U4SnJUR1BqcFV3M1hnV2lIVzJxd2FiME44aThTY21jUGVncERIWnVCYU5lMGFyLU9yYWNiV1dEZjg0MUtyT2RwdzJmOUYtaHZOMnVOMUZyRllfWXVFMnNwcjVYVExsTVNuRWRSV0FWcVhIeGxvSVNTalFNX3dfajdSTnFzOHdMdjBUcWQxLWpYcjVBbG1adFJVRkhfTmN5VzgtQ1luNjlpdm1BRUVTbVdBbXI0LUFWS1M1dXpiVE0?oc=5",
+   "source": "Tuttosport",
+   "sky": false,
+   "ts": "2026-11-14T09:18:42Z",
+   "players": [
+    "Modric"
+   ],
+   "category": "mercato",
+   "first_seen": "2026-11-14T12:04:27Z"
+  },
+  {
+   "id": "napoli, le ultime su mctominay e neres",
+   "title": "Napoli, le ultime su McTominay e Neres",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPYlA4SGJFbEtmck15d29lRXA0Q09Gcmt1aXdEWmtOWnBMMWVTYWdzV1RlVllnX0tIWHJyc01QWEx5UmdFeWlPNVIyb3FZTkRKblVwMDEtdGFDSTM4dy1yQmZuNTVWcWpmcDNaT2t3UE9TaW9mZWdza21DQWRhalduczloQlZzYTc0YjUzRlhZVmZWQmE0MUtFYmdvaHV6czZkZDBF0gGoAUFVX3lxTFBVUnNGLXljWlRwVlp2elpYQzdvVlRZVDN3NHNUVk1IcVFscnhxLWV2bW9veEVXck90S1gwVzVXeGlaZndRNG1fTmJTaG9MNFZ2YUxpem56eHUtZUQ3MENkLU9NNmFhcnBwVFl0MHVUZXFabEx0SU5jNlRVTkRFbWRKR1RBXzZUY1k3Z3dadlFYRTdEOGNYdkdfQU5XeWg2OFhfNUhXYm9XUw?oc=5",
+   "source": "Fantacalcio.it",
+   "sky": false,
+   "ts": "2026-11-14T07:31:00Z",
+   "players": [
+    "Neres"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-14T12:04:27Z"
+  },
+  {
+   "id": "watch nick woltemade - interview live stream online | dazn it",
+   "title": "Watch Nick Woltemade - Interview Live Stream Online | DAZN IT",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPSnZwOEJVNWtRMGhvNFdKWHJqY1ZTTEFhenA2RVhSQ2dmZHB5QjlLTGNlS21nNXNVMm00Qms2S3p3aVdReWdWNXk2QnZPWExDUkF1bTB5MTV2TUZ4RjA1Tloza0NsZV93MkFDNGx6U3VxM2kzTFVJNE1OZXF2czdkRG5MME4zcERERFBNV2tpWTBRbldaczRaRVZYRQ?oc=5",
+   "source": "DAZN",
+   "sky": false,
+   "ts": "2026-11-14T00:00:00Z",
+   "players": [
+    "Woltemade"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-14T12:04:27Z"
+  },
+  {
+   "id": "fiorentina, la gestione del rientro di atta: quando puo tornare fra i convocati e quando da titolare",
+   "title": "Fiorentina, la gestione del rientro di Atta: quando può tornare fra i convocati e quando da titolare",
+   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNQmNOWUNkR1dlNmFiNW9QS3RkWlhER29XZi1WYkR5b1VkN3plUC13MmNVcGlfMkY1eEhrT05Jb3Z4aDRxbUxCbzNUYUdaRHlPYU1UTWpHeFlweDQ5RDY3RXdiLTZGOTNRUWlTbGlmbE5QNWx3SEVFbnlQUS1yYjNWQzhvR2lqQnRfVVJubGctWjTSAZYBQVVfeXFMUDhVNzdzZ19xdDB1dWE5eldJcGVUanFMRWRicWRsbVEzYUdaOTlDdHdkdXZjNmpOVGdLQkNaNk9ReXRwQXBqeDNRUWJNc2Z3TDlYUUhnWmJuSWNJbE9JSGQxLUlSOWp4S1RmcW9jdzVrSHZQTWNaVVMta1ROOWN2UmtuMmtJV192UTRsbUx0a1NsSHdGYTFB?oc=5",
+   "source": "SOS Fanta",
+   "sky": false,
+   "ts": "2026-11-13T20:00:28Z",
+   "players": [
+    "Atta"
+   ],
+   "category": "recupero",
+   "first_seen": "2026-11-13T20:27:58Z"
+  },
+  {
+   "id": "como, il punto sugli infortunati e chi puo rientrare prima fra kean, rodriguez, addai, diao e chalobah",
+   "title": "Como, il punto sugli infortunati e chi può rientrare prima fra Kean, Rodriguez, Addai, Diao e Chalobah",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPbVV3c1V4NHFxZWduVkMzSTZ1RVRZNTNFNUJyck40azk2ZlpCYUI1MTItVmZOT1lXRl84cVZNcnAwdENjS0JCNnZpMF9VWkxELTdtWlVETjBrOWczc2YwanNtRW1tVjQ2Rkh5VXpsR2dNdVRiMm5JUlp2RTBycmZJQm1WY1pTWmhVVV9SYTRXcjFDN3ljM1BqaGh1eFc0bnR0YlR4NUZnQlVsdjNsQmdQNdIBtgFBVV95cUxNRGJXckxFS281RkFzOVBhN2lCUFJhTXNmeFJsQ1RNYndoWU16bk9uNFdNb2hhaG0wSzNhNnJtazA3eENWNTE4WlFjc1M0NUZEQ1RNRmVhWC1oM1VBSnRySTI4TmRObGlXdlNqZ0UtbHZUeHllSXAydW56TmMxQUpob0E4RThYY1NQZGFfT2dHX2NiM0JpWFRFTFFDVl9OelRJcGxvOGw1aHYtdm05ZURhTFA0WVB4QQ?oc=5",
+   "source": "SOS Fanta",
+   "sky": false,
+   "ts": "2026-11-13T13:00:13Z",
+   "players": [
+    "Diao"
+   ],
+   "category": "infortunio",
+   "first_seen": "2026-11-13T20:27:58Z"
+  },
+  {
+   "id": "non solo spinazzola, neres e favasuli: napoli, quando possono rientrare alisson santos e badiashile",
+   "title": "Non solo Spinazzola, Neres e Favasuli: Napoli, quando possono rientrare Alisson Santos e Badiashile",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQdmlOY2p2UEZUd1VVV2EycTNiS0E3ei1vOEV0dW1lTlluNi1IVUpjX244OHpVRGJoQTF4TlZUWjA0WUtmdW9ZNVlPTW5aWlNpaEZmaHV5TUJ5NmpJSnFFV0FMeTRqbW1ZcEZhaWVLRHNOaGpnS1VaaXhlVGVLSXdRMmZPOWZIdC1NZjNjaGtXaHpTNWPSAZgBQVVfeXFMT1BQTFFKY2FfZHJJRjB5QkRvVXJiVHBZTmUzNGJQeVZDOFJEdDhJVDJVWUg0WlktR0VfMXFHY3Z4cXllc0I4V1ExeHRRalRfMW5CM3lkZDdkVTc0ZWRQT2pmVVlEaFU5Y3pONVJXUlp5RmpfYW9UVFMzaUJSMDJqYTY0Zi1BRkZNTDBvVUMzQUZfb2VHVFpuaVQ?oc=5",
+   "source": "SOS Fanta",
+   "sky": false,
+   "ts": "2026-11-13T11:00:09Z",
+   "players": [
+    "Neres"
+   ],
+   "category": "recupero",
+   "first_seen": "2026-11-13T12:59:31Z"
+  },
+  {
+   "id": "bastoni ammonito? no, il cartellino giallo era per frattesi",
+   "title": "Bastoni ammonito? No, il cartellino giallo era per Frattesi",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNVWN4eHM0ODYtZkI5ZGptM0VuTi12Tk54MkVzbGJhWFJXZUhEM0xFaldzVHNCdDl4NFVIZ1E3SXREMmZpczVHZTN4UHdWdEw5NnJWdnZMd19zcHZqdk1FMjRRMGFCdHE1UHRKVjJxYjFuc3Vxc1MwZnVSaWpadmpzNkFOa0FLc3gwcHIwbmM4aEVHUldrZ3pEd1N3Y0x5ZDlLMS1vWW5OSXAzMWZoRW95ag?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-11-12T23:50:17Z",
+   "players": [
+    "Bastoni"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-13T02:06:02Z"
+  },
+  {
+   "id": "de bruyne e de ketelaere ancora in gol: sono decisivi col belgio, ma non al fantacalcio",
+   "title": "De Bruyne e De Ketelaere ancora in gol: sono decisivi col Belgio, ma non al Fantacalcio",
+   "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOM3JZaUJ0cFd4bklJcXU1ZTNLeW84QmNubHlyd0tBSFZSd0xUVGlJSWZYRy1Yd01LRTM5UW15ZzhscXlJdW9vcTBWSkVTMG1KQ3lNUTNQVkdSandmaV81R2xvaXJmNWptOGtPb0VWbHI2aFJKVGg0STc4cTZ6czE3cVZucDZsdTVkY3VqUWlTTGdoMDdrT1o0TklVQ1c4dk9aalZzZmVvd3NYTFBlbVNLNVNzN0RodDRmakJUcHZ5ZHZiNDNLb2ItXzF4UnpXNjdKSVZIVk1QSFc4bUIzVUNEcDY2Vlo0QUVR0gHoAUFVX3lxTE4zcllpQnRwV3huSUlxdTVlM0t5bzhCY25seXJ3S0FIVlJ3TFRUaUlJZlhHLVh3TUtFMzlRbXlnOGxxeUl1b29xMFZKRVMwbUpDeU1RM1BWR1Jqd2ZpXzVHbG9pcmY1am04a09vRVZscjZoUkpUaDRJNzhxNnpzMTdxVm5wNmx1NWRjdWpRaVNMZ2gwN2tPWjROSVVDVzh2T1pqVnNmZW93c1hMUGVtU0s1U3M3RGh0NGZqQlRwdnlkdmI0M0tvYi1fMXhSelc2N0pJVkhWTVBIVzhtQjNVQ0RwNjZWWjRBRVE?oc=5",
+   "source": "Fantacalcio.it",
+   "sky": false,
+   "ts": "2026-11-12T19:08:28Z",
+   "players": [
+    "De Ketelaere"
+   ],
+   "category": "gol",
+   "first_seen": "2026-11-12T21:25:45Z"
+  },
+  {
+   "id": "fiorentina, atta torna parzialmente in gruppo: pongracic e ndour ancora a parte",
+   "title": "Fiorentina, Atta torna parzialmente in gruppo: Pongracic e Ndour ancora a parte",
+   "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPT0gtUE1ZeklXbWtsdjRTTXo5d2ZIOFliVTdaVy1iR0J3ZXJmTEhyZVRPWjRRUGRtb3h5X05ybTRCTU9wY29Vb1lJdGdQd2RIRFFxT2JCSlRIXzJmVjRfc3VIblgwU1hqTnFnc2tJRGZFd0hhZnY1cHFldFYyd1Q2T1pLUnh3MThVMFl1Vm5WazJ4SC15SVRKR3Y4UGpkSkJFdnRsZ3dSTHprcnFtQU92WEZsMk1aM3l1SS1xampTRmJ3Y19iYkJkWkRRUmZCSXk4RUd1TWJjNFHSAd4BQVVfeXFMUHVSdmhPNEg0X000b3hoV3hzREZERXVQOHh6SHhZYTl5UkZkRXFSZ2dkay1DMnRrZmozOFkzTEVNemlfUlVac3JJX3phMGowN0M0MlVIbVAtdEx3eWJTOTdVOUFNeUNFZEVBbTRHcHFsZXVZT2E3cnpxcWx3QU9vLXVOWDEtLWJZVEYzQU9jRjJpNHBjRzBsS3hLQmZqRVc2N0MwM0lOMjJiV19kcmR5eVZLc0E0NHJHOFV3WTdSZktKTWQ2RlVrY3NkUzVOellYejkxLV9iZk90bUNvYkJ3?oc=5",
+   "source": "Fantacalcio.it",
+   "sky": false,
+   "ts": "2026-11-12T17:58:00Z",
+   "players": [
+    "Atta"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-12T21:25:45Z"
+  },
+  {
+   "id": "fiorentina, novita su atta! le condizioni di ranieri, ndour e pongracic",
+   "title": "Fiorentina, novità su Atta! Le condizioni di Ranieri, Ndour e Pongracic",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQME9wUWtNQ2owOTJXeWRiNy1nMXo2czRQWE5Mc1U5QXJsS2NPcDZjT2V2U05aTjZuVmsyb3JiRGtLNXZIQ2RyY1RQVHlSY25BTzNZaExBcGxPMVhYX2pzRG83TXBYOGQxdzNFUElWVzZkYk1obzJrTmkydGN5dklRNmRjX2dNMU9OMTVucFJwUTVqVjjSAZgBQVVfeXFMT1NrOUIwLVZsMFNsVjVrVEdxN3Z1UDl1YlZTNVVVX3Q5UjVmTlFLR2t3N0N3VURWYUI0RTdqaGNMVjBOY1hab1ZHY1R1YmdwbV9sQWV4Z1p2SEt1YTJXV3RmaXlOcXdsaTBqUmxYM0FVYTNDaUxUcC03d1I3d1BnMVdxT1pOeTBlOU9MdUpwVWdHNHFKNlFZNGI?oc=5",
+   "source": "SOS Fanta",
+   "sky": false,
+   "ts": "2026-11-12T17:00:47Z",
+   "players": [
+    "Atta"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-12T21:25:45Z"
+  },
+  {
+   "id": "napoli, il punto sugli infortunati: da neres a spinazzola a di lorenzo, badiashile, lobotka e alisson: le novita",
+   "title": "Napoli, il punto sugli infortunati: da Neres a Spinazzola a Di Lorenzo, Badiashile, Lobotka e Alisson: le novità",
+   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOcU1JUGs2d2ZuSkJWX1FxNmVrOHJsMjF0ZnQzNmFwRno2UFBQaDFvTmc0a3hLY1lZaXZqZTczTmlMeEVZM2V5YjZRaC1ydEJ0UUk3OTJXVGN3TndDdkVGRE1QWllhcnhVeFpqRW9NdVZIaDV5ZUt3NXpZa2dCc3A2QzFUOGYtSFo4ZXV6MVlXdVVpSkw5SmRjSzlmcXhkXzNSZFRFLVBYcU1lcWdHY2pSYVVBUUl5Si10YlFnaEZ30gHDAUFVX3lxTE1yNUxpX25nRjJicTVmdTdWcVVUNUJZc0NQenFVQVdqZk1pTzMySlVFejFmcXJEWjUyWjYzUEpic09oc0lubHN2T3NybFRYaHA5WUpHeHpqcGhjeWNYRUFyTmpURkdvVF9KcnJOZlFXcnJfNnZtUDF2c0lBTU43M1IwNHRrMWF3TG1pekd2a1B6QzhMLUJpRmdSR1hsbEVKNGd1dkNCZWNnSlFDMVhJWWxlYVM4UnpVWUlBeGJvbDdqTTV5aw?oc=5",
+   "source": "SOS Fanta",
+   "sky": false,
+   "ts": "2026-11-12T15:00:56Z",
+   "players": [
+    "Neres"
+   ],
+   "category": "infortunio",
+   "first_seen": "2026-11-12T21:25:45Z"
+  },
+  {
+   "id": "donnarumma-maignan, a san siro sfida tra passato e presente del milan. quale accoglienza a gigio?",
+   "title": "Donnarumma-Maignan, a San Siro sfida tra passato e presente del Milan. Quale accoglienza a Gigio?",
+   "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNMDdMRmFoNWIzVC1GcHJkUUxELU5FdWZXQmtrVkVMbFNBRi12SE5BYzZUOHBIM241aFczSG10bm90SHBRODZKdFpfbkExYThKSmYyUGp1a05iUW14b0Q4dlJFQVowWXhudVE3WTc2S192ZkxZSW9Qb2IzQVUzNE9LUWhqR1F1Q1o3RHR0MjQzNUVNbGlRMHNtOGNGQVV6VkdMckVHblI4MHZyQS1LLVpYMUNyMWJfaEp1LWM3VEwxV0lmZVZUQXA1ZVFNQUJvZUxyRXdTQWFzRdIB3AFBVV95cUxPOTdMYzRBTGNaMlZBeGxfcXJkUXVjY0JkbXVTWmc1X0FWUEtPVk9ZaXcxOEd3a3pkM2NqMXhYekRtYWk4VVJkaWhseWNRNFdiMk5wZDl4VGZGRTZUejA1SnVoTUNvalBwU2VCTk8ySGxSVnBTcFJHelUxcUU2Smd6M0cyQlhfSUhRWTFQTWlhTUhoNFpHYUdXVDItZU9xWURMTzk1TDQ3RTlMdUNsVkhaYUlWeHAxSWNpY1VOY0Y0bF9jY0l0eGtjWkZhQnh2Q01sRzZ1bnZBaUJiWW5T?oc=5",
+   "source": "Gazzetta dello Sport",
+   "sky": false,
+   "ts": "2026-11-12T14:35:37Z",
+   "players": [
+    "Maignan"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-12T21:25:45Z"
+  },
+  {
+   "id": "como, ramon: \"futuro? posso dire una cosa\"",
+   "title": "Como, Ramon: \"Futuro? Posso dire una cosa\"",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOazVJOVNOeW94SmFycjdxN01BYWhVMmR1UkhONjFWLWpaQkpyV1Vpamd5TVMtVXBxQzRCbWFtXzJNVHZYQm81UjREVXJZNG5ZSWNyb093Qk51Z3RHTlN3SlFXRXI3UnhPaFdQUTFSR0hMd2xHUVd1SzNWRVZOYmVmaDBvUFlNZFpUMDBSSzlrQTd3eVFXR3hPcjZ5WlFQc1BxZnRz0gGoAUFVX3lxTE95ZVF5TTVXVWxFM01faWF1akIxb2VHM3F6MGR4bE1wX2xwbm5wS2UtT3RTWGZxN1NVMTB0QmZoaDZBRW96cGJrUl9KTTc5bnVtQUtIbGpMaWc2dlVLWGZoOHp5SVMwZU1UZjJ2eEprTHRiLUthbFlnZHg4TlhZUFhsYy1TTFpUZE9OYXlBSEZ2TF9jQnBvSm9rQlUtSUpPRnhLa1pYZHdLbw?oc=5",
+   "source": "Fantacalcio.it",
+   "sky": false,
+   "ts": "2026-11-12T10:27:00Z",
+   "players": [
+    "Ramon"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-12T13:41:09Z"
+  },
+  {
+   "id": "akanji sfotte il como: \"non e questo fenomeno, devono imparare. con l'inter ho sempre vinto!\"",
+   "title": "Akanji sfotte il Como: \"Non è questo fenomeno, devono imparare. Con l'Inter ho sempre vinto!\"",
+   "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOdnItemZzUjRsOGVndjZLSlNvZzBZZ1NxMEtjdzJPNmI3Nk5ZejY1b09PZHdCSWZpakcxdlZ6U2paRHMzeGt2cTVQdHR4bkdJd19SMVBzcFQ0c3Nwa09MSGhQaVV5RW9YbHJ0WkpLRmNiblZsY1A5ZkFTcHRzbWg2ZnhmUEtOZmM5M2NwX2FKSFppcTdIOV81d25kN2lZYTNab3JRNjdBWnM1WFlhUjZpQjVQd09jTTUtWVNNc0N3cTVObXplQWs1aUtnWHJsNVp1VGZ4RHRmVWt6Q0ZYSC1ONk0wQkdCM3hQcGp1UFF6OWh4Z9IB9AFBVV95cUxQaFhvLTVWWFNEd3RYM2VzVGk5TXM4cEdfeWNaVFlGaHhEbGp5RzNlUWh6eWR6M190RzJEY0JGeGltbHMzamFLejFqV3ZQQVZ5OUlVMXpXMzRGN29IX0xHRUhlUjRldzVuNk56bzlzcGNmZTEtR1FHckJRSVlfZ2VHSlV6WlZuNVIta2cwMlBMS2ZuYllMTEFadGE4aTFKWllXQzZUNV9fenpfaTlKWjdHS283NXN4bVF1S1Z2TTBPVHdnWS00bEdfbHRWb2xCcllRbE9CZ1paQl9NejRDSHVVbk5JMHdCUDZkbDdSejJXclpkTWJv?oc=5",
+   "source": "Tuttosport",
+   "sky": false,
+   "ts": "2026-11-12T10:23:00Z",
+   "players": [
+    "Akanji"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-12T13:41:09Z"
+  },
+  {
+   "id": "como, parla il ds: \"ramon, scelta fatta per gennaio! su nico paz, kean, diao, cassano e i prossimi colpi...\"",
+   "title": "Como, parla il ds: \"Ramon, scelta fatta per gennaio! Su Nico Paz, Kean, Diao, Cassano e i prossimi colpi...\"",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPQW9GMi12VmE2LXlwZVNBMU1saDdLbnhWVzhNQ054QUhSR2cwTWlvZ250VE41NGM5WndfUGdhUVgxczZoTTRmMGQtcGxtMTE4MnJZMzNKZlFqc3YycjBXeVhEaFl4WDVIdlJFZHdKd0hPUzBqV1V6SllSTVNDOHB2elVqbUh0LUYxUS1URmNsZ0lvLWRkQTNTUl9VUndhcmVyQ0HSAacBQVVfeXFMT2I1eU02U3BoT3JVdmhUNmR2WDB6Vk9kV08yLUo4T3Rnd2NsdGRlZzlrelBlczM4bzhZUlF2bDdJYW1TaU5ISFlmelE4LXhRdWtTcDZURTNKcTVPZGlnbHBQQXFWa2I3eDQ4NllzMFQyVC13N2FWM2pZZ09SUjE0Y0hueTA2MGd5UDlHak9lRzFfcjBHNllIY184d29SSHdzNVV0SUJFWjA?oc=5",
+   "source": "SOS Fanta",
+   "sky": false,
+   "ts": "2026-11-12T09:45:01Z",
+   "players": [
+    "Ramon",
+    "Diao"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-12T01:59:17Z"
+  },
+  {
+   "id": "akanji punge il como: \"ma quali fenomeni, vince sempre l'inter! ne hanno da imparare...\"",
+   "title": "Akanji punge il Como: \"Ma quali fenomeni, vince sempre l'Inter! Ne hanno da imparare...\"",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNMzZCQThrQ0JvbV9LUWhvb0t3aW54NFppbVV6OWhlM3dVckpNckx0cEt1aU0xWmVBOURaT1pFUzY1aHhWdGNZR2UzVXJoR3ZsbzJrNHRJT1NrV0xrUXVaSjYtMGZXMEQ4R1pIWkRkakd1MEwzWGVVcm1BemZ1Xy1Qejd1dHVOenRZcWJ2TzgtTnhUZEUwbkVZNllqWWUzSkpyRjNDbFBIQWNucTTSAbABQVVfeXFMTkYtWlF3Rm83OS1ROWpMd3hUSG1sMUJzdTRZMGFuVThjUUl5XzdUVUxLSzRCWDM1WlRuS3pWXzZPWEpfTG1BRkx1V0owVDBHakFraC1JbVRNemRKUHQ0RHdDdUpiX1BLaW14ZF9CbmEwa2tCZXJ2dndVc0pJVmh6Z0ZkMXU4anR2WHhaSE1aMzlaZUZlQlRDeEdRNWdSVXlCakZHZmdDZzFsTS1fVTlPcWM?oc=5",
+   "source": "Gazzetta dello Sport",
+   "sky": false,
+   "ts": "2026-11-12T08:50:08Z",
+   "players": [
+    "Akanji"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-12T13:41:09Z"
+  },
+  {
+   "id": "fiorentina, ndour da valutare. aspetta anche il ritorno di atta",
+   "title": "Fiorentina, Ndour da valutare. Aspetta anche il ritorno di Atta",
+   "link": "https://news.google.com/rss/articles/CBMimAJBVV95cUxNMnhzbjJlaEZ6Sjd1R2gwWlVsSVFNLVA5aGFZTS1haHVEbDlpbmc3c25LWkNrSDBNX0FpRHFubjBCWTVkZTBQQjdqTWJXUHNvUzNRU1FVUG5CUXNYamF0SGxMMk02RkRGZW9LYTBQQkI2ck9fVHFibWtYM0hNWnIxMjF6UldVWjRveDBrZjlBQXdSQUJJT0pjM00wNGZxR0tiUmt3YmJFWEpsM3kweFo1b04zVGFER3ZNTk1BU0otbDFRdU5vSGVWMGVvZ0gxWUdyWlBKcnBQZkc0Sm5MaGthLUFJMTd3M2RDZ3pSdFRLNTdmMmk3VXRKTHFWTlJJQWFsdkNBMGltanNScnBSbmZmbkdsWHFCcUlC0gGeAkFVX3lxTE9lWnVvU09iSld2UkdQbm5IWklkajJTQ3dEeUdRR21UX0xzUUdaVXRhRDlCcEdza0owUnUwUjBacGZGUzNnb2lFOUlqTmdRbkFoOFFJVXEybUxzNDRTU2RiQ0dlVTBsLUJlajNiTW92c3g3NW1jQnlneDZtRzRlRWZZUlNoeG1pV3pxQmtyWHgwM29FaEtrczZjNVlkOVh5cjl5R1JRWVRuRmpfakF1Z2M3NnBOV3FXdW9GUGdTS2VPLVhfN3p4dUNSa0YzR05qaDhXaTdrY1BjWU1VX28zbThGSkFfSlhfTno5c2k4NlVUNERGOHpYcmlUX2g2TjlhYUFsWDlWUEd0WFVsQTNIR1VsUTVXcC1kY0d4azhXT2c?oc=5",
+   "source": "Gazzetta dello Sport",
+   "sky": false,
+   "ts": "2026-11-12T08:19:41Z",
+   "players": [
+    "Atta"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-12T13:41:09Z"
+  },
+  {
+   "id": "inter, jones vuole il rilancio e dimentica l'infortunio: chivu ha un jolly in piu",
+   "title": "Inter, Jones vuole il rilancio e dimentica l'infortunio: Chivu ha un jolly in più",
+   "link": "https://news.google.com/rss/articles/CBMiigJBVV95cUxQMHQyQjJXdFBCRTdtVkFtRmViZ09IYkZXam5MS0pWOVhfaXZWWEdyejIwb3l0LUFjQWdLRzdJWi1ULTljQ09mb28wVzI2WUcyNFNONTdEVGhzOTNmd0hKNWN2U1d4dUlFVGJjVjl4VWlxTG1YUUpvNWtQRm9xSUNac0pEWGplOW9FV282ZzE1Nl8xb0czbWRDOGZleEFsN3lZblZIUUJ0VjFzM2FMVVZtUDBzUzVwVTdaSUNkZG9kbFJ5SkpQZldtV2NFZ1FzZTZ2NGRnZE5nVkpJZURtRmxzSUplZUNDX3d0ZzUxTldUY0pMTjhUcG9oMmo3N3dxWndOVzZYeEtDb1ktd9IBjwJBVV95cUxOeXIzR2tQSUJhNFhTZlREc3hoUDRySDVRejVvNm9DRGltRy14cXRld2FUMndkVmU5alA0ajVZRWIyQW5VZTkwQjJaWEVyeXNsdy1VemlIRGpKSFNJZTY1V09BX05TcUIwYUhBRURHZHFEMTBpbjhnR2dWQ2JNeUhmdmRlOThDcWY4eDVDOWw1UXliSmtwaXBQNjNnR09kc0VNZDZ1a2Z5SnYxNkpoX0dHc2xadWxRaHJ3cWtsa2hPRUltWnFrUTFrRHZ0bXYzUV96elV3SzRZQzBUVEd3T0JsanFhcTFzRFEyYktrdTJ5WVNQQzU1c2NYX25NUXM2ekhlWWcwRjRiY3BJRjZDU3JN?oc=5",
+   "source": "Gazzetta dello Sport",
+   "sky": false,
+   "ts": "2026-11-12T08:15:03Z",
+   "players": [
+    "Jones C."
+   ],
+   "category": "infortunio",
+   "first_seen": "2026-11-12T13:41:09Z"
+  },
+  {
+   "id": "como, ramon: \"fabregas si e fidato di me! ho preso sei chili in italia, di nico paz c'e una cosa che non si nota\"",
+   "title": "Como, Ramon: \"Fabregas si è fidato di me! Ho preso sei chili in Italia, di Nico Paz c'è una cosa che non si nota\"",
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQeEtFa1BsVDRrbUM0X1BETUxxUG1SZkdrZXFkVWRFWG9PRzNlOXdSLW1uV0hib3ZfTE1YVTF2ZzFVaEdzX2hja2x3LWFWQk9adFNsV28wclJBUEdaYk5ITGZEbFpDdTh4ek8wQkdMUUs5dDhUWDE0YVlnRnNmZzE4a1pDYTDSAYoBQVVfeXFMTlF3VUItUHZsUHY1TmRCcFBOMGJydkllMi1Vb0Y2RjhpMXhhNDdiekgxeU56eUNjWlNNY2dfcjc2R3VTQ3M0OG1hUTBVYjFSRHlHYzViWnhLQ0Z5a0tJOEMtNGF4WUJjZmxNdUhjcnRKWEZMZEVHYy03SzdBbU9FMDNWelNibXNPcHpB?oc=5",
+   "source": "SOS Fanta",
+   "sky": false,
+   "ts": "2026-11-12T08:00:26Z",
+   "players": [
+    "Ramon"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-12T13:41:09Z"
+  },
+  {
+   "id": "calciomercato juve, obiettivo miranda: massara torna alla carica tra milan, rinnovo e... lucumi",
+   "title": "Calciomercato Juve, obiettivo Miranda: Massara torna alla carica tra Milan, rinnovo e... Lucumì",
+   "link": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxNOTB3X3dLWGxmaV9MWlZxb2c4ZFRIcHVRWnZXcjJHRGtqWF9JZEU4ZVdzZkIxbFV5QktNbmhCd0pseDhYd0ZOWnM1TkZHZU5QdEdVaFRXLS1kMEpnbUZvZ0VjX1hGaDlNSXpfTS1KbVhnYXEtc3kzbmhZOFliT1RoaVc4MmVLNk1LTVRxeUhEV2JDUFl1a0pCZ2JLTnVBMUdEX0wtYmIyRnJ6TnJBcUJRU1U2eW9YWjhSMTZyamlvRkRFUVZUR0hpclpOQl9lSFdYTUVnU0VpN1p5Mkl5YTAtZExNZHdtX0tFOWltUnBsdEhPUG9KYnhmTdIB-wFBVV95cUxOWnNNNjlvSndhelBENHZXa253TjZnWXdEZFk5dzh6MVhjTWF0NVU5X3c4ajRBLW1xMEF0WnJ0YWczSUlCZ3JxMEc4ZEJBQ2FHek1ZS09saW1QU3czM3RSS1pPTlF4SWFyVnczalpKLUJIaDNtckROVGNIOVVVVWJPLTFHc1hEVHdRU2JLaWtFV0hoc0pMWXktWGtaYzBZaVNxWFVrMHRZMWVJRTUyUzlxR1R3QkZZbWxYa1RTNlFlSUNZQ1JDRkxUandVRGI2akZ1dHdaSTZXcXpFcHpJWlM0aW1neWh6NXcxX3FkN2J6ZUVHZGlidjd2a2VrZw?oc=5",
+   "source": "Tuttosport",
+   "sky": false,
+   "ts": "2026-11-12T06:29:00Z",
+   "players": [
+    "Lucumì"
+   ],
+   "category": "mercato",
+   "first_seen": "2026-11-12T13:41:09Z"
+  },
+  {
+   "id": "cacciamani-torino, il patto invernale per frenare il napoli",
+   "title": "Cacciamani-Torino, il patto invernale per frenare il Napoli",
+   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQdThWOUc2THVpZlNoLV81cW5palVZQUFWVDNiTm5CZWw3QzhLNlI2ZFplOHFYb1JJaml0bzRTUVpRZzllUE5LMTBUc0hjV3U3QXNkNWtRTlRXZDNzQmNTNXJlUzZESzBTTm96N3NXV1pleGhiMVVVakl3S1prVWJiQjJPdEp3bkRhaUpMV3lVdFJESWdOYXY4VHlRYkZQamNPbXN3ZzVUalBBSHhuZ3JVcExLSUdab1cyT1ZNUVZ1NEpXV1JZcFNzdzVSWk3SAc8BQVVfeXFMT0k5Y0JQN2ZTRkpfTGtfcURLbld1UlRac1FwVFNZeU1BMTlFUzVwajM1RTBjS2YxUWg0S3ZMRVR2cFNKZUItYTluQm1BcW1faVI0TjZnSWxkY1poWDFUT3hKRmVMbEFjMVViRjVUSktILTItSDh3UW1tbmhobXVOeDBndDhKQjZzTFluand4WkkyazZITkgxSGR3UjU4cTJiUzQ4T1BmcjYtcEh4eWRsX1pOWG4zZkpWTHdsSTVzU3F0UFd5Yk1YZFhrc25tSGpv?oc=5",
+   "source": "Tuttosport",
+   "sky": false,
+   "ts": "2026-11-12T05:15:00Z",
+   "players": [
+    "Cacciamani"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-12T13:41:09Z"
+  },
+  {
+   "id": "lucumi, la juve e un'altra cosa: a bologna era un leader, con spalletti fa fatica",
+   "title": "Lucumì, la Juve è un'altra cosa: a Bologna era un leader, con Spalletti fa fatica",
+   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOMGpZeGVkeHJERllYV0dKZk5pNEM0MmZ5YVdkLTZPYlV2TWd6bGc1TFQ1RXBGaWdYaVMyUFZya0NnRENvMHljNWJXUVRGMWxiZFRmOVp5X3BObXA3VV95UE9aNllRSXN2TlhlZDJYSy00VVItdnkwbjBkYVJkTlNCell2NlVMVnd1VzduaGlFeHRxb1dfMzNVUlVzQlBvVGp5ZjhxTEcwN0hhSlZTbTcwNURmT0h1ZlZDN1HSAb8BQVVfeXFMUG5ENWRMQUZEel9od1k2VUp6VzBzRG9iZHhjbHg2Z3F0SGhmZmg2aEYxSFpGUUdWQmdBekg3d3hiSUxEbnhCV2VXdFhxT2tRZEZxc0dYYUl1ZTdUclllS2xpVnRhdEtCWkU1ZXc3UGoyUUdjT2FYbG9BLXRLem1lWk0xcXZsQnozcFh6b2hiSDJrLWhJSGJSODRaSWgzb3FmTWtMT1JIVXBLZThScXhleWNGT3B0TW1telRFTXBZcms?oc=5",
+   "source": "Gazzetta dello Sport",
+   "sky": false,
+   "ts": "2026-11-11T20:29:41Z",
+   "players": [
+    "Lucumì"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-12T01:59:17Z"
+  },
+  {
+   "id": "fiorentina, atta sfrutta la sosta: torna in campo col monza?",
+   "title": "Fiorentina, Atta sfrutta la sosta: torna in campo col Monza?",
+   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOeVprOWxqai0zU0dvc0xMUTRjblYtaUhJUmJLNUFRMzRXWlZmcnZvRGo0V3loMGNpNlpEc1BnemxEQkpBZllPY1RGc3kxRlR5a3FaOGtldF9VRTY2Z2RPa29jRW1EaG1Rd1ctLUVvN0MtU2N1bDBPZFdybExHdXRzWEVWMXQyMThkQk0yZ0M4Y0ZHUzNtNmxIZjhJbmZzWE5SVzNGdDJNY09PZXR3dDZxaGZRaHZsbzBlRFoxaTJR0gHDAUFVX3lxTE9mbkJZNTR1Tm1veF9mam94WWtfVEdzeVRfcGxhZjltTWJyRmZySVlPNkc3Y2JIdGQyQ1g2eDRjcHl0cy1zNHM3LXk3WDNpQ24tZzNmV1NYMkVyUmFYbldTT0w2QmFhUFBkMDRxMWd4X1VpdnlDMjhYMVdXVnI5N2gzQ1RQZ3RkRUoyWGJicUZpd2w4bThfcXlmejZsRmxzRXFUTTZ2RTBJNUtwMlByRzI2WUlYQ2E5Y1pqZzVuYkRNWUtGQQ?oc=5",
+   "source": "Fantacalcio.it",
+   "sky": false,
+   "ts": "2026-11-11T19:29:00Z",
+   "players": [
+    "Atta"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-11T20:09:14Z"
+  },
+  {
+   "id": "fiorentina, da atta a parisi, pongracic e ranieri: le ultime sul loro rientro, per fagioli e beto...",
+   "title": "Fiorentina, da Atta a Parisi, Pongracic e Ranieri: le ultime sul loro rientro, per Fagioli e Beto...",
+   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQZ0xSMjlaanBHZzE4SUxZWURMRmtkcmtNWDNnXy1hZ0lBVFBjM0ZtSERvUHdOMGIxeG54R3BSU09XZU1rNGREblVyeENlN1J3QkZleGloLXNEV3pJSDBZeXFyLVFnS09MZ0VoUzJWT3c4OHdqWDJxUGF2blRHcXZvd1pnbUNjeVYtNS0tVlhWVFJWS1BfUDVyTVFtcHVMbEHSAaQBQVVfeXFMTnZhSURtcXUtMGRaamoxVjh3VExBMy1NQlNjQ2M1cmlyNTBuXzloYWZDcEF1aG83T2FFUEtKVDdPdVViRzZGT0xVWmRKMU9oT0xRR0hDTWwwWmx3YkFBYnAyTXJhaXZMczBOUzc4SDRPQmI5N2lUSzdMb0xOSjdzTzhfcGRKeXJxRzdsY2RSRldCT0JDSTJxUmhJMWVuNjdrVmRlcUI?oc=5",
+   "source": "SOS Fanta",
+   "sky": false,
+   "ts": "2026-11-11T17:00:18Z",
+   "players": [
+    "Atta"
+   ],
+   "category": "recupero",
+   "first_seen": "2026-11-11T20:09:14Z"
+  },
+  {
+   "id": "napoli su cacciamani e varela? le parole del ds manna",
+   "title": "Napoli su Cacciamani e Varela? Le parole del ds Manna",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOcG1Ia0FxMkFGMUV5aDZ3UWhmQm83V19fcDlzU0ZYaEtvUFZQa1FEei15ZktiUERTT1djZnphWVB0d1E0aE1oVW03TE9VX1dfSERBem5BUm1oUjhfRkt1d0NKajZEa0FBMV9YSG9uSm5DblpzYmg3UnFpay1ROWM4TFJiNUdLSzNVU3d6WmZpMld3UDJD?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-11-11T15:17:13Z",
+   "players": [
+    "Cacciamani"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-11T20:09:14Z"
+  },
+  {
+   "id": "como, parla il ds: \"ramon, scelta fatta per gennaio! su nico paz, kean, diao, cassano, i prossimi colpi...\"",
+   "title": "Como, parla il ds: \"Ramon, scelta fatta per gennaio! Su Nico Paz, Kean, Diao, Cassano, i prossimi colpi...\"",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPYjV5TTZTcGhPclV2aFQ2ZHZYMHpWT2RXTzItSjhPdGd3Y2x0ZGVnOWt6UGVzMzhvOFlSUXZsN0lhbVNpTkhIWWZ6UTgteFF1a1NwNlRFM0pxNU9kaWdscFBBcVZrYjd4NDg2WXMwVDJULXc3YVYzallnT1JSMTRjSG55MDYwZ3lQOUdqT2VHMV9yMEc2WUhjXzh3b1JId3M1VXRJQkVaMNIBpwFBVV95cUxPYjV5TTZTcGhPclV2aFQ2ZHZYMHpWT2RXTzItSjhPdGd3Y2x0ZGVnOWt6UGVzMzhvOFlSUXZsN0lhbVNpTkhIWWZ6UTgteFF1a1NwNlRFM0pxNU9kaWdscFBBcVZrYjd4NDg2WXMwVDJULXc3YVYzallnT1JSMTRjSG55MDYwZ3lQOUdqT2VHMV9yMEc2WUhjXzh3b1JId3M1VXRJQkVaMA?oc=5",
+   "source": "SOS Fanta",
+   "sky": false,
+   "ts": "2026-11-11T14:25:01Z",
+   "players": [
+    "Ramon",
+    "Diao"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-11T20:09:14Z"
+  },
+  {
+   "id": "ds napoli: \"rispondo su varela e seguiamo cacciamani! quando tornano neres, spinazzola e favasuli, alisson...\"",
+   "title": "Ds Napoli: \"Rispondo su Varela e seguiamo Cacciamani! Quando tornano Neres, Spinazzola e Favasuli, Alisson...\"",
+   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOUXE2cHR2ZWNDNFNyM0RZV2NXWlRYdFcyNWQ3WVBJUFFBQ2RoazIxZWVZN2p0UkJmTFp4aHZ5X3lvZk9veDhMMmUyMzVHVElYN1BfZ2RTMGhoZk1rUGtSU3pYN0FIWHBuRkhuQWd4Mk15SmdSRmVURURhQTMteklxNVhISTg1b2JfbE5pZ01zMmxheXBWaVNXMGk1OU9waHgtU2RqcW9ZR25xTFdsZi1vVW56d0c0SWNOTGx1Q0VSaEhJSWRTX2RVVE4xVTZuRm5J0gHWAUFVX3lxTE03ZVRBdU5VSURmVWpra2NxLWdqWmJQaVdwYlB1X0I0ZHFHdy14djhzT1ZScnNIVzNTMDVfMnZXbmUyY0x6dUEwdGdDX3ZROEpvLXhURzdxeTVvd19HYVZLS2NpSGRzUF9YODFoY3pRLTNYdnVHbmE2SVNFLU5CRHh3Z3FwbUVqSHZZOTNOZmd4MDJsUnR5eUkwSy15dmZDYnJfd3VBazVpV1NFZ21SQTNRcDNQR0x2RVBJNm9hMHVKZ0hEQWtoTG9RRHphQ2s4YmMyWUFVWnc?oc=5",
+   "source": "SOS Fanta",
+   "sky": false,
+   "ts": "2026-11-11T13:20:10Z",
+   "players": [
+    "Cacciamani",
+    "Neres"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-11T12:38:02Z"
+  },
+  {
+   "id": "manna: \"rispondo su varela e seguiamo cacciamani! quando tornano neres, spinazzola e favasuli, su alisson...\"",
+   "title": "Manna: \"Rispondo su Varela e seguiamo Cacciamani! Quando tornano Neres, Spinazzola e Favasuli, su Alisson...\"",
+   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOellRaDRjVmE0Uk1YUzBWOVlNU3NiVU9QOUpjR2M2ZWd5YXU5RjQteVp2S2cyeWNuUGxmeFdhUTk0RVpGOFYzak52SmRzUXcwd3pMcWM5MlBnZllFdDE2UWtNYWNSZmFCdkpCc1I0djZJb3B3eHJ0bVk0SnlwMDdrLXdjMWNTelRzRW8yR2owUTFyUkNPUkk4clJmTWZ0ano4WThEV28xUUExTUI1LWhLN2J1LVczT1NOa3ZubHdMMmcwNkE0VVIyWm1iUdIB0AFBVV95cUxQMVF0SW5nLXV0YVdIR0kzT29oQ3NqMUxaM2lnTU1CamJGcUU1NHpsZXMzS3RFUUNlbF9RY1JqLTlNTjdWTmJwVDVTbnRKTDJyMHdWY3J0YXoxZUtNRDZMc250NXh4RkE5U2UzYlE1dHk2VXhmQjJTZmRPVTBsNV9Jc29DcE9BbElZTkh5WXFpU2tZWWpmZzhjSV90QjdmZFhmOHRzQU9IdGpzY2dSSzFVdjdXYW1QVHJvYk11SmpiNktBTkd4a2s0emZhZ3F4REg5?oc=5",
+   "source": "SOS Fanta",
+   "sky": false,
+   "ts": "2026-11-11T12:20:10Z",
+   "players": [
+    "Cacciamani"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-12T13:41:09Z"
+  },
+  {
+   "id": "inter, sos al centro: bastoni non convince, dubbi su stones. a gennaio si va sul mercato?",
+   "title": "Inter, sos al centro: Bastoni non convince, dubbi su Stones. A gennaio si va sul mercato?",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNeGFtYmhBZEpyWkNpSl83OVhMUkxDZHhpQUI3MDA1MGhJVzJLVlRXTi1BZVFhSzZteWlHRHVvM1RkOVZraFVCNDVCcm1uYnBKc0tyRWs4dndJTWpQZEVBbDZES25EU0gtYTdwUmxtT1FPME1QNko4SlRtc1hhT05rQjl6SjFMODEzdEVBWEJTZkxLa1VITFRPMjZkVUFuQnhOb0JDQlVsNV9OdzMyVjc0WmtR0gG3AUFVX3lxTE1HcEMyT2czaTRVTlpRWkdxYlo0ZkZuc0U3Rk5UaVN4OFdLZ01XRmpBM2d6S2NRZGxUT2RiQWFIWGdLX1V1TUtMNGpBeFFZNXltSXFvQ2lnMi1Bc25WbEZ6bDZSXzhrUU1Ecl9GSWtkbmc2ZGZDRGljRk8xcFkxSUcyeXlmOXZEbXF4WWtHQUlLLVhkMVlMVzFCMWlMRjFiY3BnRFRpaFNlNXh1aGFtNlBCaDBOOUlmaw?oc=5",
+   "source": "Gazzetta dello Sport",
+   "sky": false,
+   "ts": "2026-11-11T11:24:17Z",
+   "players": [
+    "Bastoni"
+   ],
+   "category": "mercato",
+   "first_seen": "2026-11-11T12:38:02Z"
+  },
+  {
+   "id": "como, jacobo ramon: \"sogno una semifinale di champions contro il real madrid\"",
+   "title": "Como, Jacobo Ramon: \"Sogno una semifinale di Champions contro il Real Madrid\"",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQZHRNMTFWM09ISG5hd0hLeThKSm1VU3k3cmhlb0NaUWZ4OHY4U2dvbDRVZ05fUlZvMmkwVkIySEROS3loT0h1S25JcThxVWc2aGVLSnFsT2pPNmNZTkt0bjh4aFJFZ2NFRmxPNjBDN2I3SWFuekxWU1NJTFU0Q1l0UHc2b3ozT3V6SkNmejVsMlRBWlhzNmZNOThydlk?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-11-11T11:20:37Z",
+   "players": [
+    "Ramon"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-11T12:38:02Z"
+  },
+  {
+   "id": "ramon, la spagna e i desideri col como: \"firmerei per una semifinale di champions contro il real\"",
+   "title": "Ramon, la Spagna e i desideri col Como: \"Firmerei per una semifinale di Champions contro il Real\"",
+   "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPbkhkWVA0aTlfX1o0YVgxbWJ0S0RRN1F6LV9JY3BuTGVzdDZUVm9CN2tZeS1VZ181UEtUMUJuR05GRkt6b0lfSFYwVVBSNGktSk1oMmlNd1ZxLXRvenctSHgtd1RYb0tuWkdwOU90UXlGbkJFUFJtREZDZjRaZ2owNDhIRzMxY2F2ZG5ZaTY5cHhvN0t5NDJQZzgzbDhwRGZmbDlrZlBlcHdtVUhpVVVQcHN3R3E2MDl3Z1Bwa2ZEc0VUOTVXcWZjWllVYkc3RXcycW1HWHY1bmJLdVNPUjFpQTU5X3pNV01WWUhCbmhLOUt0VHRRVGEzMk1B0gH8AUFVX3lxTE5GNDNnd0tEaTlBVVA0VURmajNjdE1QX3VhVlhFWGVNcUtYdHppbkotV2J1d1gyY2RCMTg4cGVsZW1IcDhPV2JXSXc4aFhvNGFydDk2X3o4eklSWURzNFl4Qk83Y2d1ZWtEcFN6UGtuXzF5Nk5fOTQ3bXNQdGlqMVdmd0tTclp4MFJBQ3RhWUtrbWZ0ZGg1UENCNHI0U3llekFOYXdMaVh2c1EtMmJLcXhVRmp2ZVg1MEROYWdFTnozeW1wSVZEdUN4bUZhLTAyR0NoUlgxRk01Q1JucnpLQmk4MmNDSUY0UnpjeDl4NHEzOXZLNW9GRjJNOU5YOQ?oc=5",
+   "source": "Tuttosport",
+   "sky": false,
+   "ts": "2026-11-11T10:11:00Z",
+   "players": [
+    "Ramon"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-11T12:38:02Z"
+  },
+  {
+   "id": "capello: \"inter, prendi un centrale: bastoni e meglio palla al piede che senza. endrick? come nico paz\"",
+   "title": "Capello: \"Inter, prendi un centrale: Bastoni è meglio palla al piede che senza. Endrick? Come Nico Paz\"",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNMUd6NHU0U2tfTlJYY29pdXhCR2tOa0VDM1Q4T3V1R210T0JpeHZMck9zSzhWUHhTVTBOQTFuYkpIOHpneTZaTnVRVm1FeE52Vk9fVkp3OFhBSlI4Y1lwYThMM3BYWnRRNnhqVnhxNTJPd0c2NHNpSThRM2cxSjVuYlNJZDZ3Y2ZyLUpPZElwUndvYkd2Z2t0TFp6d9IBoAFBVV95cUxNSG1uR0syMjFQaUZabTFJOVRvTzl3OHFJQW9hXzczaXBkWUNUd0ZKMkJEQkQzbm1sYXpTQmNJSmNxdDkyWl9YZ0J6cE1RdU0zTnhDRDJnaURpenVJOHE0eldtS09UNExkUkhvbzZpRUlzUjNhcHdTR2dPUGJFeWxvMkl5VW54Y0hmODd6V2QtU2lsYTF3XzhQN1JGVHhBS3lP?oc=5",
+   "source": "Gazzetta dello Sport",
+   "sky": false,
+   "ts": "2026-11-11T08:59:50Z",
+   "players": [
+    "Bastoni"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-12T01:59:17Z"
+  },
+  {
+   "id": "de laurentiis si muove per cacciamani: contatto tra napoli e torino. piace anche varela",
+   "title": "De Laurentiis si muove per Cacciamani: contatto tra Napoli e Torino. Piace anche Varela",
+   "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxNVGdpY2hNM0w4Qjk1b0ZqZlV5MnFtWGdNcjAtM0pqd1ZTYUN2YVlWMFJaUjJuSWpJQUwyWWtDLTZYejJUaEhwT3pBVlloU3JpUTFkUlVKNFhrU1dsLXdwYmpCVExvQlBHVllES004N05GTndZQW1XWWRHajdaZV9McmJjSldzd1E0UURjQU42ZDZJSTRreXR4bTk3b2VKdXppS252SHNRQmpLZWpkVDVKQ0VoWllKRndlMUlwUFlLNXdtOV9CR3hGS0ZTY1VYWEU2Slp6OUFvemo1WDNtWW00MzJuZWNsZTJZQkpsSG4xY2lHa1IxQmdNVHRGaDRSMll4UG1WUNIBhwJBVV95cUxPckQ5TmpLUkZidWRaTnRMRmE1ejRBMGVqOFdYTDlYSzZXYUVDV29RVDRLd3hWVkljR2c1UVM0VTY1UU1yU0s0RW10RGxoZHRLTnJ4Vy1kcVQtYmNXVUNSWWtIY0NZV2xmZi04dG9iUThMU0lna2FpczUzTkR2Y0ZyYm9MN3dMalpCcGFrRm5renlKMU5NRDVoc2dpa3NNSEItc2NuUHdJSHpQYTh2N3d5VFgyVkdSVG5id2loT2dieUZ1dEdlOUVrUzZCNjRTandwVmZGLWE1WXVXcGVwOEZUQTVySmQxS1N2WEJqMkVWWlJzZ1ZMby02ME4tTm1WYm82UTYtdHJrbw?oc=5",
+   "source": "Corriere dello Sport",
+   "sky": false,
+   "ts": "2026-11-11T07:30:00Z",
+   "players": [
+    "Cacciamani"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-11T12:38:02Z"
+  },
+  {
+   "id": "italia-francia, le probabili formazioni della partita di nations league",
+   "title": "Italia-Francia, le probabili formazioni della partita di Nations League",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPUEtSSjdWaGE0UDh6RGFSVHprT3ZGaFprX1MyeGpLZ3lrLWtvRE54a0tXdEJDN3lBVDJJbVZPSEpKWWdtd2hwQmtJai1zWkpoUjNjek84VUt4UHI1X2ktc05sd0V0Y3hkbVNaS0o5RDBPdXlDOTBhNHQzSzRlSTJzS2dwVTd4MGQ0NHh3cUpBUVUtSDg?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-11-10T23:03:09Z",
+   "players": [],
+   "category": "formazione",
+   "first_seen": "2026-11-11T20:09:14Z"
+  },
+  {
+   "id": "fiorentina, il 'caso' atta prosegue: le ultime sul suo rientro e quelle risposte di vanoli...",
+   "title": "Fiorentina, il 'caso' Atta prosegue: le ultime sul suo rientro e quelle risposte di Vanoli...",
+   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQVGJKRGRsYV9STkhHc1NUb3ROcHM4QkZCYUxmYkZYdHBPWndNbFdQeTllUzItcmRxem84NzZScVI1MnR3R0xXNG80SE9hS1RTcVo2V2VMdWN3Q3V3Q1VGa3Znby1fVlFEaVBMQzZiWE1rRnFIeC1VdmhWR19DOU9aTmphU295a2Q1M0llSE0wb2wwbGlSQmp1WjFPRlRRTm1aLUN1V1ZacmhVbWpVOGdSd1k2c2hLZF9aa1pncG1n0gG-AUFVX3lxTFBUYkpEZGxhX1JOSEdzU1RvdE5wczhCRkJhTGZiRlh0cE9ad01sV1B5OWVTMi1yZHF6bzg3NlJxUjUydHdHTFc0bzRIT2FLVFNxWjZXZUx1Y3dDdXdDVUZrdmdvLV9WUURpUExDNmJYTWtGcUh4LVV2aFZHX0M5T1pOamFTb3lrZDUzSWVITTBvbDBsaVJCanVaMU9GVFFObVotQ3VXVlpyaFVtalU4Z1J3WTZzaEtkX1prWmdwbWc?oc=5",
+   "source": "SOS Fanta",
+   "sky": false,
+   "ts": "2026-11-10T20:00:29Z",
+   "players": [
+    "Atta"
+   ],
+   "category": "recupero",
+   "first_seen": "2026-11-10T20:35:11Z"
+  },
+  {
+   "id": "kean punta la sua ex: como-juve per dimenticare l'infortunio. diao, addai e jesus rodriguez...",
+   "title": "Kean punta la sua ex: Como-Juve per dimenticare l'infortunio. Diao, Addai e Jesus Rodriguez...",
+   "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQSjRkUXZwa1k3NWZJYmVfZE1IWWRzVnVlVVNJUEI4amlnbWFlTkx0R2pCVUxRZ1dKazNSLTFoa0NtWmcyZ1JUVTBxdXF1VHpPZWwweVVTZ2VXVU4xdHJpSS0tQUVuT0tTYUFBZjV4VjVCYkl1WnpZWGNKWXJEWHNpZWNJdE0wTGlkcXV4TmJ6Ri14WU5vaHpQVThnbVNDWHhlV2QtTmdQTTJJbWQtNFNLLXpzQUtwTlF1MkZzeWdWdWJnQTMzSXd4SDNpX0xSbllvM0tlOXpQVkVSQTBIWkk2OUt6U056cmFXWVdLRHljdThDc290WURUdFNn0gH8AUFVX3lxTE5rU09Fcm5uVmJ3QWVJZnYwRFZCR254ZmM2WnZ2NFh6LXhnUFdDMTRVYjhZR1o0amNVOEJpTUlwWlBLbVo5b1BtVWxlYlQzSEVUVVdzVkc4LVFGZlNOazlFRmxZWXIyTl9WNXp0VGowTkh4WTFWNWpwR0NpR2dLUkFMTE0tM1JjbDhtUXRIWElsalhfRVY4SGJKYmFfdnEzV3R5RlRqX05ybHZzNkdsTVR1OWg3a0kyOFh1ZnpIaFJsUmpqQlJOWWNOeDVhejlvNGhNR3RscVNPd25sd0NBWWNRaEttVURfejdCRWp2cWNrRnBiRExSOWtoWVRkNw?oc=5",
+   "source": "Tuttosport",
+   "sky": false,
+   "ts": "2026-11-10T19:50:00Z",
+   "players": [
+    "Diao"
+   ],
+   "category": "infortunio",
+   "first_seen": "2026-11-10T20:35:11Z"
+  },
+  {
+   "id": "napoli, piace cacciamani: seguiti due prospetti in francia",
+   "title": "Napoli, piace Cacciamani: seguiti due prospetti in Francia",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPeExSRHQ1QlQtRkM3eEtXVHlLVnhNMEMzb3NvSVlSckhGNERRdjZ6NnFiNVdVMmtsVDNqNk04dTlLR3Z3cVpEWm1KM0ptWjFOaVNTUEtzSFNjakFxdVJWeUMwbzk4Rmx5c3ZnbmF4enZ1RWdncTIwN1VMRnducVp5dkpUTldtaHNjai1rVXh2cEQ2enZCSllVZlg1aDE?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-11-10T19:34:22Z",
+   "players": [
+    "Cacciamani"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-10T20:35:11Z"
+  },
+  {
+   "id": "il milan e pulisic-dipendente? se capitan america e titolare, amorim non perde mai",
+   "title": "Il Milan è Pulisic-dipendente? Se Capitan America è titolare, Amorim non perde mai",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNeEk3NTNJd0k3aW9Ud0hyZ3NLWHFBX3g0VHQ0dkRyOGFIejJ1ODJTMjFkSGh4NUYyRGtjd3d5U0dabVNaUkF2WmNVbkVGcWFXcTVIWlVYWUlHWDFNdWhJaXZYRTdoR3BHSlA2WF80R1ZCSkR2aEFGcHB6TmZCaEI2aHlCTEpwb01iRFZPalpBQ1loT1YxMHhxUXV5b3QtZXgwNUxQUUU2ZTJHbFRfSk96djBB0gGyAUFVX3lxTE14STc1M0l3STdpb1R3SHJnc0tYcUFfeDRUdDR2RHI4YUh6MnU4MlMyMWRIaHg1RjJEa2N3d3lTR1ptU1pSQXZaY1VuRUZxYVdxNUhaVVhZSUdYMU11aElpdlhFN2hHcEdKUDZYXzRHVkJKRHZoQUZwcHpOZkJoQjZoeUJMSnBvTWJEVk9qWkFDWWhPVjEweHFRdXlvdC1leDA1TFBRRTZlMkdsVF9KT3p2MEE?oc=5",
+   "source": "Gazzetta dello Sport",
+   "sky": false,
+   "ts": "2026-11-10T16:46:05Z",
+   "players": [
+    "Pulisic"
+   ],
+   "category": "formazione",
+   "first_seen": "2026-11-10T20:35:11Z"
+  },
+  {
+   "id": "ds como: \"chi e piu vicino a tornare tra kean, diao e chalobah! sul rientro di moise e a gennaio...\"",
+   "title": "Ds Como: \"Chi è più vicino a tornare tra Kean, Diao e Chalobah! Sul rientro di Moise e a gennaio...\"",
+   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOYmZhMEVzN1FYajE5cUl0X0xiTGo2bHU1MTFoVldrTVVLbE5uU2NSYU5PNS1CQWdkdmVHYXZvRHZ0U1EyWnhEZEFQc1ZsREVsWWNxd3N4YjRxbVlsOWNjQzVMT08xaE43REYyeUVCYXAwOXk1RVRMcGVFUzRwdVBKVlJiSFFwUndKOHBGM0ZsOHZ1d9IBlwFBVV95cUxQeXJMMm02akxXaEE4dGROalVnUU9xWjBRN0pPTUw1RFNoSW5KT3E5Sm8zbWJGUGxwdUZoTTFYYWxBUzZYM1cyaXY4ZHF4aUNBR0Z0RGR5dmQzX3djU2doeklwOWpCdDhFaE9hbEkxZThwV1hnN3JyR3RXdlpaUEF3ZjhGOWF6ckd5V1ZzQVJCVnE2NGFsVlJV?oc=5",
+   "source": "SOS Fanta",
+   "sky": false,
+   "ts": "2026-11-10T15:45:40Z",
+   "players": [
+    "Diao"
+   ],
+   "category": "recupero",
+   "first_seen": "2026-11-10T13:25:27Z"
+  },
+  {
+   "id": "da neres, spinazzola, badiashile e favasuli a di lorenzo, lobotka e alisson: i tempi degli infortunati del napoli",
+   "title": "Da Neres, Spinazzola, Badiashile e Favasuli a Di Lorenzo, Lobotka e Alisson: i tempi degli infortunati del Napoli",
+   "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOS3dQdFFVekFucFZ5SDhiWmJnMjc1b0tPMzR2b09wbEsxU0FlMlRBM1QtXzhTTjhfVUVGSzB1TFR6ZUFPVmxYbG9wU24tU21qcnRJeUN4TVdFWEtDc3Bma3JLbXk0bGY4cTZDeDNNSFItZHd6bjYtRG84S1dLSlNYSkQ1bVBQY0laYXpCZEZfVjNSMkhyenl4bDNTbFY4b3dIVnE3MnM0dndEeVBOWE91cDZ3bjdFWS1icnRPdmJ2VFFualBGTUd2aVNZeXAxOWFXMFFhMNIB2gFBVV95cUxQZDJxZTJBOFh6ajRWd2h0NGZGSi1Ld3d3dHhwVGpaX3N0aUNYZERaMXFySmhpV2c5cFpOWXBSdDgzUTJxMzRuR0FJeTVNdHRZbUg2T0hvSmlsYWpyTG8zck85MGdzcFBXUnFYRmZoTVhZekVKcXRxZHpBNlBsZm5iNDN1U2tZUklNQm5aSVZ5QUs3ZThQbmNaX0pwdXpWbWRQUG1sSFlEcG9oM1lwUzF1Ty1mTzVPSnBnMks3WlgyelZxSUlPUzJZV1BmRC1jdmx0QkZGZlc3ajJ5QQ?oc=5",
+   "source": "SOS Fanta",
+   "sky": false,
+   "ts": "2026-11-10T13:45:48Z",
+   "players": [
+    "Neres"
+   ],
+   "category": "infortunio",
+   "first_seen": "2026-11-10T13:25:27Z"
+  },
+  {
+   "id": "kean, ecco la speranza del como per il rientro in campo e cosa filtra sui tempi di diao e addai",
+   "title": "Kean, ecco la speranza del Como per il rientro in campo e cosa filtra sui tempi di Diao e Addai",
+   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE15ZUI4OThBNlhVMndnN1A3cVp6SEJicUlYWmhMLS1ZTTV3S0paeWNqTmpYdkx3ZGNoNWwwbFJBUDY1SGZ4c2ZzTUpsTWRCenFkd1VxNndmWS1zRjd4dHhad1dWRnF6NDNzSHZ3Z3JMZWxCcHRLREE2V9IBeEFVX3lxTE15ZUI4OThBNlhVMndnN1A3cVp6SEJicUlYWmhMLS1ZTTV3S0paeWNqTmpYdkx3ZGNoNWwwbFJBUDY1SGZ4c2ZzTUpsTWRCenFkd1VxNndmWS1zRjd4dHhad1dWRnF6NDNzSHZ3Z3JMZWxCcHRLREE2Vw?oc=5",
+   "source": "SOS Fanta",
+   "sky": false,
+   "ts": "2026-11-10T12:00:38Z",
+   "players": [
+    "Diao"
+   ],
+   "category": "recupero",
+   "first_seen": "2026-11-10T13:25:27Z"
+  },
+  {
+   "id": "napoli, il primo rinforzo e neres. a gennaio fari su varela e sul vice-anguissa",
+   "title": "Napoli, il primo rinforzo è Neres. A gennaio fari su Varela e sul vice-Anguissa",
+   "link": "https://news.google.com/rss/articles/CBMigwJBVV95cUxOVFdjX0RJQUlXTXM1TWpnVHNic3BiV0dMUGlRWjZBUUE4Rm03ejAyRm5OZkl2eExDNlJyR01taE9JQ1FfSkJuMEh6enk4SDhNS3dmZ21ONXMxLURMc0t2VlpoZFhpNXVzSTM4Rm0wZTdmRlg1NDczNHF0enRxS0VfQ0loRmxFdjUzbUJtNmhldThDLUQ2UVR6QlNndWRBYko5X1lPZVprTkZna2ZsS3V4ZUtuelFuakJFX001TTlOSGcwazhPaWFIVlhESWszTHJTcWFvYXVWQlJmXy1ibDI5VUhabk5VWUtwYm9uR19iaHZEVEIzWmtSR3N1cGdDd2RTRm1J0gGDAkFVX3lxTE5UV2NfRElBSVdNczVNamdUc2JzcGJXR0xQaVFaNkFRQThGbTd6MDJGbk5mSXZ4TEM2UnJHTW1oT0lDUV9KQm4wSHp6eThIOE1Ld2ZnbU41czEtRExzS3ZWWmhkWGk1dXNJMzhGbTBlN2ZGWDU0NzM0cXR6dHFLRV9DSWhGbEV2NTNtQm02aGV1OEMtRDZRVHpCU2d1ZEFiSjlfWU9lWmtORmdrZmxLdXhlS256UW5qQkVfTTVNOU5IZzBrOE9pYUhWWERJazNMclNxYW9hdVZCUmZfLWJsMjlVSFpuTlVZS3Bib25HX2JodkRUQjNaa1JHc3VwZ0N3ZFNGbUk?oc=5",
+   "source": "Rai Sport",
+   "sky": false,
+   "ts": "2026-11-10T11:56:35Z",
+   "players": [
+    "Neres"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-10T20:35:11Z"
+  },
+  {
+   "id": "da neres, favasuli, badiashile e spinazzola a di lorenzo, lobotka e alisson: quando tornano gli infortunati del napoli",
+   "title": "Da Neres, Favasuli, Badiashile e Spinazzola a Di Lorenzo, Lobotka e Alisson: quando tornano gli infortunati del Napoli",
+   "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNV1pXUGo1NjVxQnROdkNBU1VZeWVTaUlybVVUQkJFOWdkNDZfWXBkX3k2REY2eGhJajZzYVAtX1kzTWw4Ylg5a2QyQVMtemZVT2xfaDBsTjlQanVMbXk1YWpYb0lxSXlDVnZxTDRRcVAzMEVKQ1NkaHUyQmQwUHBKVW5xR2xveHV5RmtNUGotQUZMaEFHU043cmhhSExyV3I4T0hvUU0wVlpGM0dhTnZDSXJwcjN4RFdMRUQ0RjN1cEVlUERYQWVuQ2NPaUtPaXZIYUpWaVFPX0pjajU0Ynl5aTFQNTAwSXZXYWNZ0gHwAUFVX3lxTE1ZZnVESHhzY0JyTUpySTZJeEtfdG9abktDMEMtbkVMUy1jNnBVdFVxRURyLXBBSG1TVGJyWG45TFl5RWpkYjctQ1ZES3hCdThYNFMyR2ZwbTVMS3ZGLUlCVEdMa0w0bVI0bUszbHc4WjZrMHdlUWZMcllhYjhOd0lLbnBkM3Vxa2pzT0MzYnU0RlZLR2dnSUdrTDBpZkllS3dEOTV1UjV0UjgyejB5b01wWk9CdF90c3AwWmk2MmpaMWNvenFGSXNlaTAyTEpsT2RPVzlzVHpwMnE4bmFWVHhZcTZORjB0eU1lcVRtbHpZcA?oc=5",
+   "source": "SOS Fanta",
+   "sky": false,
+   "ts": "2026-11-10T11:25:48Z",
+   "players": [
+    "Neres"
+   ],
+   "category": "infortunio",
+   "first_seen": "2026-11-11T20:09:14Z"
+  },
+  {
+   "id": "da neres, favasuli, badiashile e spinazzola a di lorenzo, lobotka e alisson: i tempi degli infortunati del napoli",
+   "title": "Da Neres, Favasuli, Badiashile e Spinazzola a Di Lorenzo, Lobotka e Alisson: i tempi degli infortunati del Napoli",
+   "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOS3dQdFFVekFucFZ5SDhiWmJnMjc1b0tPMzR2b09wbEsxU0FlMlRBM1QtXzhTTjhfVUVGSzB1TFR6ZUFPVmxYbG9wU24tU21qcnRJeUN4TVdFWEtDc3Bma3JLbXk0bGY4cTZDeDNNSFItZHd6bjYtRG84S1dLSlNYSkQ1bVBQY0laYXpCZEZfVjNSMkhyenl4bDNTbFY4b3dIVnE3MnM0dndEeVBOWE91cDZ3bjdFWS1icnRPdmJ2VFFualBGTUd2aVNZeXAxOWFXMFFhMNIB2gFBVV95cUxQZDJxZTJBOFh6ajRWd2h0NGZGSi1Ld3d3dHhwVGpaX3N0aUNYZERaMXFySmhpV2c5cFpOWXBSdDgzUTJxMzRuR0FJeTVNdHRZbUg2T0hvSmlsYWpyTG8zck85MGdzcFBXUnFYRmZoTVhZekVKcXRxZHpBNlBsZm5iNDN1U2tZUklNQm5aSVZ5QUs3ZThQbmNaX0pwdXpWbWRQUG1sSFlEcG9oM1lwUzF1Ty1mTzVPSnBnMks3WlgyelZxSUlPUzJZV1BmRC1jdmx0QkZGZlc3ajJ5QQ?oc=5",
+   "source": "SOS Fanta",
+   "sky": false,
+   "ts": "2026-11-10T11:25:48Z",
+   "players": [
+    "Neres"
+   ],
+   "category": "infortunio",
+   "first_seen": "2026-11-10T11:31:10Z"
+  },
+  {
+   "id": "wesley-diao, ci risiamo: contatto dubbio, fabregas e como furiosi. caos in campo con la roma",
+   "title": "Wesley-Diao, ci risiamo: contatto dubbio, Fabregas e Como furiosi. Caos in campo con la Roma",
+   "link": "https://news.google.com/rss/articles/CBMikAJBVV95cUxOZnE1LVpsdVhzNVpiSzBremF3OEVhekFSYW9VaThQTmJwaXYwNVNYV1k0UTJ0QS1VcGJkbXdwX1VyNWRvUVl2RWZTRzF2WjBlYVZud0hqdi1WT00tVC1NVkVVMkxrcWVxZTFCWmJJYlRmV01aOV80ckREUm43X3ZEak5Ram52U0Q5VEZKM1JqVjhEaHVfbk9rR2ptbEVCTl93SGR2cTVnZllmc2dRV3RKdVU5OUFSQWV0Rldqa3VuWXFsOTU2dWlYSzJiUW51R3hSTkR4eUhuWEtpUVVXQnFaaVA2cnJBRVdHQ3dJUWZ6eVA4ZUNhQmVpajE1MlJ6WnZUMlNoQVBuRXFNN3JXQjNSdNIB-AFBVV95cUxQM3FnOWRjTEJLbHlmODJIc0FuR191TTFzNlZ5TjhnQnBGdHU5b2pvVEw0bEQxRzB1c3JCaUh3YVgzZ0gzWnVNNUZkWHNlSGlEcFU5UXZkVGh5QUFQc0w5NnU5bWFmbnR2V1pIdEdLcFZ3TUZueUpwN0ItVTM3SVJaLVZyUm1FZl9yV2dVRXVjMk4yRVFLOFVxMGk5V2FJZU96TlNVM3NXRFYtdGZvbVc3UjZfUVV2dl9PSk4tWUNTa05NYW1Zbk13WHphUGQyZUxBb0hva08zTEEzZ2kzX1lPbTZ4Yng5Wkw4U3dEcC1qbWt2bjRlRDFJaA?oc=5",
+   "source": "Corriere dello Sport",
+   "sky": false,
+   "ts": "2026-11-10T00:24:14Z",
+   "players": [
+    "Diao"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-09T23:23:52Z"
+  },
+  {
+   "id": "crisi udinese, intervengono padelli e vojvoda: le parole del portiere",
+   "title": "Crisi Udinese, intervengono Padelli e Vojvoda: le parole del portiere",
+   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPalZOSWtHeFNEbnhSNk9ZQ3ZQYmpaejBkNE1PRHZWcnVfSEVKa0lVczhCVUZ5NGpEVnRxNTliSk1aVi0xdm42eEVNNnZIWkoxdk1kZWw0dVJvRmlwbFc1bThCU25HY0JhbThVZVdLRjFLdmFkSDdWTWpSWkViWmtTX09UR3laaFpBbkRFWk9aS1Q2U3RONUhaQ1BEMXZLVEpLRm1qZXF6Zzg2Q1NmYXQzRmQ5M1pYNXEzUl9jbTlYTkI5LVNIa3FXVzJSa9IB0AFBVV95cUxPNGdhbzZaVW5qU3ViVUo4T3dRTU5ReHYybl9yUExtc2JNekZCUU93S2gtZHdxTExQdTlEa0lydk5TSmdaRWN3dGlXWWhrVEdQV1ZUMDZOM01WMEpmTThDVnJnUklUV2xzVTduV1VFRUZNc1RJS2xsdlRETmRxMWJWSWpwQThpYm9id0dQNzhDZGxKdVZ2Rl90TUpFblhnOXU4VnJJM0JkWS1DU2FvM2EwTGhBMlFYUHk5YWhyczZoQl9aVHFSOHVPOERzQVBVM0tL?oc=5",
+   "source": "Fantacalcio.it",
+   "sky": false,
+   "ts": "2026-11-09T19:53:00Z",
+   "players": [
+    "Vojvoda"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-09T23:23:52Z"
+  },
+  {
+   "id": "fiorentina, dal tentativo per ranieri a pongracic, atta e parisi: le ultime sugli stop e i tempi di rientro",
+   "title": "Fiorentina, dal tentativo per Ranieri a Pongracic, Atta e Parisi: le ultime sugli stop e i tempi di rientro",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNNG03RnpMRV9vZ2xMY2ZfLS1HZG03Q1RmOG9HcFlYdkNpYi1RZ3VjMzRSRW9lOXVoV0ZpN3BiWXBoZ0JuXzROUV9iMXNmOW05cUpsb3FzbDgzRmZhR0R0Y09hM1ExUHdIUVBhX3puSkkwbjNjNFB6MjcyWXhPZFNrekpra292SnhXXzdpS29IaFRVZXliWHdsYnFxVlBLdEpIWElCS0NuclFrbnBYd2F2Z3pn0gG3AUFVX3lxTFBUVFVEaUlkeWoxNWtJY1VHOFZLd0t6clllcExwNU1SYkF1dW1hZC1mS3FoNWVBelgxZFhKODk5T1J0cEhsdUxyUmw0U3F3WFRZX0tVVi1uOEJfUXhNWEdoTTA1NDVYZ2RiRUNNbTVsT1RyU1pqclo3bzZ2MFlkbzVzUE5yWTNYVXQtRHlsV0NOVDUzVnkxbHpSa2xwTGZkczNiZG5jQzRwNmJndzRLdVFVYTMweHlpQQ?oc=5",
+   "source": "SOS Fanta",
+   "sky": false,
+   "ts": "2026-11-09T18:00:51Z",
+   "players": [
+    "Atta"
+   ],
+   "category": "infortunio",
+   "first_seen": "2026-11-09T23:23:52Z"
+  },
+  {
+   "id": "derby di milano: lampo pulisic, il milan passa subito in vantaggio",
+   "title": "Derby di Milano: lampo Pulisic, il Milan passa subito in vantaggio",
+   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQWEJvQkVvbVcxX0JwWjZzWXlJRGNFdThQMzBHaUhrWlBrYzg1NGlmQW1rU292QmxCRURaTWJZekt4V2xTSTluRlMxay1CV2h4eldtTW5pbUI2U1VQT25Cb1VjaUlBY0I5aGgyaVRmWXlaRk1KZWRFbmVOclkwQVhVcXJfU19Xa0NMbk9KQ1g2YzZHZExpYWYwMFBma1k4ZWFmX1gxTzY2TmM5bzU1QlM4aHVqeVVaSDhUWU1BSUFMS1RFcmRIbHhaLVV0bEdjQQ?oc=5",
+   "source": "Corriere dello Sport",
+   "sky": false,
+   "ts": "2026-11-09T16:40:24Z",
+   "players": [
+    "Pulisic"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-09T23:23:52Z"
+  },
+  {
+   "id": "spalletti: \"livello non degno per cose importanti! muani, woltemade, alajbegovic e lucumi sente la pressione\"",
+   "title": "Spalletti: \"Livello non degno per cose importanti! Muani, Woltemade, Alajbegovic e Lucumi sente la pressione\"",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOOW5LWVl3S3ZHcmZ5TFRFS2VOWjhzMkhYdFV4MTNmLVFoUFg1R3hhUEdRRmt4ekRnWWlaald5dmtGcVYyOWZEVVFDWjlaaVRhdGJoaUp4dGlkM25kZmZ1VTRYQ3lVSTZRdWRPYWo4OG1CYUNIZFB3dUQ1ZjFKVEJhNTRLMmYwNVQxQUl3aEprMUVXRU9sVXQ5OV9xSzE1RmwzZFhhMlBRX0ttazNxT04yZnl0UdIBuAFBVV95cUxNVXJzcnctNWRNVG5SbXFoSVByWnl0T0l0WU9LdnFYSXVhVGJaUHNfTkNiNmdvNldSUlY5eTJtc29vT05YSl85MXpKT0ttUEc5cTVJSHRrd0VnLTdsLXE4eEd0WmpIcWVMLTVTaDBlRU9oU0l1U2dGVzRxUFB6bldrSU5KY0NWQnN2U1h1Xy1KZzlybjUyYnNwckZfQ1U5OWQ1OTdBYXYxN0h5aEtGNnFCcU5JdjRKb2tz?oc=5",
+   "source": "SOS Fanta",
+   "sky": false,
+   "ts": "2026-11-09T08:45:47Z",
+   "players": [
+    "Lucumì",
+    "Woltemade"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-09T13:48:00Z"
+  },
+  {
+   "id": "pagelle genoa-milan: modric senza eta, rabiot decisivo. wiafe lotta",
+   "title": "Pagelle Genoa-Milan: Modric senza età, Rabiot decisivo. Wiafe lotta",
+   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNYTdoY0tWTkp1RExGS3BCV0ZMWGFsd0pMLWFSRWl6UkJwakotaURYSDE4Y2pkWlpxNGxLbnh4OS1jdDJXQVFlXzlGZGpWX0FEaWphdzFZMk16cFlSdVVwWGlVbFhnZEhjMFkxSEd4eG0wd3VnWDhiR3d0bmZkWnhOTXZLOVBZNlZMMXN4Q19BOEEydDFBNVdwN3ctQjFPdE54OGN4dm13U1NMaUFWTE9Gc0VyQ2tVWGM5RWhVbUYtbGNzYlNpY1lhdGdHc9IBzgFBVV95cUxPa1EwdTF5N2FTa3JWVklrcmtZY2N3ZGFaR29BUFlVcUVSeTl5OE1fTmtNaXA2VzBpdVd6eDhUMlFfdFNLaE5neEEwLWdPQ1JaejVNeU8wNXVlNVdyQ1N1MnhRc2FjV0tGcl82NlJaQnB6LUpmZWFscGVJZW1INGh4Sll0TWFmbUNOSVZ1bWszT2NiZU1ObGFzRFNlSG82R1lheXNzTzQ3RkxhSnBBWUZGOXRFNWFiaThoSkZfRWp1cDdwZ0pnU1R2TERnbmsyQQ?oc=5",
+   "source": "Tuttosport",
+   "sky": false,
+   "ts": "2026-11-09T08:32:00Z",
+   "players": [
+    "Modric"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-09T13:48:00Z"
+  },
+  {
+   "id": "spence corre, thuram il migliore, nico paz non si vede, disastro ramon: le pagelle della sfida tra inter e como",
+   "title": "Spence corre, Thuram il migliore, Nico Paz non si vede, disastro Ramon: le pagelle della sfida tra Inter e Como",
+   "link": "https://news.google.com/rss/articles/CBMijwJBVV95cUxOdXJnX2xQYjdxWldib3Jpd3l1Wkd2Nmlfd0RPdkxMQlBlQjM0cUxuTUh4SVBwNUE0RjN3NDVQUXhTeGRTdnpZVkE4cmNUcjBmR3ZVUnVtS3d2TndnbHZNQXZCUjhwVS1MbHFZRXRVZHJWTEVxNldqNGFjREZHSVpwSkVLbjUzbmZqbmtEb3hwTVo0QVhVNVdxM1hmUDhUUFE3eHRLN05veFpxMEJlRHMwQ3ZDX05FcEZVU1JRVE04T1RBOFoyc2hzYUFFVGFwNlZVNV9pMWVZdnRPYjdsc21IczUtNWpyNHp6VGhQcFZ1ZFpodFB1Y0RjS2dPNEdzZWtXcDlwdHh3SENyOXI2Nlln0gGSAkFVX3lxTE5uZS1GRTFzbEVKUi1hZUJhUUYzM3E3LWdtcGtMYndGY3Z5SFhsQ3VZbi1OcUlWalhUN2NoSWIyamd4cGZPQ3phREVYQWl3V1BDd1YyQzBsMy1Mb0V4WmFNRHN4VVdLaTBSclNmcHc3azlwbTdfOU5ReVpXTWtkemlkQ2VlVFZpSHhfMDVSeVZwaG5ISjQtUTJ1VUJyVjRYcGtDemRtck1TcVRONDhEeWpjT0RLeFVRVnJVcFFSemVRc3AyN1BJeVJjanIwQ3BPZk9ld1cwLUlUZ3k2bnAtTnA3T2NPbkpoQlYxWEZjRXJhQk10eEdCRkJYUFZGMzZZY3hMZTlUeExpR2lfRjNCRm55UEE?oc=5",
+   "source": "Corriere dello Sport",
+   "sky": false,
+   "ts": "2026-11-09T08:00:22Z",
+   "players": [
+    "Ramon"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-09T13:48:00Z"
+  },
+  {
+   "id": "pagelle inter-como: thuram non da tregua. ramon horror, nico paz un lillipuziano",
+   "title": "Pagelle Inter-Como: Thuram non dà tregua. Ramon horror, Nico Paz un lillipuziano",
+   "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQYlhkQ1lXRXNfTFg2WVNmWFg4M2ZLYVV2elJZc2pocHhLY3ZMUU12ZjU0SEF3MUdkQkF3aklPVzhscGNkekdRVXBsNFhQUE4xdFpRSVBjNUN4ZUI2Rkppc2kzdnQ4UUtQdlVLYzJnTzdkVVFkWEVxUThSemJCSGJEVVVFUnZfZzBkSTZkTzA3eFBJdXNMQTFkQ0hJNXcycU1JanMwal9tT05OdWxlRVljWW40aDRHNDUzekpubTgyaHNHWE5Fb19uMG1mNk5HU0RaYzJadTV2R0wtbFNN0gHfAUFVX3lxTE5vMWFjYzlOWGZSbmdMZkZlcG5Wb1F1VU9fTlNDVnlVbEZIQzlacHpDeHI0Z25xRjROQnQxWkV2U3p6NVRZMlZnUW1uTlNoVkRabVZIS0JtWVhsbG1jY2FodW8zbDFZM3JiSDB2NlBvRElRdmtuWFgtaW1DRFRMRUp4ZnFDN1pkdS1VeVJGWHk5QmRIRThtUVQ4RFplaWlGZ0c1VkhNbC0xSklKcU5xTWMtcjdlbGQ4akZBTUtkSW00cmd1VnVoYUtVbFlCS2xjZ3lPUXUzTXpGaFlpTmhuTUU?oc=5",
+   "source": "Tuttosport",
+   "sky": false,
+   "ts": "2026-11-09T07:33:17Z",
+   "players": [
+    "Ramon"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-09T13:48:00Z"
+  },
+  {
+   "id": "finalmente woltemade: primo +3 al fantacalcio, alla ripresa sara centrale?",
+   "title": "Finalmente Woltemade: primo +3 al Fantacalcio, alla ripresa sarà centrale?",
+   "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPWXhIc05VaFpwWnViOS0wWFVzaTYtQzc1R3NMUHpBYmdUQnBGeUROYnJaeUVvZ1BWNURxZURKcks4dWZpb0FwSUZHREZQbkU4cVAzZTdScjJRVE9fTjNpd0hJcUpvWmhKNEpaWDlNQVRkVGlyYXdORmJ1bkxTNDRJd1U4VHpMSlZleG1IM3oyVlo0WXhfeU5wcmRQTjkyNi04UW9kdmFKN1UwREJoTEFNSW9CRHRKTmdsb1VuYWVWQWg5RVk3VkZWVnhTMWVhaHlsSF8yRdIB1AFBVV95cUxPWXhIc05VaFpwWnViOS0wWFVzaTYtQzc1R3NMUHpBYmdUQnBGeUROYnJaeUVvZ1BWNURxZURKcks4dWZpb0FwSUZHREZQbkU4cVAzZTdScjJRVE9fTjNpd0hJcUpvWmhKNEpaWDlNQVRkVGlyYXdORmJ1bkxTNDRJd1U4VHpMSlZleG1IM3oyVlo0WXhfeU5wcmRQTjkyNi04UW9kdmFKN1UwREJoTEFNSW9CRHRKTmdsb1VuYWVWQWg5RVk3VkZWVnhTMWVhaHlsSF8yRQ?oc=5",
+   "source": "Fantacalcio.it",
+   "sky": false,
+   "ts": "2026-11-09T06:53:12Z",
+   "players": [
+    "Woltemade"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-11T00:53:05Z"
+  },
+  {
+   "id": "i voti di fiorentina-juve al fanta: muani e pellegrino piu di woltemade! male de gea e lucumi, mckennie come luiz",
+   "title": "I voti di Fiorentina-Juve al fanta: Muani e Pellegrino più di Woltemade! Male De Gea e Lucumi, McKennie come Luiz",
+   "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNVnV3WnNTa254RmV0dktKUkhvc0RsRzNUZG1VTjdmUkxkRXFWVjZ2ZlFEOFV4NHpNY1U5ckpDWEFSLW9OYTlHMmlEcmpwZnN5QWprV09tVTlTajEzOFM3Uzk0cW83Yk1YM1U0TWx2cEVHWEZzalhLTGRPZ25YVG9UWF9ia1pYWUFXc3VrTXhwU1RUenJLOGZ6NGVXcThjdmtHVmVFS0FaVm5aRThKOTlZd05SemdYaVdQR1pIRnB3c19HYk55WDV2aDlteG95NTB4OWYxcGJxRW9TU1kwcWlzVmhWbzJwS0Ez0gHuAUFVX3lxTE85b3J5bWMtQ2dfUUVvRlJ4cGVMdDRWVVNsdl9WNmZ1WGEwTHV3X2xkY1p0THBBSFUwRkk0eVA3eHNfSUlPbDlJNkVlTWlFeHVEN1lfU3ZkNDVVX1R0dXpuc1FYMDdzaVpSWWVJcFBvUDcxU2VEYjV6a3JVOVNQUHpTOFBnWk9qdl9oZXBJVENEcmFxODF5UkwzeG5SX094Ni1fbnlKZVVVeF9XOGM0Tm03OU9nUm1UZmxNTGJNRUYxZklxX3lMUjhUNEc0QjFESHhqNVVKTGo1TXdtc0V2NTRfZlFQd1VQUE53dkNCbHc?oc=5",
+   "source": "SOS Fanta",
+   "sky": false,
+   "ts": "2026-11-09T06:45:40Z",
+   "players": [
+    "Lucumì",
+    "Woltemade"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-09T13:48:00Z"
+  },
+  {
+   "id": "juventus, spalletti: \"woltemade ha fatto vedere di avere qualcosa in piu\"",
+   "title": "Juventus, Spalletti: \"Woltemade ha fatto vedere di avere qualcosa in più\"",
+   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPWFhxeTMzYlNkcEpOQUo4T080UEtFT1lreGZjVjhyWEo1aFRwU2NhaFNjSVJva0t0a25OTW9FSTVFSnhkTFNqNE5yc29LQ3I2MWlNZlJ5ejZfSEpqTWpzaUYzN2dRaURCbzdTZmpIclBWd0k3VFU4a2pZZk9fVkI0LXhDRU8wWk9RVTF5MGljOC1CYTVGazhBWl8wem12ZXlWN0J5QmlYZTY4ZzJ0azgxVU56U3ZRbE1PWFBfdWFud0lqZEFrbVhGWUpVcTN6QdIB0wFBVV95cUxOV05sOUtkRnc0RjM2d3lqM2NGT1RpQjc2OWpuUEZjcnFrMzFxQktLMVREZEZlel8zbmdINUpjZVNBY0NldC0yV29oRzlZbGN3Y1diQjQxMTdRdG5YWU83Y1lFcGpPZzFTUlBnTHZTcTRyN1h1OFgxWU5QZ1JZcDNWTnI4UmdqLWVISV9HdEJIdXNueVZSUTNRSkpYUTJYTVM4bVc2TDU1R1VMVWQ0VGZ2c0N4MG84LUhTUmZGU21EdjdrMmF0Q3FvSGFVTnoxMXd2djNB?oc=5",
+   "source": "Fantacalcio.it",
+   "sky": false,
+   "ts": "2026-11-08T22:29:00Z",
+   "players": [
+    "Woltemade"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-09T13:48:00Z"
+  },
+  {
+   "id": "woltemade e bremer non bastano, juventus pari con la fiorentina: il film della partita",
+   "title": "Woltemade e Bremer non bastano, Juventus pari con la Fiorentina: il film della partita",
+   "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPb1dQcHBZNnIzaXA4dlU5cTdlY1hhcEFRdkdna25seDJBZ1lONWs0bzhKeWM5LTV2WTRULTVXWmRUYmx6SkxoVUQ4OWNSOHE2bnFGQUZMSXc2TlhFWE8zNVotcE8tOWQxLUVJeWRwRWE5b2N4ME1ibTUycjVENW9VUVFVaFItWVFSb0pMTmRyN1ZoVFR3UnN5cWExa1hwMUc1ZG9TcFdhWVVXRzRHM25GV1N0LW85M1RZS3VoWG5MTUI4S3luZXlyZnNLMmYtYmlYY284VDJzMlczRWk1ZkdReDlFeVRER3NvYUgwTlZZclZPYlXSAfYBQVVfeXFMT1lhS1VMSkE4WHBBZzZlZ1JDNEhuam9KODQ2Z09xTjljaERlSWdVOUlFX2JBNlAxd0FBM1Z6V2pzZ0Q5YnRQSUN5WFo4MjNfME1na29qUXpFYmdsdndHdWRTN1lMemNkUTdZV2lsWFJnenp6a1pKc25VMUd4MThlT2lkVmIzMHZkMlJqTjA3V0g1NmtKQ2g0TGdnY0Z3a2UtbWpQWVNISUkzYVBzSEt2UTdHcWJnYXd5ZGpYWEtmOHdkQm1sR08taFphWW16T3hRYndEazZxVE1ETE1MbXNjUFBGODJPcHNFTmlIckJJLWVzWW5VM2pB?oc=5",
+   "source": "Tuttosport",
+   "sky": false,
+   "ts": "2026-11-08T22:21:20Z",
+   "players": [
+    "Woltemade"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-09T13:48:00Z"
+  },
+  {
+   "id": "ancora pellegrino e njie, il primo +3 di woltemade poi bremer. al franchi e 2-2",
+   "title": "Ancora Pellegrino e Njie, il primo +3 di Woltemade poi Bremer. Al Franchi è 2-2",
+   "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxObHY0NFIybVdva0xLckJOMlkyLUJ5eG9sTnBXdTRUMzBVcmJCN2p4bk01NXd0dDBxZzdmTWF6QTRQdWtsSzNoLVp4N1dWeTU1TGdmSGs1RUJtUzBJXzU4bUJwR1daRUxudG5sbGlaci1oalZKM0xOUjlIRkI5elRpbS1MM0NQZHJHOTRkLTFRc3JKNHVNM2VTclpmXzhuTEZFdG41ekhzWkVCTi1yMFpQcFgzdDJxSEx4ZVBrTF9UQmR3SHg2MlpoY04zWTFKcnMtYmtsdnYwWnZId9IB3wFBVV95cUxPT2dVOC0yRWdRRnNjc0lIZFVvSmxuOVQwRFlITXNnNFBCcnA4eExCMHFCZ1YtallqZWpDZmhUTXNLMGduQTVWaWpTRGJIT0FEcmZ4VWNmTTg2REJXRTJPcTBlbDQ5QWdHeVQwUUNUOFNESjJQY1lXaUh0SGt5emZfOXVGbFprS3dWOEMteGRfbVAwVkF5VXp0eFdaUTNwQXZWM205Ty1NeHNya0s4cnowVVR1VS1DZGpwY2NsaTFTWGtscFVFYlZCZ0JGMERmQ21YZW5sMlF3cGVTNHpvM2tz?oc=5",
+   "source": "Fantacalcio.it",
+   "sky": false,
+   "ts": "2026-11-08T21:44:00Z",
+   "players": [
+    "Woltemade"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-09T13:48:00Z"
+  },
+  {
+   "id": "kolo muani imprendibile, woltemade non sbaglia: primo gol in serie a! e il gesto con jimenez...",
+   "title": "Kolo Muani imprendibile, Woltemade non sbaglia: primo gol in Serie A! E il gesto con Jimenez...",
+   "link": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxPM2U1RGUtcFZKRmU1UEFjVE9RNktqSXpScm1qQ01CaWdVVHZjWnduZW85QlJhbmJRTy0xdmgtb25ybkN6eEZib3YxcENlSk9MNkl3Z1RzNDZzUXlOY0x0M0MtVW9UR2dGNFZIUUtlTUdxS2ZIcXdXQmhud1FYQ2VncWcxa2hGM3d6TDQ1OHZlN0MwM0VfQ21wM1RWYjI4MnZFbzlNWjBQQ2J3MmpFMDJENFZnY285Y2EzZ21Ra0N2N3ZfTXY2ZEpTZzY1VU1fQkxOWV9sUUExV2syeGhrcEJXLTBOaUpjTDZVa1NTTVFRTGVucnB5Um5ENDQ0TdIB_gFBVV95cUxPZnQ1YjEtNGRULXZHbUcwTUc5QTY5N2lDYVJENVMxeWl0clJfYmZBZnNGekxULUpWMktQQlB2QzdHTzJNanhjSkwwQzByTjBad0lQVXE1U1ozLXdJZWNJZWpRSWtVRGl5a1p6SGlNWFhjbDAtdXZTNnhWSjlTd19xNmtKTzl0cVJaTGMwXzkwNlhwYXhZMllpLUdHOTV2OW9JLUs5eWEtTzN0TjdJREVlSExyeEREM1dMRjhTQjNmQ0lTUHAxdWRhdWwtN2JMQ3J0bC1qS05ScTFoMkFDaFIyMG5YTVhuMlJUN3dHX2V0M3RSaF9OdGp3SzM2NVRrZw?oc=5",
+   "source": "Tuttosport",
+   "sky": false,
+   "ts": "2026-11-08T20:45:00Z",
+   "players": [
+    "Woltemade"
+   ],
+   "category": "gol",
+   "first_seen": "2026-11-08T21:57:35Z"
+  },
+  {
+   "id": "fiorentina-juve, formazioni ufficiali: la scelta su fagioli, oulai, boga, goncalves, mckennie, zhegrova e woltemade",
+   "title": "Fiorentina-Juve, formazioni ufficiali: la scelta su Fagioli, Oulai, Boga, Goncalves, McKennie, Zhegrova e Woltemade",
+   "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQNkx1a1RXN01ieUtKQzVlSjA2Z2VtYW5BRnh5eW1DbGN4WVJtbmtReW1HZV9yYnQ1dmpSUEJTSHlVSW5sWUNMWkVpaDh0cF84bG45VzZ6YktSUXdDV2dSeVNNUUNCcTJJTG5jWFpSckpwdVJ4XzhCOGF0UG81TzUwS0J0SjFmd9IBiwFBVV95cUxNOVlremtOU1pQM1ZMdDBsc2JTYVU4T0haS0NrNUJaSlgtVk9rQ3E0clQzZHJCRlQzTnBoZmNqT3RUYThSQ1pFVHV4bkxsa3hfaVg3Rm5UTlRFMnhfb3kzTEgwRkIyYUR3QWNNWlZhZHNSdVZTNmZLRkloYnFmSVFxeGFwMjVlV1N1NnUw?oc=5",
+   "source": "SOS Fanta",
+   "sky": false,
+   "ts": "2026-11-08T19:15:01Z",
+   "players": [
+    "Woltemade"
+   ],
+   "category": "formazione",
+   "first_seen": "2026-11-08T21:57:35Z"
+  },
+  {
+   "id": "genoa-milan, le pagelle: pulisic sempre decisivo, merita 7. vasquez, che combini? e da 5",
+   "title": "Genoa-Milan, le pagelle: Pulisic sempre decisivo, merita 7. Vasquez, che combini? È da 5",
+   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPR3dFcDVka0V1R2I5T1FnQkdVOS16WFNlT2NpM09yeXBPY09PcFJ5bWlOMlVQaVQ2Wk83UEQyYmF4d0RRSzFGWUNjWEhTbHBrYmlLVlNKbURoaEZmd1J0MVV0SkdyQ0JRR0xNOTBqdlN0Q3VRVFpqVV91ZkdNNFFNbnFCQlZZVkZwT2lWQzFHd0t2VFozQU8wa1N0U0tiMThLNkHSAacBQVVfeXFMUERnY1FqYmJrTzQzLXVNOGRTNW5oMkMzejgwd09WVmRkYzl6UEtVM0lBekROUXlLcTdkemN2V0ppaEJUcjFEYk1lX3l4TVp4UVdXbDFWOExfdWtlTGhPZEhBZEdobHpWRnVZa0FLcHdDd3dfMWFzaXVNaDlNUnNiSzlyVEhZb0p4SzBLWUptbnZDTTNwR1F0MWpwY2RFYTF3OS16VURkUFU?oc=5",
+   "source": "Gazzetta dello Sport",
+   "sky": false,
+   "ts": "2026-11-08T16:50:12Z",
+   "players": [
+    "Pulisic"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-08T21:57:35Z"
+  },
+  {
+   "id": "cisse e pulisic decidono il match",
+   "title": "Cisse e Pulisic decidono il match",
+   "link": "https://news.google.com/rss/articles/CBMimwJBVV95cUxOOXBsTkxFRzJvNS0tOE04a1BUT2VKX3ZTY19WNjFJc3pmb3VtUmt1THE1Q2JjSUpSYUtlRzlSelhPQ1F6UmZDZXlSQU54aXI2QllnTjNLOTBkX21fWmc4T0JIM0ZpSThkd2lQcHR1YlZJcTlHSXFwWFI1bGxWekExb3VMTHM0UFQzWEJ0VVJwbDd1c0JpYlV3d3JHR2taSUlrcXJwN0JtMGRxbzlyMTZjTXFnYnctRWw0Yzl5SU42M0pfYU1ycUtTUWU2REtUM0FMd2FYUno3WXR2MUtrdm0ybUNZcXIxR1hlQUVlQkFQZjhCWFkyUVRLNGtRRjFmSHk2QjdXcE8tbkMtY2Q1RVlWcGE0MVlhM0lrdVhr?oc=5",
+   "source": "DAZN",
+   "sky": false,
+   "ts": "2026-11-08T16:32:24Z",
+   "players": [
+    "Pulisic"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-08T17:53:29Z"
+  },
+  {
+   "id": "genoa-milan 1-2, le reazioni social: “gigantesco pulisic”, ma sui cambi di amorim...",
+   "title": "Genoa-Milan 1-2, le reazioni social: “Gigantesco Pulisic”, ma sui cambi di Amorim…",
+   "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQa2I2bkItVGJCc2RJUmxhZEk2cDZHTVNmN196azQxbFdXUG4waEJqdTJGclJVOWhQVkI0SFpqS09Ed3h6S0FNenJGdUphcmlZOUF4YzNtQXJELWRqWFppeXNJZnVzNHZkWk9YYnRJaGpvQWc5cHFwT19yZ1M0Z0dSMmg4VGp5VzdBWnAwZFh0dXpPN3hwVEU0NEItMXc4c1NBTVg5U1gyZmI0LU0teDRjeHk1azFfMFlZanpsMW1sTDNscElmbG9DcU4wRGRxOUk3eE51NUdPZ2N3QmQzLXNtWEVJT1Bka3PSAewBQVVfeXFMUGVqd1dMWXFnRTlMOXB6Vmw1c3daUEtzRy00MVlkNk0wYnhPTGJTYUVqQ0tXSVppVFhxSHNrakdnN3k2YkttTVpmTWRUZ05fdEZCdlFtaHB0ZV94bzNOVFUtSkw5MjNpUldMQkZVS3ZtRWthVUdTcEx6QWx3blBYMWFYLW00el9GRGYwWEgtcmFBNlN4OF9CbnpXTk5xMktZYXJxeGtUbWFEa21zenQ1MVBEM1RITTQzTHlKVHhKMGVHUlRXemZkb3ZRNmQ0anpDWnd2U1NuTkI2Q2RHZTY5VWNNaE11cVctczA5QTc?oc=5",
+   "source": "Gazzetta dello Sport",
+   "sky": false,
+   "ts": "2026-11-08T16:28:56Z",
+   "players": [
+    "Pulisic"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-08T17:53:29Z"
+  },
+  {
+   "id": "il milan sbanca il ferraris, cisse e pulisic stendono il genoa: amorim si rialza dopo l'europa league",
+   "title": "Il Milan sbanca il Ferraris, Cisse e Pulisic stendono il Genoa: Amorim si rialza dopo l'Europa League",
+   "link": "https://news.google.com/rss/articles/CBMigwJBVV95cUxPNDU5R2xrcTA0bi1yTWx5QjRqNkMtRmo2NmRuUXF1bVg2VHpaT09WREcwTkwwQnVQUE9MM3NuTjRjalJ4Wm9UMjhpbVR5WEd0SG5zNVVUejhYcDA1RF9PdklxaDV1MzVpSlNMR2N3Z2VqX3R0TlU5cm9EVmNDZWNOTko4cjZEbFc2M0pNQnpDVy1jUS0wNEthT3NsZlFDc0JQTVFEVnU4ZDYyZzkzNVRTNGs5QXlYMTJjcXNNNUpaQk1PUmcyVVBmdkZyZ1BUcGg2NE5hRy1Zb1BTcEswMm4ta3F1ZG9kWmRTUG54UDFJckRaeE9ZSnJpQXlqcmloUnR1dGJr0gGGAkFVX3lxTE1Xd0RPYXN0TWxJUkhNWmNtMjA4NGlJLXlQc0VpaTl3ZlZobkNyd3RkOTlwcTlXUUxtNEY4RkZCOXUyczU2b0dkSkIxTDRSRlRHRlBVS1I0MkQwNjN6dVkwN3RSVWlWX2RxNjhpZWhYS2FrSnhZWGVZbVRyNWZJR0NpZzNSQWdQTXgyTkdNVUJQQ3V2T1dVQ2hvZnVzNl84dHBMZFlFMXc0RWIwZDJhUDZIeWROTThFc1JkTE4wcHZhLTgwSDRtcUt2d0hINk43RE9hNWZTeEJiX0htUDVsM2pGYkdVV3V0bHVZbllLUGFwX1JXMHFuM2ZOdzFhSFBHdnBYazVlX2c?oc=5",
+   "source": "Tuttosport",
+   "sky": false,
+   "ts": "2026-11-08T16:04:53Z",
+   "players": [
+    "Pulisic"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-08T17:53:29Z"
+  },
+  {
+   "id": "cisse e pulisic trascinano il milan, al genoa non basta ellertsson",
+   "title": "Cisse e Pulisic trascinano il Milan, al Genoa non basta Ellertsson",
+   "link": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQT1RXNGJqaVd4RXhqcG4yWUVmRTlwZXEwaE02QWdWRmpVLWx1UzJVeTc5bXpfZllDZlU1QU9nM3daR1ZCSU53Ylk1c1VxbE9WNXA5TmdzQ29vOGxEYkJqZHZ4ZWdUaWY2b2tnYmhheU83SFc2dmhmZkJPRnJXVkZreHRPLWZGYW9JQ2ZLTzVnOS1kbVd0Um1iNl9uLVlwVEx2WWhjZlVXM0paam9mckh5YmhnTEZoRWJCZndkM2FORzIwX2NCYmdXbkNXYTZkZlhueXJ5aDJGTTNpb0JlR2g1TGlUYnhiOGtMWnJtazNB0gHuAUFVX3lxTFBPVFc0YmppV3hFeGpwbjJZRWZFOXBlcTBoTTZBZ1ZGalUtbHVTMlV5Nzltel9mWUNmVTVBT2czd1pHVkJJTndiWTVzVXFsT1Y1cDlOZ3NDb284bERiQmpkdnhlZ1RpZjZva2diaGF5TzdIVzZ2aGZmQk9GcldWRmt4dE8tZkZhb0lDZktPNWc5LWRtV3RSbWI2X24tWXBUTHZZaGNmVVczSlpqb2ZySHliaGdMRmhFYkJmd2QzYU5HMjBfY0JiZ1duQ1dhNmRmWG55cnloMkZNM2lvQmVHaDVMaVRieGI4a0xacm1rM0E?oc=5",
+   "source": "Fantacalcio.it",
+   "sky": false,
+   "ts": "2026-11-08T16:04:19Z",
+   "players": [
+    "Pulisic"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-08T17:53:29Z"
+  },
+  {
+   "id": "cisse-pulisic, amorim va: il milan piega il genoa al ferraris",
+   "title": "Cisse-Pulisic, Amorim va: il Milan piega il Genoa al Ferraris",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOal9UV2hBVlA4VUhKbDhyTFVXb0lYRnc0bmpRX1hZNzBMWVlJWGx0MElyM3d6ZWI4Qk0wRmhQN2Z2MlljMk9uTW1aMm5xcEJ2a1g0eVpkMmJja0JfVEkzTzZYTzJ4MmJzRTNrY01pdW5uc2xKaFlXZkpPSFRvVVhqMDk4SzRLbmZJYWNTbUljejBZRlR4TEpad1lzU3BqTWt1R1d1dzhfYlJKeW5fZWRoak9kdk1ZemE0d2tuWjVkTUxmeXRJZ2fSAcgBQVVfeXFMUFdWWXh0STNPdGUxVTMzSHU4QnhjcHNqVHNUV2ZGelBIUFdYSktMalBWM0FIdDFFRnZoSUc3LXZQR3MxejQ3RW9PajdWY1lZbGItR0dCV0RXRUdpZllfZmNmbng5eXdqTGstcDFxUUpoTW41Z0gwTHhrUE5oYkF6eTlTN2xGeFRmNkQ5TGFoby1IQnF6ZFlncHBwbGpEbDd4ZHZLNzJaMklxWnRrS0IwYk9jN0lscnlpTXlnVy1FMmNzWEhDOFNYRFY?oc=5",
+   "source": "Tuttosport",
+   "sky": false,
+   "ts": "2026-11-08T16:01:20Z",
+   "players": [
+    "Pulisic"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-08T17:53:29Z"
+  },
+  {
+   "id": "il genoa si fa male da solo: amorim batte de rossi. colpo grosso del milan con cisse e pulisic",
+   "title": "Il Genoa si fa male da solo: Amorim batte De Rossi. Colpo grosso del Milan con Cissé e Pulisic",
+   "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxObFNjV1lEVnN1ZHVrRV9Cak93ZDRuajAxT3ZaUE9aVDV5SVJlUGYzb0w1TVpxeXc1SURUT0VVTFFoRmJoRmNJMTRCbVVjY1hqVVlreE0ydWlyNTlPRmJzbUNITHVCMFBBRi11a2hCMXU2Njd1WDl1RTg4aGN5aW96a0gtSl9iQTExYi1YaEVyOExVZHo1RXk4TWN0a2J6MF9YQUltUlhBRUNlVWtXUmctOGJTdGpGbDdtRVMtTTJJZHF0TDdxMVZOcThlT0hIX3VDX3hSVGF2dkRCWlJaOWY3VDJHZ1d4M3NmTTBYNXNvXzkwWF9ycUtkSWJR0gH8AUFVX3lxTE1zRmxtdGZlSWlyV0lHN2xQQWU0amdtX0RoNkMwSnpwNndqV2tIeXozdWRzRHAydlE2QUl6Ym1zS1FuRzdtNlJsbk9idlZrUEd3ZXp6OVF1dndTR1RyUGJ6YXJTSy1nSFJvY05nRkZGMUYxTG9wQmhtd0JESkg0R0ZNQ29KR1BMNkpWMHQ3Uzl4cUdHek13RF9rcGpyRklncFNzZ3pZRi0wMFI5cU5Ya1QyMHdKTW1TR0VwdEktSVY0NVpEVlkySktHbWNPQW41TWlPUHJBNFVsR05SMEVRVUp6dlYxYXl3YWQ2YWpOYzhBN1dXa3NhRlJESURCcA?oc=5",
+   "source": "Corriere dello Sport",
+   "sky": false,
+   "ts": "2026-11-08T15:59:00Z",
+   "players": [
+    "Pulisic"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-08T17:53:29Z"
+  },
+  {
+   "id": "cuadrado: \"inter? ho ferito i tifosi della juve, non avevo capito! bremer, locatelli, yildiz e lucumi...\"",
+   "title": "Cuadrado: \"Inter? Ho ferito i tifosi della Juve, non avevo capito! Bremer, Locatelli, Yildiz e Lucumì...\"",
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOQUhjX01zdi1mTXpHenhaaTJrckYyOHl1ZDU5dmNGZ1VPSjhISmhPM2NSZ0F2bjh2SW0tcHl6VmtRMDNRMGRvdlZNNS01UU9vTm4xNjVuNlluRTJxcmhPWHpVWEZ0aHdfQ3pmUHpQYnZCSU1tVHA3dEw3bF9KLWZ3dFc5cU3SAYoBQVVfeXFMTnQwY2hXc3JGVmZtVllDcmdDRGVkYTZIcWU3YnFGQ1FvaFM3dFowNUNFczVza2F4SV9ZbkdNbUxqQ29ucGhvQTRWWGtySEFJN1FTSngtQmg1VEg1ZngwTXdkRVNnRnJZaFBjTW9HaDRPRWdJZTZBZXZaQzY1ZXlHQkJrWjNSYkJseXBB?oc=5",
+   "source": "SOS Fanta",
+   "sky": false,
+   "ts": "2026-11-08T15:00:29Z",
+   "players": [
+    "Lucumì"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-08T17:53:29Z"
+  },
+  {
+   "id": "genoa v milan, official line-ups: de rossi turns to vitinha, amorim with cisse",
+   "title": "Genoa v Milan, official line-ups: De Rossi turns to Vitinha, Amorim with Cisse",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNMnBCY2o0OGxSdFBtWm8yeURhcWNHX0FIVGxUY2lLdjZ6WkhCS0Q1aG9zVEJ4YkwycjktRHQxaVNjUGVOazhTa0hhZE9DZTBZWk9DYzJMMDVrMVlXblFvdWxhT3FidkJGYW15cGNjM2RRZ2xkeGJpU1ZyR290V0EzUXdFWDQyYnZPenhzMGtBM1pQdEx0TjBOMzNrVm1HQklIVmUtcWxuWUhyS0lmZ1psZdIBsAFBVV95cUxNMnBCY2o0OGxSdFBtWm8yeURhcWNHX0FIVGxUY2lLdjZ6WkhCS0Q1aG9zVEJ4YkwycjktRHQxaVNjUGVOazhTa0hhZE9DZTBZWk9DYzJMMDVrMVlXblFvdWxhT3FidkJGYW15cGNjM2RRZ2xkeGJpU1ZyR290V0EzUXdFWDQyYnZPenhzMGtBM1pQdEx0TjBOMzNrVm1HQklIVmUtcWxuWUhyS0lmZ1psZQ?oc=5",
+   "source": "Gazzetta dello Sport",
+   "sky": false,
+   "ts": "2026-11-08T13:08:46Z",
+   "players": [
+    "Vitinha O."
+   ],
+   "category": "news",
+   "first_seen": "2026-11-08T17:53:29Z"
+  },
+  {
+   "id": "genoa-milan, le formazioni ufficiali: de rossi punta su vitinha, amorim con cisse",
+   "title": "Genoa-Milan, le formazioni ufficiali: De Rossi punta su Vitinha, Amorim con Cisse",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPWWVBOEFRU3RrNjBla2xPenNrWV9tVGNjbmxFUlJpLURqRm5WME1VUU1BMWVEUkJPT2dqNHd2ZVdHQkRDMWVXUHR2bXhyNEhOa2hTUmg2c3NpLUpvbjY5eDZ6UmhlNUZOQlVUV2RMRS1LZk1RT0JfYmVmajVIVlFGSkh1YS14bnVZTzFPYkNNekdjb21CdURiZWdjQUFFMHg3N2dKWFUwSUMycF9zbzR1cGZPVFfSAbQBQVVfeXFMT1llQThBUVN0azYwZWtsT3pza1lfbVRjY25sRVJSaS1EakZuVjBNVVFNQTFlRFJCT09najR3dmVXR0JEQzFlV1B0dm14cjRITmtoU1JoNnNzaS1Kb242OXg2elJoZTVGTkJVVFdkTEUtS2ZNUU9CX2JlZmo1SFZRRkpIdWEteG51WU8xT2JDTXpHY29tQnVEYmVnY0FBRTB4NzdnSlhVMElDMnBfc280dXBmT1RX?oc=5",
+   "source": "Gazzetta dello Sport",
+   "sky": false,
+   "ts": "2026-11-08T13:08:33Z",
+   "players": [
+    "Vitinha O."
+   ],
+   "category": "formazione",
+   "first_seen": "2026-11-08T17:53:29Z"
+  },
+  {
+   "id": "genoa-milan, le formazioni ufficiali: la scelta su baldanzi, messias, vitinha, frendrup, cisse, musah e modric",
+   "title": "Genoa-Milan, le formazioni ufficiali: la scelta su Baldanzi, Messias, Vitinha, Frendrup, Cisse, Musah e Modric",
+   "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBISmJMdDNISDJLUmwyYXZITUxEbWtyd3NzcV9YT3ZtLTNaRFlISmMycmdsTURIOWVBcjlIWTN3Uk1sQ2VwbGtSWUJWQTdhSEpjNFFzRTBYbEpheDMyNjJ2TkRyTEVTSFNRVnotT1NsMlrSAXZBVV95cUxQUllyT3ozcHlIeWNMekNSVDJKYldoRFY2eG40Q2xPZWEzSXZSd1BSQkFBcGFXUDVINlQxc3JNNXZvdlFMSjZFTE5IaUhYbUxJTjVIcHpMX0ZoOEJ6b1N1Y1I1Qmt5RHpCUGpFdTV3U0x2ZXp4cHhn?oc=5",
+   "source": "SOS Fanta",
+   "sky": false,
+   "ts": "2026-11-08T13:00:33Z",
+   "players": [
+    "Modric",
+    "Vitinha O."
+   ],
+   "category": "formazione",
+   "first_seen": "2026-11-08T17:53:29Z"
+  },
+  {
+   "id": "fiorentina-juve, le probabili formazioni: dubbio fagioli e oulai, mckennie, muani, woltemade e occhio a zhegrova",
+   "title": "Fiorentina-Juve, le probabili formazioni: dubbio Fagioli e Oulai, McKennie, Muani, Woltemade e occhio a Zhegrova",
+   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOU082R3dYcEF6UGJVTmhJOU1lSlFCem1mVThLajFVbXozTlRkVmlkRE54S3RUM0tjTG9OdklVajM2djNreVNuMjh5UHZKQWI4NjdtLWVYakdxZlg0TG1JLWJEakprYy1CcWVrWGVnUnU2akVuTkJZSTMxbk53V0tTbllwNUY1bmtjVl9rRzNOUmpvT0IxU2puRG41QXVpOW9CUERDSVhfSGpVaGJVVndlZ284cnBRVDhCVjdGbmptdC1nUUxiR2E5aFltWdIB0AFBVV95cUxNR1BkS3VpX0ZEbTk0ejRNdDN1QmhYaW0yNjU0VVdVckNyY0pvZURvcVZLdUpnUGJsdUc3UVhnRTRhM01UaGdWV3BtSUtsMGZNb3gwaERuWng1eUF3QlZPLVpjbVNCN3FXVV90UGREbS1CT1pZMy1tTXJOUUIxTEJaclY2VkJtZDFHX3FtdTFBOEVQXzBXeGxRZnZSeWxCMUVMX2JLMGVBSWpzNE5pTWlaVHlLczNiLVMtWHE4VnZVX3VzT3UzNU1IbTFMSlBtbnZF?oc=5",
+   "source": "SOS Fanta",
+   "sky": false,
+   "ts": "2026-11-08T12:00:37Z",
+   "players": [
+    "Woltemade"
+   ],
+   "category": "formazione",
+   "first_seen": "2026-11-08T17:53:29Z"
+  },
+  {
+   "id": "genoa-milan, le probabili formazioni",
+   "title": "Genoa-Milan, le probabili formazioni",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOaXZ6eVBzUTI5Vm5URTJFNFpfOFBWZmlOTnJJbXhmNDdSNVJtY3N5UzdsRjhmZzZDdERwSERrZ2tMY1QtMnpaM2pRWEVLYzM4WFNkMTZiTk40V1lTc194bnpmX2dkVHctRm1MeHVqck1aall1QVVneF80eTJQZWhIdVRnWnNTRkxkNHlNaGZ6a3pGU1FQWVkwQQ?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-11-08T11:54:25Z",
+   "players": [],
+   "category": "formazione",
+   "first_seen": "2026-11-08T17:53:29Z"
+  },
+  {
+   "id": "le probabili formazioni di fiorentina-juventus",
+   "title": "Le probabili formazioni di Fiorentina-Juventus",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOM0xXdldBY0M5dndjOWdTaVp6X21tcngzQ01oRklBanZES0Z6S0ZvNWVJVWNuTG5LTDlBQVRRZkg3THVfQkgySUN3UVQwb2NXa1VVbUVnN2wtbEFiWm40UGNXczBOWTJlWnRUa01pampFbGQ5N3hsOVUwcFppaTVzSzhGeU1VMld1TEJROUxCY3JPOWFuVDRuQUxOZkdMNU9x?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-11-08T10:58:44Z",
+   "players": [],
+   "category": "formazione",
+   "first_seen": "2026-11-08T11:51:59Z"
+  },
+  {
+   "id": "fiorentina-juventus, le ultime dai campi: ballottaggio oulai-fagioli. woltemade verso la panchina",
+   "title": "Fiorentina-Juventus, le ultime dai campi: ballottaggio Oulai-Fagioli. Woltemade verso la panchina",
+   "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxORExndGNWdzZiTUxPS211VC1KVFY1bkdtTW02V0xJSE9CLXBUNk5YWFF4UW92VENXeFJSVFptN0MtWFlkS0RXYURGSi03bU5rXzl6UUNQTWpCX2YwT1Q1VGVycDhPUnFLTkx6ZWhoWXFCdk5EeENuNHNnZ09ILWprUlNHZ081OENsaUl1MFNUc2JOLWRqQnREanJTcnNNMTJBblh0WksyZ3hQbWdWVHJaT1NzT2ZyZnJmd3Vjc3N2OFJSam1wVWwwelRXeFRubUhSS05mSVpn0gHbAUFVX3lxTE9rNVM2MXkwY0gxT3pIcld4bnhLeFcwcERFY3ZEdThQdFJBTVI1Z1kxUERNdVNGSXpqSUtWS1JRTklFdzZUTGRDcDZ6ckcwYzVZaVRrQXhfdm9SRW5mcXo2OGxsZ2hTLVJBTW5kdzZ5b3hmSkt6LXBfSDVhek9NTGw4Tm5MQ3VzWWQxNGd3eWRUemlrRnVnZW5OQy1lMGRndW96dFB4QVc1ajIyelJRcklUTlJMMjQxMkNIaGwyQTloTmNOSVBoNHVhdzZ5RjAxaTlWNU1UeVItT2JtRQ?oc=5",
+   "source": "Gazzetta dello Sport",
+   "sky": false,
+   "ts": "2026-11-08T10:57:57Z",
+   "players": [
+    "Woltemade"
+   ],
+   "category": "formazione",
+   "first_seen": "2026-11-08T11:51:59Z"
+  },
+  {
+   "id": "squalificati e indisponibili como 2026/27: infortunati chalobah, diao, kean e rodriguez",
+   "title": "Squalificati e indisponibili Como 2026/27: infortunati Chalobah, Diao, Kean e Rodriguez",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQdEpvMkxRWVRhYW9iTzJNUk9LUkNJelZGazF0UlFubE1sbmpNeXZuVThaMDlMU2xKN08yVVd6dVpoTXJGZE9BWk9mbFFwb3htZDVobTkzd214c2pCUFJiczFNTmIycDMyMzJvR09pUkdxNlFGYlBzYTVFZmVrLUdFaVgzc1R3VU9UTGs0cGRuUGlQZTczb3R0X3JRVU9sRWZCcjFDWkdackl3RUt3Z3VfY1VPRWlLUGNvTHEtMk5WbkZqSC00?oc=5",
+   "source": "DAZN",
+   "sky": false,
+   "ts": "2026-11-08T10:34:00Z",
+   "players": [
+    "Diao"
+   ],
+   "category": "infortunio",
+   "first_seen": "2026-11-07T00:04:11Z"
+  },
+  {
+   "id": "alajbegovic e kolo muani con woltemade: spalletti conferma il tridente",
+   "title": "Alajbegovic e Kolo Muani con Woltemade: Spalletti conferma il tridente",
+   "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPYnp6bm5MRUg2d21UNWttWkw2dDNoRElrVUJ0QjdqUktyTWtBSWZSWFJKZ1B3aFYyQ3JpVnJQZl9oRmduZVdXNlRCaHQ2OEdBd01Tb0lfMFRVcjBPNk1oQW85QWUxZFJ3VjFrajJkWkJmeXN2MklwZDBSOWhudW5ZUHEzRTAtcEFSemYzei02b0I4RkVRR1ZvRU1GczBRSXh1OEY1VWN2aDZ0Vl9MUEhsQ3oxS21MWnRUWDE2ZlctTHFwek1kQ0FZVktYNDRCa3NxbWR3ellXenlrdUdXZGRSNW9YTdIB5gFBVV95cUxPd1J6V2kzbVN0cXAtX0kydkJZNU9GYnBKVWxJcHN3RU5ZS1BMSFBxc3FxY1ZnTmwyRENkYnF4T1lYbWFoMDZ0cWxlbU5CaktaUEY5LVRSaUEzRlRJMS1fSnNCX3BwVU00VjZRWGxrUVZNUHJmTVZJU2VwV3UzSS1fTXc0T0JDQTJPbF9rS1BuU29JZlRweEVJRnZLTnkwQ3B5ZU1yN0ZRTGhTN0lkYkFZbXg3Y0o3YjdhVmk5VDg0eGpSRF9ENnRuVVRBNWxaYjcydUE1Y0l6S2tqTjhpWXAyN3pXMDBCdw?oc=5",
+   "source": "Corriere dello Sport",
+   "sky": false,
+   "ts": "2026-11-08T10:21:00Z",
+   "players": [
+    "Woltemade"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-08T11:51:59Z"
+  },
+  {
+   "id": "convocati juve per la fiorentina: un ritorno importante e la scelta su woltemade",
+   "title": "Convocati Juve per la Fiorentina: un ritorno importante e la scelta su Woltemade",
+   "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNcElxOEVYT3B2blZuaEZDaWY1LTEtQXRZZnlUMDAtNDVQZE5GYmp5YUZfcTJJa1pBOUs1cVd1NlRQb1BYS0F0b1MyUU9sQUhaVFFBTzhDZVJCcTFGeDF1TnVyUGFtNk52WXE4ZTY5NzNaV0VJdkQwVGJSWndTd2FZeC1FRU9QcnRHNzUwUms2SW5SVzdLTHFXckFIZHcxZm5wNEFMdGp2Tm5DaTBNRV9vLW05T1hiUFl0azdsLXhiT3hJekhYQm9jMGpLakNpM1hBUHVULVVIcmtiNnVvdE9XTFdxMUlJeXBzUUsyONIB7wFBVV95cUxNb1U5OG5Qam1hNWhfcTFhUnByb0RmeXNIUmlfSlJCVFYwQVd4TG5wSFE3c1pSdE1pWGlFTmdGTFpjTlktcTBFVWFVcWc5cmJUbzF4dkhHSU1hRXlvTE03dEJERmN4c0lGOWJBcHF4VFo4bDV4aFVOc05kdnlFMmJuLTN4a3ZvU0Vrbjg1WmtHVlJoVnBHMW5WOENBTXM5UDJyM19WT2FVZUV4b0N5Y21MZ2t3c0NjcjlTX1BOc3lma05LMmZpUEVPVWRyYVRnSjZCVHZOcm9qTlAyaC1EZnl5cm12VmhZMFNzWkxsRWdXTQ?oc=5",
+   "source": "Tuttosport",
+   "sky": false,
+   "ts": "2026-11-08T09:44:00Z",
+   "players": [
+    "Woltemade"
+   ],
+   "category": "recupero",
+   "first_seen": "2026-11-08T11:51:59Z"
+  },
+  {
+   "id": "napoli-lazio, le probabili formazioni della partita di serie a",
+   "title": "Napoli-Lazio, le probabili formazioni della partita di serie A",
+   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQajVDYnIzNlZhaWJJcDFTdDB6Um9KaTB0dnpveDRTdjYtdGl3QlpiSzRheWgzdGRUYk1KTzFGbGFKd0laanloQUJFUmllZ1JjM3ZjT3JXS0lpa0MxQWJMei1pYnJyNWhjNVhtbDFDUmxxVk9lVlZCTE9PWGJxUEM3ZnVKOVRsRmh3SVh2aFRfMkV0WnVDeHVj?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-11-08T09:01:21Z",
+   "players": [],
+   "category": "formazione",
+   "first_seen": "2026-11-07T11:39:29Z"
+  },
+  {
+   "id": "fiorentina-juventus, le probabili formazioni della partita di serie a",
+   "title": "Fiorentina-Juventus, le probabili formazioni della partita di Serie A",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOM0xXdldBY0M5dndjOWdTaVp6X21tcngzQ01oRklBanZES0Z6S0ZvNWVJVWNuTG5LTDlBQVRRZkg3THVfQkgySUN3UVQwb2NXa1VVbUVnN2wtbEFiWm40UGNXczBOWTJlWnRUa01pampFbGQ5N3hsOVUwcFppaTVzSzhGeU1VMld1TEJROUxCY3JPOWFuVDRuQUxOZkdMNU9x?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-11-08T08:08:01Z",
+   "players": [],
+   "category": "formazione",
+   "first_seen": "2026-11-07T17:43:07Z"
+  },
+  {
+   "id": "napoli-lazio, le probabili formazioni: le ultimissime su tavares! vergara, politano, anguissa e pinamonti...",
+   "title": "Napoli-Lazio, le probabili formazioni: le ultimissime su Tavares! Vergara, Politano, Anguissa e Pinamonti...",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNMlR0VXhMa09JZVdNM010ekNIWnhIS1o4alBNVTNtMnNKclBrMXpCeXB4emU1cnE0b05sU01KTUdDQzJQbzYydzB1Q0VTQ3NwZDJ1aWVzTmVXWUN1aGtQZkFybERzUERLeFpIMHIyME5hdVRqdzVla2tEcVBnaXRMXzh5YXo4NFNoSWEtWHFwOUQ2WnVOTkNsOEx5cDFtTS1hcEt0Z01uSzZydndzVG9aY1hwSjN5M1J3XzdweNIBwgFBVV95cUxOd1IyZ0NEcUhwQVFYcVpwUWxKdnc0ejh0VWc1T0VQQlRzSHpzM3plZDRnY2JiNW1vTXY0cHJ4azFxaGJndTA2amNuUTBxaVMyR1JySWUtN0lYMEF3eC1HSkl5cW5xeldTa1RlNkl5YVB1anpvY01mUFpseHlra1Qxel9ETTN4Y0ZydS1LUlFIT29waFNYZGJNdjlpWENNSUM2cy1CLXZDZnlybjFTcnF4UGRqNWVDWjU2LUFYUjF1akNBUQ?oc=5",
+   "source": "SOS Fanta",
+   "sky": false,
+   "ts": "2026-11-08T07:15:33Z",
+   "players": [
+    "Politano"
+   ],
+   "category": "formazione",
+   "first_seen": "2026-11-08T11:51:59Z"
+  },
+  {
+   "id": "genoa-milan, le probabili formazioni della partita di serie a",
+   "title": "Genoa-Milan, le probabili formazioni della partita di serie A",
+   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNLTZxQ1lwRTNwaTF2WXJUNVdnRnA0ZkZPaTdhNldHS2pHRkVScnJEN183TFVoQm8zUDZEMTlEQ3NzUWVJMVpuN3JrUUNSaFdJcHNYdnA3NXNmcGNVRmUxZGU3QnU2RXVtZDVqdEVFLTR2X1lONVQ0Ti01RmhzWVhOZ1dnSncwbWw2ZEpXWGtUREZlYnFYc0E?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-11-07T22:51:52Z",
+   "players": [],
+   "category": "formazione",
+   "first_seen": "2026-11-08T11:51:59Z"
+  },
+  {
+   "id": "inter-como. le probabili formazioni della partita di serie a",
+   "title": "Inter-Como. le probabili formazioni della partita di serie A",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOUVFaeWJQWGlFMTJWUDVDODAwSGUwdGFYdnpHQk5pa0lsOENCMVRQN24yUW9ZTlJhSnVEUndZSWRSN24xd19fUnU1MWxiTVdfcEV2TVU4UTA1Mlk3dlF2S2lNbzVkYmFPSkpVRnZQeUhGQVdkNF9TbEFibWFDWWxDZFFfWF85ZGVmUi1uX2g0TkFGMU5n?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-11-07T20:26:39Z",
+   "players": [],
+   "category": "formazione",
+   "first_seen": "2026-11-07T21:43:30Z"
+  },
+  {
+   "id": "i voti di parma-bologna al fanta: orsolini come cambiaghi e odgaard! daffara piu di skorupski, male toure e c'e un 4",
+   "title": "I voti di Parma-Bologna al fanta: Orsolini come Cambiaghi e Odgaard! Daffara più di Skorupski, male Touré e c'è un 4",
+   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOYWxXMEtQU0pVcjRZV3dxQXMxTFZ4SlVUTHlMSHhhbUNUM1JsMHhZRUh3SFVLZHFsNnBjSjB2eEdXLUFqYTNZekliOThsN0hzd0ZKMlJyWjFxVThfQXRmSThPYmlMZjZYRFkxYXV6d3B6N3ZIZjRCZVlkUWJZYWYzZTFUWEJRY0ZhbG9XejFlSdIBlAFBVV95cUxQQUpMLXJfWmZaMWpLRzZzX0JPOGZXbnQ2WTltZWt5ekVaUWkwUVk5TzUtY0NaZk1MRE1EeFZDRTdSSmV2NE9OOFctT2lkVzh6cERacEtQRnVYWmJYNUwtQW1qcHdBS1NpdHgxOWhDLTZiMHpySXJGN2RXcEhVbzFzOUFReElGVEduaXQtTTdjZ0VGRFZ5?oc=5",
+   "source": "SOS Fanta",
+   "sky": false,
+   "ts": "2026-11-07T19:45:30Z",
+   "players": [
+    "Daffara"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-07T21:43:30Z"
+  },
+  {
+   "id": "kone verso una maglia da titolare: le probabili formazioni di roma-sassuolo",
+   "title": "Koné verso una maglia da titolare: le probabili formazioni di Roma-Sassuolo",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxORVlTOVZGX1U3cEhNcDQ5YXJ2OXZwei1PUFhxem5mLXBHVTRJMXpQZ0xINVNnMGpseEtidDQ5WFluWEJvX0c1dHpYTDdGcFVqMmdBS0pMT1dhSlBhVE5nbW15Wm1lUzFBWjBiaVVDbDlfUU8yU1BtZU0zaWFaX3VzWVZ4LS1mbnpFSVYwb1ZndU92S05aaEZkRw?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-11-07T16:28:31Z",
+   "players": [],
+   "category": "formazione",
+   "first_seen": "2026-11-07T17:43:07Z"
+  },
+  {
+   "id": "como, le ultime sui rientri di chalobah e diao e la presenza di papaccioli in vista dell'inter",
+   "title": "Como, le ultime sui rientri di Chalobah e Diao e la presenza di Papaccioli in vista dell'Inter",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNUjNnUUZ0eXZ2ejRGTkJqT3BTb0ItRVNJTGZDVHlzWk9PU1pyTFcwV3hkblI4VHU2bVVZZFpQQVZwWHVUV20tOUVUb2dQOUhyNmR1ZWJoZ3pGOTltWHZ4WmRKRkxqRXlEdU5rYTFwOXotMTdDSjJsdTdKc3BnanIxb0VIM0lUbzU4LVZHVVExRHBMek1zQ3RDQWY0WDNpRnpXRFpVcWhBbWlrYVlPNGJEZkVwb0ZKRmpEMzFqd9IBwgFBVV95cUxQaGFXSEwwNGhETVNwaU90bEo4dTdleVNVYVlXX04taUhkMUVYNnNnRGVsOElsUm9BVnI2a19BLVVNV0tGQkRodzBvVjltR2NmSUhpNVRrbzBnRDNfaVJncmZQZ1lRUmxtcUMzSGI2dDlscWtDX2k0WmZEVFNYWDhrdTR4U3dfbVpMMktKeld4LVBiYUo2UndPa25Ud3dLYVdMbHFTZlYtbzhLMWV2d2JCRkprdHFLX3lSQWo2aFc3ZHp5UQ?oc=5",
+   "source": "Gazzetta dello Sport",
+   "sky": false,
+   "ts": "2026-11-07T15:33:03Z",
+   "players": [
+    "Diao"
+   ],
+   "category": "recupero",
+   "first_seen": "2026-11-07T17:43:07Z"
+  },
+  {
+   "id": "como, fabregas: \"chalobah e diao non ci saranno contro l'inter\"",
+   "title": "Como, Fabregas: \"Chalobah e Diao non ci saranno contro l'Inter\"",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQSHdpQ0EyVl9LMm1hMm8zY3R6OEJPRFZ5aEI5QkhoSkJGcHdaS2hoZm40a3RGWUExV2Q2OTh1ZnZ1b1kxSVF5RlBMaGFpajVGY2pVU2xYdmhoQ0VNYmxnVmxwWEFyWkstS3pPeHRic1NLNmJxcFpNWXNOblNFMTY2R1M1RWN6eDNqSmtKU3A2RG4wQUZBYmx1dkZqYVRnZksxdlAyWW1GdzFPYk50cVVLdGRTdXdEV1YtUmV2ZGlsZWLSAcYBQVVfeXFMTnoybWg1ZndGTmNPYzhZVGhhQ1FfemJCemhvc2FxSFphTUdzMFZ6aUtOV2xTejFqbWtFckNlU09pRVUxMmhiTHROb244SzZFLWNHSE5sLXg1VW5xTjJqckFmNGJpOWpGY0l6Z29CTjN2T3hQNWxtSHdXSzlsaDBnX1doN0Y0MGFpR0lyeXBEc1lHWDkwRG1sdmYzbWxRWmlHcWxmSjBnSkM1UlpBdmVHR21WNWR3VEEwWDM0cWJSdVJDVnhYVTFB?oc=5",
+   "source": "Fantacalcio.it",
+   "sky": false,
+   "ts": "2026-11-07T14:21:00Z",
+   "players": [
+    "Diao"
+   ],
+   "category": "news",
+   "first_seen": "2026-11-07T17:43:07Z"
+  },
+  {
+   "id": "inter-como, le probabili formazioni della partita di serie a",
+   "title": "Inter-Como, le probabili formazioni della partita di Serie A",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOUVFaeWJQWGlFMTJWUDVDODAwSGUwdGFYdnpHQk5pa0lsOENCMVRQN24yUW9ZTlJhSnVEUndZSWRSN24xd19fUnU1MWxiTVdfcEV2TVU4UTA1Mlk3dlF2S2lNbzVkYmFPSkpVRnZQeUhGQVdkNF9TbEFibWFDWWxDZFFfWF85ZGVmUi1uX2g0TkFGMU5n?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-11-07T14:12:53Z",
+   "players": [],
+   "category": "formazione",
+   "first_seen": "2026-11-08T11:51:59Z"
+  },
+  {
+   "id": "inter como, le probabili formazioni della partita di serie a",
+   "title": "Inter Como, le probabili formazioni della partita di serie A",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOUVFaeWJQWGlFMTJWUDVDODAwSGUwdGFYdnpHQk5pa0lsOENCMVRQN24yUW9ZTlJhSnVEUndZSWRSN24xd19fUnU1MWxiTVdfcEV2TVU4UTA1Mlk3dlF2S2lNbzVkYmFPSkpVRnZQeUhGQVdkNF9TbEFibWFDWWxDZFFfWF85ZGVmUi1uX2g0TkFGMU5n?oc=5",
+   "source": "Sky Sport",
+   "sky": true,
+   "ts": "2026-11-07T14:12:53Z",
+   "players": [],
+   "category": "formazione",
+   "first_seen": "2026-11-07T17:43:07Z"
+  },
+  {
+   "id": "formazioni ufficiali - la scelta su adams, cacciamani, belghali, fazzini, coulibaly, stulic, oyono e mendy",
+   "title": "FORMAZIONI UFFICIALI - La scelta su Adams, Cacciamani, Belghali, Fazzini, Coulibaly, Stulic, Oyono e Mendy",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNNGlTb09lRUpFd2I0UFFpVnhwOENQa3EzVzFvRm5GZWJuY05SNUY4SzV6WUF1OUs2VkJFRlVLWVdxQXlMQV9lLVVaVi1CaG9la19zQlBMMG5TUGIzd3FBQzhSLXA1cUNJZXhjSWF4WnBHWDFCR2ZCNXlDTjAtelk5WUlFNF8tb3ZCcWV0YjJvazAzX3Jsbjc0eFpPRXM4TGhmMnFSMFByN19qLVNmN01zajBVaGdMeGNpTnVwTG13WjNPdkNwSlHSAcsBQVVfeXFMT0lpdkMtdHZ4VzZSM0Q0SXN4VW9iYjM4RmRzay1tcER1eDdmZ0VNOXp2YTh3cGhTSEQwbHhQSnZzVkR2bFBFTVdyVUxFSVVGaVRtZnhXS0V6ajExTkcwM19hVlhFNEdxZmhFVnZkb1g1NDNfVWhkekVJenRXWkpPdkF3WGtXUDVuT2tLQkNCa0FZb3VoRlJON3hJNkFvVTdLWDFMVWxqYUs1WVJDdFVYNGg3UzUta1IyYjh5RjVlVXc4dFV0Um1XVlhhLVU?oc=5",
+   "source": "SOS Fanta",
+   "sky": false,
+   "ts": "2026-11-07T13:30:51Z",
+   "players": [
+    "Cacciamani"
+   ],
+   "category": "formazione",
+   "first_seen": "2026-11-07T17:43:07Z"
+  },
+  {
+   "id": "torino-lecce, le formazioni ufficiali: adams fuori! da belghali a cacciamani, tiago gabriel e stulic, le scelte",
+   "title": "Torino-Lecce, le formazioni ufficiali: Adams fuori! Da Belghali a Cacciamani, Tiago Gabriel e Stulic, le scelte",
+   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPZkd0cUlVMXJtSFVPZklLZnpKUEliS0NrRTByTG1PM09ZNlVxRy1ySHMzU0tEelNXUDlPcWhKS1VxOW83TU1KVEJ2am5ybUZDV01pT3RCUS1SUzV3Tl9wMzZSeU9mcWhua0NRQW1vNjl0cUpWRmY1NUFYajBvNlBaSUZETF9LWC01RGstZHdJOWU2RF9VaDBaOTJVb0MxVkFKVGZlZDlfMHE4ZDBHenlUalU4SGQ1R1JMTm1Yc0hjZHhZWnhuOFpJOEFob08yN1oz0gHWAUFVX3lxTFB0MTl5NGZSZU5ZMmVNZ0NkY1l0SjRqdzJYeklqa0UzNHdjNEptT2dXWWdjWE9yTjdPcV83WUZVTTB5c1I3aEZRV3Rqd1RpU01hNXl5RVBXX0hlSGR2dUdROWp4Vm5nOHBzRDZndU9kakhYZmtKb2RPdGlhVXZnU21rc1NkVjRmQk90cUlqWGJxRC00dXVZR1JraFRjU09TWWFreDB3dHR0UGtUUGpDNlhNaXhhZHVIMF9Ba1hUY1VUMXFTVDBFcThsZkRFSHRRMWFiaVhOcHc?oc=5",
+   "source": "SOS Fanta",
+   "sky": false,
+   "ts": "2026-11-07T13:00:10Z",
+   "players": [
+    "Cacciamani",
+    "Adams C."
+   ],
+   "category": "formazione",
+   "first_seen": "2026-11-07T17:43:07Z"
+  }
+ ],
+ "probabili": {
+  "Daffara": {
+   "stato": "titolare",
+   "pct": 90,
+   "flags": [],
+   "note": "",
+   "partner": "",
+   "match": {
+    "home": "Parma",
+    "away": "Roma",
+    "casa": true,
+    "kickoff": "Sabato 21 Novembre, 18:00",
+    "stadium": "Tardini",
+    "aggiornato": "14/11/2026 - 08:54"
+   }
+  },
+  "Corvi": {
+   "stato": "panchina",
+   "pct": 5,
+   "flags": [],
+   "note": "",
+   "partner": "",
+   "match": {
+    "home": "Parma",
+    "away": "Roma",
+    "casa": true,
+    "kickoff": "Sabato 21 Novembre, 18:00",
+    "stadium": "Tardini",
+    "aggiornato": "14/11/2026 - 08:54"
+   }
+  },
+  "Maignan": {
+   "stato": "titolare",
+   "pct": 90,
+   "flags": [],
+   "note": "",
+   "partner": "",
+   "match": {
+    "home": "Milan",
+    "away": "Frosinone",
+    "casa": true,
+    "kickoff": "Domenica 22 Novembre, 18:00",
+    "stadium": "Giuseppe Meazza",
+    "aggiornato": "14/11/2026 - 08:54"
+   }
+  },
+  "Ramon": {
+   "stato": "titolare",
+   "pct": 90,
+   "flags": [],
+   "note": "",
+   "partner": "",
+   "match": {
+    "home": "Como",
+    "away": "Cagliari",
+    "casa": true,
+    "kickoff": "Sabato 21 Novembre, 15:00",
+    "stadium": "Giuseppe Sinigaglia",
+    "aggiornato": "14/11/2026 - 08:54"
+   }
+  },
+  "Lucumì": {
+   "stato": "titolare",
+   "pct": 75,
+   "flags": [],
+   "note": "",
+   "partner": "",
+   "match": {
+    "home": "Juventus",
+    "away": "Venezia",
+    "casa": true,
+    "kickoff": "Domenica 22 Novembre, 12:30",
+    "stadium": "Allianz Stadium",
+    "aggiornato": "14/11/2026 - 08:54"
+   }
+  },
+  "Gila": {
+   "stato": "titolare",
+   "pct": 90,
+   "flags": [],
+   "note": "",
+   "partner": "",
+   "match": {
+    "home": "Milan",
+    "away": "Frosinone",
+    "casa": true,
+    "kickoff": "Domenica 22 Novembre, 18:00",
+    "stadium": "Giuseppe Meazza",
+    "aggiornato": "14/11/2026 - 08:54"
+   }
+  },
+  "Scalvini": {
+   "stato": "titolare",
+   "pct": 90,
+   "flags": [],
+   "note": "",
+   "partner": "",
+   "match": {
+    "home": "Atalanta",
+    "away": "Inter",
+    "casa": true,
+    "kickoff": "Domenica 22 Novembre, 20:45",
+    "stadium": "Gewiss Stadium",
+    "aggiornato": "14/11/2026 - 08:54"
+   }
+  },
+  "Vojvoda": {
+   "stato": "titolare",
+   "pct": 85,
+   "flags": [],
+   "note": "",
+   "partner": "",
+   "match": {
+    "home": "Bologna",
+    "away": "Udinese",
+    "casa": false,
+    "kickoff": "Domenica 22 Novembre, 15:00",
+    "stadium": "Renato Dall'Ara",
+    "aggiornato": "14/11/2026 - 08:54"
+   }
+  },
+  "Zortea": {
+   "stato": "titolare",
+   "pct": 90,
+   "flags": [],
+   "note": "",
+   "partner": "",
+   "match": {
+    "home": "Bologna",
+    "away": "Udinese",
+    "casa": true,
+    "kickoff": "Domenica 22 Novembre, 15:00",
+    "stadium": "Renato Dall'Ara",
+    "aggiornato": "14/11/2026 - 08:54"
+   }
+  },
+  "Akanji": {
+   "stato": "titolare",
+   "pct": 90,
+   "flags": [],
+   "note": "",
+   "partner": "",
+   "match": {
+    "home": "Atalanta",
+    "away": "Inter",
+    "casa": false,
+    "kickoff": "Domenica 22 Novembre, 20:45",
+    "stadium": "Gewiss Stadium",
+    "aggiornato": "14/11/2026 - 08:54"
+   }
+  },
+  "Bastoni": {
+   "stato": "titolare",
+   "pct": 90,
+   "flags": [],
+   "note": "",
+   "partner": "",
+   "match": {
+    "home": "Atalanta",
+    "away": "Inter",
+    "casa": false,
+    "kickoff": "Domenica 22 Novembre, 20:45",
+    "stadium": "Gewiss Stadium",
+    "aggiornato": "14/11/2026 - 08:54"
+   }
+  },
+  "Cacciamani": {
+   "stato": "titolare",
+   "pct": 85,
+   "flags": [],
+   "note": "",
+   "partner": "",
+   "match": {
+    "home": "Napoli",
+    "away": "Torino",
+    "casa": false,
+    "kickoff": "Sabato 21 Novembre, 20:45",
+    "stadium": "Diego Armando Maradona",
+    "aggiornato": "14/11/2026 - 08:54"
+   }
+  },
+  "Atta": {
+   "stato": "panchina",
+   "pct": 35,
+   "flags": [
+    "in dubbio"
+   ],
+   "note": "Sovraccarico funzionale dell'addome, da valutare convocazione per Monza",
+   "partner": "",
+   "match": {
+    "home": "Monza",
+    "away": "Fiorentina",
+    "casa": false,
+    "kickoff": "Lunedì 23 Novembre, 20:45",
+    "stadium": "U-Power Stadium",
+    "aggiornato": "14/11/2026 - 08:54"
+   }
+  },
+  "Colpani": {
+   "stato": "panchina",
+   "pct": 50,
+   "flags": [],
+   "note": "",
+   "partner": "",
+   "match": {
+    "home": "Monza",
+    "away": "Fiorentina",
+    "casa": true,
+    "kickoff": "Lunedì 23 Novembre, 20:45",
+    "stadium": "U-Power Stadium",
+    "aggiornato": "14/11/2026 - 08:54"
+   }
+  },
+  "Koopmeiners": {
+   "stato": "titolare",
+   "pct": 80,
+   "flags": [],
+   "note": "",
+   "partner": "",
+   "match": {
+    "home": "Juventus",
+    "away": "Venezia",
+    "casa": true,
+    "kickoff": "Domenica 22 Novembre, 12:30",
+    "stadium": "Allianz Stadium",
+    "aggiornato": "14/11/2026 - 08:54"
+   }
+  },
+  "Jones C.": {
+   "stato": "panchina",
+   "pct": 60,
+   "flags": [],
+   "note": "",
+   "partner": "",
+   "match": {
+    "home": "Atalanta",
+    "away": "Inter",
+    "casa": false,
+    "kickoff": "Domenica 22 Novembre, 20:45",
+    "stadium": "Gewiss Stadium",
+    "aggiornato": "14/11/2026 - 08:54"
+   }
+  },
+  "Modric": {
+   "stato": "titolare",
+   "pct": 90,
+   "flags": [],
+   "note": "",
+   "partner": "",
+   "match": {
+    "home": "Milan",
+    "away": "Frosinone",
+    "casa": true,
+    "kickoff": "Domenica 22 Novembre, 18:00",
+    "stadium": "Giuseppe Meazza",
+    "aggiornato": "14/11/2026 - 08:54"
+   }
+  },
+  "Pulisic": {
+   "stato": "titolare",
+   "pct": 90,
+   "flags": [],
+   "note": "",
+   "partner": "",
+   "match": {
+    "home": "Milan",
+    "away": "Frosinone",
+    "casa": true,
+    "kickoff": "Domenica 22 Novembre, 18:00",
+    "stadium": "Giuseppe Meazza",
+    "aggiornato": "14/11/2026 - 08:54"
+   }
+  },
+  "Politano": {
+   "stato": "titolare",
+   "pct": 80,
+   "flags": [],
+   "note": "",
+   "partner": "",
+   "match": {
+    "home": "Napoli",
+    "away": "Torino",
+    "casa": true,
+    "kickoff": "Sabato 21 Novembre, 20:45",
+    "stadium": "Diego Armando Maradona",
+    "aggiornato": "14/11/2026 - 08:54"
+   }
+  },
+  "Diao": {
+   "stato": "panchina",
+   "pct": 25,
+   "flags": [
+    "in dubbio"
+   ],
+   "note": "Lesione muscolare al flessore della gamba, da valutare convocazione contro Cagliari",
+   "partner": "",
+   "match": {
+    "home": "Como",
+    "away": "Cagliari",
+    "casa": true,
+    "kickoff": "Sabato 21 Novembre, 15:00",
+    "stadium": "Giuseppe Sinigaglia",
+    "aggiornato": "14/11/2026 - 08:54"
+   }
+  },
+  "Neres": {
+   "stato": "panchina",
+   "pct": 55,
+   "flags": [],
+   "note": "",
+   "partner": "",
+   "match": {
+    "home": "Napoli",
+    "away": "Torino",
+    "casa": true,
+    "kickoff": "Sabato 21 Novembre, 20:45",
+    "stadium": "Diego Armando Maradona",
+    "aggiornato": "14/11/2026 - 08:54"
+   }
+  },
+  "Woltemade": {
+   "stato": "titolare",
+   "pct": 90,
+   "flags": [],
+   "note": "",
+   "partner": "",
+   "match": {
+    "home": "Juventus",
+    "away": "Venezia",
+    "casa": true,
+    "kickoff": "Domenica 22 Novembre, 12:30",
+    "stadium": "Allianz Stadium",
+    "aggiornato": "14/11/2026 - 08:54"
+   }
+  },
+  "Adams C.": {
+   "stato": "titolare",
+   "pct": 80,
+   "flags": [],
+   "note": "",
+   "partner": "",
+   "match": {
+    "home": "Napoli",
+    "away": "Torino",
+    "casa": false,
+    "kickoff": "Sabato 21 Novembre, 20:45",
+    "stadium": "Diego Armando Maradona",
+    "aggiornato": "14/11/2026 - 08:54"
+   }
+  },
+  "Vitinha O.": {
+   "stato": "panchina",
+   "pct": 60,
+   "flags": [],
+   "note": "",
+   "partner": "",
+   "match": {
+    "home": "Sassuolo",
+    "away": "Genoa",
+    "casa": false,
+    "kickoff": "Domenica 22 Novembre, 15:00",
+    "stadium": "Mapei Stadium",
+    "aggiornato": "14/11/2026 - 08:54"
+   }
+  },
+  "De Ketelaere": {
+   "stato": "titolare",
+   "pct": 90,
+   "flags": [],
+   "note": "",
+   "partner": "",
+   "match": {
+    "home": "Atalanta",
+    "away": "Inter",
+    "casa": true,
+    "kickoff": "Domenica 22 Novembre, 20:45",
+    "stadium": "Gewiss Stadium",
+    "aggiornato": "14/11/2026 - 08:54"
+   }
+  }
+ },
+ "probabili_updated": "2026-11-14T12:04:27Z",
+ "probabili_parser": 2,
+ "serie_a": {
+  "Como": {
+   "infortunati": [
+    {
+     "nome": "Addai",
+     "nota": "Problema muscolare, out contro Cagliari"
+    }
+   ],
+   "squalificati": [],
+   "dubbio": [
+    {
+     "nome": "Diao",
+     "nota": "Lesione muscolare al flessore della gamba, da valutare convocazione contro Cagliari"
+    },
+    {
+     "nome": "Chalobah T.",
+     "nota": "Problema muscolare alla gamba, da valutare convocazione contro Cagliari"
+    }
+   ],
+   "diffidati": [],
+   "avversario": "Cagliari",
+   "casa": true,
+   "kickoff": "Sabato 21 Novembre, 15:00",
+   "aggiornato": "14/11/2026 - 08:54",
+   "da_verificare": [
+    {
+     "nome": "Rodriguez Je.",
+     "nota": "Problema fisico, ipotesi rientro metà dicembre",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Kean",
+     "nota": "Fastidio alla tibia, rientro da inizio dicembre",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Mina",
+     "nota": "Microlesione muscolare al bicipite femorale, da valutare per Como",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Felici",
+     "nota": "Rottura del legamento crociato anteriore, ipotesi rientro da marzo",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Aurelio",
+     "nota": "Affaticamento al soleo della gamba sinistra, da valutare per Como",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Fadera",
+     "nota": "Lesione muscolare al bicipite femorale, rientro dalla seconda metà di novembre",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Nzola",
+     "nota": "Distrazione muscolare ai flessori della coscia destra, rientro dalla seconda metà di novembre",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Winks",
+     "nota": "Lombalgia, in dubbio per Como",
+     "tipo": "dubbio"
+    }
+   ]
+  },
+  "Cagliari": {
+   "infortunati": [],
+   "squalificati": [],
+   "dubbio": [],
+   "diffidati": [
+    {
+     "nome": "Deiola",
+     "nota": ""
+    }
+   ],
+   "avversario": "Como",
+   "casa": false,
+   "kickoff": "Sabato 21 Novembre, 15:00",
+   "aggiornato": "14/11/2026 - 08:54",
+   "da_verificare": [
+    {
+     "nome": "Rodriguez Je.",
+     "nota": "Problema fisico, ipotesi rientro metà dicembre",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Kean",
+     "nota": "Fastidio alla tibia, rientro da inizio dicembre",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Mina",
+     "nota": "Microlesione muscolare al bicipite femorale, da valutare per Como",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Felici",
+     "nota": "Rottura del legamento crociato anteriore, ipotesi rientro da marzo",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Aurelio",
+     "nota": "Affaticamento al soleo della gamba sinistra, da valutare per Como",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Fadera",
+     "nota": "Lesione muscolare al bicipite femorale, rientro dalla seconda metà di novembre",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Nzola",
+     "nota": "Distrazione muscolare ai flessori della coscia destra, rientro dalla seconda metà di novembre",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Winks",
+     "nota": "Lombalgia, in dubbio per Como",
+     "tipo": "dubbio"
+    }
+   ]
+  },
+  "Lazio": {
+   "infortunati": [],
+   "squalificati": [],
+   "dubbio": [
+    {
+     "nome": "Zaccagni",
+     "nota": "Lesione del quadricipite femorale sinistro, da valutare convocazione contro il Lecce"
+    },
+    {
+     "nome": "Frattesi",
+     "nota": "Risentimento muscolare alla gamba, in forte dubbio contro il Lecce"
+    },
+    {
+     "nome": "Gudmundsson A.",
+     "nota": "Problema alla spalla destra, da valutare convocazione contro il Lecce"
+    }
+   ],
+   "diffidati": [],
+   "avversario": "Lecce",
+   "casa": true,
+   "kickoff": "Sabato 21 Novembre, 15:00",
+   "aggiornato": "14/11/2026 - 12:42",
+   "da_verificare": [
+    {
+     "nome": "Tavares N.",
+     "nota": "Noie muscolari al flessore, rientro dalla metà di dicembre",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Marusic",
+     "nota": "Problema muscolare alla gamba, da valutare",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Sutalo J.",
+     "nota": "Problema muscolare al flessore, rientro fine dicembre",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Pierotti",
+     "nota": "Frattura composta del malleolo mediale della caviglia destra, ipotesi rientro da gennaio",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Ilic",
+     "nota": "Lesione miotendinea del retto femorale sinistro con lesione parziale del tendine, rientro da aprile",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Monteiro J.",
+     "nota": "Lesione di primo grado al polpaccio sinistro, rientro dall'inizio di dicembre",
+     "tipo": "infortunati"
+    }
+   ]
+  },
+  "Lecce": {
+   "infortunati": [],
+   "squalificati": [],
+   "dubbio": [],
+   "diffidati": [],
+   "avversario": "Lazio",
+   "casa": false,
+   "kickoff": "Sabato 21 Novembre, 15:00",
+   "aggiornato": "14/11/2026 - 12:42",
+   "da_verificare": [
+    {
+     "nome": "Tavares N.",
+     "nota": "Noie muscolari al flessore, rientro dalla metà di dicembre",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Marusic",
+     "nota": "Problema muscolare alla gamba, da valutare",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Sutalo J.",
+     "nota": "Problema muscolare al flessore, rientro fine dicembre",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Pierotti",
+     "nota": "Frattura composta del malleolo mediale della caviglia destra, ipotesi rientro da gennaio",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Ilic",
+     "nota": "Lesione miotendinea del retto femorale sinistro con lesione parziale del tendine, rientro da aprile",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Monteiro J.",
+     "nota": "Lesione di primo grado al polpaccio sinistro, rientro dall'inizio di dicembre",
+     "tipo": "infortunati"
+    }
+   ]
+  },
+  "Parma": {
+   "infortunati": [
+    {
+     "nome": "Romero D.",
+     "nota": "Lussazione acromion-claveare della spalla destra, out contro la Roma"
+    }
+   ],
+   "squalificati": [
+    {
+     "nome": "Ndiaye",
+     "nota": ""
+    }
+   ],
+   "dubbio": [
+    {
+     "nome": "Drobnic",
+     "nota": "Problema al piede sinistro, in dubbio impiego contro la Roma"
+    }
+   ],
+   "diffidati": [
+    {
+     "nome": "Troilo",
+     "nota": ""
+    }
+   ],
+   "avversario": "Roma",
+   "casa": true,
+   "kickoff": "Sabato 21 Novembre, 18:00",
+   "aggiornato": "14/11/2026 - 08:54",
+   "da_verificare": [
+    {
+     "nome": "Bernabè",
+     "nota": "Distrazione muscolare al retto femorale della coscia sinistra, rientro dalla seconda metà di novembre",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Rensch",
+     "nota": "Lesione di primo grado dell'adduttore lungo di destra, rientro dalla seconda metà di novembre",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Pellegrini Lo.",
+     "nota": "Lesione di alto grado in corrispondenza della giunzione muscolo - tendinea distale del muscolo semitendinoso della coscia destra, ipotesi rientro dalla fine di dicembre",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Gollini",
+     "nota": "Fastidio alla schiena, in dubbio per Parma",
+     "tipo": "dubbio"
+    },
+    {
+     "nome": "Dybala",
+     "nota": "Fastidio muscolare al polpaccio, da valutare impiego a Parma",
+     "tipo": "dubbio"
+    }
+   ]
+  },
+  "Roma": {
+   "infortunati": [],
+   "squalificati": [],
+   "dubbio": [],
+   "diffidati": [],
+   "avversario": "Parma",
+   "casa": false,
+   "kickoff": "Sabato 21 Novembre, 18:00",
+   "aggiornato": "14/11/2026 - 08:54",
+   "da_verificare": [
+    {
+     "nome": "Bernabè",
+     "nota": "Distrazione muscolare al retto femorale della coscia sinistra, rientro dalla seconda metà di novembre",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Rensch",
+     "nota": "Lesione di primo grado dell'adduttore lungo di destra, rientro dalla seconda metà di novembre",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Pellegrini Lo.",
+     "nota": "Lesione di alto grado in corrispondenza della giunzione muscolo - tendinea distale del muscolo semitendinoso della coscia destra, ipotesi rientro dalla fine di dicembre",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Gollini",
+     "nota": "Fastidio alla schiena, in dubbio per Parma",
+     "tipo": "dubbio"
+    },
+    {
+     "nome": "Dybala",
+     "nota": "Fastidio muscolare al polpaccio, da valutare impiego a Parma",
+     "tipo": "dubbio"
+    }
+   ]
+  },
+  "Napoli": {
+   "infortunati": [],
+   "squalificati": [],
+   "dubbio": [],
+   "diffidati": [],
+   "avversario": "Torino",
+   "casa": true,
+   "kickoff": "Sabato 21 Novembre, 20:45",
+   "aggiornato": "14/11/2026 - 08:54",
+   "da_verificare": [
+    {
+     "nome": "Buongiorno",
+     "nota": "Problema al menisco del ginocchio destro, rientro da fine dicembre",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Di Lorenzo",
+     "nota": "Lesione distrattiva del muscolo adduttore lungo della coscia sinistra, tentativo rientro dalla fine di novembre",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Lobotka",
+     "nota": "Problema alla caviglia sinistra, recuperabile da metà dicembre",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Santos A.",
+     "nota": "Lesione distrattiva di medio grado del bicipite femorale sinistro, rientro da inizio dicembre",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Badiashile",
+     "nota": "Lesione distrattiva di medio grado del retto femorale destro, rientro dalla fine di novembre",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Fortini",
+     "nota": "Affaticamento muscolare all'adduttore, da valutare per Napoli",
+     "tipo": "infortunati"
+    }
+   ]
+  },
+  "Torino": {
+   "infortunati": [],
+   "squalificati": [],
+   "dubbio": [
+    {
+     "nome": "Rodriguez R.",
+     "nota": "Lesione tendinea di basso grado ai muscoli flessori della coscia sinistra, da valutare convocazione per Napoli"
+    }
+   ],
+   "diffidati": [],
+   "avversario": "Napoli",
+   "casa": false,
+   "kickoff": "Sabato 21 Novembre, 20:45",
+   "aggiornato": "14/11/2026 - 08:54",
+   "da_verificare": [
+    {
+     "nome": "Buongiorno",
+     "nota": "Problema al menisco del ginocchio destro, rientro da fine dicembre",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Di Lorenzo",
+     "nota": "Lesione distrattiva del muscolo adduttore lungo della coscia sinistra, tentativo rientro dalla fine di novembre",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Lobotka",
+     "nota": "Problema alla caviglia sinistra, recuperabile da metà dicembre",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Santos A.",
+     "nota": "Lesione distrattiva di medio grado del bicipite femorale sinistro, rientro da inizio dicembre",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Badiashile",
+     "nota": "Lesione distrattiva di medio grado del retto femorale destro, rientro dalla fine di novembre",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Fortini",
+     "nota": "Affaticamento muscolare all'adduttore, da valutare per Napoli",
+     "tipo": "infortunati"
+    }
+   ]
+  },
+  "Juventus": {
+   "infortunati": [],
+   "squalificati": [],
+   "dubbio": [
+    {
+     "nome": "Cambiaso",
+     "nota": "Affaticamento muscolare, da valutare contro Venezia"
+    },
+    {
+     "nome": "Gonzalez N.",
+     "nota": "Lesione di basso grado del soleo destro, da valutare contro Venezia"
+    }
+   ],
+   "diffidati": [],
+   "avversario": "Venezia",
+   "casa": true,
+   "kickoff": "Domenica 22 Novembre, 12:30",
+   "aggiornato": "14/11/2026 - 08:54",
+   "da_verificare": [
+    {
+     "nome": "Kalulu",
+     "nota": "Lesione ai muscoli ischiocrurali della gamba sinistra, rientro da fine novembre",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Locatelli",
+     "nota": "Rottura del menisco esterno del ginocchio, rientro in campo da febbraio",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Thuram K.",
+     "nota": "Sindrome femoro-rotulea, ipotesi rientro da gennaio",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Yildiz",
+     "nota": "Frattura metatarso piede sinistro, rientro dalla prima metà di dicembre",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Grabara",
+     "nota": "Lesione al crociato anteriore del ginocchio destro, rientro da aprile",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Sverko",
+     "nota": "Problema all'anca, rientro fine novembre",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Franjic",
+     "nota": "Problema alla spalla, rientro dalla metà di dicembre",
+     "tipo": "infortunati"
+    }
+   ]
+  },
+  "Venezia": {
+   "infortunati": [],
+   "squalificati": [],
+   "dubbio": [],
+   "diffidati": [],
+   "avversario": "Juventus",
+   "casa": false,
+   "kickoff": "Domenica 22 Novembre, 12:30",
+   "aggiornato": "14/11/2026 - 08:54",
+   "da_verificare": [
+    {
+     "nome": "Kalulu",
+     "nota": "Lesione ai muscoli ischiocrurali della gamba sinistra, rientro da fine novembre",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Locatelli",
+     "nota": "Rottura del menisco esterno del ginocchio, rientro in campo da febbraio",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Thuram K.",
+     "nota": "Sindrome femoro-rotulea, ipotesi rientro da gennaio",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Yildiz",
+     "nota": "Frattura metatarso piede sinistro, rientro dalla prima metà di dicembre",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Grabara",
+     "nota": "Lesione al crociato anteriore del ginocchio destro, rientro da aprile",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Sverko",
+     "nota": "Problema all'anca, rientro fine novembre",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Franjic",
+     "nota": "Problema alla spalla, rientro dalla metà di dicembre",
+     "tipo": "infortunati"
+    }
+   ]
+  },
+  "Bologna": {
+   "infortunati": [
+    {
+     "nome": "De Silvestri",
+     "nota": "Risentimento muscolare ai flessori della coscia destra, out contro Udinese"
+    },
+    {
+     "nome": "Enem",
+     "nota": "Lieve affaticamento muscolare, da valutare convocazione contro Udinese"
+    }
+   ],
+   "squalificati": [],
+   "dubbio": [],
+   "diffidati": [],
+   "avversario": "Udinese",
+   "casa": true,
+   "kickoff": "Domenica 22 Novembre, 15:00",
+   "aggiornato": "14/11/2026 - 08:54",
+   "da_verificare": [
+    {
+     "nome": "Holm",
+     "nota": "Problema al tendine della coscia destra, ipotesi rientro da fine febbraio",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Miranda J.",
+     "nota": "Lesione di primo grado al bicipite femorale della coscia sinistra, tentativo rientro da fine novembre",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Zanoli",
+     "nota": "Problema muscolare, da valutare per Bologna",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Gueye",
+     "nota": "Problema alla caviglia, rientro da fine gennaio",
+     "tipo": "infortunati"
+    }
+   ]
+  },
+  "Udinese": {
+   "infortunati": [
+    {
+     "nome": "Bertola",
+     "nota": "Problema muscolare alla coscia destra, out contro Bologna"
+    }
+   ],
+   "squalificati": [],
+   "dubbio": [
+    {
+     "nome": "Alaba",
+     "nota": "Risentimento muscolare al polpaccio destro, da valutare per Bologna"
+    }
+   ],
+   "diffidati": [
+    {
+     "nome": "Karlstrom",
+     "nota": ""
+    }
+   ],
+   "avversario": "Bologna",
+   "casa": false,
+   "kickoff": "Domenica 22 Novembre, 15:00",
+   "aggiornato": "14/11/2026 - 08:54",
+   "da_verificare": [
+    {
+     "nome": "Holm",
+     "nota": "Problema al tendine della coscia destra, ipotesi rientro da fine febbraio",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Miranda J.",
+     "nota": "Lesione di primo grado al bicipite femorale della coscia sinistra, tentativo rientro da fine novembre",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Zanoli",
+     "nota": "Problema muscolare, da valutare per Bologna",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Gueye",
+     "nota": "Problema alla caviglia, rientro da fine gennaio",
+     "tipo": "infortunati"
+    }
+   ]
+  },
+  "Sassuolo": {
+   "infortunati": [
+    {
+     "nome": "Boloca",
+     "nota": "Problema al ginocchio, da valutare rientro da fine novembre"
+    },
+    {
+     "nome": "Konè I.",
+     "nota": "Rottura di tibia e perone gamba sinistra, rientro da fine dicembre"
+    },
+    {
+     "nome": "Volpato",
+     "nota": "Problema muscolare alla gamba, da valutare contro il Genoa"
+    },
+    {
+     "nome": "Berardi",
+     "nota": "Noie fisiche, da valutare contro il Genoa"
+    },
+    {
+     "nome": "Leysen F.",
+     "nota": "Lesione crociato anteriore del ginocchio sinistro, ipotesi rientro da aprile"
+    }
+   ],
+   "squalificati": [],
+   "dubbio": [],
+   "diffidati": [],
+   "avversario": "Genoa",
+   "casa": true,
+   "kickoff": "Domenica 22 Novembre, 15:00",
+   "aggiornato": "14/11/2026 - 08:54",
+   "da_verificare": []
+  },
+  "Genoa": {
+   "infortunati": [],
+   "squalificati": [],
+   "dubbio": [],
+   "diffidati": [
+    {
+     "nome": "Ostigard",
+     "nota": ""
+    }
+   ],
+   "avversario": "Sassuolo",
+   "casa": false,
+   "kickoff": "Domenica 22 Novembre, 15:00",
+   "aggiornato": "14/11/2026 - 08:54",
+   "da_verificare": []
+  },
+  "Milan": {
+   "infortunati": [
+    {
+     "nome": "Terracciano",
+     "nota": "Noie fisiche, da valutare contro Frosinone"
+    }
+   ],
+   "squalificati": [],
+   "dubbio": [
+    {
+     "nome": "Pavlovic",
+     "nota": "Problema alla spalla, in dubbio dal 1' contro il Frosinone"
+    }
+   ],
+   "diffidati": [],
+   "avversario": "Frosinone",
+   "casa": true,
+   "kickoff": "Domenica 22 Novembre, 18:00",
+   "aggiornato": "14/11/2026 - 08:54",
+   "da_verificare": [
+    {
+     "nome": "Gabbia",
+     "nota": "Lesione del flessore della coscia sinistra con parziale interessamento tendineo, ipotesi rientro da fine febbraio",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Tomori",
+     "nota": "Lesione a carico del muscolo flessore mediale della coscia destra, rientro dalla seconda metà di novembre",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Saelemaekers",
+     "nota": "Problema alla caviglia destra, ipotesi rientro da febbraio",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Loftus-Cheek",
+     "nota": "Lesione muscolare al flessore, rientro dalla seconda metà di novembre",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Chukwueze",
+     "nota": "Rottura del tendine del muscolo tensore della fascia lata dell'anca sinistra, ipotesi rientro da aprile",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Raimondo",
+     "nota": "Lesione multilegamentosa contusivo-distorsiva della caviglia sinistra, tentativo rientro da metà dicembre",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Grillitsch",
+     "nota": "Sindrome retto-adduttoria, rientro dalla seconda metà di novembre",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Terzic",
+     "nota": "Noie fisiche, da valutare per Milano",
+     "tipo": "infortunati"
+    }
+   ]
+  },
+  "Frosinone": {
+   "infortunati": [],
+   "squalificati": [
+    {
+     "nome": "Bracaglia",
+     "nota": ""
+    }
+   ],
+   "dubbio": [],
+   "diffidati": [],
+   "avversario": "Milan",
+   "casa": false,
+   "kickoff": "Domenica 22 Novembre, 18:00",
+   "aggiornato": "14/11/2026 - 08:54",
+   "da_verificare": [
+    {
+     "nome": "Gabbia",
+     "nota": "Lesione del flessore della coscia sinistra con parziale interessamento tendineo, ipotesi rientro da fine febbraio",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Tomori",
+     "nota": "Lesione a carico del muscolo flessore mediale della coscia destra, rientro dalla seconda metà di novembre",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Saelemaekers",
+     "nota": "Problema alla caviglia destra, ipotesi rientro da febbraio",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Loftus-Cheek",
+     "nota": "Lesione muscolare al flessore, rientro dalla seconda metà di novembre",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Chukwueze",
+     "nota": "Rottura del tendine del muscolo tensore della fascia lata dell'anca sinistra, ipotesi rientro da aprile",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Raimondo",
+     "nota": "Lesione multilegamentosa contusivo-distorsiva della caviglia sinistra, tentativo rientro da metà dicembre",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Grillitsch",
+     "nota": "Sindrome retto-adduttoria, rientro dalla seconda metà di novembre",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Terzic",
+     "nota": "Noie fisiche, da valutare per Milano",
+     "tipo": "infortunati"
+    }
+   ]
+  },
+  "Atalanta": {
+   "infortunati": [],
+   "squalificati": [],
+   "dubbio": [],
+   "diffidati": [],
+   "avversario": "Inter",
+   "casa": true,
+   "kickoff": "Domenica 22 Novembre, 20:45",
+   "aggiornato": "14/11/2026 - 08:54",
+   "da_verificare": [
+    {
+     "nome": "Hien",
+     "nota": "Lesione del tendine prossimale del muscolo semimembranoso della coscia sinistra, rientro da fine novembre",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Kossounou",
+     "nota": "Lesione muscolare di medio-alto grado del bicipite femorale della coscia sinistra, rientro dalla fine di novembre",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Gaetano",
+     "nota": "Distrazione di medio grado ai muscoli adduttori della coscia destra, rientro fine novembre",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Kristensen T.",
+     "nota": "Distrazione di basso grado ai muscoli flessori della coscia sinistra, rientro dalla seconda metà di novembre",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Pompei",
+     "nota": "Frattura della falange della mano destra, rientro da dicembre",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Bonny",
+     "nota": "Risentimento muscolare ai flessori della coscia destra, rientro da inizio dicembre",
+     "tipo": "infortunati"
+    }
+   ]
+  },
+  "Inter": {
+   "infortunati": [
+    {
+     "nome": "Stankovic A.",
+     "nota": "Lesione al muscolo adduttore della coscia destra, out contro Atalanta"
+    }
+   ],
+   "squalificati": [],
+   "dubbio": [
+    {
+     "nome": "Martinez L.",
+     "nota": "Risentimento muscolare ai flessori della coscia sinistra, da valutare convocazione contro Atalanta"
+    },
+    {
+     "nome": "Thuram",
+     "nota": "Problema muscolare al bicipite femorale della coscia, da valutare impiego dal 1' contro Atalanta"
+    }
+   ],
+   "diffidati": [],
+   "avversario": "Atalanta",
+   "casa": false,
+   "kickoff": "Domenica 22 Novembre, 20:45",
+   "aggiornato": "14/11/2026 - 08:54",
+   "da_verificare": [
+    {
+     "nome": "Hien",
+     "nota": "Lesione del tendine prossimale del muscolo semimembranoso della coscia sinistra, rientro da fine novembre",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Kossounou",
+     "nota": "Lesione muscolare di medio-alto grado del bicipite femorale della coscia sinistra, rientro dalla fine di novembre",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Gaetano",
+     "nota": "Distrazione di medio grado ai muscoli adduttori della coscia destra, rientro fine novembre",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Kristensen T.",
+     "nota": "Distrazione di basso grado ai muscoli flessori della coscia sinistra, rientro dalla seconda metà di novembre",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Pompei",
+     "nota": "Frattura della falange della mano destra, rientro da dicembre",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Bonny",
+     "nota": "Risentimento muscolare ai flessori della coscia destra, rientro da inizio dicembre",
+     "tipo": "infortunati"
+    }
+   ]
+  },
+  "Monza": {
+   "infortunati": [
+    {
+     "nome": "Birindelli",
+     "nota": "Problema fisico, da valutare contro la Fiorentina"
+    },
+    {
+     "nome": "Maye",
+     "nota": "Noie fisiche, out contro Fiorentina"
+    },
+    {
+     "nome": "Folorunsho",
+     "nota": "Noie muscolari al polpaccio, da valutare contro Fiorentina"
+    }
+   ],
+   "squalificati": [],
+   "dubbio": [],
+   "diffidati": [],
+   "avversario": "Fiorentina",
+   "casa": true,
+   "kickoff": "Lunedì 23 Novembre, 20:45",
+   "aggiornato": "14/11/2026 - 08:54",
+   "da_verificare": [
+    {
+     "nome": "Pongracic",
+     "nota": "Lesione mio-fasciale a carico del capo lungo del bicipite femorale della coscia destra, rientro dalla fine di novembre",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Parisi",
+     "nota": "Infortunio al legamento crociato, rientro da fine dicembre",
+     "tipo": "infortunati"
+    }
+   ]
+  },
+  "Fiorentina": {
+   "infortunati": [],
+   "squalificati": [],
+   "dubbio": [
+    {
+     "nome": "Atta",
+     "nota": "Sovraccarico funzionale dell'addome, da valutare convocazione per Monza"
+    }
+   ],
+   "diffidati": [],
+   "avversario": "Monza",
+   "casa": false,
+   "kickoff": "Lunedì 23 Novembre, 20:45",
+   "aggiornato": "14/11/2026 - 08:54",
+   "da_verificare": [
+    {
+     "nome": "Pongracic",
+     "nota": "Lesione mio-fasciale a carico del capo lungo del bicipite femorale della coscia destra, rientro dalla fine di novembre",
+     "tipo": "infortunati"
+    },
+    {
+     "nome": "Parisi",
+     "nota": "Infortunio al legamento crociato, rientro da fine dicembre",
+     "tipo": "infortunati"
+    }
+   ]
+  }
+ },
+ "changes": [
+  {
+   "ts": "2026-11-09T23:23:52Z",
+   "nome": "Vojvoda",
+   "squadra": "Udinese",
+   "da": {
+    "stato": "titolare",
+    "pct": 100,
+    "flags": []
+   },
+   "a": {
+    "stato": "titolare",
+    "pct": 85,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-11-09T23:23:52Z",
+   "nome": "Cacciamani",
+   "squadra": "Torino",
+   "da": {
+    "stato": "titolare",
+    "pct": 55,
+    "flags": []
+   },
+   "a": {
+    "stato": "titolare",
+    "pct": 85,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-11-09T23:23:52Z",
+   "nome": "Atta",
+   "squadra": "Fiorentina",
+   "da": {
+    "stato": "assente",
+    "pct": null,
+    "flags": []
+   },
+   "a": {
+    "stato": "panchina",
+    "pct": 25,
+    "flags": [
+     "in dubbio"
+    ]
+   }
+  },
+  {
+   "ts": "2026-11-09T23:23:52Z",
+   "nome": "Diao",
+   "squadra": "Como",
+   "da": {
+    "stato": "assente",
+    "pct": null,
+    "flags": []
+   },
+   "a": {
+    "stato": "panchina",
+    "pct": 25,
+    "flags": [
+     "in dubbio"
+    ]
+   }
+  },
+  {
+   "ts": "2026-11-09T23:23:52Z",
+   "nome": "Neres",
+   "squadra": "Napoli",
+   "da": {
+    "stato": "assente",
+    "pct": null,
+    "flags": []
+   },
+   "a": {
+    "stato": "panchina",
+    "pct": 55,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-11-07T00:04:11Z",
+   "nome": "Cacciamani",
+   "squadra": "Torino",
+   "da": {
+    "stato": "assente",
+    "pct": null,
+    "flags": []
+   },
+   "a": {
+    "stato": "titolare",
+    "pct": 55,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-11-06T01:29:47Z",
+   "nome": "Cacciamani",
+   "squadra": "Torino",
+   "da": {
+    "stato": "indisponibile",
+    "pct": 0,
+    "flags": []
+   },
+   "a": {
+    "stato": "assente",
+    "pct": null,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-11-06T01:29:47Z",
+   "nome": "Atta",
+   "squadra": "Fiorentina",
+   "da": {
+    "stato": "indisponibile",
+    "pct": 0,
+    "flags": []
+   },
+   "a": {
+    "stato": "assente",
+    "pct": null,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-11-06T01:29:47Z",
+   "nome": "Diao",
+   "squadra": "Como",
+   "da": {
+    "stato": "indisponibile",
+    "pct": 0,
+    "flags": []
+   },
+   "a": {
+    "stato": "assente",
+    "pct": null,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-11-06T01:29:47Z",
+   "nome": "Neres",
+   "squadra": "Napoli",
+   "da": {
+    "stato": "indisponibile",
+    "pct": 0,
+    "flags": []
+   },
+   "a": {
+    "stato": "assente",
+    "pct": null,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-11-04T15:59:19Z",
+   "nome": "Jones C.",
+   "squadra": "Inter",
+   "da": {
+    "stato": "panchina",
+    "pct": 20,
+    "flags": [
+     "in dubbio"
+    ]
+   },
+   "a": {
+    "stato": "panchina",
+    "pct": 55,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-11-03T20:04:35Z",
+   "nome": "Akanji",
+   "squadra": "Inter",
+   "da": {
+    "stato": "titolare",
+    "pct": 100,
+    "flags": []
+   },
+   "a": {
+    "stato": "titolare",
+    "pct": 80,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-11-03T20:04:35Z",
+   "nome": "Koopmeiners",
+   "squadra": "Juventus",
+   "da": {
+    "stato": "titolare",
+    "pct": 100,
+    "flags": []
+   },
+   "a": {
+    "stato": "titolare",
+    "pct": 80,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-11-03T20:04:35Z",
+   "nome": "Jones C.",
+   "squadra": "Inter",
+   "da": {
+    "stato": "indisponibile",
+    "pct": 0,
+    "flags": []
+   },
+   "a": {
+    "stato": "panchina",
+    "pct": 20,
+    "flags": [
+     "in dubbio"
+    ]
+   }
+  },
+  {
+   "ts": "2026-11-03T20:04:35Z",
+   "nome": "Adams C.",
+   "squadra": "Torino",
+   "da": {
+    "stato": "titolare",
+    "pct": 100,
+    "flags": []
+   },
+   "a": {
+    "stato": "titolare",
+    "pct": 80,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-11-02T22:27:26Z",
+   "nome": "Daffara",
+   "squadra": "Parma",
+   "da": {
+    "stato": "titolare",
+    "pct": 80,
+    "flags": []
+   },
+   "a": {
+    "stato": "titolare",
+    "pct": 100,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-11-02T13:24:11Z",
+   "nome": "Ramon",
+   "squadra": "Como",
+   "da": {
+    "stato": "titolare",
+    "pct": 80,
+    "flags": []
+   },
+   "a": {
+    "stato": "titolare",
+    "pct": 100,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-11-02T13:24:11Z",
+   "nome": "Koopmeiners",
+   "squadra": "Juventus",
+   "da": {
+    "stato": "titolare",
+    "pct": 60,
+    "flags": [
+     "ballottaggio"
+    ]
+   },
+   "a": {
+    "stato": "titolare",
+    "pct": 100,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-11-02T13:24:11Z",
+   "nome": "Woltemade",
+   "squadra": "Juventus",
+   "da": {
+    "stato": "titolare",
+    "pct": 85,
+    "flags": []
+   },
+   "a": {
+    "stato": "titolare",
+    "pct": 100,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-11-02T13:24:11Z",
+   "nome": "Adams C.",
+   "squadra": "Torino",
+   "da": {
+    "stato": "titolare",
+    "pct": 60,
+    "flags": [
+     "ballottaggio"
+    ]
+   },
+   "a": {
+    "stato": "titolare",
+    "pct": 100,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-10-31T23:20:13Z",
+   "nome": "Gila",
+   "squadra": "Milan",
+   "da": {
+    "stato": "titolare",
+    "pct": 80,
+    "flags": []
+   },
+   "a": {
+    "stato": "titolare",
+    "pct": 100,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-10-31T23:20:13Z",
+   "nome": "Bastoni",
+   "squadra": "Inter",
+   "da": {
+    "stato": "titolare",
+    "pct": 80,
+    "flags": []
+   },
+   "a": {
+    "stato": "titolare",
+    "pct": 100,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-10-31T16:02:22Z",
+   "nome": "Zortea",
+   "squadra": "Bologna",
+   "da": {
+    "stato": "titolare",
+    "pct": 60,
+    "flags": [
+     "ballottaggio"
+    ]
+   },
+   "a": {
+    "stato": "titolare",
+    "pct": 100,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-10-31T16:02:22Z",
+   "nome": "Koopmeiners",
+   "squadra": "Juventus",
+   "da": {
+    "stato": "panchina",
+    "pct": 60,
+    "flags": []
+   },
+   "a": {
+    "stato": "titolare",
+    "pct": 60,
+    "flags": [
+     "ballottaggio"
+    ]
+   }
+  },
+  {
+   "ts": "2026-10-30T17:09:08Z",
+   "nome": "Zortea",
+   "squadra": "Bologna",
+   "da": {
+    "stato": "titolare",
+    "pct": 85,
+    "flags": []
+   },
+   "a": {
+    "stato": "titolare",
+    "pct": 60,
+    "flags": [
+     "ballottaggio"
+    ]
+   }
+  },
+  {
+   "ts": "2026-10-30T17:09:08Z",
+   "nome": "Cacciamani",
+   "squadra": "Torino",
+   "da": {
+    "stato": "panchina",
+    "pct": 50,
+    "flags": [
+     "in dubbio"
+    ]
+   },
+   "a": {
+    "stato": "indisponibile",
+    "pct": 0,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-10-30T11:19:47Z",
+   "nome": "Daffara",
+   "squadra": "Parma",
+   "da": {
+    "stato": "titolare",
+    "pct": 100,
+    "flags": []
+   },
+   "a": {
+    "stato": "titolare",
+    "pct": 80,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-10-30T11:19:47Z",
+   "nome": "Ramon",
+   "squadra": "Como",
+   "da": {
+    "stato": "titolare",
+    "pct": 100,
+    "flags": []
+   },
+   "a": {
+    "stato": "titolare",
+    "pct": 80,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-10-30T11:19:47Z",
+   "nome": "Gila",
+   "squadra": "Milan",
+   "da": {
+    "stato": "indisponibile",
+    "pct": 0,
+    "flags": []
+   },
+   "a": {
+    "stato": "titolare",
+    "pct": 70,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-10-30T11:19:47Z",
+   "nome": "Scalvini",
+   "squadra": "Atalanta",
+   "da": {
+    "stato": "titolare",
+    "pct": 55,
+    "flags": [
+     "ballottaggio"
+    ]
+   },
+   "a": {
+    "stato": "titolare",
+    "pct": 90,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-10-30T11:19:47Z",
+   "nome": "Vojvoda",
+   "squadra": "Udinese",
+   "da": {
+    "stato": "panchina",
+    "pct": 60,
+    "flags": []
+   },
+   "a": {
+    "stato": "titolare",
+    "pct": 90,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-10-30T11:19:47Z",
+   "nome": "Zortea",
+   "squadra": "Bologna",
+   "da": {
+    "stato": "titolare",
+    "pct": 100,
+    "flags": []
+   },
+   "a": {
+    "stato": "titolare",
+    "pct": 85,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-10-30T11:19:47Z",
+   "nome": "Akanji",
+   "squadra": "Inter",
+   "da": {
+    "stato": "panchina",
+    "pct": 55,
+    "flags": []
+   },
+   "a": {
+    "stato": "titolare",
+    "pct": 90,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-10-30T11:19:47Z",
+   "nome": "Cacciamani",
+   "squadra": "Torino",
+   "da": {
+    "stato": "titolare",
+    "pct": 100,
+    "flags": []
+   },
+   "a": {
+    "stato": "panchina",
+    "pct": 50,
+    "flags": [
+     "in dubbio"
+    ]
+   }
+  },
+  {
+   "ts": "2026-10-30T11:19:47Z",
+   "nome": "Modric",
+   "squadra": "Milan",
+   "da": {
+    "stato": "panchina",
+    "pct": 60,
+    "flags": []
+   },
+   "a": {
+    "stato": "titolare",
+    "pct": 90,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-10-30T11:19:47Z",
+   "nome": "Pulisic",
+   "squadra": "Milan",
+   "da": {
+    "stato": "panchina",
+    "pct": 55,
+    "flags": []
+   },
+   "a": {
+    "stato": "titolare",
+    "pct": 90,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-10-30T11:19:47Z",
+   "nome": "Woltemade",
+   "squadra": "Juventus",
+   "da": {
+    "stato": "panchina",
+    "pct": 60,
+    "flags": []
+   },
+   "a": {
+    "stato": "titolare",
+    "pct": 85,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-10-30T11:19:47Z",
+   "nome": "Adams C.",
+   "squadra": "Torino",
+   "da": {
+    "stato": "titolare",
+    "pct": 100,
+    "flags": []
+   },
+   "a": {
+    "stato": "titolare",
+    "pct": 60,
+    "flags": [
+     "ballottaggio"
+    ]
+   }
+  },
+  {
+   "ts": "2026-10-30T11:19:47Z",
+   "nome": "Vitinha O.",
+   "squadra": "Genoa",
+   "da": {
+    "stato": "titolare",
+    "pct": 100,
+    "flags": []
+   },
+   "a": {
+    "stato": "panchina",
+    "pct": 60,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-10-29T11:28:02Z",
+   "nome": "Lucumì",
+   "squadra": "Juventus",
+   "da": {
+    "stato": "titolare",
+    "pct": 80,
+    "flags": []
+   },
+   "a": {
+    "stato": "titolare",
+    "pct": 100,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-10-29T11:28:02Z",
+   "nome": "Koopmeiners",
+   "squadra": "Juventus",
+   "da": {
+    "stato": "panchina",
+    "pct": 60,
+    "flags": [
+     "ballottaggio"
+    ]
+   },
+   "a": {
+    "stato": "panchina",
+    "pct": 60,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-10-29T11:28:02Z",
+   "nome": "Woltemade",
+   "squadra": "Juventus",
+   "da": {
+    "stato": "titolare",
+    "pct": 80,
+    "flags": []
+   },
+   "a": {
+    "stato": "panchina",
+    "pct": 60,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-10-29T11:28:02Z",
+   "nome": "Vitinha O.",
+   "squadra": "Genoa",
+   "da": {
+    "stato": "panchina",
+    "pct": 60,
+    "flags": [
+     "ballottaggio"
+    ]
+   },
+   "a": {
+    "stato": "titolare",
+    "pct": 100,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-10-28T17:08:34Z",
+   "nome": "Daffara",
+   "squadra": "Parma",
+   "da": {
+    "stato": "panchina",
+    "pct": 5,
+    "flags": []
+   },
+   "a": {
+    "stato": "titolare",
+    "pct": 100,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-10-28T17:08:34Z",
+   "nome": "Corvi",
+   "squadra": "Parma",
+   "da": {
+    "stato": "titolare",
+    "pct": 80,
+    "flags": []
+   },
+   "a": {
+    "stato": "panchina",
+    "pct": 5,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-10-28T17:08:34Z",
+   "nome": "Scalvini",
+   "squadra": "Atalanta",
+   "da": {
+    "stato": "panchina",
+    "pct": 50,
+    "flags": [
+     "in dubbio"
+    ]
+   },
+   "a": {
+    "stato": "titolare",
+    "pct": 55,
+    "flags": [
+     "ballottaggio"
+    ]
+   }
+  },
+  {
+   "ts": "2026-10-28T17:08:34Z",
+   "nome": "Vojvoda",
+   "squadra": "Udinese",
+   "da": {
+    "stato": "titolare",
+    "pct": 90,
+    "flags": []
+   },
+   "a": {
+    "stato": "panchina",
+    "pct": 60,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-10-28T17:08:34Z",
+   "nome": "Akanji",
+   "squadra": "Inter",
+   "da": {
+    "stato": "panchina",
+    "pct": 55,
+    "flags": [
+     "ballottaggio"
+    ]
+   },
+   "a": {
+    "stato": "panchina",
+    "pct": 55,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-10-28T17:08:34Z",
+   "nome": "Bastoni",
+   "squadra": "Inter",
+   "da": {
+    "stato": "titolare",
+    "pct": 55,
+    "flags": [
+     "ballottaggio"
+    ]
+   },
+   "a": {
+    "stato": "titolare",
+    "pct": 100,
+    "flags": []
+   }
+  },
+  {
+   "ts": "2026-10-28T17:08:34Z",
+   "nome": "Pulisic",
+   "squadra": "Milan",
+   "da": {
+    "stato": "titolare",
+    "pct": 55,
+    "flags": [
+     "ballottaggio"
+    ]
+   },
+   "a": {
+    "stato": "panchina",
+    "pct": 55,
+    "flags": []
+   }
+  }
+ ],
+ "nazionali": {
+  "parser": 3,
+  "updated": "2026-11-14T12:05:17Z",
+  "ok": true,
+  "found": 25,
+  "teams_read": 20,
+  "errors": [],
+  "players": {
+   "Daffara": {
+    "wiki": "Giovanni Daffara",
+    "full": "Giovanni Daffara",
+    "team": {
+     "page": "Italy national under-21 football team",
+     "shown": "Italy U21",
+     "years": "2026–",
+     "open": true,
+     "caps": 1,
+     "goals": 0,
+     "level": "giovanile",
+     "current": true
+    },
+    "resolved": "2026-11-10T11:28:24Z",
+    "squadra": "Parma",
+    "status": "convocato",
+    "note": "",
+    "fixtures": [
+     {
+      "date": "2026-11-13",
+      "time": "",
+      "home": "Italia",
+      "away": "Francia",
+      "comp": "Amichevole",
+      "score": "",
+      "place": "",
+      "nat_home": true,
+      "scored": 0
+     },
+     {
+      "date": "2026-11-16",
+      "time": "",
+      "home": "Italia",
+      "away": "Belgio",
+      "comp": "Amichevole",
+      "score": "",
+      "place": "",
+      "nat_home": true,
+      "scored": 0
+     }
+    ],
+    "played": null,
+    "scored": 0,
+    "caps": 0,
+    "goals_tot": 0,
+    "done": false,
+    "window": "2026-11-13",
+    "caps_base": 0,
+    "return": "2026-11-16",
+    "long_trip": false,
+    "nat": "Italia",
+    "code": "ITA",
+    "squad_intro": "The following players were called up for the friendly matches against France and Belgium on 13 and 16 November 2026 respectively.",
+    "label": "Convocato",
+    "news": []
+   },
+   "Corvi": {
+    "wiki": "Edoardo Corvi",
+    "full": "Edoardo Corvi",
+    "team": null,
+    "resolved": "2026-11-10T11:28:24Z",
+    "squadra": "Parma",
+    "status": "fuori",
+    "note": "Nessuna presenza in nazionale",
+    "fixtures": [],
+    "played": null,
+    "scored": 0,
+    "team_page": null,
+    "label": "Fuori dal giro",
+    "news": []
+   },
+   "Maignan": {
+    "wiki": "Mike Maignan",
+    "full": "Mike Maignan",
+    "team": {
+     "page": "France national football team",
+     "shown": "France",
+     "years": "2020–",
+     "open": true,
+     "caps": 51,
+     "goals": 0,
+     "level": "A",
+     "current": true
+    },
+    "resolved": "2026-11-10T11:28:24Z",
+    "squadra": "Milan",
+    "status": "convocato",
+    "note": "",
+    "fixtures": [
+     {
+      "date": "2026-11-12",
+      "time": "20:45",
+      "home": "Italia",
+      "away": "Francia",
+      "comp": "Nations League",
+      "score": "3–1",
+      "place": "Milan, Italy",
+      "nat_home": false,
+      "scored": 0
+     },
+     {
+      "date": "2026-11-15",
+      "time": "20:45",
+      "home": "Francia",
+      "away": "Turchia",
+      "comp": "Nations League",
+      "score": "",
+      "place": "Bordeaux, France",
+      "nat_home": true,
+      "scored": 0
+     }
+    ],
+    "played": 1,
+    "scored": 0,
+    "caps": 52,
+    "goals_tot": 0,
+    "done": false,
+    "window": "2026-11-12",
+    "caps_base": 51,
+    "return": "2026-11-15",
+    "long_trip": false,
+    "team_page": "France national football team",
+    "nat": "Francia",
+    "code": "FRA",
+    "squad_intro": "The following players were called up for the 2026–27 UEFA Nations League matches against Italy and Turkey on 12 and 15 November 2026 respectively.",
+    "label": "Convocato",
+    "news": []
+   },
+   "Ramon": {
+    "wiki": "Jacobo Ramón",
+    "full": "Jacobo Ramón",
+    "team": {
+     "page": "Spain national under-21 football team",
+     "shown": "Spain U21",
+     "years": "2025–",
+     "open": true,
+     "caps": 3,
+     "goals": 0,
+     "level": "giovanile",
+     "current": true
+    },
+    "resolved": "2026-11-10T11:28:24Z",
+    "squadra": "Como",
+    "status": "convocato",
+    "note": "Chiamato in nazionale maggiore.",
+    "fixtures": [
+     {
+      "date": "2026-11-12",
+      "time": "",
+      "home": "Spagna",
+      "away": "Repubblica Ceca",
+      "comp": "Nations League",
+      "score": "",
+      "place": "",
+      "nat_home": true,
+      "scored": 0
+     },
+     {
+      "date": "2026-11-15",
+      "time": "",
+      "home": "Spagna",
+      "away": "Inghilterra",
+      "comp": "Nations League",
+      "score": "",
+      "place": "",
+      "nat_home": true,
+      "scored": 0
+     }
+    ],
+    "played": null,
+    "scored": 0,
+    "caps": 0,
+    "goals_tot": 0,
+    "done": false,
+    "window": "2026-11-12",
+    "caps_base": 0,
+    "return": "2026-11-15",
+    "long_trip": false,
+    "team_page": "Spain national football team",
+    "nat": "Spagna",
+    "code": "ESP",
+    "squad_intro": "The following 28 players were named in the squad for the 2026–27 UEFA Nations League A matches against the Czech Republic and England on 12 and 15 November 2026, respectively.",
+    "label": "Convocato",
+    "news": []
+   },
+   "Lucumì": {
+    "wiki": "Jhon Lucumí",
+    "full": "Jhon Lucumí",
+    "team": {
+     "page": "Colombia national football team",
+     "shown": "Colombia",
+     "years": "2019–",
+     "open": true,
+     "caps": 43,
+     "goals": 1,
+     "level": "A",
+     "current": true
+    },
+    "resolved": "2026-11-10T11:28:24Z",
+    "squadra": "Juventus",
+    "status": "convocato",
+    "note": "",
+    "fixtures": [
+     {
+      "date": "2026-11-13",
+      "time": "",
+      "home": "Colombia",
+      "away": "Cile",
+      "comp": "Amichevole",
+      "score": "",
+      "place": "",
+      "nat_home": true,
+      "scored": 0
+     },
+     {
+      "date": "2026-11-17",
+      "time": "",
+      "home": "Colombia",
+      "away": "Cile",
+      "comp": "Amichevole",
+      "score": "",
+      "place": "",
+      "nat_home": true,
+      "scored": 0
+     }
+    ],
+    "played": null,
+    "scored": 0,
+    "caps": 45,
+    "goals_tot": 1,
+    "done": false,
+    "window": "2026-11-13",
+    "caps_base": 44,
+    "return": "2026-11-17",
+    "long_trip": true,
+    "team_page": "Colombia national football team",
+    "nat": "Colombia",
+    "code": "COL",
+    "squad_intro": "The following players were called up for the friendly matches against Chile on 13 and 17 November 2026, respectively.",
+    "label": "Convocato",
+    "news": []
+   },
+   "Gila": {
+    "wiki": "Mario Gila",
+    "full": "Mario Gila",
+    "team": {
+     "page": "Spain national under-21 football team",
+     "shown": "Spain U21",
+     "years": "2022–2023",
+     "open": false,
+     "caps": 9,
+     "goals": 0,
+     "level": "giovanile",
+     "current": false
+    },
+    "resolved": "2026-11-10T11:28:24Z",
+    "squadra": "Milan",
+    "status": "fuori",
+    "note": "Ultima nazionale: Spain U21 (2022–2023)",
+    "fixtures": [],
+    "played": null,
+    "scored": 0,
+    "caps": null,
+    "goals_tot": null,
+    "done": false,
+    "window": null,
+    "caps_base": null,
+    "nat": "Spagna",
+    "code": "ESP",
+    "squad_intro": "The following players were named in the squad for the 2027 UEFA European Under-21 Championship qualification Group A matches against Finland, San Marino and Romania on 25, 30 September and 6 October 2026; respectively.",
+    "label": "Fuori dal giro",
+    "news": []
+   },
+   "Scalvini": {
+    "wiki": "Giorgio Scalvini",
+    "full": "Giorgio Scalvini",
+    "team": {
+     "page": "Italy national football team",
+     "shown": "Italy",
+     "years": "2022–",
+     "open": true,
+     "caps": 11,
+     "goals": 0,
+     "level": "A",
+     "current": true
+    },
+    "resolved": "2026-11-10T11:28:24Z",
+    "squadra": "Atalanta",
+    "status": "convocato",
+    "note": "",
+    "fixtures": [
+     {
+      "date": "2026-11-12",
+      "time": "20:45",
+      "home": "Italia",
+      "away": "Francia",
+      "comp": "Nations League",
+      "score": "3–1",
+      "place": "Milan, Italy",
+      "nat_home": true,
+      "scored": 0
+     },
+     {
+      "date": "2026-11-15",
+      "time": "20:45",
+      "home": "Belgio",
+      "away": "Italia",
+      "comp": "Nations League",
+      "score": "",
+      "place": "Brussels, Belgium",
+      "nat_home": false,
+      "scored": 0
+     }
+    ],
+    "played": 1,
+    "scored": 0,
+    "caps": 12,
+    "goals_tot": 0,
+    "done": false,
+    "window": "2026-11-12",
+    "caps_base": 11,
+    "return": "2026-11-15",
+    "long_trip": false,
+    "team_page": "Italy national football team",
+    "nat": "Italia",
+    "code": "ITA",
+    "squad_intro": "The following players were called up for the 2026–27 UEFA Nations League matches against France and Belgium on 12 and 15 November 2026, respectively.",
+    "label": "Convocato",
+    "news": []
+   },
+   "Vojvoda": {
+    "wiki": "Mërgim Vojvoda",
+    "full": "Mërgim Vojvoda",
+    "team": {
+     "page": "Kosovo national football team",
+     "shown": "Kosovo",
+     "years": "2017–",
+     "open": true,
+     "caps": 79,
+     "goals": 3,
+     "level": "A",
+     "current": true
+    },
+    "resolved": "2026-11-10T11:28:24Z",
+    "squadra": "Udinese",
+    "status": "convocato",
+    "note": "",
+    "fixtures": [
+     {
+      "date": "2026-11-14",
+      "time": "",
+      "home": "Kosovo",
+      "away": "Israele",
+      "comp": "Nations League",
+      "score": "",
+      "place": "",
+      "nat_home": true,
+      "scored": 0
+     },
+     {
+      "date": "2026-11-17",
+      "time": "",
+      "home": "Kosovo",
+      "away": "Irlanda",
+      "comp": "Nations League",
+      "score": "",
+      "place": "",
+      "nat_home": true,
+      "scored": 0
+     }
+    ],
+    "played": null,
+    "scored": 0,
+    "caps": 79,
+    "goals_tot": 3,
+    "done": false,
+    "window": "2026-11-14",
+    "caps_base": 79,
+    "return": "2026-11-17",
+    "long_trip": false,
+    "team_page": "Kosovo national football team",
+    "nat": "Kosovo",
+    "code": "KVX",
+    "squad_intro": "*The following players were called up for the 2026–27 UEFA Nations League matches against Israel and the Republic of Ireland, on 14 and 17 November 2026.",
+    "label": "Convocato",
+    "news": []
+   },
+   "Zortea": {
+    "wiki": "Nadir Zortea",
+    "full": "Nadir Zortea",
+    "team": null,
+    "resolved": "2026-11-10T11:28:24Z",
+    "squadra": "Bologna",
+    "status": "fuori",
+    "note": "Nessuna presenza in nazionale",
+    "fixtures": [],
+    "played": null,
+    "scored": 0,
+    "team_page": null,
+    "label": "Fuori dal giro",
+    "news": []
+   },
+   "Akanji": {
+    "wiki": "Manuel Akanji",
+    "full": "Manuel Akanji",
+    "team": {
+     "page": "Switzerland national football team",
+     "shown": "Switzerland",
+     "years": "2017–",
+     "open": true,
+     "caps": 91,
+     "goals": 4,
+     "level": "A",
+     "current": true
+    },
+    "resolved": "2026-11-10T11:28:24Z",
+    "squadra": "Inter",
+    "status": "convocato",
+    "note": "",
+    "fixtures": [
+     {
+      "date": "2026-11-13",
+      "time": "",
+      "home": "Svizzera",
+      "away": "Slovenia",
+      "comp": "Nations League",
+      "score": "",
+      "place": "",
+      "nat_home": true,
+      "scored": 0
+     },
+     {
+      "date": "2026-11-16",
+      "time": "",
+      "home": "Svizzera",
+      "away": "Scozia",
+      "comp": "Nations League",
+      "score": "",
+      "place": "",
+      "nat_home": true,
+      "scored": 0
+     }
+    ],
+    "played": null,
+    "scored": 0,
+    "caps": 91,
+    "goals_tot": 4,
+    "done": false,
+    "window": "2026-11-13",
+    "caps_base": 91,
+    "return": "2026-11-16",
+    "long_trip": false,
+    "team_page": "Switzerland national football team",
+    "nat": "Svizzera",
+    "code": "SUI",
+    "squad_intro": "The following 24 players were called up to the 2026–27 UEFA Nations League B matches against Slovenia on 13 November and Scotland on 16 November 2026.",
+    "label": "Convocato",
+    "news": []
+   },
+   "Bastoni": {
+    "wiki": "Alessandro Bastoni",
+    "full": "Alessandro Bastoni",
+    "team": {
+     "page": "Italy national football team",
+     "shown": "Italy",
+     "years": "2020–",
+     "open": true,
+     "caps": 46,
+     "goals": 5,
+     "level": "A",
+     "current": true
+    },
+    "resolved": "2026-11-10T11:28:24Z",
+    "squadra": "Inter",
+    "status": "convocato",
+    "note": "",
+    "fixtures": [
+     {
+      "date": "2026-11-12",
+      "time": "20:45",
+      "home": "Italia",
+      "away": "Francia",
+      "comp": "Nations League",
+      "score": "3–1",
+      "place": "Milan, Italy",
+      "nat_home": true,
+      "scored": 0
+     },
+     {
+      "date": "2026-11-15",
+      "time": "20:45",
+      "home": "Belgio",
+      "away": "Italia",
+      "comp": "Nations League",
+      "score": "",
+      "place": "Brussels, Belgium",
+      "nat_home": false,
+      "scored": 0
+     }
+    ],
+    "played": 1,
+    "scored": 0,
+    "caps": 47,
+    "goals_tot": 5,
+    "done": false,
+    "window": "2026-11-12",
+    "caps_base": 46,
+    "return": "2026-11-15",
+    "long_trip": false,
+    "team_page": "Italy national football team",
+    "nat": "Italia",
+    "code": "ITA",
+    "squad_intro": "The following players were called up for the 2026–27 UEFA Nations League matches against France and Belgium on 12 and 15 November 2026, respectively.",
+    "label": "Convocato",
+    "news": []
+   },
+   "Cacciamani": {
+    "wiki": "Alessio Cacciamani",
+    "full": "Alessio Cacciamani",
+    "team": {
+     "page": "Italy national under-21 football team",
+     "shown": "Italy U21",
+     "years": "2026–",
+     "open": true,
+     "caps": 1,
+     "goals": 0,
+     "level": "giovanile",
+     "current": true
+    },
+    "resolved": "2026-11-10T11:28:24Z",
+    "squadra": "Torino",
+    "status": "convocato",
+    "note": "",
+    "fixtures": [
+     {
+      "date": "2026-11-13",
+      "time": "",
+      "home": "Italia",
+      "away": "Francia",
+      "comp": "Amichevole",
+      "score": "",
+      "place": "",
+      "nat_home": true,
+      "scored": 0
+     },
+     {
+      "date": "2026-11-16",
+      "time": "",
+      "home": "Italia",
+      "away": "Belgio",
+      "comp": "Amichevole",
+      "score": "",
+      "place": "",
+      "nat_home": true,
+      "scored": 0
+     }
+    ],
+    "played": null,
+    "scored": 0,
+    "caps": 2,
+    "goals_tot": 0,
+    "done": false,
+    "window": "2026-11-13",
+    "caps_base": 1,
+    "return": "2026-11-16",
+    "long_trip": false,
+    "nat": "Italia",
+    "code": "ITA",
+    "squad_intro": "The following players were called up for the friendly matches against France and Belgium on 13 and 16 November 2026 respectively.",
+    "label": "Convocato",
+    "news": []
+   },
+   "Atta": {
+    "wiki": "Arthur Atta",
+    "full": "Arthur Atta",
+    "team": {
+     "page": "France national under-20 football team",
+     "shown": "France U20",
+     "years": "2023–2024",
+     "open": false,
+     "caps": 6,
+     "goals": 0,
+     "level": "giovanile",
+     "current": false
+    },
+    "resolved": "2026-11-10T11:28:24Z",
+    "squadra": "Fiorentina",
+    "status": "fuori",
+    "note": "Ultima nazionale: France U20 (2023–2024)",
+    "fixtures": [],
+    "played": null,
+    "scored": 0,
+    "caps": null,
+    "goals_tot": null,
+    "done": false,
+    "window": null,
+    "caps_base": null,
+    "nat": "Francia",
+    "code": "FRA",
+    "squad_intro": "The following players were named in the squad for the 2025 FIFA U-20 World Cup, to be played 27 September – 19 October 2025.",
+    "label": "Fuori dal giro",
+    "news": []
+   },
+   "Colpani": {
+    "wiki": "Andrea Colpani",
+    "full": "Andrea Colpani",
+    "team": {
+     "page": "Italy national under-21 football team",
+     "shown": "Italy U21",
+     "years": "2020",
+     "open": false,
+     "caps": 3,
+     "goals": 1,
+     "level": "giovanile",
+     "current": false
+    },
+    "resolved": "2026-11-10T11:28:24Z",
+    "squadra": "Monza",
+    "status": "fuori",
+    "note": "Ultima nazionale: Italy U21 (2020)",
+    "fixtures": [
+     {
+      "date": "2026-11-13",
+      "time": "",
+      "home": "Italia",
+      "away": "Francia",
+      "comp": "Amichevole",
+      "score": "",
+      "place": "",
+      "nat_home": true,
+      "scored": 0
+     },
+     {
+      "date": "2026-11-16",
+      "time": "",
+      "home": "Italia",
+      "away": "Belgio",
+      "comp": "Amichevole",
+      "score": "",
+      "place": "",
+      "nat_home": true,
+      "scored": 0
+     }
+    ],
+    "played": null,
+    "scored": 0,
+    "caps": null,
+    "goals_tot": null,
+    "done": false,
+    "window": "2026-11-13",
+    "caps_base": null,
+    "return": "2026-11-16",
+    "long_trip": false,
+    "nat": "Italia",
+    "code": "ITA",
+    "squad_intro": "The following players were called up for the friendly matches against France and Belgium on 13 and 16 November 2026 respectively.",
+    "label": "Fuori dal giro",
+    "news": []
+   },
+   "Koopmeiners": {
+    "wiki": "Teun Koopmeiners",
+    "full": "Teun Koopmeiners",
+    "team": {
+     "page": "Netherlands national football team",
+     "shown": "Netherlands",
+     "years": "2020–",
+     "open": true,
+     "caps": 33,
+     "goals": 4,
+     "level": "A",
+     "current": true
+    },
+    "resolved": "2026-11-10T11:28:24Z",
+    "squadra": "Juventus",
+    "status": "convocato",
+    "note": "",
+    "fixtures": [
+     {
+      "date": "2026-11-13",
+      "time": "20:45",
+      "home": "Paesi Bassi",
+      "away": "Grecia",
+      "comp": "Nations League",
+      "score": "7–0",
+      "place": "Amsterdam, Netherlands",
+      "nat_home": true,
+      "scored": 0
+     },
+     {
+      "date": "2026-11-16",
+      "time": "20:45",
+      "home": "Germania",
+      "away": "Paesi Bassi",
+      "comp": "Nations League",
+      "score": "",
+      "place": "Berlin, Germany",
+      "nat_home": false,
+      "scored": 0
+     }
+    ],
+    "played": 1,
+    "scored": 0,
+    "caps": 34,
+    "goals_tot": 4,
+    "done": false,
+    "window": "2026-11-13",
+    "caps_base": 33,
+    "return": "2026-11-16",
+    "long_trip": false,
+    "team_page": "Netherlands national football team",
+    "nat": "Paesi Bassi",
+    "code": "NED",
+    "squad_intro": "The following players were called up for the 2026–27 UEFA Nations League matches against Greece and Germany on 13 and 16 November 2026.",
+    "label": "Convocato",
+    "news": []
+   },
+   "Jones C.": {
+    "wiki": "Curtis Jones (footballer, born 2001)",
+    "full": "Curtis Jones",
+    "team": {
+     "page": "England national football team",
+     "shown": "England",
+     "years": "2024–",
+     "open": true,
+     "caps": 6,
+     "goals": 1,
+     "level": "A",
+     "current": true
+    },
+    "resolved": "2026-11-10T11:28:24Z",
+    "squadra": "Inter",
+    "status": "non_convocato",
+    "note": "",
+    "fixtures": [
+     {
+      "date": "2026-11-12",
+      "time": "",
+      "home": "Inghilterra",
+      "away": "Croazia",
+      "comp": "Nations League",
+      "score": "2–1",
+      "place": "London, England",
+      "nat_home": true,
+      "scored": 0
+     },
+     {
+      "date": "2026-11-15",
+      "time": "",
+      "home": "Spagna",
+      "away": "Inghilterra",
+      "comp": "Nations League",
+      "score": "",
+      "place": "Madrid, Spain",
+      "nat_home": false,
+      "scored": 0
+     }
+    ],
+    "played": null,
+    "scored": 0,
+    "caps": null,
+    "goals_tot": null,
+    "done": false,
+    "window": "2026-11-12",
+    "caps_base": null,
+    "return": "2026-11-15",
+    "long_trip": false,
+    "team_page": "England national football team",
+    "nat": "Inghilterra",
+    "code": "ENG",
+    "squad_intro": "The following 26 players were named in the squad for the 2026–27 UEFA Nations League A matches against Croatia and Spain on 12 and 15 November 2026, respectively.",
+    "label": "Non convocato",
+    "news": []
+   },
+   "Modric": {
+    "wiki": "Luka Modrić",
+    "full": "Luka Modrić",
+    "team": {
+     "page": "Croatia national football team",
+     "shown": "Croatia",
+     "years": "2006–",
+     "open": true,
+     "caps": 206,
+     "goals": 30,
+     "level": "A",
+     "current": true
+    },
+    "resolved": "2026-11-10T11:28:24Z",
+    "squadra": "Milan",
+    "status": "convocato",
+    "note": "Date delle partite non ancora disponibili",
+    "fixtures": [],
+    "played": null,
+    "scored": 0,
+    "caps": 207,
+    "goals_tot": 30,
+    "done": false,
+    "window": null,
+    "caps_base": null,
+    "team_page": "Croatia national football team",
+    "nat": "Croazia",
+    "code": "CRO",
+    "squad_intro": "The following players were called up for the 2026–27 UEFA Nations League A matches in November 2026.",
+    "label": "Convocato",
+    "news": []
+   },
+   "Pulisic": {
+    "wiki": "Christian Pulisic",
+    "full": "Christian Pulisic",
+    "team": {
+     "page": "United States men's national soccer team",
+     "shown": "United States",
+     "years": "2016–",
+     "open": true,
+     "caps": 90,
+     "goals": 33,
+     "level": "A",
+     "current": true
+    },
+    "resolved": "2026-11-10T11:28:24Z",
+    "squadra": "Milan",
+    "status": "non_convocato",
+    "note": "",
+    "fixtures": [
+     {
+      "date": "2026-11-14",
+      "time": "",
+      "home": "Stati Uniti",
+      "away": "Haiti",
+      "comp": "CONCACAF Nations League",
+      "score": "",
+      "place": "",
+      "nat_home": true,
+      "scored": 0
+     },
+     {
+      "date": "2026-11-17",
+      "time": "",
+      "home": "Stati Uniti",
+      "away": "Haiti",
+      "comp": "CONCACAF Nations League",
+      "score": "",
+      "place": "",
+      "nat_home": true,
+      "scored": 0
+     }
+    ],
+    "played": null,
+    "scored": 0,
+    "caps": null,
+    "goals_tot": null,
+    "done": false,
+    "window": "2026-11-14",
+    "caps_base": null,
+    "return": "2026-11-17",
+    "long_trip": true,
+    "team_page": "United States men's national soccer team",
+    "nat": "Stati Uniti",
+    "code": "USA",
+    "squad_intro": "The following 24 players were called up for 2026-27 CONCACAF Nations League quarter-finals matches against Haiti on November 14 and 17, 2026.",
+    "label": "Non convocato",
+    "news": []
+   },
+   "Politano": {
+    "wiki": "Matteo Politano",
+    "full": "Matteo Politano",
+    "team": {
+     "page": "Italy national football team",
+     "shown": "Italy",
+     "years": "2018–",
+     "open": true,
+     "caps": 20,
+     "goals": 4,
+     "level": "A",
+     "current": true
+    },
+    "resolved": "2026-11-10T11:28:24Z",
+    "squadra": "Napoli",
+    "status": "non_convocato",
+    "note": "",
+    "fixtures": [
+     {
+      "date": "2026-11-12",
+      "time": "20:45",
+      "home": "Italia",
+      "away": "Francia",
+      "comp": "Nations League",
+      "score": "3–1",
+      "place": "Milan, Italy",
+      "nat_home": true,
+      "scored": 0
+     },
+     {
+      "date": "2026-11-15",
+      "time": "20:45",
+      "home": "Belgio",
+      "away": "Italia",
+      "comp": "Nations League",
+      "score": "",
+      "place": "Brussels, Belgium",
+      "nat_home": false,
+      "scored": 0
+     }
+    ],
+    "played": 0,
+    "scored": 0,
+    "caps": 20,
+    "goals_tot": 4,
+    "done": false,
+    "window": "2026-11-12",
+    "caps_base": 20,
+    "return": "2026-11-15",
+    "long_trip": false,
+    "team_page": "Italy national football team",
+    "nat": "Italia",
+    "code": "ITA",
+    "squad_intro": "The following players were called up for the 2026–27 UEFA Nations League matches against France and Belgium on 12 and 15 November 2026, respectively.",
+    "label": "Non convocato",
+    "news": []
+   },
+   "Diao": {
+    "wiki": "Assane Diao",
+    "full": "Assane Diao",
+    "team": {
+     "page": "Senegal national football team",
+     "shown": "Senegal",
+     "years": "2025–",
+     "open": true,
+     "caps": 9,
+     "goals": 0,
+     "level": "A",
+     "current": true
+    },
+    "resolved": "2026-11-10T11:28:24Z",
+    "squadra": "Como",
+    "status": "non_convocato",
+    "note": "Ultima chiamata: contro Comore, 4 ottobre 2026",
+    "fixtures": [
+     {
+      "date": "2026-11-12",
+      "time": "",
+      "home": "Senegal",
+      "away": "Sudan",
+      "comp": "Qualificazioni Coppa d'Africa",
+      "score": "",
+      "place": "",
+      "nat_home": true,
+      "scored": 0
+     },
+     {
+      "date": "2026-11-16",
+      "time": "",
+      "home": "Senegal",
+      "away": "Sudan",
+      "comp": "Qualificazioni Coppa d'Africa",
+      "score": "",
+      "place": "",
+      "nat_home": true,
+      "scored": 0
+     }
+    ],
+    "played": null,
+    "scored": 0,
+    "caps": 9,
+    "goals_tot": 0,
+    "done": false,
+    "window": "2026-11-12",
+    "caps_base": 9,
+    "return": "2026-11-16",
+    "long_trip": true,
+    "team_page": "Senegal national football team",
+    "nat": "Senegal",
+    "code": "SEN",
+    "squad_intro": "The following players were called up for the 2027 Africa Cup of Nations qualification matches against Sudan on 12 and 16 November 2026, respectively.",
+    "label": "Non convocato",
+    "news": [
+     {
+      "title": "Kean punta la sua ex: Como-Juve per dimenticare l'infortunio. Diao, Addai e Jesus Rodriguez...",
+      "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQSjRkUXZwa1k3NWZJYmVfZE1IWWRzVnVlVVNJUEI4amlnbWFlTkx0R2pCVUxRZ1dKazNSLTFoa0NtWmcyZ1JUVTBxdXF1VHpPZWwweVVTZ2VXVU4xdHJpSS0tQUVuT0tTYUFBZjV4VjVCYkl1WnpZWGNKWXJEWHNpZWNJdE0wTGlkcXV4TmJ6Ri14WU5vaHpQVThnbVNDWHhlV2QtTmdQTTJJbWQtNFNLLXpzQUtwTlF1MkZzeWdWdWJnQTMzSXd4SDNpX0xSbllvM0tlOXpQVkVSQTBIWkk2OUt6U056cmFXWVdLRHljdThDc290WURUdFNn0gH8AUFVX3lxTE5rU09Fcm5uVmJ3QWVJZnYwRFZCR254ZmM2WnZ2NFh6LXhnUFdDMTRVYjhZR1o0amNVOEJpTUlwWlBLbVo5b1BtVWxlYlQzSEVUVVdzVkc4LVFGZlNOazlFRmxZWXIyTl9WNXp0VGowTkh4WTFWNWpwR0NpR2dLUkFMTE0tM1JjbDhtUXRIWElsalhfRVY4SGJKYmFfdnEzV3R5RlRqX05ybHZzNkdsTVR1OWg3a0kyOFh1ZnpIaFJsUmpqQlJOWWNOeDVhejlvNGhNR3RscVNPd25sd0NBWWNRaEttVURfejdCRWp2cWNrRnBiRExSOWtoWVRkNw?oc=5",
+      "source": "Tuttosport",
+      "sky": false,
+      "ts": "2026-11-10T19:50:00Z"
+     }
+    ]
+   },
+   "Neres": {
+    "wiki": "David Neres",
+    "full": "David Neres",
+    "team": {
+     "page": "Brazil national football team",
+     "shown": "Brazil",
+     "years": "2019–2023",
+     "open": false,
+     "caps": 8,
+     "goals": 1,
+     "level": "A",
+     "current": false
+    },
+    "resolved": "2026-11-10T11:28:24Z",
+    "squadra": "Napoli",
+    "status": "fuori",
+    "note": "Ultima nazionale: Brazil (2019–2023)",
+    "fixtures": [
+     {
+      "date": "2026-11-14",
+      "time": "",
+      "home": "Giappone",
+      "away": "Brasile",
+      "comp": "Amichevole",
+      "score": "",
+      "place": "Kallang, Singapore",
+      "nat_home": false,
+      "scored": 0
+     },
+     {
+      "date": "2026-11-17",
+      "time": "",
+      "home": "Singapore",
+      "away": "Brasile",
+      "comp": "Amichevole",
+      "score": "",
+      "place": "Kallang, Singapore",
+      "nat_home": false,
+      "scored": 0
+     }
+    ],
+    "played": null,
+    "scored": 0,
+    "caps": null,
+    "goals_tot": null,
+    "done": false,
+    "window": "2026-11-14",
+    "caps_base": null,
+    "return": "2026-11-17",
+    "long_trip": true,
+    "team_page": "Brazil national football team",
+    "nat": "Brasile",
+    "code": "BRA",
+    "squad_intro": "The following 26 players were named in the squad for the friendly matches against Japan and Singapore on 14 and 17 November 2026, respectively.",
+    "label": "Fuori dal giro",
+    "news": []
+   },
+   "Woltemade": {
+    "wiki": "Nick Woltemade",
+    "full": "Nick Woltemade",
+    "team": {
+     "page": "Germany national football team",
+     "shown": "Germany",
+     "years": "2025–",
+     "open": true,
+     "caps": 14,
+     "goals": 4,
+     "level": "A",
+     "current": true
+    },
+    "resolved": "2026-11-10T11:28:24Z",
+    "squadra": "Juventus",
+    "status": "non_convocato",
+    "note": "Ultima chiamata: contro Grecia, 4 ottobre 2026",
+    "fixtures": [
+     {
+      "date": "2026-11-13",
+      "time": "20:45",
+      "home": "Serbia",
+      "away": "Germania",
+      "comp": "Nations League",
+      "score": "1–3",
+      "place": "Belgrade",
+      "nat_home": false,
+      "scored": 0
+     },
+     {
+      "date": "2026-11-16",
+      "time": "20:45",
+      "home": "Germania",
+      "away": "Paesi Bassi",
+      "comp": "Nations League",
+      "score": "",
+      "place": "Berlin",
+      "nat_home": true,
+      "scored": 0
+     }
+    ],
+    "played": 0,
+    "scored": 0,
+    "caps": 14,
+    "goals_tot": 4,
+    "done": false,
+    "window": "2026-11-13",
+    "caps_base": 14,
+    "return": "2026-11-16",
+    "long_trip": false,
+    "team_page": "Germany national football team",
+    "nat": "Germania",
+    "code": "GER",
+    "squad_intro": "The following players were called up for the 2026–27 UEFA Nations League matches against Serbia and the Netherlands on 13 and 16 November 2026, respectively.",
+    "label": "Non convocato",
+    "news": []
+   },
+   "Adams C.": {
+    "wiki": "Ché Adams",
+    "full": "Ché Adams",
+    "team": {
+     "page": "Scotland national football team",
+     "shown": "Scotland",
+     "years": "2021–",
+     "open": true,
+     "caps": 50,
+     "goals": 13,
+     "level": "A",
+     "current": true
+    },
+    "resolved": "2026-11-10T11:28:24Z",
+    "squadra": "Torino",
+    "status": "convocato",
+    "note": "",
+    "fixtures": [
+     {
+      "date": "2026-11-13",
+      "time": "",
+      "home": "Scozia",
+      "away": "Macedonia del Nord",
+      "comp": "Nations League",
+      "score": "2–1",
+      "place": "Glasgow, Scotland",
+      "nat_home": true,
+      "scored": 0
+     },
+     {
+      "date": "2026-11-16",
+      "time": "",
+      "home": "Svizzera",
+      "away": "Scozia",
+      "comp": "Nations League",
+      "score": "",
+      "place": "St. Gallen, Switzerland",
+      "nat_home": false,
+      "scored": 0
+     }
+    ],
+    "played": 1,
+    "scored": 0,
+    "caps": 51,
+    "goals_tot": 13,
+    "done": false,
+    "window": "2026-11-13",
+    "caps_base": 50,
+    "return": "2026-11-16",
+    "long_trip": false,
+    "team_page": "Scotland national football team",
+    "nat": "Scozia",
+    "code": "SCO",
+    "squad_intro": "The following players were called up for the 2026–27 UEFA Nations League matches in November 2026.",
+    "label": "Convocato",
+    "news": []
+   },
+   "Vitinha O.": {
+    "wiki": "Vitinha (footballer, born March 2000)",
+    "full": "Vitinha",
+    "team": {
+     "page": "Portugal national under-21 football team",
+     "shown": "Portugal U21",
+     "years": "2021–2023",
+     "open": false,
+     "caps": 10,
+     "goals": 4,
+     "level": "giovanile",
+     "current": false
+    },
+    "resolved": "2026-11-10T11:28:24Z",
+    "squadra": "Genoa",
+    "status": "convocato",
+    "note": "Chiamato in nazionale maggiore.",
+    "fixtures": [
+     {
+      "date": "2026-11-14",
+      "time": "",
+      "home": "Portogallo",
+      "away": "Danimarca",
+      "comp": "Nations League",
+      "score": "",
+      "place": "Braga, Portugal",
+      "nat_home": true,
+      "scored": 0
+     },
+     {
+      "date": "2026-11-17",
+      "time": "",
+      "home": "Galles",
+      "away": "Portogallo",
+      "comp": "Nations League",
+      "score": "",
+      "place": "Cardiff, Wales",
+      "nat_home": false,
+      "scored": 0
+     }
+    ],
+    "played": null,
+    "scored": 0,
+    "caps": 47,
+    "goals_tot": 1,
+    "done": false,
+    "window": "2026-11-14",
+    "caps_base": 47,
+    "return": "2026-11-17",
+    "long_trip": false,
+    "team_page": "Portugal national football team",
+    "nat": "Portogallo",
+    "code": "POR",
+    "squad_intro": "The following players were named in the squad for the 2026–27 UEFA Nations League matches against Denmark and Wales on 14 and 17 November respectively.",
+    "label": "Convocato",
+    "news": []
+   },
+   "De Ketelaere": {
+    "wiki": "Charles De Ketelaere",
+    "full": "Charles De Ketelaere",
+    "team": {
+     "page": "Belgium national football team",
+     "shown": "Belgium",
+     "years": "2020–",
+     "open": true,
+     "caps": 39,
+     "goals": 9,
+     "level": "A",
+     "current": true
+    },
+    "resolved": "2026-11-10T11:28:24Z",
+    "squadra": "Atalanta",
+    "status": "convocato",
+    "note": "",
+    "fixtures": [
+     {
+      "date": "2026-11-12",
+      "time": "18:00",
+      "home": "Turchia",
+      "away": "Belgio",
+      "comp": "Nations League",
+      "score": "1–2",
+      "place": "İzmir, Turkey",
+      "nat_home": false,
+      "scored": 1
+     },
+     {
+      "date": "2026-11-15",
+      "time": "20:45",
+      "home": "Belgio",
+      "away": "Italia",
+      "comp": "Nations League",
+      "score": "",
+      "place": "Brussels, Belgium",
+      "nat_home": true,
+      "scored": 0
+     }
+    ],
+    "played": 1,
+    "scored": 1,
+    "caps": 40,
+    "goals_tot": 10,
+    "done": false,
+    "window": "2026-11-12",
+    "caps_base": 39,
+    "return": "2026-11-15",
+    "long_trip": false,
+    "team_page": "Belgium national football team",
+    "nat": "Belgio",
+    "code": "BEL",
+    "squad_intro": "The following players were selected for the UEFA Nations League matches against Turkey and Italy on 12 and 15 November 2026, respectively.",
+    "label": "Convocato",
+    "news": []
+   }
+  },
+  "changes": [
+   {
+    "ts": "2026-11-10T11:45:15Z",
+    "nome": "Vitinha O.",
+    "da": "Fuori dal giro",
+    "a": "Convocato",
+    "nat": "Portogallo",
+    "note": "Chiamato in nazionale maggiore."
+   },
+   {
+    "ts": "2026-11-10T11:45:15Z",
+    "nome": "Ramon",
+    "da": "Lista non ancora uscita",
+    "a": "Convocato",
+    "nat": "Spagna",
+    "note": "Chiamato in nazionale maggiore."
+   }
+  ],
+  "news_status": {
+   "ok": true,
+   "feeds": 19,
+   "errors": 0,
+   "when": "2026-11-14T12:05:17Z"
+  },
+  "teams": {
+   "Belgium national football team": {
+    "code": "BEL",
+    "name": "Belgio",
+    "squad_dates": [
+     "2026-11-12",
+     "2026-11-15"
+    ],
+    "intro": "The following players were selected for the UEFA Nations League matches against Turkey and Italy on 12 and 15 November 2026, respectively.",
+    "squad_size": 26,
+    "fixtures": 18
+   },
+   "Brazil national football team": {
+    "code": "BRA",
+    "name": "Brasile",
+    "squad_dates": [
+     "2026-11-14",
+     "2026-11-17"
+    ],
+    "intro": "The following 26 players were named in the squad for the friendly matches against Japan and Singapore on 14 and 17 November 2026, respectively.",
+    "squad_size": 25,
+    "fixtures": 16
+   },
+   "Colombia national football team": {
+    "code": "COL",
+    "name": "Colombia",
+    "squad_dates": [
+     "2026-11-13",
+     "2026-11-17"
+    ],
+    "intro": "The following players were called up for the friendly matches against Chile on 13 and 17 November 2026, respectively.",
+    "squad_size": 26,
+    "fixtures": 0
+   },
+   "Croatia national football team": {
+    "code": "CRO",
+    "name": "Croazia",
+    "squad_dates": [],
+    "intro": "The following players were called up for the 2026–27 UEFA Nations League A matches in November 2026.",
+    "squad_size": 25,
+    "fixtures": 0
+   },
+   "England national football team": {
+    "code": "ENG",
+    "name": "Inghilterra",
+    "squad_dates": [
+     "2026-11-12",
+     "2026-11-15"
+    ],
+    "intro": "The following 26 players were named in the squad for the 2026–27 UEFA Nations League A matches against Croatia and Spain on 12 and 15 November 2026, respectively.",
+    "squad_size": 26,
+    "fixtures": 20
+   },
+   "France national football team": {
+    "code": "FRA",
+    "name": "Francia",
+    "squad_dates": [
+     "2026-11-12",
+     "2026-11-15"
+    ],
+    "intro": "The following players were called up for the 2026–27 UEFA Nations League matches against Italy and Turkey on 12 and 15 November 2026 respectively.",
+    "squad_size": 23,
+    "fixtures": 20
+   },
+   "France national under-20 football team": {
+    "code": "FRA",
+    "name": "Francia",
+    "squad_dates": [
+     "2025-09-27",
+     "2025-10-19"
+    ],
+    "intro": "The following players were named in the squad for the 2025 FIFA U-20 World Cup, to be played 27 September – 19 October 2025.",
+    "squad_size": 21,
+    "fixtures": 0
+   },
+   "Germany national football team": {
+    "code": "GER",
+    "name": "Germania",
+    "squad_dates": [
+     "2026-11-13",
+     "2026-11-16"
+    ],
+    "intro": "The following players were called up for the 2026–27 UEFA Nations League matches against Serbia and the Netherlands on 13 and 16 November 2026, respectively.",
+    "squad_size": 24,
+    "fixtures": 16
+   },
+   "Italy national football team": {
+    "code": "ITA",
+    "name": "Italia",
+    "squad_dates": [
+     "2026-11-12",
+     "2026-11-15"
+    ],
+    "intro": "The following players were called up for the 2026–27 UEFA Nations League matches against France and Belgium on 12 and 15 November 2026, respectively.",
+    "squad_size": 28,
+    "fixtures": 11
+   },
+   "Italy national under-21 football team": {
+    "code": "ITA",
+    "name": "Italia",
+    "squad_dates": [
+     "2026-11-13",
+     "2026-11-16"
+    ],
+    "intro": "The following players were called up for the friendly matches against France and Belgium on 13 and 16 November 2026 respectively.",
+    "squad_size": 25,
+    "fixtures": 0
+   },
+   "Kosovo national football team": {
+    "code": "KVX",
+    "name": "Kosovo",
+    "squad_dates": [
+     "2026-11-14",
+     "2026-11-17"
+    ],
+    "intro": "*The following players were called up for the 2026–27 UEFA Nations League matches against Israel and the Republic of Ireland, on 14 and 17 November 2026.",
+    "squad_size": 25,
+    "fixtures": 0
+   },
+   "Netherlands national football team": {
+    "code": "NED",
+    "name": "Paesi Bassi",
+    "squad_dates": [
+     "2026-11-13",
+     "2026-11-16"
+    ],
+    "intro": "The following players were called up for the 2026–27 UEFA Nations League matches against Greece and Germany on 13 and 16 November 2026.",
+    "squad_size": 24,
+    "fixtures": 16
+   },
+   "Portugal national football team": {
+    "code": "POR",
+    "name": "Portogallo",
+    "squad_dates": [
+     "2026-11-14",
+     "2026-11-17"
+    ],
+    "intro": "The following players were named in the squad for the 2026–27 UEFA Nations League matches against Denmark and Wales on 14 and 17 November respectively.",
+    "squad_size": 27,
+    "fixtures": 17
+   },
+   "Portugal national under-21 football team": {
+    "code": "POR",
+    "name": "Portogallo",
+    "squad_dates": [
+     "2026-11-13",
+     "2026-11-17"
+    ],
+    "intro": "The following players were called up for the preparation match against England and Norway on 13 and 17 November respectively.",
+    "squad_size": 24,
+    "fixtures": 0
+   },
+   "Scotland national football team": {
+    "code": "SCO",
+    "name": "Scozia",
+    "squad_dates": [],
+    "intro": "The following players were called up for the 2026–27 UEFA Nations League matches in November 2026.",
+    "squad_size": 26,
+    "fixtures": 15
+   },
+   "Senegal national football team": {
+    "code": "SEN",
+    "name": "Senegal",
+    "squad_dates": [
+     "2026-11-12",
+     "2026-11-16"
+    ],
+    "intro": "The following players were called up for the 2027 Africa Cup of Nations qualification matches against Sudan on 12 and 16 November 2026, respectively.",
+    "squad_size": 26,
+    "fixtures": 0
+   },
+   "Spain national football team": {
+    "code": "ESP",
+    "name": "Spagna",
+    "squad_dates": [
+     "2026-11-12",
+     "2026-11-15"
+    ],
+    "intro": "The following 28 players were named in the squad for the 2026–27 UEFA Nations League A matches against the Czech Republic and England on 12 and 15 November 2026, respectively.",
+    "squad_size": 28,
+    "fixtures": 0
+   },
+   "Spain national under-21 football team": {
+    "code": "ESP",
+    "name": "Spagna",
+    "squad_dates": [
+     "2026-09-25",
+     "2026-09-30",
+     "2026-10-06"
+    ],
+    "intro": "The following players were named in the squad for the 2027 UEFA European Under-21 Championship qualification Group A matches against Finland, San Marino and Romania on 25, 30 September and 6 October 2026; respectively.",
+    "squad_size": 27,
+    "fixtures": 0
+   },
+   "Switzerland national football team": {
+    "code": "SUI",
+    "name": "Svizzera",
+    "squad_dates": [
+     "2026-11-13",
+     "2026-11-16"
+    ],
+    "intro": "The following 24 players were called up to the 2026–27 UEFA Nations League B matches against Slovenia on 13 November and Scotland on 16 November 2026.",
+    "squad_size": 28,
+    "fixtures": 0
+   },
+   "United States men's national soccer team": {
+    "code": "USA",
+    "name": "Stati Uniti",
+    "squad_dates": [
+     "2026-11-14",
+     "2026-11-17"
+    ],
+    "intro": "The following 24 players were called up for 2026-27 CONCACAF Nations League quarter-finals matches against Haiti on November 14 and 17, 2026.",
+    "squad_size": 24,
+    "fixtures": 0
+   }
+  }
+ }
+}

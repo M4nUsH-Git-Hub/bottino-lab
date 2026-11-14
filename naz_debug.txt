@@ -1,0 +1,162 @@
+Daffara: Giovanni Daffara | Italy national under-21 football team | convocato | 
+Corvi: Edoardo Corvi | None | fuori | Nessuna presenza in nazionale
+Maignan: Mike Maignan | France national football team | convocato | 
+Ramon: Jacobo Ramón | Spain national under-21 football team | convocato | Chiamato in nazionale maggiore.
+Lucumì: Jhon Lucumí | Colombia national football team | convocato | 
+Gila: Mario Gila | Spain national under-21 football team | fuori | Ultima nazionale: Spain U21 (2022–2023)
+Scalvini: Giorgio Scalvini | Italy national football team | convocato | 
+Vojvoda: Mërgim Vojvoda | Kosovo national football team | convocato | 
+Zortea: Nadir Zortea | None | fuori | Nessuna presenza in nazionale
+Akanji: Manuel Akanji | Switzerland national football team | convocato | 
+Bastoni: Alessandro Bastoni | Italy national football team | convocato | 
+Cacciamani: Alessio Cacciamani | Italy national under-21 football team | convocato | 
+Atta: Arthur Atta | France national under-20 football team | fuori | Ultima nazionale: France U20 (2023–2024)
+Colpani: Andrea Colpani | Italy national under-21 football team | fuori | Ultima nazionale: Italy U21 (2020)
+Koopmeiners: Teun Koopmeiners | Netherlands national football team | convocato | 
+Jones C.: Curtis Jones (footballer, born 2001) | England national football team | non_convocato | 
+Modric: Luka Modrić | Croatia national football team | convocato | Date delle partite non ancora disponibili
+Pulisic: Christian Pulisic | United States men's national soccer team | non_convocato | 
+Politano: Matteo Politano | Italy national football team | non_convocato | 
+Diao: Assane Diao | Senegal national football team | non_convocato | Ultima chiamata: contro Comore, 4 ottobre 2026
+Neres: David Neres | Brazil national football team | fuori | Ultima nazionale: Brazil (2019–2023)
+Woltemade: Nick Woltemade | Germany national football team | non_convocato | Ultima chiamata: contro Grecia, 4 ottobre 2026
+Adams C.: Ché Adams | Scotland national football team | convocato | 
+Vitinha O.: Vitinha (footballer, born March 2000) | Portugal national under-21 football team | convocato | Chiamato in nazionale maggiore.
+De Ketelaere: Charles De Ketelaere | Belgium national football team | convocato | 
+
+== Belgium national football team [BEL] squad=26 recent=15 fixtures=18
+   intro: The following players were selected for the UEFA Nations League matches against Turkey and Italy on 12 and 15 November 2026, respectively.
+   dates: ['2026-11-12', '2026-11-15']
+   avversari: ['Turkey', 'Italy'] · comp Nations League · mesi []
+   {'date': '2026-11-12', 'time': '18:00', 'c1': 'TUR', 'c2': 'BEL', 't1': 'Turchia', 't2': 'Belgio', 'score': '1–2', 'comp': 'Nations League', 'place': 'İzmir, Turkey', 'g1': '*[[Arda Güler|Güler]] {{goal|20}}', 'g2': '*[[Kevin De Bruyne|De Bruyne]] {{goal|27}}\n*[[Charles De Ketelaere|De Ketelaere]] {{goal|30}}'}
+   {'date': '2026-11-15', 'time': '20:45', 'c1': 'BEL', 'c2': 'ITA', 't1': 'Belgio', 't2': 'Italia', 'score': '', 'comp': 'Nations League', 'place': 'Brussels, Belgium', 'g1': '', 'g2': ''}
+
+== Brazil national football team [BRA] squad=25 recent=52 fixtures=16
+   intro: The following 26 players were named in the squad for the friendly matches against Japan and Singapore on 14 and 17 November 2026, respectively.
+   dates: ['2026-11-14', '2026-11-17']
+   avversari: ['Japan', 'Singapore'] · comp Amichevole · mesi []
+   {'date': '2026-11-14', 'time': '', 'c1': 'JPN', 'c2': 'BRA', 't1': 'Giappone', 't2': 'Brasile', 'score': '', 'comp': 'Amichevole', 'place': 'Kallang, Singapore', 'g1': '', 'g2': ''}
+   {'date': '2026-11-17', 'time': '', 'c1': 'SGP', 'c2': 'BRA', 't1': 'Singapore', 't2': 'Brasile', 'score': '', 'comp': 'Amichevole', 'place': 'Kallang, Singapore', 'g1': '', 'g2': ''}
+
+== Colombia national football team [COL] squad=26 recent=41 fixtures=0
+   intro: The following players were called up for the friendly matches against Chile on 13 and 17 November 2026, respectively.
+   dates: ['2026-11-13', '2026-11-17']
+   avversari: ['Chile'] · comp Amichevole · mesi []
+   {'date': '2026-11-13', 'time': '', 'c1': 'COL', 'c2': '', 't1': 'Colombia', 't2': 'Cile', 'score': '', 'comp': 'Amichevole', 'place': '', 'g1': '', 'g2': '', 'approx': True}
+   {'date': '2026-11-17', 'time': '', 'c1': 'COL', 'c2': '', 't1': 'Colombia', 't2': 'Cile', 'score': '', 'comp': 'Amichevole', 'place': '', 'g1': '', 'g2': '', 'approx': True}
+
+== Croatia national football team [CRO] squad=25 recent=13 fixtures=0
+   intro: The following players were called up for the 2026–27 UEFA Nations League A matches in November 2026.
+   dates: []
+   avversari: [] · comp Nations League · mesi [(2026, 11)]
+
+== England national football team [ENG] squad=26 recent=27 fixtures=20
+   intro: The following 26 players were named in the squad for the 2026–27 UEFA Nations League A matches against Croatia and Spain on 12 and 15 November 2026, respectively.
+   dates: ['2026-11-12', '2026-11-15']
+   avversari: ['Croatia', 'Spain'] · comp Nations League · mesi []
+   {'date': '2026-11-12', 'time': '', 'c1': 'ENG', 'c2': 'CRO', 't1': 'Inghilterra', 't2': 'Croazia', 'score': '2–1', 'comp': 'Nations League', 'place': 'London, England', 'g1': '*[[Morgan Rogers|Rogers]] {{goal|24}}\n*[[Harry Kane|Kane]] {{goal|64|pen.}}', 'g2': '*[[Petar Sučić|P. Sučić]] {{goal|59}}'}
+   {'date': '2026-11-15', 'time': '', 'c1': 'ESP', 'c2': 'ENG', 't1': 'Spagna', 't2': 'Inghilterra', 'score': '', 'comp': 'Nations League', 'place': 'Madrid, Spain', 'g1': '', 'g2': ''}
+
+== France national football team [FRA] squad=23 recent=23 fixtures=20
+   intro: The following players were called up for the 2026–27 UEFA Nations League matches against Italy and Turkey on 12 and 15 November 2026 respectively.
+   dates: ['2026-11-12', '2026-11-15']
+   avversari: ['Italy', 'Turkey'] · comp Nations League · mesi []
+   {'date': '2026-11-12', 'time': '20:45', 'c1': 'ITA', 'c2': 'FRA', 't1': 'Italia', 't2': 'Francia', 'score': '3–1', 'comp': 'Nations League', 'place': 'Milan, Italy', 'g1': '*[[Pio Esposito|P. Esposito]] {{goal|26||75|pen.}}\n*[[Davide Frattesi|Frattesi]] {{goal|63}}', 'g2': '*[[Michael Olise|Olise]] {{goal|10}}'}
+   {'date': '2026-11-15', 'time': '20:45', 'c1': 'FRA', 'c2': 'TUR', 't1': 'Francia', 't2': 'Turchia', 'score': '', 'comp': 'Nations League', 'place': 'Bordeaux, France', 'g1': '', 'g2': ''}
+
+== France national under-20 football team [FRA] squad=21 recent=0 fixtures=0
+   intro: The following players were named in the squad for the 2025 FIFA U-20 World Cup, to be played 27 September – 19 October 2025.
+   dates: ['2025-09-27', '2025-10-19']
+   avversari: [] · comp Mondiali · mesi []
+
+== Germany national football team [GER] squad=24 recent=33 fixtures=16
+   intro: The following players were called up for the 2026–27 UEFA Nations League matches against Serbia and the Netherlands on 13 and 16 November 2026, respectively.
+   dates: ['2026-11-13', '2026-11-16']
+   avversari: ['Serbia', 'Netherlands'] · comp Nations League · mesi []
+   {'date': '2026-11-13', 'time': '20:45', 'c1': 'SRB', 'c2': 'GER', 't1': 'Serbia', 't2': 'Germania', 'score': '1–3', 'comp': 'Nations League', 'place': 'Belgrade', 'g1': '*[[Srđan Babić|Babić]] {{goal|56}}', 'g2': '*[[Srđan Babić|Babić]] {{goal|3|o.g.}}\n*[[Florian Wirtz|Wirtz]] {{goal|14}}\n*[[Brajan Gruda|Gruda]] {{goal|50}}'}
+   {'date': '2026-11-16', 'time': '20:45', 'c1': 'GER', 'c2': 'NED', 't1': 'Germania', 't2': 'Paesi Bassi', 'score': '', 'comp': 'Nations League', 'place': 'Berlin', 'g1': '', 'g2': ''}
+
+== Italy national football team [ITA] squad=28 recent=50 fixtures=11
+   intro: The following players were called up for the 2026–27 UEFA Nations League matches against France and Belgium on 12 and 15 November 2026, respectively.
+   dates: ['2026-11-12', '2026-11-15']
+   avversari: ['France', 'Belgium'] · comp Nations League · mesi []
+   {'date': '2026-11-12', 'time': '20:45', 'c1': 'ITA', 'c2': 'FRA', 't1': 'Italia', 't2': 'Francia', 'score': '3–1', 'comp': 'Nations League', 'place': 'Milan, Italy', 'g1': '*[[Pio Esposito|P. Esposito]] {{goal|26||75|pen.}}\n*[[Davide Frattesi|Frattesi]] {{goal|63}}', 'g2': '*[[Michael Olise|Olise]] {{goal|10}}'}
+   {'date': '2026-11-15', 'time': '20:45', 'c1': 'BEL', 'c2': 'ITA', 't1': 'Belgio', 't2': 'Italia', 'score': '', 'comp': 'Nations League', 'place': 'Brussels, Belgium', 'g1': '', 'g2': ''}
+
+== Italy national under-21 football team [ITA] squad=25 recent=34 fixtures=0
+   intro: The following players were called up for the friendly matches against France and Belgium on 13 and 16 November 2026 respectively.
+   dates: ['2026-11-13', '2026-11-16']
+   avversari: ['France', 'Belgium'] · comp Amichevole · mesi []
+   {'date': '2026-11-13', 'time': '', 'c1': 'ITA', 'c2': '', 't1': 'Italia', 't2': 'Francia', 'score': '', 'comp': 'Amichevole', 'place': '', 'g1': '', 'g2': '', 'approx': True}
+   {'date': '2026-11-16', 'time': '', 'c1': 'ITA', 'c2': '', 't1': 'Italia', 't2': 'Belgio', 'score': '', 'comp': 'Amichevole', 'place': '', 'g1': '', 'g2': '', 'approx': True}
+
+== Kosovo national football team [KVX] squad=25 recent=22 fixtures=0
+   intro: *The following players were called up for the 2026–27 UEFA Nations League matches against Israel and the Republic of Ireland, on 14 and 17 November 2026.
+   dates: ['2026-11-14', '2026-11-17']
+   avversari: ['Israel', 'Republic of Ireland'] · comp Nations League · mesi []
+   {'date': '2026-11-14', 'time': '', 'c1': 'KVX', 'c2': '', 't1': 'Kosovo', 't2': 'Israele', 'score': '', 'comp': 'Nations League', 'place': '', 'g1': '', 'g2': '', 'approx': True}
+   {'date': '2026-11-17', 'time': '', 'c1': 'KVX', 'c2': '', 't1': 'Kosovo', 't2': 'Irlanda', 'score': '', 'comp': 'Nations League', 'place': '', 'g1': '', 'g2': '', 'approx': True}
+
+== Netherlands national football team [NED] squad=24 recent=21 fixtures=16
+   intro: The following players were called up for the 2026–27 UEFA Nations League matches against Greece and Germany on 13 and 16 November 2026.
+   dates: ['2026-11-13', '2026-11-16']
+   avversari: ['Greece', 'Germany'] · comp Nations League · mesi []
+   {'date': '2026-11-13', 'time': '20:45', 'c1': 'NED', 'c2': 'GRE', 't1': 'Paesi Bassi', 't2': 'Grecia', 'score': '7–0', 'comp': 'Nations League', 'place': 'Amsterdam, Netherlands', 'g1': '*[[Crysencio Summerville|Summerville]] {{goal|6}}\n*[[Tijjani Reijnders|Reijnders]] {{goal|12|18|33}}\n*[[Jurriën Timber|Timber]] {{goal|40|59}}\n*[[Donyell Malen|Malen]] {{goal|62}}', 'g2': ''}
+   {'date': '2026-11-16', 'time': '20:45', 'c1': 'GER', 'c2': 'NED', 't1': 'Germania', 't2': 'Paesi Bassi', 'score': '', 'comp': 'Nations League', 'place': 'Berlin, Germany', 'g1': '', 'g2': ''}
+
+== Portugal national football team [POR] squad=27 recent=15 fixtures=17
+   intro: The following players were named in the squad for the 2026–27 UEFA Nations League matches against Denmark and Wales on 14 and 17 November respectively.
+   dates: ['2026-11-14', '2026-11-17']
+   avversari: ['Denmark', 'Wales'] · comp Nations League · mesi []
+   {'date': '2026-11-14', 'time': '', 'c1': 'POR', 'c2': 'DEN', 't1': 'Portogallo', 't2': 'Danimarca', 'score': '', 'comp': 'Nations League', 'place': 'Braga, Portugal', 'g1': '', 'g2': ''}
+   {'date': '2026-11-17', 'time': '', 'c1': 'WAL', 'c2': 'POR', 't1': 'Galles', 't2': 'Portogallo', 'score': '', 'comp': 'Nations League', 'place': 'Cardiff, Wales', 'g1': '', 'g2': ''}
+
+== Portugal national under-21 football team [POR] squad=24 recent=23 fixtures=0
+   intro: The following players were called up for the preparation match against England and Norway on 13 and 17 November respectively.
+   dates: ['2026-11-13', '2026-11-17']
+   avversari: ['England', 'Norway'] · comp The following players were called up for · mesi []
+   {'date': '2026-11-13', 'time': '', 'c1': 'POR', 'c2': '', 't1': 'Portogallo', 't2': 'Inghilterra', 'score': '', 'comp': 'The following players were called up for', 'place': '', 'g1': '', 'g2': '', 'approx': True}
+   {'date': '2026-11-17', 'time': '', 'c1': 'POR', 'c2': '', 't1': 'Portogallo', 't2': 'Norvegia', 'score': '', 'comp': 'The following players were called up for', 'place': '', 'g1': '', 'g2': '', 'approx': True}
+
+== Scotland national football team [SCO] squad=26 recent=22 fixtures=15
+   intro: The following players were called up for the 2026–27 UEFA Nations League matches in November 2026.
+   dates: []
+   avversari: [] · comp Nations League · mesi [(2026, 11)]
+   {'date': '2026-11-13', 'time': '', 'c1': 'SCO', 'c2': 'MKD', 't1': 'Scozia', 't2': 'Macedonia del Nord', 'score': '2–1', 'comp': 'Nations League', 'place': 'Glasgow, Scotland', 'g1': '*[[John McGinn|McGinn]] {{goal|54|74|pen.}}', 'g2': '*[[Elmin Rastoder|Rastoder]] {{goal|57}}'}
+   {'date': '2026-11-16', 'time': '', 'c1': 'SUI', 'c2': 'SCO', 't1': 'Svizzera', 't2': 'Scozia', 'score': '', 'comp': 'Nations League', 'place': 'St. Gallen, Switzerland', 'g1': '', 'g2': ''}
+
+== Senegal national football team [SEN] squad=26 recent=26 fixtures=0
+   intro: The following players were called up for the 2027 Africa Cup of Nations qualification matches against Sudan on 12 and 16 November 2026, respectively.
+   dates: ['2026-11-12', '2026-11-16']
+   avversari: ['Sudan'] · comp Qualificazioni Coppa d'Africa · mesi []
+   {'date': '2026-11-12', 'time': '', 'c1': 'SEN', 'c2': '', 't1': 'Senegal', 't2': 'Sudan', 'score': '', 'comp': "Qualificazioni Coppa d'Africa", 'place': '', 'g1': '', 'g2': '', 'approx': True}
+   {'date': '2026-11-16', 'time': '', 'c1': 'SEN', 'c2': '', 't1': 'Senegal', 't2': 'Sudan', 'score': '', 'comp': "Qualificazioni Coppa d'Africa", 'place': '', 'g1': '', 'g2': '', 'approx': True}
+
+== Spain national football team [ESP] squad=28 recent=28 fixtures=0
+   intro: The following 28 players were named in the squad for the 2026–27 UEFA Nations League A matches against the Czech Republic and England on 12 and 15 November 2026, respectively.
+   dates: ['2026-11-12', '2026-11-15']
+   avversari: ['Czech Republic', 'England'] · comp Nations League · mesi []
+   {'date': '2026-11-12', 'time': '', 'c1': 'ESP', 'c2': '', 't1': 'Spagna', 't2': 'Repubblica Ceca', 'score': '', 'comp': 'Nations League', 'place': '', 'g1': '', 'g2': '', 'approx': True}
+   {'date': '2026-11-15', 'time': '', 'c1': 'ESP', 'c2': '', 't1': 'Spagna', 't2': 'Inghilterra', 'score': '', 'comp': 'Nations League', 'place': '', 'g1': '', 'g2': '', 'approx': True}
+
+== Spain national under-21 football team [ESP] squad=27 recent=10 fixtures=0
+   intro: The following players were named in the squad for the 2027 UEFA European Under-21 Championship qualification Group A matches against Finland, San Marino and Romania on 25, 30 September and 6 October 2026; respectively.
+   dates: ['2026-09-25', '2026-09-30', '2026-10-06']
+   avversari: ['Finland', 'San Marino', 'Romania'] · comp Qualificazioni Europei · mesi []
+
+== Switzerland national football team [SUI] squad=28 recent=14 fixtures=0
+   intro: The following 24 players were called up to the 2026–27 UEFA Nations League B matches against Slovenia on 13 November and Scotland on 16 November 2026.
+   dates: ['2026-11-13', '2026-11-16']
+   avversari: ['Slovenia', 'Scotland'] · comp Nations League · mesi []
+   {'date': '2026-11-13', 'time': '', 'c1': 'SUI', 'c2': '', 't1': 'Svizzera', 't2': 'Slovenia', 'score': '', 'comp': 'Nations League', 'place': '', 'g1': '', 'g2': '', 'approx': True}
+   {'date': '2026-11-16', 'time': '', 'c1': 'SUI', 'c2': '', 't1': 'Svizzera', 't2': 'Scozia', 'score': '', 'comp': 'Nations League', 'place': '', 'g1': '', 'g2': '', 'approx': True}
+
+== United States men's national soccer team [USA] squad=24 recent=32 fixtures=0
+   intro: The following 24 players were called up for 2026-27 CONCACAF Nations League quarter-finals matches against Haiti on November 14 and 17, 2026.
+   dates: ['2026-11-14', '2026-11-17']
+   avversari: ['Haiti'] · comp CONCACAF Nations League · mesi []
+   {'date': '2026-11-14', 'time': '', 'c1': 'USA', 'c2': '', 't1': 'Stati Uniti', 't2': 'Haiti', 'score': '', 'comp': 'CONCACAF Nations League', 'place': '', 'g1': '', 'g2': '', 'approx': True}
+   {'date': '2026-11-17', 'time': '', 'c1': 'USA', 'c2': '', 't1': 'Stati Uniti', 't2': 'Haiti', 'score': '', 'comp': 'CONCACAF Nations League', 'place': '', 'g1': '', 'g2': '', 'approx': True}
+
+
+TRACCIA
